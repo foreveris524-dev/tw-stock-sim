@@ -7,7 +7,44 @@
   "used_margin": 0,
   "position": null,
   "cumulative_pnl": 0,
+  "plan_for_5_22": {
+    "rationale": "台指期 5/21 單日暴漲 930 點(+2.32%)，技術上短線超漲，隔日回測機率高；選擇空 1 口小台，等開盤穩定後進場，停損停利對稱設定。",
+    "direction": "SHORT",
+    "contracts": 1,
+    "entry_price": 41000,
+    "entry_timing": "開盤後 10 分鐘觀察，若無持續跳高則在 41,000-41,100 之間做空",
+    "take_profit": 40400,
+    "stop_loss": 41600,
+    "margin_required": 48000,
+    "max_profit_pts": 600,
+    "max_profit_ntd": 30000,
+    "max_loss_pts": 600,
+    "max_loss_ntd": 30000,
+    "risk_reward_ratio": "1:1",
+    "note": "若開盤跳空低開超過 500 點則取消，代表已回測完成不適合再追空"
+  },
   "trade_log": [
-    {"date": "2026-05-21", "action": "RESET", "direction": "", "contracts": 0, "entry_price": 0, "exit_price": 0, "pnl": 0, "reason": "期貨模擬起始，保證金20萬，等待明日開盤進場"}
+    {
+      "date": "2026-05-21",
+      "action": "RESET",
+      "direction": "",
+      "contracts": 0,
+      "entry_price": 0,
+      "exit_price": 0,
+      "pnl": 0,
+      "reason": "期貨模擬起始，保證金20萬，等待明日開盤進場"
+    },
+    {
+      "date": "2026-05-21",
+      "action": "PLAN_SHORT",
+      "direction": "SHORT",
+      "contracts": 1,
+      "entry_price": 41000,
+      "take_profit": 40400,
+      "stop_loss": 41600,
+      "margin_required": 48000,
+      "pnl": 0,
+      "reason": "5/21 大漲 930 點後短線過熱，空 1 口小台等隔日回測；停利 40,400 / 停損 41,600"
+    }
   ]
 }

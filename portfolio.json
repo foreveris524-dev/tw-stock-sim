@@ -4,7 +4,76 @@
   "cash": 1000000,
   "total_value": 1000000,
   "holdings": [],
+  "plan_for_5_22": {
+    "rationale": "台指期 5/21 大漲 930 點(+2.32%)，不追高；0050、00981A 掛限價等小回；2330 連4跌且背離大盤，暫觀望。",
+    "orders": [
+      {
+        "code": "0050",
+        "name": "元大台灣50",
+        "action": "BUY_LIMIT",
+        "limit_price": 93.5,
+        "shares": 1604,
+        "amount": 150000,
+        "note": "今估收 ~94，掛低 0.5 元等小回；第一批，動用 15 萬"
+      },
+      {
+        "code": "00981A",
+        "name": "統一主動台股增長",
+        "action": "BUY_LIMIT",
+        "limit_price": 27.5,
+        "shares": 2909,
+        "amount": 80000,
+        "note": "今估收 ~27.7，掛低 0.2 元；第一批，動用 8 萬"
+      },
+      {
+        "code": "2330",
+        "name": "台積電",
+        "action": "SKIP",
+        "note": "連4跌至 2,185，大盤大漲日仍下跌 -0.91%，背離訊號明顯；等 2,150 附近確認支撐再評估"
+      }
+    ],
+    "capital_plan": {
+      "deployed": 230000,
+      "remaining_cash": 770000,
+      "memo": "第一批僅動用 23%，後續依回檔幅度分批加碼"
+    }
+  },
   "trade_log": [
-    {"date": "2026-05-21", "action": "RESET", "code": "", "reason": "歸零起始，100% 現金，等待明日開盤選股買入", "price": 0, "shares": 0, "amount": 0}
+    {
+      "date": "2026-05-21",
+      "action": "RESET",
+      "code": "",
+      "reason": "歸零起始，100% 現金，等待明日開盤選股買入",
+      "price": 0,
+      "shares": 0,
+      "amount": 0
+    },
+    {
+      "date": "2026-05-21",
+      "action": "PLAN_BUY",
+      "code": "0050",
+      "reason": "明日掛限價 93.5，第一批動用 15 萬，大漲後等小回",
+      "price": 93.5,
+      "shares": 1604,
+      "amount": 150000
+    },
+    {
+      "date": "2026-05-21",
+      "action": "PLAN_BUY",
+      "code": "00981A",
+      "reason": "明日掛限價 27.5，第一批動用 8 萬",
+      "price": 27.5,
+      "shares": 2909,
+      "amount": 80000
+    },
+    {
+      "date": "2026-05-21",
+      "action": "PLAN_SKIP",
+      "code": "2330",
+      "reason": "連4跌背離大盤，等 2,150 支撐確認再進",
+      "price": 0,
+      "shares": 0,
+      "amount": 0
+    }
   ]
 }
