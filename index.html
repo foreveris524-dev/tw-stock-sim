@@ -5,46 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>台股模擬操盤儀表板</title>
 <style>
-  .charts-section { margin-bottom: 24px; }
-  .charts-tabs { display: flex; gap: 8px; margin-bottom: 14px; }
-  .tab-btn {
-    background: var(--card);
-    border: 1px solid var(--border);
-    color: var(--muted);
-    padding: 7px 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 500;
-    transition: all 0.15s;
-  }
-  .tab-btn.active { background: var(--border); color: var(--text); border-color: #4a4d5a; }
-  .tab-btn:hover:not(.active) { color: var(--text); }
-  .chart-panel { display: none; }
-  .chart-panel.active { display: block; }
-  .chart-wrap {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-    height: 420px;
-  }
-  .chart-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
-  .watchlist-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-top: 14px;
-  }
-  .mini-chart-wrap {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-    height: 130px;
-  }
-  .mini-chart-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
-</style>
   :root {
     --bg: #0f1117;
     --card: #1a1d27;
@@ -81,8 +41,51 @@
   }
   .refresh-btn:hover { background: #3a3d4a; }
 
-  main { max-width: 1100px; margin: 0 auto; padding: 16px 20px 24px; }
+  .outer { max-width: 1100px; margin: 0 auto; padding: 24px 20px; }
 
+  /* ── Charts ── */
+  .charts-tabs { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+  .tab-btn {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 7px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.15s;
+  }
+  .tab-btn.active { background: var(--border); color: var(--text); border-color: #4a4d5a; }
+  .tab-btn:hover:not(.active) { color: var(--text); }
+  .chart-panel { display: none; }
+  .chart-panel.active { display: block; }
+  .chart-wrap {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    height: 420px;
+    margin-bottom: 24px;
+  }
+  .chart-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
+  .watchlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .mini-label { font-size: 11px; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.8px; }
+  .mini-chart-wrap {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    height: 140px;
+  }
+  .mini-chart-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
+
+  /* ── Stats ── */
   .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -141,7 +144,6 @@
   .holding-pnl { font-size: 12px; margin-top: 3px; }
 
   .futures-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  .fut-item { }
   .fut-key { font-size: 11px; color: var(--muted); margin-bottom: 4px; }
   .fut-val { font-size: 15px; font-weight: 600; }
 
@@ -161,13 +163,8 @@
   .log-table td { padding: 10px 12px; border-bottom: 1px solid rgba(42,45,58,0.6); }
   .log-table tr:last-child td { border-bottom: none; }
   .log-table tr:hover td { background: rgba(255,255,255,0.02); }
-  .action-tag {
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 11px;
-    font-weight: 600;
-  }
+
+  .action-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
   .tag-buy   { background: rgba(72,187,120,0.15);  color: var(--green); }
   .tag-sell  { background: rgba(252,129,129,0.15); color: var(--red); }
   .tag-short { background: rgba(252,129,129,0.15); color: var(--red); }
@@ -176,15 +173,14 @@
   .tag-other { background: rgba(113,128,150,0.15); color: var(--muted); }
 
   .empty { color: var(--muted); font-size: 13px; text-align: center; padding: 24px; }
-
   .progress-bar { background: var(--border); border-radius: 4px; height: 6px; margin-top: 8px; overflow: hidden; }
   .progress-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
-
   .loading { text-align: center; padding: 60px; color: var(--muted); }
-  .error-msg { background: rgba(252,129,129,0.1); border: 1px solid rgba(252,129,129,0.3); color: var(--red); border-radius: 8px; padding: 14px 18px; margin-bottom: 20px; font-size: 13px; }
+  .card-mb { margin-bottom: 20px; }
 </style>
 </head>
 <body>
+
 <header>
   <h1>📊 台股模擬操盤</h1>
   <div style="display:flex;align-items:center;gap:16px">
@@ -193,64 +189,58 @@
   </div>
 </header>
 
-<main id="app-wrapper">
+<div class="outer">
 
-  <!-- 走勢圖區塊 -->
-  <div style="max-width:1100px;margin:0 auto;padding:24px 20px 0">
-    <div class="charts-section">
-      <div class="charts-tabs">
-        <button class="tab-btn active" onclick="switchTab('taiex')">台灣加權指數</button>
-        <button class="tab-btn" onclick="switchTab('futures')">台指期（近月）</button>
-        <button class="tab-btn" onclick="switchTab('stocks')">個股走勢</button>
-      </div>
+  <!-- 走勢圖 -->
+  <div class="charts-tabs">
+    <button class="tab-btn active" onclick="switchTab(this,'taiex')">台灣加權指數</button>
+    <button class="tab-btn" onclick="switchTab(this,'futures')">台指期（近月）</button>
+    <button class="tab-btn" onclick="switchTab(this,'stocks')">個股走勢</button>
+  </div>
 
-      <div id="tab-taiex" class="chart-panel active">
-        <div class="chart-wrap">
-          <iframe src="https://s3.tradingview.com/widgetembed/?frameElementId=tv_taiex&symbol=TVC%3ATWII&interval=D&hidesidetoolbar=0&hidetoptoolbar=0&symboledit=0&saveimage=0&toolbarbg=1a1d27&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&studies=%5B%5D&style=1&utm_source=github.io&utm_medium=widget" allowtransparency="true" scrolling="no" allowfullscreen></iframe>
+  <div id="tab-taiex" class="chart-panel active">
+    <div class="chart-wrap">
+      <iframe src="https://s3.tradingview.com/widgetembed/?symbol=TVC%3ATWII&interval=D&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&hidesidetoolbar=0&hidetoptoolbar=0&saveimage=0" allowtransparency="true" scrolling="no" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="tab-futures" class="chart-panel">
+    <div class="chart-wrap">
+      <iframe src="https://s3.tradingview.com/widgetembed/?symbol=TAIFEX%3ATX1!&interval=D&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&hidesidetoolbar=0&hidetoptoolbar=0&saveimage=0" allowtransparency="true" scrolling="no" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="tab-stocks" class="chart-panel">
+    <div class="watchlist-grid">
+      <div>
+        <div class="mini-label">0050 元大台灣50</div>
+        <div class="mini-chart-wrap">
+          <iframe src="https://s3.tradingview.com/widgetembed/?symbol=TWSE%3A0050&interval=D&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&hidesidetoolbar=1&hidetoptoolbar=1&saveimage=0" allowtransparency="true" scrolling="no"></iframe>
         </div>
       </div>
-
-      <div id="tab-futures" class="chart-panel">
-        <div class="chart-wrap">
-          <iframe src="https://s3.tradingview.com/widgetembed/?frameElementId=tv_futures&symbol=TAIFEX%3ATX1!&interval=D&hidesidetoolbar=0&hidetoptoolbar=0&symboledit=0&saveimage=0&toolbarbg=1a1d27&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&studies=%5B%5D&style=1&utm_source=github.io&utm_medium=widget" allowtransparency="true" scrolling="no" allowfullscreen></iframe>
+      <div>
+        <div class="mini-label">2330 台積電</div>
+        <div class="mini-chart-wrap">
+          <iframe src="https://s3.tradingview.com/widgetembed/?symbol=TWSE%3A2330&interval=D&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&hidesidetoolbar=1&hidetoptoolbar=1&saveimage=0" allowtransparency="true" scrolling="no"></iframe>
         </div>
       </div>
-
-      <div id="tab-stocks" class="chart-panel">
-        <div class="watchlist-grid">
-          <div>
-            <div style="font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.8px">0050 元大台灣50</div>
-            <div class="mini-chart-wrap">
-              <iframe src="https://s3.tradingview.com/widgetembed/?frameElementId=tv_0050&symbol=TWSE%3A0050&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=0&saveimage=0&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&utm_source=github.io&utm_medium=widget" allowtransparency="true" scrolling="no"></iframe>
-            </div>
-          </div>
-          <div>
-            <div style="font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.8px">2330 台積電</div>
-            <div class="mini-chart-wrap">
-              <iframe src="https://s3.tradingview.com/widgetembed/?frameElementId=tv_2330&symbol=TWSE%3A2330&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=0&saveimage=0&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&utm_source=github.io&utm_medium=widget" allowtransparency="true" scrolling="no"></iframe>
-            </div>
-          </div>
-          <div>
-            <div style="font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.8px">小台指期（MTX）</div>
-            <div class="mini-chart-wrap">
-              <iframe src="https://s3.tradingview.com/widgetembed/?frameElementId=tv_mtx&symbol=TAIFEX%3AMTX1!&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=0&saveimage=0&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&utm_source=github.io&utm_medium=widget" allowtransparency="true" scrolling="no"></iframe>
-            </div>
-          </div>
-          <div>
-            <div style="font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.8px">00981A 統一主動台股</div>
-            <div class="mini-chart-wrap">
-              <iframe src="https://s3.tradingview.com/widgetembed/?frameElementId=tv_00981a&symbol=TWSE%3A00981A&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=0&saveimage=0&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&utm_source=github.io&utm_medium=widget" allowtransparency="true" scrolling="no"></iframe>
-            </div>
-          </div>
+      <div>
+        <div class="mini-label">小台指（MTX）</div>
+        <div class="mini-chart-wrap">
+          <iframe src="https://s3.tradingview.com/widgetembed/?symbol=TAIFEX%3AMTX1!&interval=D&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&hidesidetoolbar=1&hidetoptoolbar=1&saveimage=0" allowtransparency="true" scrolling="no"></iframe>
+        </div>
+      </div>
+      <div>
+        <div class="mini-label">00981A 統一主動台股</div>
+        <div class="mini-chart-wrap">
+          <iframe src="https://s3.tradingview.com/widgetembed/?symbol=TWSE%3A00981A&interval=D&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&hidesidetoolbar=1&hidetoptoolbar=1&saveimage=0" allowtransparency="true" scrolling="no"></iframe>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- 帳戶數據區塊 -->
-  <main id="app">
-    <div class="loading">載入資料中...</div>
-  </main>
+  <!-- 帳戶數據 -->
+  <div id="app"><div class="loading">載入資料中...</div></div>
 
 </div>
 
@@ -258,180 +248,113 @@
 const REPO = 'foreveris524-dev/tw-stock-sim';
 const RAW = `https://raw.githubusercontent.com/${REPO}/main`;
 
-function fmt(n) { return Math.abs(n) >= 1000 ? n.toLocaleString('zh-TW', {maximumFractionDigits:0}) : n.toFixed(0); }
-function fmtMoney(n) { const s = n >= 0 ? '+' : ''; return s + '$' + fmt(n); }
+function fmt(n) { return Number(n).toLocaleString('zh-TW', {maximumFractionDigits:0}); }
+function fmtMoney(n) { return (n >= 0 ? '+' : '') + '$' + fmt(n); }
 function colorClass(n) { return n > 0 ? 'green' : n < 0 ? 'red' : ''; }
-
-function actionTag(action) {
-  const a = (action || '').toUpperCase();
-  if (a.includes('BUY'))   return `<span class="action-tag tag-buy">${action}</span>`;
-  if (a.includes('SELL'))  return `<span class="action-tag tag-sell">${action}</span>`;
-  if (a.includes('SHORT')) return `<span class="action-tag tag-short">${action}</span>`;
-  if (a.includes('COVER')) return `<span class="action-tag tag-cover">${action}</span>`;
-  if (a.includes('PLAN'))  return `<span class="action-tag tag-plan">${action}</span>`;
-  return `<span class="action-tag tag-other">${action}</span>`;
+function actionTag(a) {
+  a = a || '';
+  const u = a.toUpperCase();
+  if (u.includes('BUY'))   return `<span class="action-tag tag-buy">${a}</span>`;
+  if (u.includes('SELL'))  return `<span class="action-tag tag-sell">${a}</span>`;
+  if (u.includes('SHORT')) return `<span class="action-tag tag-short">${a}</span>`;
+  if (u.includes('COVER')) return `<span class="action-tag tag-cover">${a}</span>`;
+  if (u.includes('PLAN'))  return `<span class="action-tag tag-plan">${a}</span>`;
+  return `<span class="action-tag tag-other">${a}</span>`;
 }
 
 async function loadData() {
-  const app = document.getElementById('app');
   try {
     const [pRes, fRes] = await Promise.all([
       fetch(`${RAW}/portfolio.json?t=${Date.now()}`),
       fetch(`${RAW}/futures_portfolio.json?t=${Date.now()}`)
     ]);
-    const p = await pRes.json();
-    const f = await fRes.json();
-    render(p, f);
+    render(await pRes.json(), await fRes.json());
     document.getElementById('last-updated').textContent = '更新於 ' + new Date().toLocaleTimeString('zh-TW');
   } catch(e) {
-    app.innerHTML = `<div class="error-msg">⚠ 資料載入失敗：${e.message}</div>`;
+    document.getElementById('app').innerHTML = `<div style="color:var(--red);padding:20px">⚠ 載入失敗：${e.message}</div>`;
   }
 }
 
 function render(p, f) {
-  const app = document.getElementById('app');
-  const cash = p.cash || 0;
-  const totalValue = p.total_value || 0;
+  const cash = p.cash || 0, tv = p.total_value || 0, ic = p.initial_capital || 1000000;
   const holdings = p.holdings || [];
-  const initCapital = p.initial_capital || 1000000;
-  const initMargin = f.initial_margin || 200000;
-  const cumPnl = f.cumulative_pnl || 0;
-  const usedMargin = f.used_margin || 0;
-  const availMargin = f.available_margin || initMargin;
-  const position = f.position;
-  const stockPnl = totalValue - initCapital;
-  const totalPnl = stockPnl + cumPnl;
-  const marginPct = initMargin ? (usedMargin / initMargin * 100) : 0;
-  const tradeLog = [...(p.trade_log || [])].reverse().slice(0, 20);
-  const futLog = [...(f.trade_log || [])].reverse().slice(0, 10);
+  const im = f.initial_margin || 200000, cp = f.cumulative_pnl || 0;
+  const um = f.used_margin || 0, am = f.available_margin || im;
+  const pos = f.position, spnl = tv - ic, tpnl = spnl + cp;
+  const mpct = im ? um / im * 100 : 0;
+  const tradeLog = [...(p.trade_log||[])].reverse().slice(0,20);
+  const futLog   = [...(f.trade_log||[])].reverse().slice(0,10);
 
-  // Position badge
   let posBadge = '<span class="position-badge badge-none">無持倉</span>';
   let posDetail = '';
-  if (position) {
-    const dir = position.direction === 'LONG' ? 'LONG 多' : 'SHORT 空';
-    const cls = position.direction === 'LONG' ? 'badge-long' : 'badge-short';
-    posBadge = `<span class="position-badge ${cls}">${dir}</span>`;
-    const uPnl = position.unrealized_pnl || 0;
-    posDetail = `${position.contracts}口 @ ${(position.entry_price||0).toLocaleString()}點`;
-    if (uPnl !== 0) posDetail += `　未實現 <span class="${colorClass(uPnl)}">${fmtMoney(uPnl)}</span>`;
+  if (pos) {
+    const isLong = pos.direction === 'LONG';
+    posBadge = `<span class="position-badge ${isLong?'badge-long':'badge-short'}">${isLong?'LONG 多':'SHORT 空'}</span>`;
+    const up = pos.unrealized_pnl || 0;
+    posDetail = `${pos.contracts}口 @ ${(pos.entry_price||0).toLocaleString()}點`;
+    if (up) posDetail += `　未實現 <span class="${colorClass(up)}">${fmtMoney(up)}</span>`;
   }
 
-  // Holdings HTML
-  let holdingsHtml = '<div class="empty">目前無持股</div>';
-  if (holdings.length) {
-    holdingsHtml = holdings.map(h => {
-      const upnl = h.unrealized_pnl || 0;
-      const upct = h.unrealized_pnl_pct || 0;
-      const pct = totalValue ? (h.value||0)/totalValue*100 : 0;
-      return `
-      <div class="holding-row">
-        <div>
-          <div class="holding-code">${h.code} <small style="font-weight:400;color:var(--muted)">${h.name||''}</small></div>
-          <div class="holding-name">均價 $${(h.avg_price||0).toFixed(1)} · ${(h.shares||0).toLocaleString()}股 · 佔 ${pct.toFixed(1)}%</div>
-        </div>
-        <div class="holding-right">
-          <div class="holding-value">$${fmt(h.value||0)}</div>
-          <div class="holding-pnl ${colorClass(upnl)}">${fmtMoney(upnl)} (${upnl>=0?'+':''}${upct.toFixed(1)}%)</div>
-        </div>
-      </div>`;
-    }).join('');
-  }
+  const holdHtml = holdings.length ? holdings.map(h => {
+    const pct = tv ? (h.value||0)/tv*100 : 0, up = h.unrealized_pnl||0, uc = h.unrealized_pnl_pct||0;
+    return `<div class="holding-row">
+      <div><div class="holding-code">${h.code} <small style="font-weight:400;color:var(--muted)">${h.name||''}</small></div>
+      <div class="holding-name">均價$${(h.avg_price||0).toFixed(1)} · ${(h.shares||0).toLocaleString()}股 · ${pct.toFixed(1)}%</div></div>
+      <div class="holding-right"><div class="holding-value">$${fmt(h.value||0)}</div>
+      <div class="holding-pnl ${colorClass(up)}">${fmtMoney(up)} (${up>=0?'+':''}${uc.toFixed(1)}%)</div></div>
+    </div>`;
+  }).join('') : '<div class="empty">目前無持股</div>';
 
-  // Trade log rows (stocks)
-  const logRows = tradeLog.filter(t => !['RESET'].includes(t.action)).map(t => `
-    <tr>
-      <td>${t.date||''}</td>
-      <td>${actionTag(t.action)}</td>
-      <td>${t.code||'—'}</td>
-      <td>${t.price ? '$'+fmt(t.price) : '—'}</td>
-      <td>${t.shares ? (t.shares).toLocaleString() : '—'}</td>
-      <td>${t.amount ? '$'+fmt(t.amount) : '—'}</td>
-      <td style="color:var(--muted);font-size:12px;max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${t.reason||''}</td>
-    </tr>`).join('') || '<tr><td colspan="7" class="empty">無記錄</td></tr>';
+  const logRows = tradeLog.filter(t => t.action !== 'RESET').map(t =>
+    `<tr><td>${t.date||''}</td><td>${actionTag(t.action)}</td><td>${t.code||'—'}</td>
+    <td>${t.price?'$'+fmt(t.price):'—'}</td><td>${t.shares?fmt(t.shares):'—'}</td>
+    <td>${t.amount?'$'+fmt(t.amount):'—'}</td>
+    <td style="color:var(--muted);font-size:12px;max-width:180px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">${t.reason||''}</td></tr>`
+  ).join('') || '<tr><td colspan="7" class="empty">無記錄</td></tr>';
 
-  // Futures log rows
-  const futRows = futLog.filter(t => !['RESET'].includes(t.action)).map(t => {
+  const futRows = futLog.filter(t => t.action !== 'RESET').map(t => {
     const pnl = t.pnl || 0;
-    return `
-    <tr>
-      <td>${t.date||''}</td>
-      <td>${actionTag(t.action)}</td>
-      <td>${t.direction||'—'}</td>
-      <td>${t.contracts||'—'}</td>
-      <td>${t.entry_price ? (t.entry_price).toLocaleString() : '—'}</td>
-      <td class="${colorClass(pnl)}">${pnl !== 0 ? fmtMoney(pnl) : '—'}</td>
-      <td style="color:var(--muted);font-size:12px;max-width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${t.reason||''}</td>
-    </tr>`;
+    return `<tr><td>${t.date||''}</td><td>${actionTag(t.action)}</td><td>${t.direction||'—'}</td>
+    <td>${t.contracts||'—'}</td><td>${t.entry_price?(t.entry_price).toLocaleString():'—'}</td>
+    <td class="${colorClass(pnl)}">${pnl?fmtMoney(pnl):'—'}</td>
+    <td style="color:var(--muted);font-size:12px;max-width:160px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">${t.reason||''}</td></tr>`;
   }).join('') || '<tr><td colspan="7" class="empty">無記錄</td></tr>';
 
-  const marginFill = Math.min(marginPct, 100);
-  const marginColor = marginPct > 70 ? '#fc8181' : marginPct > 40 ? '#f6c90e' : '#48bb78';
+  const mColor = mpct > 70 ? '#fc8181' : mpct > 40 ? '#f6c90e' : '#48bb78';
 
-  app.innerHTML = `
+  document.getElementById('app').innerHTML = `
     <div class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-label">現貨總值</div>
-        <div class="stat-value">$${fmt(totalValue)}</div>
-        <div class="stat-sub ${colorClass(stockPnl)}">${fmtMoney(stockPnl)} 相較起始</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">可用現金</div>
-        <div class="stat-value blue">$${fmt(cash)}</div>
-        <div class="stat-sub">${totalValue ? (cash/totalValue*100).toFixed(0) : 0}% 現金比</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">期貨累計損益</div>
-        <div class="stat-value ${colorClass(cumPnl)}">${fmtMoney(cumPnl)}</div>
-        <div class="stat-sub">保證金 $${fmt(availMargin)}</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">整體損益合計</div>
-        <div class="stat-value ${colorClass(totalPnl)}">${fmtMoney(totalPnl)}</div>
-        <div class="stat-sub">更新 ${p.last_updated||'—'}</div>
-      </div>
+      <div class="stat-card"><div class="stat-label">現貨總值</div>
+        <div class="stat-value">$${fmt(tv)}</div><div class="stat-sub ${colorClass(spnl)}">${fmtMoney(spnl)} 相較起始</div></div>
+      <div class="stat-card"><div class="stat-label">可用現金</div>
+        <div class="stat-value blue">$${fmt(cash)}</div><div class="stat-sub">${tv?(cash/tv*100).toFixed(0):0}% 現金比</div></div>
+      <div class="stat-card"><div class="stat-label">期貨累計損益</div>
+        <div class="stat-value ${colorClass(cp)}">${fmtMoney(cp)}</div><div class="stat-sub">保證金 $${fmt(am)}</div></div>
+      <div class="stat-card"><div class="stat-label">整體損益合計</div>
+        <div class="stat-value ${colorClass(tpnl)}">${fmtMoney(tpnl)}</div><div class="stat-sub">更新 ${p.last_updated||'—'}</div></div>
     </div>
 
     <div class="grid-2">
-      <div class="card">
-        <div class="card-header">現貨持股</div>
-        <div class="card-body">${holdingsHtml}</div>
-      </div>
-      <div class="card">
-        <div class="card-header">期貨帳戶 <span>${posBadge}</span></div>
+      <div class="card"><div class="card-header">現貨持股</div><div class="card-body">${holdHtml}</div></div>
+      <div class="card"><div class="card-header">期貨帳戶 <span>${posBadge}</span></div>
         <div class="card-body">
-          ${posDetail ? `<div style="margin-bottom:16px;font-size:14px">${posDetail}</div>` : ''}
+          ${posDetail?`<div style="margin-bottom:16px;font-size:14px">${posDetail}</div>`:''}
           <div class="futures-grid">
-            <div class="fut-item">
-              <div class="fut-key">商品</div>
-              <div class="fut-val">${f.instrument||'小台指 MTX'}</div>
-            </div>
-            <div class="fut-item">
-              <div class="fut-key">點值</div>
-              <div class="fut-val">$${f.point_value||50} / 點</div>
-            </div>
-            <div class="fut-item">
-              <div class="fut-key">初始保證金</div>
-              <div class="fut-val">$${fmt(initMargin)}</div>
-            </div>
-            <div class="fut-item">
-              <div class="fut-key">已用保證金</div>
-              <div class="fut-val ${usedMargin > 0 ? 'gold' : ''}">$${fmt(usedMargin)}</div>
-            </div>
+            <div><div class="fut-key">商品</div><div class="fut-val">${f.instrument||'小台指 MTX'}</div></div>
+            <div><div class="fut-key">點值</div><div class="fut-val">$${f.point_value||50}/點</div></div>
+            <div><div class="fut-key">初始保證金</div><div class="fut-val">$${fmt(im)}</div></div>
+            <div><div class="fut-key">已用保證金</div><div class="fut-val ${um?'gold':''}">$${fmt(um)}</div></div>
           </div>
           <div style="margin-top:16px">
             <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:4px">
-              <span>保證金使用率</span><span>${marginPct.toFixed(0)}%</span>
-            </div>
-            <div class="progress-bar">
-              <div class="progress-fill" style="width:${marginFill}%;background:${marginColor}"></div>
-            </div>
+              <span>保證金使用率</span><span>${mpct.toFixed(0)}%</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width:${Math.min(mpct,100)}%;background:${mColor}"></div></div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="card" style="margin-bottom:20px">
+    <div class="card card-mb">
       <div class="card-header">現貨交易記錄（最近 20 筆）</div>
       <div style="overflow-x:auto">
         <table class="log-table">
@@ -453,15 +376,15 @@ function render(p, f) {
   `;
 }
 
-loadData();
-setInterval(loadData, 60000);
-
-function switchTab(name) {
+function switchTab(btn, name) {
   document.querySelectorAll('.chart-panel').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + name).classList.add('active');
-  event.target.classList.add('active');
+  btn.classList.add('active');
 }
+
+loadData();
+setInterval(loadData, 60000);
 </script>
 </body>
 </html>
