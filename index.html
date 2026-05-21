@@ -177,6 +177,22 @@
   .progress-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
   .loading { text-align: center; padding: 60px; color: var(--muted); }
   .card-mb { margin-bottom: 20px; }
+
+  /* ── Watchlist ── */
+  .screen-meta { font-size: 12px; color: var(--muted); margin-bottom: 16px; display: flex; gap: 20px; flex-wrap: wrap; }
+  .screen-meta span { background: var(--border); padding: 4px 10px; border-radius: 6px; }
+  .wl-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .wl-table th { text-align: left; padding: 8px 10px; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  .wl-table td { padding: 10px 10px; border-bottom: 1px solid rgba(42,45,58,0.6); vertical-align: middle; }
+  .wl-table tr:hover td { background: rgba(255,255,255,0.02); }
+  .score-bar { display: flex; align-items: center; gap: 8px; }
+  .score-fill { height: 6px; border-radius: 3px; min-width: 4px; }
+  .score-num { font-weight: 700; font-size: 14px; min-width: 28px; }
+  .signal-tag { display: inline-block; background: rgba(99,179,237,0.12); color: var(--blue); border: 1px solid rgba(99,179,237,0.25); padding: 2px 7px; border-radius: 4px; font-size: 11px; margin: 1px; white-space: nowrap; }
+  .rank-badge { display: inline-block; width: 24px; height: 24px; border-radius: 50%; background: var(--border); font-size: 11px; font-weight: 700; text-align: center; line-height: 24px; }
+  .rank-1 { background: #b7791f; color: #fff; }
+  .rank-2 { background: #718096; color: #fff; }
+  .rank-3 { background: #744210; color: #fff; }
 </style>
 </head>
 <body>
@@ -244,6 +260,19 @@
 
   <!-- 帳戶數據 -->
   <div id="app"><div class="loading">載入資料中...</div></div>
+
+  <!-- 選股雷達 -->
+  <div id="watchlist-section" style="margin-top:8px">
+    <div class="card">
+      <div class="card-header">
+        🎯 選股雷達
+        <span id="screen-date" style="font-size:11px;font-weight:400"></span>
+      </div>
+      <div class="card-body" id="watchlist-body">
+        <div class="loading">載入選股資料...</div>
+      </div>
+    </div>
+  </div>
 
 </div>
 
@@ -388,6 +417,90 @@ function switchTab(btn, name) {
 
 loadData();
 setInterval(loadData, 60000);
+loadWatchlist();
+
+async function loadWatchlist() {
+  try {
+    const res = await fetch(`${RAW}/watchlist.json?t=${Date.now()}`);
+    const wl = await res.json();
+    renderWatchlist(wl);
+  } catch(e) {
+    document.getElementById('watchlist-body').innerHTML =
+      `<div style="color:var(--muted);font-size:13px">⚠ 選股資料載入失敗</div>`;
+  }
+}
+
+function renderWatchlist(wl) {
+  const body = document.getElementById('watchlist-body');
+  const dateEl = document.getElementById('screen-date');
+  const cands = wl.candidates || [];
+
+  dateEl.textContent = wl.last_screened !== '尚未執行'
+    ? `上次篩選：${wl.last_screened}　共篩選 ${wl.total_screened} 支`
+    : '首次篩選將於本週日自動執行';
+
+  if (!cands.length) {
+    body.innerHTML = `
+      <div style="text-align:center;padding:32px;color:var(--muted)">
+        <div style="font-size:32px;margin-bottom:12px">🔍</div>
+        <div style="font-size:14px">選股雷達尚未執行</div>
+        <div style="font-size:12px;margin-top:8px">每週日自動掃描全市場，首次結果即將產生</div>
+        <div style="font-size:11px;margin-top:12px;color:#4a5568">
+          篩選條件：PE 0–30 · PB ≤ 5 · 殖利率 ≥ 1%<br>技術指標：RSI · KD · MA20 · MACD 綜合評分
+        </div>
+      </div>`;
+    return;
+  }
+
+  function scoreColor(s) {
+    if (s >= 80) return '#48bb78';
+    if (s >= 60) return '#f6c90e';
+    return '#fc8181';
+  }
+
+  const rows = cands.map((c, i) => {
+    const rank = i < 3 ? `<span class="rank-badge rank-${i+1}">${i+1}</span>` : `<span class="rank-badge">${i+1}</span>`;
+    const sc = scoreColor(c.score);
+    const scoreBar = `<div class="score-bar">
+      <span class="score-num" style="color:${sc}">${c.score}</span>
+      <div style="flex:1;background:var(--border);border-radius:3px;height:6px">
+        <div class="score-fill" style="width:${c.score}%;background:${sc}"></div>
+      </div>
+    </div>`;
+    const sigs = (c.signals || []).slice(0, 3).map(s => `<span class="signal-tag">${s}</span>`).join('');
+    const rsiColor = c.rsi ? (c.rsi < 30 ? 'red' : c.rsi > 70 ? 'red' : c.rsi >= 40 && c.rsi <= 60 ? 'green' : '') : '';
+    const kdColor  = c.k && c.d ? (c.k > c.d ? 'green' : 'red') : '';
+    const maColor  = c.price && c.ma20 ? (c.price > c.ma20 ? 'green' : 'red') : '';
+    return `<tr>
+      <td>${rank}</td>
+      <td><div style="font-weight:700">${c.code}</div><div style="font-size:11px;color:var(--muted)">${c.name}</div></td>
+      <td>$${c.price ? fmt(c.price) : '—'}</td>
+      <td>${scoreBar}</td>
+      <td><span class="${rsiColor}">${c.rsi || '—'}</span></td>
+      <td><span class="${kdColor}">${c.k ? `${c.k}/${c.d}` : '—'}</span></td>
+      <td><span class="${maColor}">${c.ma20 ? '$'+fmt(c.ma20) : '—'}</span></td>
+      <td>${c.pe}</td>
+      <td>${c.dividend_yield}%</td>
+      <td>${sigs}</td>
+    </tr>`;
+  }).join('');
+
+  body.innerHTML = `
+    <div class="screen-meta">
+      <span>🔬 篩選範圍：${wl.total_screened} 支上市股</span>
+      <span>📐 ${wl.criteria?.fundamental || ''}</span>
+    </div>
+    <div style="overflow-x:auto">
+      <table class="wl-table">
+        <thead><tr>
+          <th>#</th><th>股票</th><th>股價</th><th>評分</th>
+          <th>RSI</th><th>KD</th><th>MA20</th>
+          <th>PE</th><th>殖利率</th><th>技術信號</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
 </script>
 </body>
 </html>
