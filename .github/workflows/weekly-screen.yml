@@ -1,0 +1,26 @@
+name: 週末選股雷達
+
+on:
+  schedule:
+    - cron: "0 16 * * 0"  # 每週日 00:00 台北時間（UTC 16:00 Saturday）
+  workflow_dispatch:
+
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Stock Screener
+        run: python3 scripts/screen_stocks.py
+
+      - name: Commit watchlist.json
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add watchlist.json
+          git diff --cached --quiet || git commit -m "選股雷達更新 $(date +%Y-%m-%d)"
+          git push
