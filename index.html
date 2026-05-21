@@ -5,6 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>台股模擬操盤儀表板</title>
 <style>
+  .charts-section { margin-bottom: 24px; }
+  .charts-tabs { display: flex; gap: 8px; margin-bottom: 14px; }
+  .tab-btn {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 7px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.15s;
+  }
+  .tab-btn.active { background: var(--border); color: var(--text); border-color: #4a4d5a; }
+  .tab-btn:hover:not(.active) { color: var(--text); }
+  .chart-panel { display: none; }
+  .chart-panel.active { display: block; }
+  .chart-wrap {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    height: 420px;
+  }
+  .chart-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
+  .watchlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .mini-chart-wrap {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    height: 130px;
+  }
+  .mini-chart-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
+</style>
   :root {
     --bg: #0f1117;
     --card: #1a1d27;
@@ -41,7 +81,7 @@
   }
   .refresh-btn:hover { background: #3a3d4a; }
 
-  main { max-width: 1100px; margin: 0 auto; padding: 24px 20px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 16px 20px 24px; }
 
   .stats-grid {
     display: grid;
@@ -153,9 +193,66 @@
   </div>
 </header>
 
-<main id="app">
-  <div class="loading">載入資料中...</div>
-</main>
+<main id="app-wrapper">
+
+  <!-- 走勢圖區塊 -->
+  <div style="max-width:1100px;margin:0 auto;padding:24px 20px 0">
+    <div class="charts-section">
+      <div class="charts-tabs">
+        <button class="tab-btn active" onclick="switchTab('taiex')">台灣加權指數</button>
+        <button class="tab-btn" onclick="switchTab('futures')">台指期（近月）</button>
+        <button class="tab-btn" onclick="switchTab('stocks')">個股走勢</button>
+      </div>
+
+      <div id="tab-taiex" class="chart-panel active">
+        <div class="chart-wrap">
+          <iframe src="https://s3.tradingview.com/widgetembed/?frameElementId=tv_taiex&symbol=TVC%3ATWII&interval=D&hidesidetoolbar=0&hidetoptoolbar=0&symboledit=0&saveimage=0&toolbarbg=1a1d27&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&studies=%5B%5D&style=1&utm_source=github.io&utm_medium=widget" allowtransparency="true" scrolling="no" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div id="tab-futures" class="chart-panel">
+        <div class="chart-wrap">
+          <iframe src="https://s3.tradingview.com/widgetembed/?frameElementId=tv_futures&symbol=TAIFEX%3ATX1!&interval=D&hidesidetoolbar=0&hidetoptoolbar=0&symboledit=0&saveimage=0&toolbarbg=1a1d27&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&studies=%5B%5D&style=1&utm_source=github.io&utm_medium=widget" allowtransparency="true" scrolling="no" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div id="tab-stocks" class="chart-panel">
+        <div class="watchlist-grid">
+          <div>
+            <div style="font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.8px">0050 元大台灣50</div>
+            <div class="mini-chart-wrap">
+              <iframe src="https://s3.tradingview.com/widgetembed/?frameElementId=tv_0050&symbol=TWSE%3A0050&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=0&saveimage=0&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&utm_source=github.io&utm_medium=widget" allowtransparency="true" scrolling="no"></iframe>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.8px">2330 台積電</div>
+            <div class="mini-chart-wrap">
+              <iframe src="https://s3.tradingview.com/widgetembed/?frameElementId=tv_2330&symbol=TWSE%3A2330&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=0&saveimage=0&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&utm_source=github.io&utm_medium=widget" allowtransparency="true" scrolling="no"></iframe>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.8px">小台指期（MTX）</div>
+            <div class="mini-chart-wrap">
+              <iframe src="https://s3.tradingview.com/widgetembed/?frameElementId=tv_mtx&symbol=TAIFEX%3AMTX1!&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=0&saveimage=0&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&utm_source=github.io&utm_medium=widget" allowtransparency="true" scrolling="no"></iframe>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.8px">00981A 統一主動台股</div>
+            <div class="mini-chart-wrap">
+              <iframe src="https://s3.tradingview.com/widgetembed/?frameElementId=tv_00981a&symbol=TWSE%3A00981A&interval=D&hidesidetoolbar=1&hidetoptoolbar=1&symboledit=0&saveimage=0&theme=dark&locale=zh_TW&timezone=Asia%2FTaipei&style=1&utm_source=github.io&utm_medium=widget" allowtransparency="true" scrolling="no"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 帳戶數據區塊 -->
+  <main id="app">
+    <div class="loading">載入資料中...</div>
+  </main>
+
+</div>
 
 <script>
 const REPO = 'foreveris524-dev/tw-stock-sim';
@@ -357,7 +454,14 @@ function render(p, f) {
 }
 
 loadData();
-setInterval(loadData, 60000); // 每 60 秒自動更新
+setInterval(loadData, 60000);
+
+function switchTab(name) {
+  document.querySelectorAll('.chart-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+}
 </script>
 </body>
 </html>
