@@ -1,0 +1,10 @@
+{
+  "last_screened": "尚未執行",
+  "criteria": {
+    "fundamental": "0 < PE ≤ 30，0 < PB ≤ 5，殖利率 ≥ 1%",
+    "technical": "RSI、KD、MA20、MACD 綜合評分",
+    "universe": "TWSE 全上市股（排除 ETF）"
+  },
+  "total_screened": 0,
+  "candidates": []
+}
