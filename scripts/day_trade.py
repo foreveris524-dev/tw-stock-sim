@@ -14,13 +14,38 @@ NOW_TW = datetime.now(TZ_TW)
 TODAY  = NOW_TW.strftime("%Y-%m-%d")
 NOW_STR = NOW_TW.strftime("%H:%M")
 
-WATCHLIST = [
-    ("0050",   "0050.TW",   "元大台灣50",     150_000),
-    ("2330",   "2330.TW",   "台積電",         150_000),
-    ("00981A", "00981A.TW", "統一主動台股增長", 100_000),
+MAX_POSITIONS = 5     # 最多同時持有幾支
+BUDGET_PER_STOCK = 150_000  # 每支標的預算（元）
+TP_PCT = 0.05         # 停利 5%
+SL_PCT = 0.03         # 停損 3%
+
+DEFAULT_WATCHLIST = [
+    ("0050",   "0050.TW",   "元大台灣50"),
+    ("2330",   "2330.TW",   "台積電"),
+    ("00981A", "00981A.TW", "統一主動台股增長"),
 ]
-TP_PCT = 0.05   # 停利 5%
-SL_PCT = 0.03   # 停損 3%
+
+def load_watchlist():
+    """從 watchlist.json 讀取選股雷達結果，取前 MAX_POSITIONS 名；檔案不存在則用預設清單"""
+    try:
+        with open("watchlist.json", encoding="utf-8") as f:
+            wl = json.load(f)
+        candidates = wl.get("candidates", [])
+        if not candidates:
+            raise ValueError("空清單")
+        top = sorted(candidates, key=lambda x: x.get("score", 0), reverse=True)[:MAX_POSITIONS]
+        result = []
+        for s in top:
+            code = s["code"]
+            ticker = code + ".TW"
+            result.append((code, ticker, s["name"]))
+        print(f"選股雷達：使用前 {len(result)} 支（共 {len(candidates)} 支候選）")
+        for r in result:
+            print(f"  {r[0]} {r[2]}")
+        return result
+    except Exception:
+        print("watchlist.json 不可用，使用預設標的")
+        return DEFAULT_WATCHLIST
 
 # ── 工具 ─────────────────────────────────────────────────────────────────────
 
@@ -143,7 +168,10 @@ def main():
     prices   = {}
     changed  = False
 
-    for code, ticker, name, budget in WATCHLIST:
+    watchlist = load_watchlist()
+    print()
+
+    for code, ticker, name in watchlist:
         print(f"\n── {code} {name} ──")
 
         hist = get_ohlc(ticker, interval="1d", range_="3mo")
@@ -188,8 +216,8 @@ def main():
                 print(f"  → 繼續持倉")
         else:
             go_buy, reason = should_buy(rsi, k, d, hist_val)
-            if go_buy and cash >= budget * 0.8:
-                shares = int(budget / price / 1000) * 1000
+            if go_buy and cash >= BUDGET_PER_STOCK * 0.8 and len(holdings) < MAX_POSITIONS:
+                shares = int(BUDGET_PER_STOCK / price / 1000) * 1000
                 if shares <= 0:
                     print(f"  → 預算不足一整張，略過")
                     continue
@@ -215,6 +243,8 @@ def main():
                 print(f"    理由：{reason}")
             elif not go_buy:
                 print(f"  → 條件未觸發，觀望")
+            elif len(holdings) >= MAX_POSITIONS:
+                print(f"  → 已達最大持倉數 {MAX_POSITIONS}，略過")
             else:
                 print(f"  → 現金不足，略過")
 
