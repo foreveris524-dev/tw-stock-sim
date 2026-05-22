@@ -15,7 +15,6 @@ TODAY  = NOW_TW.strftime("%Y-%m-%d")
 NOW_STR = NOW_TW.strftime("%H:%M")
 
 MAX_POSITIONS = 5     # 最多同時持有幾支
-BUDGET_PER_STOCK = 150_000  # 每支標的預算（元）
 TP_PCT = 0.05         # 停利 5%
 SL_PCT = 0.03         # 停損 3%
 
@@ -216,11 +215,11 @@ def main():
                 print(f"  → 繼續持倉")
         else:
             go_buy, reason = should_buy(rsi, k, d, hist_val)
-            if go_buy and cash >= BUDGET_PER_STOCK * 0.8 and len(holdings) < MAX_POSITIONS:
-                shares = int(BUDGET_PER_STOCK / price / 1000) * 1000
-                if shares <= 0:
-                    print(f"  → 預算不足一整張，略過")
-                    continue
+            if go_buy and cash >= price and len(holdings) < MAX_POSITIONS:
+                # 剩餘空位平均分配現金，最少買 1 股
+                slots = max(MAX_POSITIONS - len(holdings), 1)
+                budget = cash / slots
+                shares = max(int(budget / price), 1)
                 cost = round(price * shares)
                 tp   = round(price * (1 + TP_PCT), 2)
                 sl   = round(price * (1 - SL_PCT), 2)
@@ -246,7 +245,7 @@ def main():
             elif len(holdings) >= MAX_POSITIONS:
                 print(f"  → 已達最大持倉數 {MAX_POSITIONS}，略過")
             else:
-                print(f"  → 現金不足，略過")
+                print(f"  → 現金不足（現金={cash:.0f} < 現價={price:.2f}），略過")
 
         time.sleep(0.5)
 
