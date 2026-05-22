@@ -1,0 +1,25 @@
+name: 每日股價資料
+
+on:
+  schedule:
+    - cron: "50 5 * * 1-5"   # 週一到週五 13:50 台北（收盤後約20分）
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch price data
+        run: python3 scripts/fetch_prices.py
+
+      - name: Commit price data
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add price_data/
+          git diff --cached --quiet || git commit -m "股價資料更新 $(date +%Y-%m-%d)"
+          git push
