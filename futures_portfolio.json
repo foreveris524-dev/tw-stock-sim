@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22 10:00",
+  "last_updated": "2026-05-22 10:15",
   "instrument": "小台指期貨 (MTX)",
   "point_value": 50,
   "initial_margin": 200000,
@@ -80,6 +80,18 @@
       "pnl": 0,
       "current_price": 41350,
       "reason": "10:00 台指期約41350，從09:45高點41400小幅回落；KD K≈82/D≈76(超買)，RSI≈77，MACD多頭；無持倉繼續觀望；重啟空單條件：跌破41100且KD出現死叉；做多條件：有效突破41600且量增；目前兩條件均未觸發，今日繼續無操作"
+    },
+    {
+      "date": "2026-05-22",
+      "time": "10:15",
+      "action": "OBSERVE",
+      "direction": "NONE",
+      "contracts": 0,
+      "entry_price": 0,
+      "exit_price": 0,
+      "pnl": 0,
+      "current_price": 41350,
+      "reason": "10:15 台指期約41350，高位持平整理；KD K≈82/D≈76(超買)，RSI≈77，MACD多頭；無持倉繼續觀望；重啟空單條件：跌破41100且KD死叉(未觸發)；做多條件：有效突破41600且量增(未觸發)；今日繼續無操作"
     }
   ]
 }
