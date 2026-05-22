@@ -172,16 +172,21 @@
   .tag-plan  { background: rgba(99,179,237,0.15);  color: var(--blue); }
   .tag-other { background: rgba(113,128,150,0.15); color: var(--muted); }
 
-.stock-link-card {
-    display: flex; flex-direction: column; justify-content: center; align-items: center;
-    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 24px 16px; text-decoration: none; color: var(--text);
-    transition: border-color 0.15s, background 0.15s; height: 140px; text-align: center;
+  .stock-charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 8px;
   }
-  .stock-link-card:hover { border-color: var(--blue); background: rgba(99,179,237,0.05); }
-  .slc-code { font-size: 20px; font-weight: 700; color: var(--blue); margin-bottom: 6px; }
-  .slc-name { font-size: 12px; color: var(--muted); margin-bottom: 12px; }
-  .slc-btn  { font-size: 12px; color: var(--text); }
+  @media (max-width: 640px) { .stock-charts-grid { grid-template-columns: 1fr; } }
+  .stock-chart-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    padding: 10px 12px 6px;
+  }
+  .stock-chart-inner { height: 160px; width: 100%; }
   .empty { color: var(--muted); font-size: 13px; text-align: center; padding: 24px; }
   .progress-bar { background: var(--border); border-radius: 4px; height: 6px; margin-top: 8px; overflow: hidden; }
   .progress-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
@@ -204,6 +209,7 @@
   .rank-2 { background: #718096; color: #fff; }
   .rank-3 { background: #744210; color: #fff; }
 </style>
+<script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
 </head>
 <body>
 
@@ -250,30 +256,23 @@
   </div>
 
   <div id="tab-stocks" class="chart-panel">
-    <div style="font-size:12px;color:var(--muted);margin-bottom:14px">
-      ⓘ TWSE 個股資料需 TradingView 訂閱，點擊下方連結開啟完整互動圖表。
-    </div>
-    <div class="watchlist-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
-      <a href="https://www.tradingview.com/chart/?symbol=TWSE:0050" target="_blank" class="stock-link-card">
-        <div class="slc-code">0050</div>
-        <div class="slc-name">元大台灣50</div>
-        <div class="slc-btn">📈 查看走勢 →</div>
-      </a>
-      <a href="https://www.tradingview.com/chart/?symbol=TWSE:2330" target="_blank" class="stock-link-card">
-        <div class="slc-code">2330</div>
-        <div class="slc-name">台積電</div>
-        <div class="slc-btn">📈 查看走勢 →</div>
-      </a>
-      <a href="https://www.tradingview.com/chart/?symbol=TWSE:00981A" target="_blank" class="stock-link-card">
-        <div class="slc-code">00981A</div>
-        <div class="slc-name">統一主動台股增長</div>
-        <div class="slc-btn">📈 查看走勢 →</div>
-      </a>
-      <a href="https://www.tradingview.com/chart/?symbol=INDEX:TAIEX" target="_blank" class="stock-link-card">
-        <div class="slc-code">TAIEX</div>
-        <div class="slc-name">台灣加權指數</div>
-        <div class="slc-btn">📈 查看走勢 →</div>
-      </a>
+    <div class="stock-charts-grid">
+      <div class="stock-chart-card">
+        <div class="mini-label">0050 元大台灣50</div>
+        <div class="stock-chart-inner" id="chart-0050"></div>
+      </div>
+      <div class="stock-chart-card">
+        <div class="mini-label">2330 台積電</div>
+        <div class="stock-chart-inner" id="chart-2330"></div>
+      </div>
+      <div class="stock-chart-card">
+        <div class="mini-label">00981A 統一主動台股增長</div>
+        <div class="stock-chart-inner" id="chart-00981A"></div>
+      </div>
+      <div class="stock-chart-card">
+        <div class="mini-label">TAIEX 台灣加權指數</div>
+        <div class="stock-chart-inner" id="chart-taiex"></div>
+      </div>
     </div>
   </div>
 
@@ -520,6 +519,87 @@ function renderWatchlist(wl) {
       </table>
     </div>`;
 }
+</script>
+
+<script>
+// ── 個股 K 線圖（lightweight-charts + GitHub raw data）─────────────────────
+const PRICE_BASE = 'https://raw.githubusercontent.com/foreveris524-dev/tw-stock-sim/main/price_data/';
+const STOCK_LIST = [
+  { code: '0050',   name: '元大台灣50' },
+  { code: '2330',   name: '台積電' },
+  { code: '00981A', name: '統一主動台股增長' },
+  { code: 'taiex',  name: '台灣加權指數' },
+];
+
+function createStockChart(containerId, ohlcData) {
+  const el = document.getElementById(containerId);
+  if (!el || !window.LightweightCharts) return;
+  el.innerHTML = '';
+
+  const chart = LightweightCharts.createChart(el, {
+    width:  el.clientWidth,
+    height: el.clientHeight,
+    layout: {
+      background: { type: 'solid', color: 'transparent' },
+      textColor: '#718096',
+      fontSize: 10,
+    },
+    grid: {
+      vertLines: { color: '#2a2d3a' },
+      horzLines: { color: '#2a2d3a' },
+    },
+    rightPriceScale: {
+      borderColor: '#2a2d3a',
+      scaleMargins: { top: 0.08, bottom: 0.08 },
+    },
+    timeScale: { borderColor: '#2a2d3a', timeVisible: false },
+    crosshair: { mode: 1 },
+    handleScroll: false,
+    handleScale: false,
+  });
+
+  const series = chart.addCandlestickSeries({
+    upColor:       '#10B981',
+    downColor:     '#EF4444',
+    borderVisible: false,
+    wickUpColor:   '#10B981',
+    wickDownColor: '#EF4444',
+  });
+  series.setData(ohlcData);
+  chart.timeScale().fitContent();
+
+  // 響應式 resize
+  new ResizeObserver(() => {
+    chart.applyOptions({ width: el.clientWidth });
+  }).observe(el);
+}
+
+let stockChartsLoaded = false;
+
+async function loadStockCharts() {
+  if (stockChartsLoaded) return;
+  for (const s of STOCK_LIST) {
+    const el = document.getElementById('chart-' + s.code);
+    if (!el) continue;
+    el.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#718096;font-size:11px">載入中...</div>';
+    try {
+      const resp = await fetch(PRICE_BASE + s.code + '.json?v=' + Date.now());
+      if (!resp.ok) throw new Error(resp.status);
+      const data = await resp.json();
+      createStockChart('chart-' + s.code, data.ohlc);
+    } catch(e) {
+      if (el) el.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#718096;font-size:11px">暫無資料</div>';
+    }
+  }
+  stockChartsLoaded = true;
+}
+
+// 切換到個股走勢 tab 時才載入（lazy load）
+const origSwitchTab = window.switchTab;
+window.switchTab = function(btn, id) {
+  if (origSwitchTab) origSwitchTab(btn, id);
+  if (id === 'stocks') loadStockCharts();
+};
 </script>
 </body>
 </html>
