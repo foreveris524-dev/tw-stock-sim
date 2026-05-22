@@ -14,7 +14,7 @@ NOW_TW = datetime.now(TZ_TW)
 TODAY  = NOW_TW.strftime("%Y-%m-%d")
 NOW_STR = NOW_TW.strftime("%H:%M")
 
-MAX_POSITIONS = 5     # 最多同時持有幾支
+MAX_POSITIONS = 10    # 最多同時持有幾支
 TP_PCT = 0.05         # 停利 5%
 SL_PCT = 0.03         # 停損 3%
 
@@ -32,7 +32,7 @@ def load_watchlist():
         candidates = wl.get("candidates", [])
         if not candidates:
             raise ValueError("空清單")
-        top = sorted(candidates, key=lambda x: x.get("score", 0), reverse=True)[:MAX_POSITIONS]
+        top = sorted(candidates, key=lambda x: x.get("score", 0), reverse=True)[:MAX_POSITIONS * 2]
         result = []
         for s in top:
             code = s["code"]
