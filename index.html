@@ -171,6 +171,8 @@
   .tag-cover { background: rgba(72,187,120,0.15);  color: var(--green); }
   .tag-plan  { background: rgba(99,179,237,0.15);  color: var(--blue); }
   .tag-other { background: rgba(113,128,150,0.15); color: var(--muted); }
+  .session-day   { display: inline-block; padding: 1px 5px; border-radius: 3px; font-size: 10px; font-weight: 600; background: rgba(99,179,237,0.15); color: var(--blue); margin-left: 4px; vertical-align: middle; }
+  .session-night { display: inline-block; padding: 1px 5px; border-radius: 3px; font-size: 10px; font-weight: 600; background: rgba(159,122,234,0.2); color: #b794f4; margin-left: 4px; vertical-align: middle; }
 
   .stock-charts-grid {
     display: grid;
@@ -364,7 +366,10 @@ function render(p, f) {
 
   const futRows = futLog.filter(t => t.action !== 'RESET').map(t => {
     const pnl = t.pnl || 0;
-    return `<tr><td>${t.date||''}</td><td>${actionTag(t.action)}</td><td>${t.direction||'—'}</td>
+    const sessionBadge = t.session === 'night'
+      ? '<span class="session-night">夜盤</span>'
+      : '<span class="session-day">日盤</span>';
+    return `<tr><td>${t.date||''}${sessionBadge}</td><td>${actionTag(t.action)}</td><td>${t.direction||'—'}</td>
     <td>${t.contracts||'—'}</td><td>${t.entry_price?(t.entry_price).toLocaleString():'—'}</td>
     <td class="${colorClass(pnl)}">${pnl?fmtMoney(pnl):'—'}</td>
     <td style="color:var(--muted);font-size:12px;max-width:160px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">${t.reason||''}</td></tr>`;
@@ -603,3 +608,4 @@ window.switchTab = function(btn, id) {
 </script>
 </body>
 </html>
+
