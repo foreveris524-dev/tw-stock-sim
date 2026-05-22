@@ -14,6 +14,7 @@ NOW_TW = datetime.now(TZ_TW)
 TODAY = NOW_TW.strftime("%Y-%m-%d")
 NOW_STR = NOW_TW.strftime("%H:%M")
 POINT_VALUE = 50  # 小台指每點 50 元
+SESSION = "day" if 9 <= NOW_TW.hour < 14 else "night"
 
 # ── 工具 ─────────────────────────────────────────────────────────────────────
 
@@ -190,7 +191,7 @@ def main():
     log = {
         "date":          TODAY,
         "time":          NOW_STR,
-        "session":       "night",
+        "session":       SESSION,
         "current_price": round(price),
         "rsi": rsi, "k": k, "d": d, "macd_hist": hist_val,
     }
