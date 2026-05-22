@@ -1,22 +1,26 @@
 """
 台股日盤模擬當沖
 每 15 分鐘由 GitHub Actions 觸發（台北 09:00-13:30）
-  - 無持倉：RSI / KD / MACD 符合條件，以現價買入
-  - 有持倉：達到 TP / SL 或反向技術信號則平倉（支援當沖）
-價格來源：Yahoo Finance（日線計算指標 + 5 分線現價）
+  - 無持倉且無掛單：RSI/KD/MACD 符合條件 → 掛限價單（比現價低 1%）
+  - 有掛單：用 5 分鐘 K 線低點判斷是否成交；逾時 2 小時自動取消
+  - 有持倉：達到 TP/SL 或反向技術信號則平倉（支援當沖）
+價格來源：Yahoo Finance（日線計算指標 + 5 分線現價與低點）
 """
 import json, time
 from datetime import datetime, timezone, timedelta
 from urllib.request import urlopen, Request
 
 TZ_TW = timezone(timedelta(hours=8))
-NOW_TW = datetime.now(TZ_TW)
-TODAY  = NOW_TW.strftime("%Y-%m-%d")
+NOW_TW  = datetime.now(TZ_TW)
+TODAY   = NOW_TW.strftime("%Y-%m-%d")
 NOW_STR = NOW_TW.strftime("%H:%M")
+NOW_TS  = int(NOW_TW.timestamp())
 
-MAX_POSITIONS = 10    # 最多同時持有幾支
-TP_PCT = 0.05         # 停利 5%
-SL_PCT = 0.03         # 停損 3%
+MAX_POSITIONS   = 10    # 最多同時持有幾支
+LIMIT_DISCOUNT  = 0.01  # 限價比現價低 1%
+ORDER_TIMEOUT   = 120   # 掛單逾時分鐘數
+TP_PCT = 0.05
+SL_PCT = 0.03
 
 DEFAULT_WATCHLIST = [
     ("0050",   "0050.TW",   "元大台灣50"),
@@ -25,7 +29,6 @@ DEFAULT_WATCHLIST = [
 ]
 
 def load_watchlist():
-    """從 watchlist.json 讀取選股雷達結果，取前 MAX_POSITIONS 名；檔案不存在則用預設清單"""
     try:
         with open("watchlist.json", encoding="utf-8") as f:
             wl = json.load(f)
@@ -33,11 +36,7 @@ def load_watchlist():
         if not candidates:
             raise ValueError("空清單")
         top = sorted(candidates, key=lambda x: x.get("score", 0), reverse=True)[:MAX_POSITIONS * 2]
-        result = []
-        for s in top:
-            code = s["code"]
-            ticker = code + ".TW"
-            result.append((code, ticker, s["name"]))
+        result = [(s["code"], s["code"] + ".TW", s["name"]) for s in top]
         print(f"選股雷達：使用前 {len(result)} 支（共 {len(candidates)} 支候選）")
         for r in result:
             print(f"  {r[0]} {r[2]}")
@@ -84,6 +83,16 @@ def get_current_price(ticker):
         if data and data["closes"]:
             return data["closes"][-1]
     return None
+
+def check_limit_touched(ticker, limit_price, placed_ts):
+    """用 5 分鐘 K 線低點判斷：掛單後是否有任何 K 棒 low <= limit_price"""
+    data = get_ohlc(ticker, interval="5m", range_="1d")
+    if not data:
+        return False
+    for ts, low in zip(data["ts"], data["lows"]):
+        if ts >= placed_ts and low <= limit_price:
+            return True
+    return False
 
 # ── 技術指標 ─────────────────────────────────────────────────────────────────
 
@@ -143,7 +152,6 @@ def should_sell(holding, price, rsi, k, d):
     tp    = holding["take_profit"]
     sl    = holding["stop_loss"]
     pct   = (price - entry) / entry * 100
-
     if price >= tp:
         return True, f"達停利 TP={tp:.2f}（+{pct:.1f}%）"
     if price <= sl:
@@ -162,11 +170,73 @@ def main():
     with open("portfolio.json", encoding="utf-8") as f:
         pf = json.load(f)
 
-    cash     = pf.get("cash", 0)
-    holdings = {h["code"]: h for h in pf.get("holdings", [])}
-    prices   = {}
-    changed  = False
+    cash          = pf.get("cash", 0)
+    holdings      = {h["code"]: h for h in pf.get("holdings", [])}
+    pending_orders = pf.get("pending_orders", [])  # 待成交限價單
+    prices        = {}
+    changed       = False
 
+    # ── 第一步：處理待成交的限價單 ────────────────────────────────────────────
+    print("\n── 檢查待成交限價單 ──")
+    remaining_orders = []
+    for order in pending_orders:
+        code        = order["code"]
+        ticker      = order["ticker"]
+        limit_price = order["limit_price"]
+        placed_ts   = order["placed_ts"]
+        elapsed_min = (NOW_TS - placed_ts) // 60
+
+        price = get_current_price(ticker)
+        if price:
+            prices[code] = price
+
+        # 逾時取消
+        if elapsed_min >= ORDER_TIMEOUT:
+            cash += order["reserved_cash"]  # 退回凍結資金
+            changed = True
+            pf.setdefault("trade_log", []).append({
+                "date": TODAY, "time": NOW_STR,
+                "action": "ORDER_CANCEL", "code": code, "name": order["name"],
+                "price": limit_price, "shares": order["shares"], "amount": 0,
+                "pnl": 0, "session": "day",
+                "reason": f"限價單逾時取消（掛單 {elapsed_min} 分鐘未成交）",
+            })
+            print(f"  {code} 限價 {limit_price:.2f} 逾時取消（{elapsed_min} 分）")
+            continue
+
+        # 用 5 分 K 低點判斷是否成交
+        filled = check_limit_touched(ticker, limit_price, placed_ts)
+        if filled:
+            shares = order["shares"]
+            cost   = round(limit_price * shares)
+            tp     = round(limit_price * (1 + TP_PCT), 2)
+            sl     = round(limit_price * (1 - SL_PCT), 2)
+            # 退回凍結資金，扣除實際成本（限價可能比市價低，差額歸回現金）
+            cash += order["reserved_cash"] - cost
+            holdings[code] = {
+                "code": code, "name": order["name"],
+                "shares": shares, "entry_price": limit_price,
+                "entry_date": TODAY, "entry_time": NOW_STR,
+                "cost": cost, "take_profit": tp, "stop_loss": sl,
+            }
+            changed = True
+            pf.setdefault("trade_log", []).append({
+                "date": TODAY, "time": NOW_STR,
+                "action": "BUY", "code": code, "name": order["name"],
+                "price": limit_price, "shares": shares, "amount": cost,
+                "pnl": 0, "session": "day",
+                "reason": f"限價單成交（限價={limit_price:.2f}，5分K低點觸及）",
+            })
+            print(f"  {code} 限價 {limit_price:.2f} 成交！{shares} 股")
+        else:
+            remaining_orders.append(order)
+            print(f"  {code} 限價 {limit_price:.2f} 尚未成交（掛單 {elapsed_min} 分）")
+
+        time.sleep(0.3)
+
+    pending_orders = remaining_orders
+
+    # ── 第二步：持倉管理 + 尋找新進場 ────────────────────────────────────────
     watchlist = load_watchlist()
     print()
 
@@ -189,9 +259,9 @@ def main():
 
         print(f"  現價={price:.2f}  RSI={rsi}  K={k}/D={d}  MACD_hist={hist_val}")
 
-        holding = holdings.get(code)
-
-        if holding:
+        # 已持倉 → 管理部位
+        if code in holdings:
+            holding = holdings[code]
             pnl_ntd = round((price - holding["entry_price"]) * holding["shares"])
             pnl_pct = (price - holding["entry_price"]) / holding["entry_price"] * 100
             print(f"  持倉中 進場={holding['entry_price']:.2f}  未實現={pnl_ntd:+,}元（{pnl_pct:+.1f}%）")
@@ -209,61 +279,77 @@ def main():
                 })
                 del holdings[code]
                 changed = True
-                print(f"  → 賣出 {code} @ {price:.2f}  損益={pnl_ntd:+,}元")
+                print(f"  → 賣出 @ {price:.2f}  損益={pnl_ntd:+,}元")
                 print(f"    理由：{reason}")
             else:
                 print(f"  → 繼續持倉")
+            time.sleep(0.5)
+            continue
+
+        # 已有掛單 → 跳過，等成交
+        already_pending = any(o["code"] == code for o in pending_orders)
+        if already_pending:
+            print(f"  → 已有限價單掛單中，略過")
+            time.sleep(0.3)
+            continue
+
+        # 尋找新進場
+        active = len(holdings) + len(pending_orders)
+        go_buy, reason = should_buy(rsi, k, d, hist_val)
+        if go_buy and cash >= price and active < MAX_POSITIONS:
+            limit_price = round(price * (1 - LIMIT_DISCOUNT), 2)
+            slots       = max(MAX_POSITIONS - active, 1)
+            budget      = cash / slots
+            shares      = max(int(budget / limit_price), 1)
+            reserved    = round(limit_price * shares)
+            cash -= reserved  # 凍結資金
+            pending_orders.append({
+                "code": code, "name": name, "ticker": ticker,
+                "limit_price": limit_price, "shares": shares,
+                "placed_date": TODAY, "placed_time": NOW_STR,
+                "placed_ts": NOW_TS,
+                "reserved_cash": reserved,
+            })
+            pf.setdefault("trade_log", []).append({
+                "date": TODAY, "time": NOW_STR,
+                "action": "ORDER_PLACE", "code": code, "name": name,
+                "price": limit_price, "shares": shares, "amount": reserved,
+                "pnl": 0, "session": "day",
+                "reason": f"掛限價單 {limit_price:.2f}（現價 {price:.2f} 的 {(1-LIMIT_DISCOUNT)*100:.0f}%）｜{reason}",
+            })
+            changed = True
+            print(f"  → 掛限價單 {limit_price:.2f}（現價 {price:.2f}），{shares} 股")
+            print(f"    理由：{reason}")
+        elif not go_buy:
+            print(f"  → 條件未觸發，觀望")
+        elif active >= MAX_POSITIONS:
+            print(f"  → 已達最大部位數 {MAX_POSITIONS}，略過")
         else:
-            go_buy, reason = should_buy(rsi, k, d, hist_val)
-            if go_buy and cash >= price and len(holdings) < MAX_POSITIONS:
-                # 剩餘空位平均分配現金，最少買 1 股
-                slots = max(MAX_POSITIONS - len(holdings), 1)
-                budget = cash / slots
-                shares = max(int(budget / price), 1)
-                cost = round(price * shares)
-                tp   = round(price * (1 + TP_PCT), 2)
-                sl   = round(price * (1 - SL_PCT), 2)
-                cash -= cost
-                holdings[code] = {
-                    "code": code, "name": name,
-                    "shares": shares, "entry_price": round(price, 2),
-                    "entry_date": TODAY, "entry_time": NOW_STR,
-                    "cost": cost, "take_profit": tp, "stop_loss": sl,
-                }
-                pf.setdefault("trade_log", []).append({
-                    "date": TODAY, "time": NOW_STR,
-                    "action": "BUY", "code": code, "name": name,
-                    "price": round(price, 2), "shares": shares,
-                    "amount": cost, "pnl": 0,
-                    "session": "day", "reason": reason,
-                })
-                changed = True
-                print(f"  → 買入 {shares}股 @ {price:.2f}  TP={tp} SL={sl}")
-                print(f"    理由：{reason}")
-            elif not go_buy:
-                print(f"  → 條件未觸發，觀望")
-            elif len(holdings) >= MAX_POSITIONS:
-                print(f"  → 已達最大持倉數 {MAX_POSITIONS}，略過")
-            else:
-                print(f"  → 現金不足（現金={cash:.0f} < 現價={price:.2f}），略過")
+            print(f"  → 現金不足，略過")
 
         time.sleep(0.5)
 
+    # ── 寫回 portfolio.json ───────────────────────────────────────────────────
     if changed:
         stock_value = sum(
             round(prices.get(h["code"], h["entry_price"]) * h["shares"])
             for h in holdings.values()
         )
-        pf["cash"]         = round(cash)
-        pf["holdings"]     = list(holdings.values())
-        pf["total_value"]  = round(cash + stock_value)
-        pf["last_updated"] = f"{TODAY} {NOW_STR}"
+        pf["cash"]           = round(cash)
+        pf["holdings"]       = list(holdings.values())
+        pf["pending_orders"] = pending_orders
+        pf["total_value"]    = round(cash + stock_value)
+        pf["last_updated"]   = f"{TODAY} {NOW_STR}"
 
         with open("portfolio.json", "w", encoding="utf-8") as f:
             json.dump(pf, f, ensure_ascii=False, indent=2)
         print("\n✅ portfolio.json 已更新")
     else:
-        print("\n→ 無操作，portfolio.json 未異動")
+        pf["pending_orders"] = pending_orders
+        pf["last_updated"]   = f"{TODAY} {NOW_STR}"
+        with open("portfolio.json", "w", encoding="utf-8") as f:
+            json.dump(pf, f, ensure_ascii=False, indent=2)
+        print("\n→ 無交易，portfolio.json 已同步")
 
 if __name__ == "__main__":
     main()
