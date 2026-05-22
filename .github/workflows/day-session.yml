@@ -1,0 +1,25 @@
+name: 台股日盤模擬
+
+on:
+  schedule:
+    - cron: "*/15 1-5 * * 1-5"   # 每15分鐘，週一到週五，UTC 01:00-05:45 = 台北 09:00-13:45
+  workflow_dispatch:
+
+jobs:
+  day-trade:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run day trade
+        run: python3 scripts/day_trade.py
+
+      - name: Commit portfolio
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add portfolio.json
+          git diff --cached --quiet || git commit -m "日盤交易 $(date +'%Y-%m-%d %H:%M') UTC"
+          git push
