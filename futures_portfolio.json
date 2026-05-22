@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21",
+  "last_updated": "2026-05-22 09:30",
   "instrument": "小台指期貨 (MTX)",
   "point_value": 50,
   "initial_margin": 200000,
@@ -12,7 +12,7 @@
     "direction": "SHORT",
     "contracts": 1,
     "entry_price": 41000,
-    "entry_timing": "開盤後 10 分鐘觀察，若無持續跳高則在 41,000-41,100 之間做空",
+    "entry_timing": "取消：開盤跳空高開41313，超出進場區間；觀察日內是否回落41100以下",
     "take_profit": 40400,
     "stop_loss": 41600,
     "margin_required": 48000,
@@ -21,7 +21,7 @@
     "max_loss_pts": 600,
     "max_loss_ntd": 30000,
     "risk_reward_ratio": "1:1",
-    "note": "若開盤跳空低開超過 500 點則取消，代表已回測完成不適合再追空"
+    "note": "原計畫空單取消。若盤中回測41000-41100且KD出現死叉可重新評估空頭；否則放棄今日操作"
   },
   "trade_log": [
     {
@@ -45,6 +45,17 @@
       "margin_required": 48000,
       "pnl": 0,
       "reason": "5/21 大漲 930 點後短線過熱，空 1 口小台等隔日回測；停利 40,400 / 停損 41,600"
+    },
+    {
+      "date": "2026-05-22",
+      "time": "09:30",
+      "action": "PLAN_CANCEL",
+      "direction": "SHORT",
+      "contracts": 0,
+      "entry_price": 0,
+      "exit_price": 0,
+      "pnl": 0,
+      "reason": "台指期開盤41313，高出計畫進場區間(41000-41100)213點；KD偏強，追空風險高，取消今日空單計畫；若日內跌回41100以下再重新評估"
     }
   ]
 }
