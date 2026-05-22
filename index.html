@@ -250,51 +250,30 @@
   </div>
 
   <div id="tab-stocks" class="chart-panel">
-    <div class="watchlist-grid">
-      <div>
-        <div class="mini-label">0050 元大台灣50</div>
-        <div class="mini-chart-wrap">
-          <div class="tradingview-widget-container" style="height:100%;width:100%">
-            <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-            {"symbol":"TWSE:0050","width":"100%","height":"100%","locale":"zh_TW","dateRange":"3M","colorTheme":"dark","isTransparent":true,"autosize":true,"largeChartUrl":"","noTimeScale":false}
-            </script>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="mini-label">2330 台積電</div>
-        <div class="mini-chart-wrap">
-          <div class="tradingview-widget-container" style="height:100%;width:100%">
-            <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-            {"symbol":"TWSE:2330","width":"100%","height":"100%","locale":"zh_TW","dateRange":"3M","colorTheme":"dark","isTransparent":true,"autosize":true,"largeChartUrl":"","noTimeScale":false}
-            </script>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="mini-label">台灣指數 CFD（近台指期）</div>
-        <div class="mini-chart-wrap">
-          <div class="tradingview-widget-container" style="height:100%;width:100%">
-            <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-            {"symbol":"INDEX:TAIEX","width":"100%","height":"100%","locale":"zh_TW","dateRange":"3M","colorTheme":"dark","isTransparent":true,"autosize":true,"largeChartUrl":"","noTimeScale":false}
-            </script>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="mini-label">00981A 統一主動台股</div>
-        <div class="mini-chart-wrap">
-          <div class="tradingview-widget-container" style="height:100%;width:100%">
-            <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-            {"symbol":"TWSE:00981A","width":"100%","height":"100%","locale":"zh_TW","dateRange":"3M","colorTheme":"dark","isTransparent":true,"autosize":true,"largeChartUrl":"","noTimeScale":false}
-            </script>
-          </div>
-        </div>
-      </div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:14px">
+      ⓘ TWSE 個股資料需 TradingView 訂閱，點擊下方連結開啟完整互動圖表。
+    </div>
+    <div class="watchlist-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+      <a href="https://www.tradingview.com/chart/?symbol=TWSE:0050" target="_blank" class="stock-link-card">
+        <div class="slc-code">0050</div>
+        <div class="slc-name">元大台灣50</div>
+        <div class="slc-btn">📈 查看走勢 →</div>
+      </a>
+      <a href="https://www.tradingview.com/chart/?symbol=TWSE:2330" target="_blank" class="stock-link-card">
+        <div class="slc-code">2330</div>
+        <div class="slc-name">台積電</div>
+        <div class="slc-btn">📈 查看走勢 →</div>
+      </a>
+      <a href="https://www.tradingview.com/chart/?symbol=TWSE:00981A" target="_blank" class="stock-link-card">
+        <div class="slc-code">00981A</div>
+        <div class="slc-name">統一主動台股增長</div>
+        <div class="slc-btn">📈 查看走勢 →</div>
+      </a>
+      <a href="https://www.tradingview.com/chart/?symbol=INDEX:TAIEX" target="_blank" class="stock-link-card">
+        <div class="slc-code">TAIEX</div>
+        <div class="slc-name">台灣加權指數</div>
+        <div class="slc-btn">📈 查看走勢 →</div>
+      </a>
     </div>
   </div>
 
