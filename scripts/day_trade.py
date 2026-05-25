@@ -190,18 +190,19 @@ def main():
         if price:
             prices[code] = price
 
-        # 逾時取消
-        if elapsed_min >= ORDER_TIMEOUT:
-            cash += order["reserved_cash"]  # 退回凍結資金
+        # 跨日自動取消（台股限價單僅當日有效）
+        placed_date = order.get("placed_date", TODAY)
+        if placed_date != TODAY:
+            cash += order["reserved_cash"]
             changed = True
             pf.setdefault("trade_log", []).append({
                 "date": TODAY, "time": NOW_STR,
                 "action": "ORDER_CANCEL", "code": code, "name": order["name"],
                 "price": limit_price, "shares": order["shares"], "amount": 0,
                 "pnl": 0, "session": "day",
-                "reason": f"限價單逾時取消（掛單 {elapsed_min} 分鐘未成交）",
+                "reason": f"跨日取消（下單日 {placed_date}，限價單僅當日有效）",
             })
-            print(f"  {code} 限價 {limit_price:.2f} 逾時取消（{elapsed_min} 分）")
+            print(f"  {code} 限價 {limit_price:.2f} 跨日取消（下單日 {placed_date}）")
             continue
 
         # 用 5 分 K 低點判斷是否成交
