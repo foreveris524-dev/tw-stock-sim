@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-05-25 13:06",
+  "last_updated": "2026-05-25 20:54",
   "initial_capital": 1000000,
   "cash": 11,
-  "total_value": 11,
-  "holdings": [],
+  "total_value": 99732,
+  "holdings": [
+    {
+      "code": "2618",
+      "name": "長榮航",
+      "shares": 2813,
+      "entry_price": 35.54,
+      "entry_date": "2026-05-25",
+      "entry_time": "20:54",
+      "cost": 99974,
+      "take_profit": 37.32,
+      "stop_loss": 34.47
+    }
+  ],
   "plan_for_5_22": {
     "rationale": "台指期 5/21 大漲 930 點(+2.32%)，不追高；0050、00981A 掛限價等小回；2330 連4跌且背離大盤，暫觀望。",
     "orders": [
@@ -518,6 +530,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 17.62（現價 17.80 的 99%）｜KD金叉(K58.5/D53.3)，RSI=42.3健康，MACD多頭"
+    },
+    {
+      "date": "2026-05-25",
+      "time": "20:54",
+      "action": "BUY",
+      "code": "2618",
+      "name": "長榮航",
+      "price": 35.54,
+      "shares": 2813,
+      "amount": 99974,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=35.54，5分K低點觸及）"
     }
   ],
   "pending_orders": [
@@ -553,17 +578,6 @@
       "placed_time": "13:06",
       "placed_ts": 1779685560,
       "reserved_cash": 100001
-    },
-    {
-      "code": "2618",
-      "name": "長榮航",
-      "ticker": "2618.TW",
-      "limit_price": 35.54,
-      "shares": 2813,
-      "placed_date": "2026-05-25",
-      "placed_time": "13:06",
-      "placed_ts": 1779685560,
-      "reserved_cash": 99974
     },
     {
       "code": "6625",
