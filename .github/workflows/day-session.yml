@@ -22,5 +22,4 @@ jobs:
           git config user.name "GitHub Actions"
           git add portfolio.json
           git diff --cached --quiet || git commit -m "日盤交易 $(date +'%Y-%m-%d %H:%M') UTC"
-          git pull --rebase origin main
-          git push
+          for i in 1 2 3; do git pull --rebase origin main && git push && break || sleep 5; done
