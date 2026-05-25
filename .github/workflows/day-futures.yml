@@ -20,6 +20,14 @@ jobs:
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
-          git add futures_portfolio.json
-          git diff --cached --quiet || git commit -m "日盤期貨 $(date +'%Y-%m-%d %H:%M') UTC"
-          for i in 1 2 3; do git pull --rebase origin main && git push && break || sleep 5; done
+          cp futures_portfolio.json /tmp/fp_new.json
+          for i in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/fp_new.json futures_portfolio.json
+            git add futures_portfolio.json
+            git diff --cached --quiet && break
+            git commit -m "日盤期貨 $(date +'%Y-%m-%d %H:%M') UTC"
+            git push && break
+            sleep 5
+          done
