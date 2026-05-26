@@ -215,7 +215,7 @@ def main():
             # 退回凍結資金，扣除實際成本（限價可能比市價低，差額歸回現金）
             cash += order["reserved_cash"] - cost
             holdings[code] = {
-                "code": code, "name": order["name"],
+                "code": code, "name": order["name"], "ticker": order["ticker"],
                 "shares": shares, "entry_price": limit_price,
                 "entry_date": TODAY, "entry_time": NOW_STR,
                 "cost": cost, "take_profit": tp, "stop_loss": sl,
@@ -330,26 +330,38 @@ def main():
 
         time.sleep(0.5)
 
-    # ── 寫回 portfolio.json ───────────────────────────────────────────────────
-    if changed:
-        stock_value = sum(
-            round(prices.get(h["code"], h["entry_price"]) * h["shares"])
-            for h in holdings.values()
-        )
-        pf["cash"]           = round(cash)
-        pf["holdings"]       = list(holdings.values())
-        pf["pending_orders"] = pending_orders
-        pf["total_value"]    = round(cash + stock_value)
-        pf["last_updated"]   = f"{TODAY} {NOW_STR}"
+    # ── 補抓未在 watchlist 內的持倉現價 ─────────────────────────────────────
+    for code, h in holdings.items():
+        if code not in prices:
+            p = get_current_price(h.get("ticker", code + ".TW"))
+            if p:
+                prices[code] = p
 
-        with open("portfolio.json", "w", encoding="utf-8") as f:
-            json.dump(pf, f, ensure_ascii=False, indent=2)
+    # ── 寫回 portfolio.json ───────────────────────────────────────────────────
+    reserved_cash = sum(o["reserved_cash"] for o in pending_orders)
+    holdings_list = []
+    stock_value = 0
+    for h in holdings.values():
+        price = prices.get(h["code"], h["entry_price"])
+        val   = round(price * h["shares"])
+        upnl  = val - h["cost"]
+        upnl_pct = round((val - h["cost"]) / h["cost"] * 100, 2) if h["cost"] else 0
+        stock_value += val
+        holdings_list.append({**h, "value": val,
+                               "unrealized_pnl": upnl, "unrealized_pnl_pct": upnl_pct})
+
+    pf["cash"]            = round(cash)
+    pf["holdings"]        = holdings_list
+    pf["pending_orders"]  = pending_orders
+    pf["total_value"]     = round(cash + reserved_cash + stock_value)
+    pf["initial_capital"] = pf.get("initial_capital", 1000000)
+    pf["last_updated"]    = f"{TODAY} {NOW_STR}"
+
+    with open("portfolio.json", "w", encoding="utf-8") as f:
+        json.dump(pf, f, ensure_ascii=False, indent=2)
+    if changed:
         print("\n✅ portfolio.json 已更新")
     else:
-        pf["pending_orders"] = pending_orders
-        pf["last_updated"]   = f"{TODAY} {NOW_STR}"
-        with open("portfolio.json", "w", encoding="utf-8") as f:
-            json.dump(pf, f, ensure_ascii=False, indent=2)
         print("\n→ 無交易，portfolio.json 已同步")
 
 if __name__ == "__main__":
