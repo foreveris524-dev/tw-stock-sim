@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-05-26 12:59",
+  "last_updated": "2026-05-26 13:05",
   "initial_capital": 1000000,
   "cash": 158,
-  "total_value": 99879,
+  "total_value": 1000028,
   "holdings": [
     {
       "code": "2618",
@@ -13,7 +13,10 @@
       "entry_time": "20:54",
       "cost": 99974,
       "take_profit": 37.32,
-      "stop_loss": 34.47
+      "stop_loss": 34.47,
+      "value": 100002,
+      "unrealized_pnl": 28,
+      "unrealized_pnl_pct": 0.03
     }
   ],
   "plan_for_5_22": {
