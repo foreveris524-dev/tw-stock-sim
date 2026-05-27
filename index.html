@@ -307,6 +307,18 @@
     </div>
   </div>
 
+  <div id="arb-section" style="margin-top:8px">
+    <div class="card">
+      <div class="card-header">
+        ⚖️ 資金費率套利（模擬）
+        <span style="font-size:11px;font-weight:400;color:var(--muted)">現貨多 + 期貨空 · 收取費率</span>
+      </div>
+      <div class="card-body" id="arb-body">
+        <div class="loading">載入套利資料...</div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <script>
@@ -706,6 +718,72 @@ function renderBinance(d) {
 
 loadBinance();
 setInterval(loadBinance, 60000);
+
+// ── 資金費率套利 ──
+async function loadArb() {
+  try {
+    const res = await fetch(`${RAW}/binance_status.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error(res.status);
+    const d = await res.json();
+    if (d.arb) renderArb(d.arb);
+    else document.getElementById('arb-body').innerHTML =
+      `<div style="color:var(--muted);font-size:13px">⚠ 套利 Bot 尚未啟動</div>`;
+  } catch(e) {
+    document.getElementById('arb-body').innerHTML =
+      `<div style="color:var(--muted);font-size:13px">⚠ 資料載入失敗</div>`;
+  }
+}
+
+function renderArb(a) {
+  const isOpen = a.status === 'OPEN';
+  const statusBadge = isOpen
+    ? `<span style="background:var(--green);color:#000;font-size:11px;padding:2px 10px;border-radius:4px;font-weight:600">持倉中</span>`
+    : `<span style="background:var(--border);color:var(--muted);font-size:11px;padding:2px 10px;border-radius:4px">未持倉</span>`;
+
+  const rateColor = a.funding_rate >= 0.0005 ? 'var(--green)' : a.funding_rate >= 0.0001 ? 'var(--gold)' : 'var(--red)';
+  const pnlColor = (a.accumulated_funding || 0) >= 0 ? 'var(--green)' : 'var(--red)';
+
+  const histRows = (a.history || []).slice().reverse().map(h => {
+    const evColor = h.event === 'OPEN' ? 'var(--green)' : h.event === 'CLOSE' ? 'var(--red)' : 'var(--gold)';
+    const income = h.income != null ? `+${h.income} USDT` : h.total_funding != null ? `累計 ${h.total_funding} USDT` : '—';
+    return `<tr>
+      <td style="color:var(--muted);font-size:11px">${h.time}</td>
+      <td><span style="color:${evColor};font-weight:600">${h.event}</span></td>
+      <td>${h.rate != null ? (h.rate*100).toFixed(4)+'%' : '—'}</td>
+      <td style="color:var(--green)">${income}</td>
+      <td style="color:var(--muted);font-size:11px">${h.reason||''}</td>
+    </tr>`;
+  }).join('') || `<tr><td colspan="5" class="empty">尚無記錄</td></tr>`;
+
+  document.getElementById('arb-body').innerHTML = `
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px">
+      <div style="flex:1;min-width:140px;background:var(--bg);border-radius:8px;padding:14px 18px">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:4px">目前費率 / 8h</div>
+        <div style="font-size:22px;font-weight:700;color:${rateColor}">${(a.funding_rate*100).toFixed(4)}%</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:2px">年化 ${a.annual_rate_pct}%</div>
+      </div>
+      <div style="flex:1;min-width:140px;background:var(--bg);border-radius:8px;padding:14px 18px">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:4px">累積費率收入</div>
+        <div style="font-size:22px;font-weight:700;color:${pnlColor}">${(a.accumulated_funding||0) >= 0 ? '+' : ''}${a.accumulated_funding||0} USDT</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:2px">模擬 ${a.quantity} BTC 部位</div>
+      </div>
+      <div style="flex:1;min-width:140px;background:var(--bg);border-radius:8px;padding:14px 18px">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:4px">持倉狀態</div>
+        <div style="margin-top:6px">${statusBadge}</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:6px">${isOpen ? '進場 '+a.spot_entry+' USDT' : '下次費率 '+a.next_funding}</div>
+      </div>
+    </div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:6px">操作記錄</div>
+    <div style="overflow-x:auto">
+      <table class="log-table">
+        <thead><tr><th>時間</th><th>事件</th><th>費率</th><th>收入</th><th>備註</th></tr></thead>
+        <tbody>${histRows}</tbody>
+      </table>
+    </div>`;
+}
+
+loadArb();
+setInterval(loadArb, 60000);
 </script>
 </body>
 </html>
