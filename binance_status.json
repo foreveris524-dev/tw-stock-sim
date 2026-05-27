@@ -1,9 +1,9 @@
 {
   "fast": {
-    "price": 75850.56,
-    "signal": "HOLD",
+    "price": 75936.43,
+    "signal": "BUY",
     "position": "BUY",
-    "entry_price": 75822.0,
+    "entry_price": 75936.43,
     "trades": [
       {
         "time": "2026-05-27 18:51:47",
@@ -29,16 +29,29 @@
         "side": "BUY",
         "price": 75822.0,
         "qty": 0.001
+      },
+      {
+        "time": "2026-05-27 20:36:53",
+        "side": "SELL",
+        "price": 75917.13,
+        "qty": 0.001,
+        "pnl": 0.0951
+      },
+      {
+        "time": "2026-05-27 20:40:54",
+        "side": "BUY",
+        "price": 75936.43,
+        "qty": 0.001
       }
     ]
   },
   "trend": {
-    "price": 75850.56,
+    "price": 75936.43,
     "signal": "HOLD",
     "position": null,
     "entry_price": null
   },
-  "last_updated": "2026-05-27 20:35:53",
+  "last_updated": "2026-05-27 20:40:54",
   "arb": {
     "status": "CLOSED",
     "funding_rate": 4.405e-05,
