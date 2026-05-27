@@ -648,7 +648,17 @@ function renderBinance(d) {
       ? `<span style="background:var(--green);color:#000;font-size:11px;padding:2px 8px;border-radius:4px;font-weight:600">持多</span>`
       : `<span style="background:var(--border);color:var(--muted);font-size:11px;padding:2px 8px;border-radius:4px">無持倉</span>`;
     const ep = b.entry_price ? `進場 $${Number(b.entry_price).toLocaleString()}` : '';
-    const trades = (b.trades || []).slice().reverse().slice(0, 5);
+
+    // 累積損益（加總所有 SELL 的 pnl）
+    const allTrades = b.trades || [];
+    const cumPnl = allTrades.reduce((sum, t) => sum + (t.pnl != null ? Number(t.pnl) : 0), 0);
+    const cumPnlFixed = cumPnl.toFixed(4);
+    const cumColor = cumPnl > 0 ? 'var(--green)' : cumPnl < 0 ? 'var(--red)' : 'var(--muted)';
+    const cumText = allTrades.some(t => t.pnl != null)
+      ? `<span style="color:${cumColor};font-weight:700">${cumPnl >= 0 ? '+' : ''}${cumPnlFixed} USDT</span>`
+      : `<span style="color:var(--muted)">尚無已結算損益</span>`;
+
+    const trades = allTrades.slice().reverse().slice(0, 5);
     const tradeRows = trades.map(t => {
       const pnl = t.pnl != null ? `<span class="${t.pnl >= 0 ? 'green' : 'red'}">${t.pnl >= 0 ? '+' : ''}${t.pnl} USDT</span>` : '—';
       const sideColor = t.side === 'BUY' ? 'var(--green)' : 'var(--red)';
@@ -675,7 +685,11 @@ function renderBinance(d) {
               <div style="margin-top:4px">${posBadge}</div>
             </div>
           </div>
-          <div style="font-size:12px;color:var(--muted);margin-bottom:6px">最近交易</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;background:var(--bg);border-radius:8px;padding:10px 14px;margin-bottom:14px">
+            <div style="font-size:12px;color:var(--muted)">累積損益</div>
+            <div style="font-size:15px">${cumText}</div>
+          </div>
+          <div style="font-size:12px;color:var(--muted);margin-bottom:6px">最近交易（最多顯示 5 筆）</div>
           <div style="overflow-x:auto">
             <table class="log-table">
               <thead><tr><th>時間</th><th>方向</th><th>價格</th><th>損益</th><th>原因</th></tr></thead>
