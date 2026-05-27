@@ -1,6 +1,6 @@
 {
   "fast": {
-    "price": 75808.01,
+    "price": 75881.0,
     "signal": "HOLD",
     "position": null,
     "entry_price": null,
@@ -27,10 +27,10 @@
     ]
   },
   "trend": {
-    "price": 75854.0,
+    "price": 75851.4,
     "signal": "HOLD",
     "position": null,
     "entry_price": null
   },
-  "last_updated": "2026-05-27 19:32:42"
+  "last_updated": "2026-05-27 19:37:43"
 }
