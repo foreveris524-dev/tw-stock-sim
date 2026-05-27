@@ -1,6 +1,6 @@
 {
   "fast": {
-    "price": 75896.93,
+    "price": 75976.45,
     "signal": "HOLD",
     "position": "BUY",
     "entry_price": 75822.0,
@@ -33,12 +33,12 @@
     ]
   },
   "trend": {
-    "price": 75896.93,
+    "price": 75976.45,
     "signal": "HOLD",
     "position": null,
     "entry_price": null
   },
-  "last_updated": "2026-05-27 20:25:53",
+  "last_updated": "2026-05-27 20:30:53",
   "arb": {
     "status": "CLOSED",
     "funding_rate": 4.405e-05,
