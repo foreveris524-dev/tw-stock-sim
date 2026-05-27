@@ -1,0 +1,25 @@
+name: 選股雷達（每週更新監控清單）
+
+on:
+  schedule:
+    - cron: "40 6 * * 5"   # 每週五 14:40 台北（UTC 06:40），收盤後掃描
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run watchlist scan
+        run: python3 scripts/scan_watchlist.py
+
+      - name: Commit watchlist
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add watchlist.json
+          git diff --cached --quiet || git commit -m "選股雷達更新 $(date +'%Y-%m-%d')"
+          git push
