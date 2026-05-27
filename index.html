@@ -294,6 +294,19 @@
     </div>
   </div>
 
+  <!-- Binance Bot -->
+  <div id="binance-section" style="margin-top:8px">
+    <div class="card">
+      <div class="card-header">
+        ₿ Binance Bot（Testnet）
+        <span id="binance-updated" style="font-size:11px;font-weight:400;color:var(--muted)"></span>
+      </div>
+      <div class="card-body" id="binance-body">
+        <div class="loading">載入 Binance 資料...</div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <script>
@@ -605,6 +618,80 @@ window.switchTab = function(btn, id) {
   if (origSwitchTab) origSwitchTab(btn, id);
   if (id === 'stocks') loadStockCharts();
 };
+
+// ── Binance Bot ──
+async function loadBinance() {
+  try {
+    const res = await fetch(`${RAW}/binance_status.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error(res.status);
+    const d = await res.json();
+    renderBinance(d);
+    document.getElementById('binance-updated').textContent = `　更新 ${d.last_updated || '—'}`;
+  } catch(e) {
+    document.getElementById('binance-body').innerHTML =
+      `<div style="color:var(--muted);font-size:13px">⚠ 尚無資料（Bot 尚未推送）</div>`;
+  }
+}
+
+function renderBinance(d) {
+  const modes = [
+    { key: 'fast',  label: '快速模式', sub: '1m K棒 · MA5/MA20' },
+    { key: 'trend', label: '趨勢模式', sub: '1h K棒 · MA9/MA21 · 停損-2%' },
+  ];
+
+  const cards = modes.map(m => {
+    const b = d[m.key] || {};
+    const sig = b.signal || '—';
+    const sigColor = sig === 'BUY' ? 'var(--green)' : sig === 'SELL' ? 'var(--red)' : 'var(--muted)';
+    const pos = b.position || null;
+    const posBadge = pos
+      ? `<span style="background:var(--green);color:#000;font-size:11px;padding:2px 8px;border-radius:4px;font-weight:600">持多</span>`
+      : `<span style="background:var(--border);color:var(--muted);font-size:11px;padding:2px 8px;border-radius:4px">無持倉</span>`;
+    const ep = b.entry_price ? `進場 $${Number(b.entry_price).toLocaleString()}` : '';
+    const trades = (b.trades || []).slice().reverse().slice(0, 5);
+    const tradeRows = trades.map(t => {
+      const pnl = t.pnl != null ? `<span class="${t.pnl >= 0 ? 'green' : 'red'}">${t.pnl >= 0 ? '+' : ''}${t.pnl} USDT</span>` : '—';
+      const sideColor = t.side === 'BUY' ? 'var(--green)' : 'var(--red)';
+      return `<tr>
+        <td style="color:var(--muted);font-size:11px">${t.time||''}</td>
+        <td><span style="color:${sideColor};font-weight:600">${t.side}</span></td>
+        <td>$${Number(t.price||0).toLocaleString()}</td>
+        <td>${pnl}</td>
+        <td style="color:var(--muted);font-size:11px">${t.reason||'均線'}</td>
+      </tr>`;
+    }).join('') || `<tr><td colspan="5" class="empty">尚無交易記錄</td></tr>`;
+
+    return `
+      <div class="card" style="flex:1;min-width:280px">
+        <div class="card-header">${m.label} <span style="font-size:11px;font-weight:400;color:var(--muted)">${m.sub}</span></div>
+        <div class="card-body">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+            <div>
+              <div style="font-size:22px;font-weight:700">$${b.price ? Number(b.price).toLocaleString() : '—'}</div>
+              <div style="font-size:11px;color:var(--muted);margin-top:2px">BTCUSDT ${ep}</div>
+            </div>
+            <div style="text-align:right">
+              <div style="font-size:20px;font-weight:700;color:${sigColor}">${sig}</div>
+              <div style="margin-top:4px">${posBadge}</div>
+            </div>
+          </div>
+          <div style="font-size:12px;color:var(--muted);margin-bottom:6px">最近交易</div>
+          <div style="overflow-x:auto">
+            <table class="log-table">
+              <thead><tr><th>時間</th><th>方向</th><th>價格</th><th>損益</th><th>原因</th></tr></thead>
+              <tbody>${tradeRows}</tbody>
+            </table>
+          </div>
+        </div>
+      </div>`;
+  }).join('');
+
+  document.getElementById('binance-body').innerHTML =
+    `<div style="display:flex;gap:16px;flex-wrap:wrap">${cards}</div>`;
+}
+
+loadBinance();
+setInterval(loadBinance, 60000);
 </script>
 </body>
 </html>
