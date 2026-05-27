@@ -27,6 +27,8 @@ DEFAULT_WATCHLIST = [
     ("2330",   "2330.TW",   "台積電"),
     ("00981A", "00981A.TW", "統一主動台股增長"),
 ]
+# 注意：當 watchlist.json 可讀時，day_trade.py 會取前 MAX_POSITIONS*2 支候選，
+# 此 DEFAULT_WATCHLIST 僅作 fallback 用
 
 def load_watchlist():
     try:
@@ -138,13 +140,21 @@ def calc_macd(closes, fast=12, slow=26, signal=9):
     sl_ = ema_s(ml, signal)
     return round(ml[-1], 3), round(sl_[-1], 3), round(ml[-1]-sl_[-1], 3)
 
+def calc_ma(closes, period=20):
+    if len(closes) < period:
+        return None
+    return round(sum(closes[-period:]) / period, 2)
+
 # ── 開平倉條件 ───────────────────────────────────────────────────────────────
 
-def should_buy(rsi, k, d, hist):
-    if any(v is None for v in [rsi, k, d, hist]):
+def should_buy(rsi, k, d, hist, price, ma20, ma20_prev):
+    """ma20_prev: 5 天前的 MA20，確認均線方向向上"""
+    if any(v is None for v in [rsi, k, d, hist, price, ma20, ma20_prev]):
+        return False, ""
+    if ma20 <= ma20_prev:
         return False, ""
     if k > d and k < 80 and 40 <= rsi <= 65 and hist > 0:
-        return True, f"KD金叉(K{k}/D{d})，RSI={rsi}健康，MACD多頭"
+        return True, f"KD金叉(K{k}/D{d})，RSI={rsi}健康，MACD多頭，MA20上揚({ma20_prev}→{ma20})"
     return False, ""
 
 def should_sell(holding, price, rsi, k, d):
@@ -170,11 +180,12 @@ def main():
     with open("portfolio.json", encoding="utf-8") as f:
         pf = json.load(f)
 
-    cash          = pf.get("cash", 0)
-    holdings      = {h["code"]: h for h in pf.get("holdings", [])}
-    pending_orders = pf.get("pending_orders", [])  # 待成交限價單
-    prices        = {}
-    changed       = False
+    cash           = pf.get("cash", 0)
+    holdings       = {h["code"]: h for h in pf.get("holdings", [])}
+    pending_orders = pf.get("pending_orders", [])
+    sl_cooldown    = pf.get("sl_cooldown", {})   # {code: {sl_dates:[...], cooldown_until:date}}
+    prices         = {}
+    changed        = False
 
     # ── 第一步：處理待成交的限價單 ────────────────────────────────────────────
     print("\n── 檢查待成交限價單 ──")
@@ -248,9 +259,12 @@ def main():
         if not hist:
             print("  無法取得日線資料，略過")
             continue
-        rsi = calc_rsi(hist["closes"])
-        k, d = calc_kd(hist["highs"], hist["lows"], hist["closes"])
-        _, _, hist_val = calc_macd(hist["closes"])
+        closes_all     = hist["closes"]
+        rsi            = calc_rsi(closes_all)
+        k, d           = calc_kd(hist["highs"], hist["lows"], closes_all)
+        _, _, hist_val = calc_macd(closes_all)
+        ma20           = calc_ma(closes_all, 20)
+        ma20_prev      = calc_ma(closes_all[:-5], 20) if len(closes_all) >= 25 else None
 
         price = get_current_price(ticker)
         if price is None:
@@ -258,7 +272,8 @@ def main():
             continue
         prices[code] = price
 
-        print(f"  現價={price:.2f}  RSI={rsi}  K={k}/D={d}  MACD_hist={hist_val}")
+        ma20_trend = "↑" if (ma20 and ma20_prev and ma20 > ma20_prev) else "↓"
+        print(f"  現價={price:.2f}  MA20={ma20}{ma20_trend}  RSI={rsi}  K={k}/D={d}  MACD_hist={hist_val}")
 
         # 已持倉 → 管理部位
         if code in holdings:
@@ -282,6 +297,16 @@ def main():
                 changed = True
                 print(f"  → 賣出 @ {price:.2f}  損益={pnl_ntd:+,}元")
                 print(f"    理由：{reason}")
+                # 停損時更新冷靜期計數
+                if "SL" in reason or "停損" in reason:
+                    cd = sl_cooldown.setdefault(code, {"sl_dates": [], "cooldown_until": None})
+                    cd["sl_dates"].append(TODAY)
+                    # 累計近 8 週內的停損次數
+                    cutoff = (NOW_TW - timedelta(weeks=8)).strftime("%Y-%m-%d")
+                    cd["sl_dates"] = [d for d in cd["sl_dates"] if d >= cutoff]
+                    if len(cd["sl_dates"]) >= 2:
+                        cd["cooldown_until"] = (NOW_TW + timedelta(weeks=4)).strftime("%Y-%m-%d")
+                        print(f"  ⚠️  {code} 8週內第{len(cd['sl_dates'])}次停損 → 冷靜期至 {cd['cooldown_until']}")
             else:
                 print(f"  → 繼續持倉")
             time.sleep(0.5)
@@ -294,9 +319,19 @@ def main():
             time.sleep(0.3)
             continue
 
+        # 冷靜期檢查
+        cd = sl_cooldown.get(code, {})
+        cooldown_until = cd.get("cooldown_until")
+        if cooldown_until and cooldown_until >= TODAY:
+            print(f"  → 停損冷靜期中（至 {cooldown_until}），略過")
+            time.sleep(0.3)
+            continue
+        elif cooldown_until and cooldown_until < TODAY:
+            sl_cooldown[code] = {"sl_dates": [], "cooldown_until": None}
+
         # 尋找新進場
         active = len(holdings) + len(pending_orders)
-        go_buy, reason = should_buy(rsi, k, d, hist_val)
+        go_buy, reason = should_buy(rsi, k, d, hist_val, price, ma20, ma20_prev)
         if go_buy and cash >= price and active < MAX_POSITIONS:
             limit_price = round(price * (1 - LIMIT_DISCOUNT), 2)
             slots       = max(MAX_POSITIONS - active, 1)
@@ -353,6 +388,7 @@ def main():
     pf["cash"]            = round(cash)
     pf["holdings"]        = holdings_list
     pf["pending_orders"]  = pending_orders
+    pf["sl_cooldown"]     = sl_cooldown
     pf["total_value"]     = round(cash + reserved_cash + stock_value)
     pf["initial_capital"] = pf.get("initial_capital", 1000000)
     pf["last_updated"]    = f"{TODAY} {NOW_STR}"
