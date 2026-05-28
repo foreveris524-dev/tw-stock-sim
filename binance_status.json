@@ -1,7 +1,7 @@
 {
   "fast": {
-    "price": 73416.01,
-    "signal": "HOLD",
+    "price": 73411.73,
+    "signal": "BUY",
     "position": "BUY",
     "entry_price": 73434.32,
     "trades": [
@@ -356,7 +356,7 @@
     "rsi": 32.69,
     "ma200": 76533.69
   },
-  "last_updated": "2026-05-28 19:02:39",
+  "last_updated": "2026-05-28 19:38:24",
   "arb": {
     "status": "CLOSED",
     "funding_rate": 7.05e-05,
