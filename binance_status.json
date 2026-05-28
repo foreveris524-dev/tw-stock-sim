@@ -1,9 +1,9 @@
 {
   "fast": {
-    "price": 74517.31,
+    "price": 74559.4,
     "signal": "HOLD",
-    "position": null,
-    "entry_price": null,
+    "position": "BUY",
+    "entry_price": 74560.01,
     "trades": [
       {
         "time": "2026-05-27 18:51:47",
@@ -218,11 +218,17 @@
         "price": 74444.48,
         "qty": 0.001,
         "pnl": 0.1164
+      },
+      {
+        "time": "2026-05-28 08:19:05",
+        "side": "BUY",
+        "price": 74560.01,
+        "qty": 0.001
       }
     ]
   },
   "trend": {
-    "price": 74449.8,
+    "price": 74493.37,
     "signal": "FILTERED",
     "position": "BUY",
     "entry_price": 75512.53,
@@ -234,20 +240,20 @@
         "qty": 0.001
       }
     ],
-    "rsi": 32.76,
-    "ma200": 76699.32
+    "rsi": 33.58,
+    "ma200": 76699.54
   },
-  "last_updated": "2026-05-28 08:18:05",
+  "last_updated": "2026-05-28 08:23:05",
   "arb": {
     "status": "CLOSED",
     "funding_rate": 0.0001,
     "annual_rate_pct": 10.95,
-    "price": 74443.8,
+    "price": 74516.6,
     "quantity": 0.01,
     "spot_entry": null,
     "open_time": null,
     "accumulated_funding": 0.0,
-    "next_funding": "2026-05-28 08:00",
+    "next_funding": "2026-05-28 16:00",
     "history": []
   }
 }
