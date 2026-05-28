@@ -1,6 +1,6 @@
 {
   "fast": {
-    "price": 74322.69,
+    "price": 74188.03,
     "signal": "HOLD",
     "position": "BUY",
     "entry_price": 74335.31,
@@ -280,7 +280,7 @@
     ]
   },
   "trend": {
-    "price": 74385.77,
+    "price": 74270.36,
     "signal": "FILTERED",
     "position": "BUY",
     "entry_price": 75512.53,
@@ -292,15 +292,15 @@
         "qty": 0.001
       }
     ],
-    "rsi": 31.73,
-    "ma200": 76675.2
+    "rsi": 30.23,
+    "ma200": 76674.62
   },
-  "last_updated": "2026-05-28 10:18:16",
+  "last_updated": "2026-05-28 10:23:17",
   "arb": {
     "status": "CLOSED",
     "funding_rate": 0.0001,
     "annual_rate_pct": 10.95,
-    "price": 74332.04951123,
+    "price": 74196.91497826,
     "quantity": 0.01,
     "spot_entry": null,
     "open_time": null,
