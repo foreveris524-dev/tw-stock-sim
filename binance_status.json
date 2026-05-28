@@ -1,6 +1,6 @@
 {
   "fast": {
-    "price": 73484.71,
+    "price": 73481.73,
     "signal": "HOLD",
     "position": null,
     "entry_price": null,
@@ -287,7 +287,7 @@
     ]
   },
   "trend": {
-    "price": 73598.0,
+    "price": 73554.01,
     "signal": "FILTERED",
     "position": null,
     "entry_price": null,
@@ -307,10 +307,10 @@
         "reason": "停損"
       }
     ],
-    "rsi": 23.85,
-    "ma200": 76658.56
+    "rsi": 23.61,
+    "ma200": 76658.34
   },
-  "last_updated": "2026-05-28 11:38:25",
+  "last_updated": "2026-05-28 11:43:25",
   "arb": {
     "status": "CLOSED",
     "funding_rate": 0.0001,
