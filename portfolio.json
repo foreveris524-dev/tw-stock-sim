@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-05-28 22:45",
+  "last_updated": "2026-05-29 13:33",
   "initial_capital": 1000000,
-  "cash": 800038,
-  "total_value": 999325,
+  "cash": 900026,
+  "total_value": 1002841,
   "holdings": [
     {
       "code": "2618",
@@ -14,9 +14,9 @@
       "cost": 99974,
       "take_profit": 37.32,
       "stop_loss": 34.47,
-      "value": 99299,
-      "unrealized_pnl": -675,
-      "unrealized_pnl_pct": -0.68
+      "value": 102815,
+      "unrealized_pnl": 2841,
+      "unrealized_pnl_pct": 2.84
     }
   ],
   "plan_for_5_22": {
@@ -910,20 +910,21 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 30.41（現價 30.72 的 99%）｜KD金叉(K73.4/D67.0)，RSI=62.6健康，MACD多頭，MA20上揚(28.58→29.48)"
-    }
-  ],
-  "pending_orders": [
+    },
     {
+      "date": "2026-05-29",
+      "time": "13:33",
+      "action": "ORDER_CANCEL",
       "code": "00981A",
       "name": "統一主動台股增長",
-      "ticker": "00981A.TW",
-      "limit_price": 30.41,
+      "price": 30.41,
       "shares": 3288,
-      "placed_date": "2026-05-28",
-      "placed_time": "22:45",
-      "placed_ts": 1779979553,
-      "reserved_cash": 99988
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-05-28，限價單僅當日有效）"
     }
   ],
+  "pending_orders": [],
   "sl_cooldown": {}
 }
