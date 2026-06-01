@@ -1,24 +1,9 @@
 {
-  "last_updated": "2026-05-29 20:34",
+  "last_updated": "2026-06-02 03:57",
   "initial_capital": 1000000,
-  "cash": 900026,
-  "total_value": 1001435,
-  "holdings": [
-    {
-      "code": "2618",
-      "name": "長榮航",
-      "shares": 2813,
-      "entry_price": 35.54,
-      "entry_date": "2026-05-25",
-      "entry_time": "20:54",
-      "cost": 99974,
-      "take_profit": 37.32,
-      "stop_loss": 34.47,
-      "value": 101409,
-      "unrealized_pnl": 1435,
-      "unrealized_pnl_pct": 1.44
-    }
-  ],
+  "cash": 604626,
+  "total_value": 1006076,
+  "holdings": [],
   "plan_for_5_22": {
     "rationale": "台指期 5/21 大漲 930 點(+2.32%)，不追高；0050、00981A 掛限價等小回；2330 連4跌且背離大盤，暫觀望。",
     "orders": [
@@ -923,8 +908,118 @@
       "pnl": 0,
       "session": "day",
       "reason": "跨日取消（下單日 2026-05-28，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-02",
+      "time": "03:57",
+      "action": "ORDER_PLACE",
+      "code": "2442",
+      "name": "新美齊",
+      "price": 18.71,
+      "shares": 5344,
+      "amount": 99986,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 18.71（現價 18.90 的 99%）｜KD金叉(K73.3/D60.4)，RSI=53.7健康，MACD多頭，MA20上揚(18.45→18.53)"
+    },
+    {
+      "date": "2026-06-02",
+      "time": "03:57",
+      "action": "ORDER_PLACE",
+      "code": "5515",
+      "name": "建國",
+      "price": 41.13,
+      "shares": 2431,
+      "amount": 99987,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 41.13（現價 41.55 的 99%）｜KD金叉(K71.8/D59.3)，RSI=61.9健康，MACD多頭，MA20上揚(39.88→39.99)"
+    },
+    {
+      "date": "2026-06-02",
+      "time": "03:57",
+      "action": "SELL",
+      "code": "2618",
+      "name": "長榮航",
+      "price": 37.7,
+      "shares": 2813,
+      "amount": 106050,
+      "pnl": 6076,
+      "session": "day",
+      "reason": "達停利 TP=37.32（+6.1%）"
+    },
+    {
+      "date": "2026-06-02",
+      "time": "03:57",
+      "action": "ORDER_PLACE",
+      "code": "2610",
+      "name": "華航",
+      "price": 19.35,
+      "shares": 5207,
+      "amount": 100755,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 19.35（現價 19.55 的 99%）｜KD金叉(K70.6/D55.4)，RSI=64.8健康，MACD多頭，MA20上揚(18.39→18.62)"
+    },
+    {
+      "date": "2026-06-02",
+      "time": "03:57",
+      "action": "ORDER_PLACE",
+      "code": "3622",
+      "name": "洋華",
+      "price": 57.82,
+      "shares": 1742,
+      "amount": 100722,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 57.82（現價 58.40 的 99%）｜KD金叉(K68.2/D62.9)，RSI=59.4健康，MACD多頭，MA20上揚(55.4→55.95)"
     }
   ],
-  "pending_orders": [],
+  "pending_orders": [
+    {
+      "code": "2442",
+      "name": "新美齊",
+      "ticker": "2442.TW",
+      "limit_price": 18.71,
+      "shares": 5344,
+      "placed_date": "2026-06-02",
+      "placed_time": "03:57",
+      "placed_ts": 1780343869,
+      "reserved_cash": 99986
+    },
+    {
+      "code": "5515",
+      "name": "建國",
+      "ticker": "5515.TW",
+      "limit_price": 41.13,
+      "shares": 2431,
+      "placed_date": "2026-06-02",
+      "placed_time": "03:57",
+      "placed_ts": 1780343869,
+      "reserved_cash": 99987
+    },
+    {
+      "code": "2610",
+      "name": "華航",
+      "ticker": "2610.TW",
+      "limit_price": 19.35,
+      "shares": 5207,
+      "placed_date": "2026-06-02",
+      "placed_time": "03:57",
+      "placed_ts": 1780343869,
+      "reserved_cash": 100755
+    },
+    {
+      "code": "3622",
+      "name": "洋華",
+      "ticker": "3622.TW",
+      "limit_price": 57.82,
+      "shares": 1742,
+      "placed_date": "2026-06-02",
+      "placed_time": "03:57",
+      "placed_ts": 1780343869,
+      "reserved_cash": 100722
+    }
+  ],
   "sl_cooldown": {}
 }
