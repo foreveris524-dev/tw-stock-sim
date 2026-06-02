@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-02 10:03",
+  "last_updated": "2026-06-02 14:01",
   "initial_capital": 1000000,
   "cash": 100872,
-  "total_value": 1005485,
+  "total_value": 1009054,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 99428,
-      "unrealized_pnl": -559,
-      "unrealized_pnl_pct": -0.56
+      "value": 100157,
+      "unrealized_pnl": 170,
+      "unrealized_pnl_pct": 0.17
     },
     {
       "code": "2610",
@@ -30,9 +30,9 @@
       "cost": 100755,
       "take_profit": 20.32,
       "stop_loss": 18.77,
-      "value": 100235,
-      "unrealized_pnl": -520,
-      "unrealized_pnl_pct": -0.52
+      "value": 101536,
+      "unrealized_pnl": 781,
+      "unrealized_pnl_pct": 0.78
     },
     {
       "code": "3622",
@@ -45,9 +45,24 @@
       "cost": 100722,
       "take_profit": 60.71,
       "stop_loss": 56.09,
-      "value": 101210,
-      "unrealized_pnl": 488,
-      "unrealized_pnl_pct": 0.48
+      "value": 101733,
+      "unrealized_pnl": 1011,
+      "unrealized_pnl_pct": 1.0
+    },
+    {
+      "code": "2442",
+      "name": "新美齊",
+      "ticker": "2442.TW",
+      "shares": 5344,
+      "entry_price": 18.71,
+      "entry_date": "2026-06-02",
+      "entry_time": "14:01",
+      "cost": 99986,
+      "take_profit": 19.65,
+      "stop_loss": 18.15,
+      "value": 101002,
+      "unrealized_pnl": 1016,
+      "unrealized_pnl_pct": 1.02
     }
   ],
   "plan_for_5_22": {
@@ -1123,20 +1138,22 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 68.21（現價 68.90 的 99%）｜KD金叉(K78.2/D70.5)，RSI=59.5健康，MACD多頭，MA20上揚(66.89→67.09)"
+    },
+    {
+      "date": "2026-06-02",
+      "time": "14:01",
+      "action": "BUY",
+      "code": "2442",
+      "name": "新美齊",
+      "price": 18.71,
+      "shares": 5344,
+      "amount": 99986,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=18.71，5分K低點觸及）"
     }
   ],
   "pending_orders": [
-    {
-      "code": "2442",
-      "name": "新美齊",
-      "ticker": "2442.TW",
-      "limit_price": 18.71,
-      "shares": 5344,
-      "placed_date": "2026-06-02",
-      "placed_time": "03:57",
-      "placed_ts": 1780343869,
-      "reserved_cash": 99986
-    },
     {
       "code": "2915",
       "name": "潤泰全",
