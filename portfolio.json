@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-02 14:01",
+  "last_updated": "2026-06-03 14:15",
   "initial_capital": 1000000,
-  "cash": 100872,
-  "total_value": 1009054,
+  "cash": 604626,
+  "total_value": 1017084,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 100157,
-      "unrealized_pnl": 170,
-      "unrealized_pnl_pct": 0.17
+      "value": 100036,
+      "unrealized_pnl": 49,
+      "unrealized_pnl_pct": 0.05
     },
     {
       "code": "2610",
@@ -30,9 +30,9 @@
       "cost": 100755,
       "take_profit": 20.32,
       "stop_loss": 18.77,
-      "value": 101536,
-      "unrealized_pnl": 781,
-      "unrealized_pnl_pct": 0.78
+      "value": 103880,
+      "unrealized_pnl": 3125,
+      "unrealized_pnl_pct": 3.1
     },
     {
       "code": "3622",
@@ -45,9 +45,9 @@
       "cost": 100722,
       "take_profit": 60.71,
       "stop_loss": 56.09,
-      "value": 101733,
-      "unrealized_pnl": 1011,
-      "unrealized_pnl_pct": 1.0
+      "value": 104868,
+      "unrealized_pnl": 4146,
+      "unrealized_pnl_pct": 4.12
     },
     {
       "code": "2442",
@@ -60,9 +60,9 @@
       "cost": 99986,
       "take_profit": 19.65,
       "stop_loss": 18.15,
-      "value": 101002,
-      "unrealized_pnl": 1016,
-      "unrealized_pnl_pct": 1.02
+      "value": 103674,
+      "unrealized_pnl": 3688,
+      "unrealized_pnl_pct": 3.69
     }
   ],
   "plan_for_5_22": {
@@ -1151,64 +1151,73 @@
       "pnl": 0,
       "session": "day",
       "reason": "限價單成交（限價=18.71，5分K低點觸及）"
-    }
-  ],
-  "pending_orders": [
+    },
     {
+      "date": "2026-06-03",
+      "time": "14:15",
+      "action": "ORDER_CANCEL",
       "code": "2915",
       "name": "潤泰全",
-      "ticker": "2915.TW",
-      "limit_price": 44.9,
+      "price": 44.9,
       "shares": 2244,
-      "placed_date": "2026-06-02",
-      "placed_time": "10:03",
-      "placed_ts": 1780365783,
-      "reserved_cash": 100756
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-02，限價單僅當日有效）"
     },
     {
+      "date": "2026-06-03",
+      "time": "14:15",
+      "action": "ORDER_CANCEL",
       "code": "2618",
       "name": "長榮航",
-      "ticker": "2618.TW",
-      "limit_price": 36.58,
+      "price": 36.58,
       "shares": 2754,
-      "placed_date": "2026-06-02",
-      "placed_time": "10:03",
-      "placed_ts": 1780365783,
-      "reserved_cash": 100741
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-02，限價單僅當日有效）"
     },
     {
+      "date": "2026-06-03",
+      "time": "14:15",
+      "action": "ORDER_CANCEL",
       "code": "1446",
       "name": "宏和",
-      "ticker": "1446.TW",
-      "limit_price": 15.79,
+      "price": 15.79,
       "shares": 6382,
-      "placed_date": "2026-06-02",
-      "placed_time": "10:03",
-      "placed_ts": 1780365783,
-      "reserved_cash": 100772
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-02，限價單僅當日有效）"
     },
     {
+      "date": "2026-06-03",
+      "time": "14:15",
+      "action": "ORDER_CANCEL",
       "code": "2603",
       "name": "長榮",
-      "ticker": "2603.TW",
-      "limit_price": 220.77,
+      "price": 220.77,
       "shares": 456,
-      "placed_date": "2026-06-02",
-      "placed_time": "10:03",
-      "placed_ts": 1780365783,
-      "reserved_cash": 100671
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-02，限價單僅當日有效）"
     },
     {
+      "date": "2026-06-03",
+      "time": "14:15",
+      "action": "ORDER_CANCEL",
       "code": "2636",
       "name": "台驊控股",
-      "ticker": "2636.TW",
-      "limit_price": 68.21,
+      "price": 68.21,
       "shares": 1478,
-      "placed_date": "2026-06-02",
-      "placed_time": "10:03",
-      "placed_ts": 1780365783,
-      "reserved_cash": 100814
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-02，限價單僅當日有效）"
     }
   ],
+  "pending_orders": [],
   "sl_cooldown": {}
 }
