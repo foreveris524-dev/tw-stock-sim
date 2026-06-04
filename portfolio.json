@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-03 14:15",
+  "last_updated": "2026-06-04 14:06",
   "initial_capital": 1000000,
-  "cash": 604626,
-  "total_value": 1017084,
+  "cash": 610691,
+  "total_value": 1019686,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 100036,
-      "unrealized_pnl": 49,
-      "unrealized_pnl_pct": 0.05
+      "value": 99914,
+      "unrealized_pnl": -73,
+      "unrealized_pnl_pct": -0.07
     },
     {
       "code": "2610",
@@ -30,24 +30,9 @@
       "cost": 100755,
       "take_profit": 20.32,
       "stop_loss": 18.77,
-      "value": 103880,
-      "unrealized_pnl": 3125,
-      "unrealized_pnl_pct": 3.1
-    },
-    {
-      "code": "3622",
-      "name": "洋華",
-      "ticker": "3622.TW",
-      "shares": 1742,
-      "entry_price": 57.82,
-      "entry_date": "2026-06-02",
-      "entry_time": "10:03",
-      "cost": 100722,
-      "take_profit": 60.71,
-      "stop_loss": 56.09,
-      "value": 104868,
-      "unrealized_pnl": 4146,
-      "unrealized_pnl_pct": 4.12
+      "value": 103619,
+      "unrealized_pnl": 2864,
+      "unrealized_pnl_pct": 2.84
     },
     {
       "code": "2442",
@@ -60,9 +45,9 @@
       "cost": 99986,
       "take_profit": 19.65,
       "stop_loss": 18.15,
-      "value": 103674,
-      "unrealized_pnl": 3688,
-      "unrealized_pnl_pct": 3.69
+      "value": 104742,
+      "unrealized_pnl": 4756,
+      "unrealized_pnl_pct": 4.76
     }
   ],
   "plan_for_5_22": {
@@ -1216,8 +1201,46 @@
       "pnl": 0,
       "session": "day",
       "reason": "跨日取消（下單日 2026-06-02，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-04",
+      "time": "14:06",
+      "action": "ORDER_PLACE",
+      "code": "6625",
+      "name": "必應",
+      "price": 73.95,
+      "shares": 1362,
+      "amount": 100720,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 73.95（現價 74.70 的 99%）｜KD金叉(K63.3/D50.9)，RSI=56.9健康，MACD多頭，MA20上揚(72.9→72.98)"
+    },
+    {
+      "date": "2026-06-04",
+      "time": "14:06",
+      "action": "SELL",
+      "code": "3622",
+      "name": "洋華",
+      "price": 61.3,
+      "shares": 1742,
+      "amount": 106785,
+      "pnl": 6062,
+      "session": "day",
+      "reason": "達停利 TP=60.71（+6.0%）"
     }
   ],
-  "pending_orders": [],
+  "pending_orders": [
+    {
+      "code": "6625",
+      "name": "必應",
+      "ticker": "6625.TW",
+      "limit_price": 73.95,
+      "shares": 1362,
+      "placed_date": "2026-06-04",
+      "placed_time": "14:06",
+      "placed_ts": 1780553179,
+      "reserved_cash": 100720
+    }
+  ],
   "sl_cooldown": {}
 }
