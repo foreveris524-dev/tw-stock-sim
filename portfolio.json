@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-04 14:06",
+  "last_updated": "2026-06-05 13:46",
   "initial_capital": 1000000,
-  "cash": 610691,
-  "total_value": 1019686,
+  "cash": 715345,
+  "total_value": 1021925,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 99914,
-      "unrealized_pnl": -73,
-      "unrealized_pnl_pct": -0.07
+      "value": 100036,
+      "unrealized_pnl": 49,
+      "unrealized_pnl_pct": 0.05
     },
     {
       "code": "2610",
@@ -30,24 +30,9 @@
       "cost": 100755,
       "take_profit": 20.32,
       "stop_loss": 18.77,
-      "value": 103619,
-      "unrealized_pnl": 2864,
-      "unrealized_pnl_pct": 2.84
-    },
-    {
-      "code": "2442",
-      "name": "新美齊",
-      "ticker": "2442.TW",
-      "shares": 5344,
-      "entry_price": 18.71,
-      "entry_date": "2026-06-02",
-      "entry_time": "14:01",
-      "cost": 99986,
-      "take_profit": 19.65,
-      "stop_loss": 18.15,
-      "value": 104742,
-      "unrealized_pnl": 4756,
-      "unrealized_pnl_pct": 4.76
+      "value": 104400,
+      "unrealized_pnl": 3645,
+      "unrealized_pnl_pct": 3.62
     }
   ],
   "plan_for_5_22": {
@@ -1227,6 +1212,45 @@
       "pnl": 6062,
       "session": "day",
       "reason": "達停利 TP=60.71（+6.0%）"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "13:46",
+      "action": "ORDER_CANCEL",
+      "code": "6625",
+      "name": "必應",
+      "price": 73.95,
+      "shares": 1362,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-04，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "13:46",
+      "action": "SELL",
+      "code": "2442",
+      "name": "新美齊",
+      "price": 19.85,
+      "shares": 5344,
+      "amount": 106078,
+      "pnl": 6092,
+      "session": "day",
+      "reason": "達停利 TP=19.65（+6.1%）"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "13:46",
+      "action": "ORDER_PLACE",
+      "code": "6625",
+      "name": "必應",
+      "price": 73.75,
+      "shares": 1385,
+      "amount": 102144,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 73.75（現價 74.50 的 99%）｜KD金叉(K68.7/D56.8)，RSI=55.1健康，MACD多頭，MA20上揚(72.91→73.0)"
     }
   ],
   "pending_orders": [
@@ -1234,12 +1258,12 @@
       "code": "6625",
       "name": "必應",
       "ticker": "6625.TW",
-      "limit_price": 73.95,
-      "shares": 1362,
-      "placed_date": "2026-06-04",
-      "placed_time": "14:06",
-      "placed_ts": 1780553179,
-      "reserved_cash": 100720
+      "limit_price": 73.75,
+      "shares": 1385,
+      "placed_date": "2026-06-05",
+      "placed_time": "13:46",
+      "placed_ts": 1780638403,
+      "reserved_cash": 102144
     }
   ],
   "sl_cooldown": {}
