@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-05 16:58",
+  "last_updated": "2026-06-08 14:05",
   "initial_capital": 1000000,
-  "cash": 715345,
-  "total_value": 1021405,
+  "cash": 204432,
+  "total_value": 1015624,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 100036,
-      "unrealized_pnl": 49,
-      "unrealized_pnl_pct": 0.05
+      "value": 98942,
+      "unrealized_pnl": -1045,
+      "unrealized_pnl_pct": -1.05
     },
     {
       "code": "2610",
@@ -30,9 +30,9 @@
       "cost": 100755,
       "take_profit": 20.32,
       "stop_loss": 18.77,
-      "value": 103880,
-      "unrealized_pnl": 3125,
-      "unrealized_pnl_pct": 3.1
+      "value": 99193,
+      "unrealized_pnl": -1562,
+      "unrealized_pnl_pct": -1.55
     }
   ],
   "plan_for_5_22": {
@@ -1251,19 +1251,165 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 73.75（現價 74.50 的 99%）｜KD金叉(K68.7/D56.8)，RSI=55.1健康，MACD多頭，MA20上揚(72.91→73.0)"
+    },
+    {
+      "date": "2026-06-08",
+      "time": "14:05",
+      "action": "ORDER_CANCEL",
+      "code": "6625",
+      "name": "必應",
+      "price": 73.75,
+      "shares": 1385,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-05，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-08",
+      "time": "14:05",
+      "action": "ORDER_PLACE",
+      "code": "9904",
+      "name": "寶成",
+      "price": 25.64,
+      "shares": 3985,
+      "amount": 102175,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 25.64（現價 25.90 的 99%）｜KD金叉(K66.6/D61.4)，RSI=45.7健康，MACD多頭，MA20上揚(25.76→25.89)"
+    },
+    {
+      "date": "2026-06-08",
+      "time": "14:05",
+      "action": "ORDER_PLACE",
+      "code": "6625",
+      "name": "必應",
+      "price": 73.16,
+      "shares": 1396,
+      "amount": 102131,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 73.16（現價 73.90 的 99%）｜KD金叉(K67.7/D60.9)，RSI=50.4健康，MACD多頭，MA20上揚(72.94→73.04)"
+    },
+    {
+      "date": "2026-06-08",
+      "time": "14:05",
+      "action": "ORDER_PLACE",
+      "code": "4763",
+      "name": "材料*-KY",
+      "price": 41.93,
+      "shares": 2437,
+      "amount": 102183,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 41.93（現價 42.35 的 99%）｜KD金叉(K56.6/D55.1)，RSI=49.0健康，MACD多頭，MA20上揚(41.98→42.25)"
+    },
+    {
+      "date": "2026-06-08",
+      "time": "14:05",
+      "action": "ORDER_PLACE",
+      "code": "1615",
+      "name": "大山",
+      "price": 44.25,
+      "shares": 2309,
+      "amount": 102173,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 44.25（現價 44.70 的 99%）｜KD金叉(K60.2/D60.0)，RSI=51.7健康，MACD多頭，MA20上揚(43.7→43.73)"
+    },
+    {
+      "date": "2026-06-08",
+      "time": "14:05",
+      "action": "ORDER_PLACE",
+      "code": "9946",
+      "name": "三發地產",
+      "price": 16.68,
+      "shares": 6127,
+      "amount": 102198,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 16.68（現價 16.85 的 99%）｜KD金叉(K73.8/D66.4)，RSI=55.5健康，MACD多頭，MA20上揚(16.47→16.69)"
+    },
+    {
+      "date": "2026-06-08",
+      "time": "14:05",
+      "action": "ORDER_PLACE",
+      "code": "9945",
+      "name": "潤泰新",
+      "price": 24.35,
+      "shares": 4197,
+      "amount": 102197,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 24.35（現價 24.60 的 99%）｜KD金叉(K74.2/D68.1)，RSI=56.8健康，MACD多頭，MA20上揚(23.41→23.71)"
     }
   ],
   "pending_orders": [
     {
+      "code": "9904",
+      "name": "寶成",
+      "ticker": "9904.TW",
+      "limit_price": 25.64,
+      "shares": 3985,
+      "placed_date": "2026-06-08",
+      "placed_time": "14:05",
+      "placed_ts": 1780898728,
+      "reserved_cash": 102175
+    },
+    {
       "code": "6625",
       "name": "必應",
       "ticker": "6625.TW",
-      "limit_price": 73.75,
-      "shares": 1385,
-      "placed_date": "2026-06-05",
-      "placed_time": "13:46",
-      "placed_ts": 1780638403,
-      "reserved_cash": 102144
+      "limit_price": 73.16,
+      "shares": 1396,
+      "placed_date": "2026-06-08",
+      "placed_time": "14:05",
+      "placed_ts": 1780898728,
+      "reserved_cash": 102131
+    },
+    {
+      "code": "4763",
+      "name": "材料*-KY",
+      "ticker": "4763.TW",
+      "limit_price": 41.93,
+      "shares": 2437,
+      "placed_date": "2026-06-08",
+      "placed_time": "14:05",
+      "placed_ts": 1780898728,
+      "reserved_cash": 102183
+    },
+    {
+      "code": "1615",
+      "name": "大山",
+      "ticker": "1615.TW",
+      "limit_price": 44.25,
+      "shares": 2309,
+      "placed_date": "2026-06-08",
+      "placed_time": "14:05",
+      "placed_ts": 1780898728,
+      "reserved_cash": 102173
+    },
+    {
+      "code": "9946",
+      "name": "三發地產",
+      "ticker": "9946.TW",
+      "limit_price": 16.68,
+      "shares": 6127,
+      "placed_date": "2026-06-08",
+      "placed_time": "14:05",
+      "placed_ts": 1780898728,
+      "reserved_cash": 102198
+    },
+    {
+      "code": "9945",
+      "name": "潤泰新",
+      "ticker": "9945.TW",
+      "limit_price": 24.35,
+      "shares": 4197,
+      "placed_date": "2026-06-08",
+      "placed_time": "14:05",
+      "placed_ts": 1780898728,
+      "reserved_cash": 102197
     }
   ],
   "sl_cooldown": {}
