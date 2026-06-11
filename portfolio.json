@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-10 17:33",
+  "last_updated": "2026-06-11 14:04",
   "initial_capital": 1000000,
-  "cash": 306591,
-  "total_value": 1023819,
+  "cash": 510952,
+  "total_value": 1024513,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 104533,
-      "unrealized_pnl": 4546,
-      "unrealized_pnl_pct": 4.55
+      "value": 105748,
+      "unrealized_pnl": 5761,
+      "unrealized_pnl_pct": 5.76
     },
     {
       "code": "2610",
@@ -30,9 +30,9 @@
       "cost": 100755,
       "take_profit": 20.32,
       "stop_loss": 18.77,
-      "value": 101797,
-      "unrealized_pnl": 1042,
-      "unrealized_pnl_pct": 1.03
+      "value": 101276,
+      "unrealized_pnl": 521,
+      "unrealized_pnl_pct": 0.52
     }
   ],
   "plan_for_5_22": {
@@ -1693,6 +1693,110 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 29.35（現價 29.65 的 99%）｜KD金叉(K79.9/D75.9)，RSI=54.0健康，MACD多頭，MA20上揚(29.12→29.17)"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "14:04",
+      "action": "ORDER_CANCEL",
+      "code": "9904",
+      "name": "寶成",
+      "price": 26.23,
+      "shares": 3895,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-10，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "14:04",
+      "action": "ORDER_CANCEL",
+      "code": "6625",
+      "name": "必應",
+      "price": 74.05,
+      "shares": 1380,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-10，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "14:04",
+      "action": "ORDER_CANCEL",
+      "code": "4763",
+      "name": "材料*-KY",
+      "price": 43.76,
+      "shares": 2335,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-10，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "14:04",
+      "action": "ORDER_CANCEL",
+      "code": "2607",
+      "name": "榮運",
+      "price": 48.86,
+      "shares": 2091,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-10，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "14:04",
+      "action": "ORDER_CANCEL",
+      "code": "2617",
+      "name": "台航",
+      "price": 29.35,
+      "shares": 3482,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-10，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "14:04",
+      "action": "ORDER_PLACE",
+      "code": "9904",
+      "name": "寶成",
+      "price": 26.04,
+      "shares": 3924,
+      "amount": 102181,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 26.04（現價 26.30 的 99%）｜KD金叉(K69.7/D68.9)，RSI=51.3健康，MACD多頭，MA20上揚(25.86→25.97)"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "14:04",
+      "action": "ORDER_PLACE",
+      "code": "4763",
+      "name": "材料*-KY",
+      "price": 43.31,
+      "shares": 2359,
+      "amount": 102168,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 43.31（現價 43.75 的 99%）｜KD金叉(K63.2/D62.4)，RSI=53.0健康，MACD多頭，MA20上揚(42.14→42.64)"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "14:04",
+      "action": "ORDER_PLACE",
+      "code": "2607",
+      "name": "榮運",
+      "price": 49.2,
+      "shares": 2077,
+      "amount": 102188,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 49.20（現價 49.70 的 99%）｜KD金叉(K79.1/D73.9)，RSI=58.9健康，MACD多頭，MA20上揚(47.86→48.26)"
     }
   ],
   "pending_orders": [
@@ -1700,56 +1804,34 @@
       "code": "9904",
       "name": "寶成",
       "ticker": "9904.TW",
-      "limit_price": 26.23,
-      "shares": 3895,
-      "placed_date": "2026-06-10",
-      "placed_time": "13:46",
-      "placed_ts": 1781070405,
-      "reserved_cash": 102166
-    },
-    {
-      "code": "6625",
-      "name": "必應",
-      "ticker": "6625.TW",
-      "limit_price": 74.05,
-      "shares": 1380,
-      "placed_date": "2026-06-10",
-      "placed_time": "13:46",
-      "placed_ts": 1781070405,
-      "reserved_cash": 102189
+      "limit_price": 26.04,
+      "shares": 3924,
+      "placed_date": "2026-06-11",
+      "placed_time": "14:04",
+      "placed_ts": 1781157862,
+      "reserved_cash": 102181
     },
     {
       "code": "4763",
       "name": "材料*-KY",
       "ticker": "4763.TW",
-      "limit_price": 43.76,
-      "shares": 2335,
-      "placed_date": "2026-06-10",
-      "placed_time": "13:46",
-      "placed_ts": 1781070405,
-      "reserved_cash": 102180
+      "limit_price": 43.31,
+      "shares": 2359,
+      "placed_date": "2026-06-11",
+      "placed_time": "14:04",
+      "placed_ts": 1781157862,
+      "reserved_cash": 102168
     },
     {
       "code": "2607",
       "name": "榮運",
       "ticker": "2607.TW",
-      "limit_price": 48.86,
-      "shares": 2091,
-      "placed_date": "2026-06-10",
-      "placed_time": "13:46",
-      "placed_ts": 1781070405,
-      "reserved_cash": 102166
-    },
-    {
-      "code": "2617",
-      "name": "台航",
-      "ticker": "2617.TW",
-      "limit_price": 29.35,
-      "shares": 3482,
-      "placed_date": "2026-06-10",
-      "placed_time": "13:46",
-      "placed_ts": 1781070405,
-      "reserved_cash": 102197
+      "limit_price": 49.2,
+      "shares": 2077,
+      "placed_date": "2026-06-11",
+      "placed_time": "14:04",
+      "placed_ts": 1781157862,
+      "reserved_cash": 102188
     }
   ],
   "sl_cooldown": {}
