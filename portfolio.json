@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-15 09:04",
+  "last_updated": "2026-06-15 11:32",
   "initial_capital": 1000000,
   "cash": 308640,
-  "total_value": 1030676,
+  "total_value": 1030924,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,24 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 106964,
-      "unrealized_pnl": 6977,
-      "unrealized_pnl_pct": 6.98
+      "value": 107450,
+      "unrealized_pnl": 7463,
+      "unrealized_pnl_pct": 7.46
+    },
+    {
+      "code": "2204",
+      "name": "中華",
+      "ticker": "2204.TW",
+      "shares": 1835,
+      "entry_price": 56.03,
+      "entry_date": "2026-06-15",
+      "entry_time": "11:32",
+      "cost": 102815,
+      "take_profit": 58.83,
+      "stop_loss": 54.35,
+      "value": 102577,
+      "unrealized_pnl": -238,
+      "unrealized_pnl_pct": -0.23
     }
   ],
   "plan_for_5_22": {
@@ -1990,6 +2005,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 24.35（現價 24.60 的 99%）｜KD金叉(K78.0/D77.6)，RSI=61.1健康，MACD多頭，MA20上揚(23.11→23.33)"
+    },
+    {
+      "date": "2026-06-15",
+      "time": "11:32",
+      "action": "BUY",
+      "code": "2204",
+      "name": "中華",
+      "price": 56.03,
+      "shares": 1835,
+      "amount": 102815,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=56.03，5分K低點觸及）"
     }
   ],
   "pending_orders": [
@@ -2025,17 +2053,6 @@
       "placed_time": "09:04",
       "placed_ts": 1781485452,
       "reserved_cash": 102190
-    },
-    {
-      "code": "2204",
-      "name": "中華",
-      "ticker": "2204.TW",
-      "limit_price": 56.03,
-      "shares": 1835,
-      "placed_date": "2026-06-15",
-      "placed_time": "09:04",
-      "placed_ts": 1781485452,
-      "reserved_cash": 102815
     },
     {
       "code": "8463",
