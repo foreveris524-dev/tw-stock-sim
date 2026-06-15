@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-15 11:32",
+  "last_updated": "2026-06-15 14:36",
   "initial_capital": 1000000,
   "cash": 308640,
-  "total_value": 1030924,
+  "total_value": 1030741,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 107450,
-      "unrealized_pnl": 7463,
-      "unrealized_pnl_pct": 7.46
+      "value": 106842,
+      "unrealized_pnl": 6855,
+      "unrealized_pnl_pct": 6.86
     },
     {
       "code": "2204",
@@ -30,9 +30,24 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 102577,
-      "unrealized_pnl": -238,
-      "unrealized_pnl_pct": -0.23
+      "value": 102210,
+      "unrealized_pnl": -605,
+      "unrealized_pnl_pct": -0.59
+    },
+    {
+      "code": "8463",
+      "name": "潤泰材",
+      "ticker": "8463.TW",
+      "shares": 4659,
+      "entry_price": 22.08,
+      "entry_date": "2026-06-15",
+      "entry_time": "14:36",
+      "cost": 102871,
+      "take_profit": 23.18,
+      "stop_loss": 21.42,
+      "value": 103663,
+      "unrealized_pnl": 792,
+      "unrealized_pnl_pct": 0.77
     }
   ],
   "plan_for_5_22": {
@@ -2018,6 +2033,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "限價單成交（限價=56.03，5分K低點觸及）"
+    },
+    {
+      "date": "2026-06-15",
+      "time": "14:36",
+      "action": "BUY",
+      "code": "8463",
+      "name": "潤泰材",
+      "price": 22.08,
+      "shares": 4659,
+      "amount": 102871,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=22.08，5分K低點觸及）"
     }
   ],
   "pending_orders": [
@@ -2053,17 +2081,6 @@
       "placed_time": "09:04",
       "placed_ts": 1781485452,
       "reserved_cash": 102190
-    },
-    {
-      "code": "8463",
-      "name": "潤泰材",
-      "ticker": "8463.TW",
-      "limit_price": 22.08,
-      "shares": 4659,
-      "placed_date": "2026-06-15",
-      "placed_time": "09:04",
-      "placed_ts": 1781485452,
-      "reserved_cash": 102871
     },
     {
       "code": "2010",
