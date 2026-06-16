@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-15 14:36",
+  "last_updated": "2026-06-16 12:04",
   "initial_capital": 1000000,
-  "cash": 308640,
-  "total_value": 1030741,
+  "cash": 410371,
+  "total_value": 1029238,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 106842,
-      "unrealized_pnl": 6855,
-      "unrealized_pnl_pct": 6.86
+      "value": 106356,
+      "unrealized_pnl": 6369,
+      "unrealized_pnl_pct": 6.37
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 102210,
-      "unrealized_pnl": -605,
-      "unrealized_pnl_pct": -0.59
+      "value": 101659,
+      "unrealized_pnl": -1156,
+      "unrealized_pnl_pct": -1.12
     },
     {
       "code": "8463",
@@ -45,9 +45,9 @@
       "cost": 102871,
       "take_profit": 23.18,
       "stop_loss": 21.42,
-      "value": 103663,
-      "unrealized_pnl": 792,
-      "unrealized_pnl_pct": 0.77
+      "value": 103197,
+      "unrealized_pnl": 326,
+      "unrealized_pnl_pct": 0.32
     }
   ],
   "plan_for_5_22": {
@@ -2046,52 +2046,132 @@
       "pnl": 0,
       "session": "day",
       "reason": "限價單成交（限價=22.08，5分K低點觸及）"
+    },
+    {
+      "date": "2026-06-16",
+      "time": "12:04",
+      "action": "ORDER_CANCEL",
+      "code": "9904",
+      "name": "寶成",
+      "price": 26.38,
+      "shares": 3873,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-15，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-16",
+      "time": "12:04",
+      "action": "ORDER_CANCEL",
+      "code": "4763",
+      "name": "材料*-KY",
+      "price": 44.01,
+      "shares": 2321,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-15，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-16",
+      "time": "12:04",
+      "action": "ORDER_CANCEL",
+      "code": "2006",
+      "name": "東和鋼鐵",
+      "price": 67.81,
+      "shares": 1507,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-15，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-16",
+      "time": "12:04",
+      "action": "ORDER_CANCEL",
+      "code": "2010",
+      "name": "春源",
+      "price": 24.35,
+      "shares": 4225,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-15，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-16",
+      "time": "12:04",
+      "action": "ORDER_PLACE",
+      "code": "4763",
+      "name": "材料*-KY",
+      "price": 44.55,
+      "shares": 2302,
+      "amount": 102554,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 44.55（現價 45.00 的 99%）｜KD金叉(K71.3/D66.9)，RSI=57.3健康，MACD多頭，MA20上揚(42.42→43.11)"
+    },
+    {
+      "date": "2026-06-16",
+      "time": "12:04",
+      "action": "ORDER_PLACE",
+      "code": "2528",
+      "name": "皇普",
+      "price": 22.13,
+      "shares": 4635,
+      "amount": 102573,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 22.13（現價 22.35 的 99%）｜KD金叉(K63.2/D61.0)，RSI=51.9健康，MACD多頭，MA20上揚(21.76→21.78)"
+    },
+    {
+      "date": "2026-06-16",
+      "time": "12:04",
+      "action": "ORDER_PLACE",
+      "code": "2006",
+      "name": "東和鋼鐵",
+      "price": 67.72,
+      "shares": 1514,
+      "amount": 102528,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 67.72（現價 68.40 的 99%）｜KD金叉(K75.4/D74.2)，RSI=55.4健康，MACD多頭，MA20上揚(66.16→66.79)"
     }
   ],
   "pending_orders": [
     {
-      "code": "9904",
-      "name": "寶成",
-      "ticker": "9904.TW",
-      "limit_price": 26.38,
-      "shares": 3873,
-      "placed_date": "2026-06-15",
-      "placed_time": "09:04",
-      "placed_ts": 1781485452,
-      "reserved_cash": 102170
-    },
-    {
       "code": "4763",
       "name": "材料*-KY",
       "ticker": "4763.TW",
-      "limit_price": 44.01,
-      "shares": 2321,
-      "placed_date": "2026-06-15",
-      "placed_time": "09:04",
-      "placed_ts": 1781485452,
-      "reserved_cash": 102147
+      "limit_price": 44.55,
+      "shares": 2302,
+      "placed_date": "2026-06-16",
+      "placed_time": "12:04",
+      "placed_ts": 1781582650,
+      "reserved_cash": 102554
+    },
+    {
+      "code": "2528",
+      "name": "皇普",
+      "ticker": "2528.TW",
+      "limit_price": 22.13,
+      "shares": 4635,
+      "placed_date": "2026-06-16",
+      "placed_time": "12:04",
+      "placed_ts": 1781582650,
+      "reserved_cash": 102573
     },
     {
       "code": "2006",
       "name": "東和鋼鐵",
       "ticker": "2006.TW",
-      "limit_price": 67.81,
-      "shares": 1507,
-      "placed_date": "2026-06-15",
-      "placed_time": "09:04",
-      "placed_ts": 1781485452,
-      "reserved_cash": 102190
-    },
-    {
-      "code": "2010",
-      "name": "春源",
-      "ticker": "2010.TW",
-      "limit_price": 24.35,
-      "shares": 4225,
-      "placed_date": "2026-06-15",
-      "placed_time": "09:04",
-      "placed_ts": 1781485452,
-      "reserved_cash": 102879
+      "limit_price": 67.72,
+      "shares": 1514,
+      "placed_date": "2026-06-16",
+      "placed_time": "12:04",
+      "placed_ts": 1781582650,
+      "reserved_cash": 102528
     }
   ],
   "sl_cooldown": {}
