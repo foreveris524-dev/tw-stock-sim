@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-17 14:26",
+  "last_updated": "2026-06-18 14:08",
   "initial_capital": 1000000,
-  "cash": 615494,
-  "total_value": 1028772,
+  "cash": 509607,
+  "total_value": 1020840,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 104655,
-      "unrealized_pnl": 4668,
-      "unrealized_pnl_pct": 4.67
+      "value": 102102,
+      "unrealized_pnl": 2115,
+      "unrealized_pnl_pct": 2.12
     },
     {
       "code": "2204",
@@ -30,24 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 103127,
-      "unrealized_pnl": 312,
-      "unrealized_pnl_pct": 0.3
-    },
-    {
-      "code": "8463",
-      "name": "潤泰材",
-      "ticker": "8463.TW",
-      "shares": 4659,
-      "entry_price": 22.08,
-      "entry_date": "2026-06-15",
-      "entry_time": "14:36",
-      "cost": 102871,
-      "take_profit": 23.18,
-      "stop_loss": 21.42,
-      "value": 102964,
-      "unrealized_pnl": 93,
-      "unrealized_pnl_pct": 0.09
+      "value": 101475,
+      "unrealized_pnl": -1340,
+      "unrealized_pnl_pct": -1.3
     }
   ],
   "plan_for_5_22": {
@@ -2215,6 +2200,71 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 44.10（現價 44.55 的 99%）｜KD金叉(K69.7/D67.6)，RSI=55.3健康，MACD多頭，MA20上揚(42.56→43.27)"
+    },
+    {
+      "date": "2026-06-18",
+      "time": "14:08",
+      "action": "ORDER_CANCEL",
+      "code": "4763",
+      "name": "材料*-KY",
+      "price": 44.1,
+      "shares": 2325,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-17，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-18",
+      "time": "14:08",
+      "action": "ORDER_PLACE",
+      "code": "4763",
+      "name": "材料*-KY",
+      "price": 43.86,
+      "shares": 2338,
+      "amount": 102545,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 43.86（現價 44.30 的 99%）｜KD金叉(K67.9/D67.7)，RSI=53.8健康，MACD多頭，MA20上揚(42.64→43.37)"
+    },
+    {
+      "date": "2026-06-18",
+      "time": "14:08",
+      "action": "ORDER_PLACE",
+      "code": "2528",
+      "name": "皇普",
+      "price": 22.18,
+      "shares": 4624,
+      "amount": 102560,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 22.18（現價 22.40 的 99%）｜KD金叉(K62.9/D61.6)，RSI=52.2健康，MACD多頭，MA20上揚(21.75→21.8)"
+    },
+    {
+      "date": "2026-06-18",
+      "time": "14:08",
+      "action": "ORDER_PLACE",
+      "code": "1436",
+      "name": "華友聯",
+      "price": 47.02,
+      "shares": 2181,
+      "amount": 102551,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 47.02（現價 47.50 的 99%）｜KD金叉(K60.2/D53.3)，RSI=55.5健康，MACD多頭，MA20上揚(45.42→45.55)"
+    },
+    {
+      "date": "2026-06-18",
+      "time": "14:08",
+      "action": "SELL",
+      "code": "8463",
+      "name": "潤泰材",
+      "price": 21.3,
+      "shares": 4659,
+      "amount": 99237,
+      "pnl": -3634,
+      "session": "day",
+      "reason": "達停損 SL=21.42（-3.5%）"
     }
   ],
   "pending_orders": [
@@ -2222,13 +2272,42 @@
       "code": "4763",
       "name": "材料*-KY",
       "ticker": "4763.TW",
-      "limit_price": 44.1,
-      "shares": 2325,
-      "placed_date": "2026-06-17",
-      "placed_time": "14:26",
-      "placed_ts": 1781677575,
-      "reserved_cash": 102532
+      "limit_price": 43.86,
+      "shares": 2338,
+      "placed_date": "2026-06-18",
+      "placed_time": "14:08",
+      "placed_ts": 1781762891,
+      "reserved_cash": 102545
+    },
+    {
+      "code": "2528",
+      "name": "皇普",
+      "ticker": "2528.TW",
+      "limit_price": 22.18,
+      "shares": 4624,
+      "placed_date": "2026-06-18",
+      "placed_time": "14:08",
+      "placed_ts": 1781762891,
+      "reserved_cash": 102560
+    },
+    {
+      "code": "1436",
+      "name": "華友聯",
+      "ticker": "1436.TW",
+      "limit_price": 47.02,
+      "shares": 2181,
+      "placed_date": "2026-06-18",
+      "placed_time": "14:08",
+      "placed_ts": 1781762891,
+      "reserved_cash": 102551
     }
   ],
-  "sl_cooldown": {}
+  "sl_cooldown": {
+    "8463": {
+      "sl_dates": [
+        "2026-06-18"
+      ],
+      "cooldown_until": null
+    }
+  }
 }
