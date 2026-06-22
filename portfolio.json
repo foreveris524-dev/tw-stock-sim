@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-22 12:17",
+  "last_updated": "2026-06-22 12:32",
   "initial_capital": 1000000,
   "cash": 58,
-  "total_value": 1022015,
+  "total_value": 1021422,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 101980,
-      "unrealized_pnl": 1993,
-      "unrealized_pnl_pct": 1.99
+      "value": 101616,
+      "unrealized_pnl": 1629,
+      "unrealized_pnl_pct": 1.63
     },
     {
       "code": "2204",
@@ -45,9 +45,9 @@
       "cost": 102134,
       "take_profit": 46.83,
       "stop_loss": 43.26,
-      "value": 103050,
-      "unrealized_pnl": 916,
-      "unrealized_pnl_pct": 0.9
+      "value": 102821,
+      "unrealized_pnl": 687,
+      "unrealized_pnl_pct": 0.67
     },
     {
       "code": "1419",
