@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-22 13:32",
+  "last_updated": "2026-06-22 14:40",
   "initial_capital": 1000000,
   "cash": 58,
-  "total_value": 1022085,
+  "total_value": 1024047,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 101616,
-      "unrealized_pnl": 1629,
-      "unrealized_pnl_pct": 1.63
+      "value": 102102,
+      "unrealized_pnl": 2115,
+      "unrealized_pnl_pct": 2.12
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 100925,
-      "unrealized_pnl": -1890,
-      "unrealized_pnl_pct": -1.84
+      "value": 101108,
+      "unrealized_pnl": -1707,
+      "unrealized_pnl_pct": -1.66
     },
     {
       "code": "4763",
@@ -45,9 +45,9 @@
       "cost": 102134,
       "take_profit": 46.83,
       "stop_loss": 43.26,
-      "value": 103851,
-      "unrealized_pnl": 1717,
-      "unrealized_pnl_pct": 1.68
+      "value": 104424,
+      "unrealized_pnl": 2290,
+      "unrealized_pnl_pct": 2.24
     },
     {
       "code": "1419",
@@ -60,9 +60,24 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102730,
-      "unrealized_pnl": 564,
-      "unrealized_pnl_pct": 0.55
+      "value": 103669,
+      "unrealized_pnl": 1503,
+      "unrealized_pnl_pct": 1.47
+    },
+    {
+      "code": "2496",
+      "name": "卓越",
+      "ticker": "2496.TW",
+      "shares": 1566,
+      "entry_price": 65.24,
+      "entry_date": "2026-06-22",
+      "entry_time": "14:40",
+      "cost": 102166,
+      "take_profit": 68.5,
+      "stop_loss": 63.28,
+      "value": 101947,
+      "unrealized_pnl": -219,
+      "unrealized_pnl_pct": -0.21
     }
   ],
   "plan_for_5_22": {
@@ -2542,6 +2557,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "限價單成交（限價=65.24，5分K低點觸及）"
+    },
+    {
+      "date": "2026-06-22",
+      "time": "14:40",
+      "action": "BUY",
+      "code": "2496",
+      "name": "卓越",
+      "price": 65.24,
+      "shares": 1566,
+      "amount": 102166,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=65.24，5分K低點觸及）"
     }
   ],
   "pending_orders": [
@@ -2577,17 +2605,6 @@
       "placed_time": "09:32",
       "placed_ts": 1782091954,
       "reserved_cash": 102144
-    },
-    {
-      "code": "2496",
-      "name": "卓越",
-      "ticker": "2496.TW",
-      "limit_price": 65.24,
-      "shares": 1566,
-      "placed_date": "2026-06-22",
-      "placed_time": "09:32",
-      "placed_ts": 1782091954,
-      "reserved_cash": 102166
     },
     {
       "code": "1108",
