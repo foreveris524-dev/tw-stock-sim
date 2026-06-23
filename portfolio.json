@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-22 14:40",
+  "last_updated": "2026-06-23 11:17",
   "initial_capital": 1000000,
-  "cash": 58,
-  "total_value": 1024047,
+  "cash": 34,
+  "total_value": 1027722,
   "holdings": [
     {
       "code": "5515",
@@ -35,21 +35,6 @@
       "unrealized_pnl_pct": -1.66
     },
     {
-      "code": "4763",
-      "name": "材料*-KY",
-      "ticker": "4763.TW",
-      "shares": 2290,
-      "entry_price": 44.6,
-      "entry_date": "2026-06-22",
-      "entry_time": "10:18",
-      "cost": 102134,
-      "take_profit": 46.83,
-      "stop_loss": 43.26,
-      "value": 104424,
-      "unrealized_pnl": 2290,
-      "unrealized_pnl_pct": 2.24
-    },
-    {
       "code": "1419",
       "name": "新紡",
       "ticker": "1419.TW",
@@ -60,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 103669,
-      "unrealized_pnl": 1503,
-      "unrealized_pnl_pct": 1.47
+      "value": 103982,
+      "unrealized_pnl": 1816,
+      "unrealized_pnl_pct": 1.78
     },
     {
       "code": "2496",
@@ -75,9 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 101947,
-      "unrealized_pnl": -219,
-      "unrealized_pnl_pct": -0.21
+      "value": 102103,
+      "unrealized_pnl": -63,
+      "unrealized_pnl_pct": -0.06
     }
   ],
   "plan_for_5_22": {
@@ -2570,6 +2555,162 @@
       "pnl": 0,
       "session": "day",
       "reason": "限價單成交（限價=65.24，5分K低點觸及）"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "11:17",
+      "action": "ORDER_CANCEL",
+      "code": "2323",
+      "name": "中環",
+      "price": 11.68,
+      "shares": 8746,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-22，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "11:17",
+      "action": "ORDER_CANCEL",
+      "code": "6757",
+      "name": "台灣虎航",
+      "price": 57.32,
+      "shares": 1782,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-22，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "11:17",
+      "action": "ORDER_CANCEL",
+      "code": "1615",
+      "name": "大山",
+      "price": 44.8,
+      "shares": 2280,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-22，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "11:17",
+      "action": "ORDER_CANCEL",
+      "code": "1108",
+      "name": "幸福",
+      "price": 13.71,
+      "shares": 7452,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-22，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "11:17",
+      "action": "ORDER_CANCEL",
+      "code": "5225",
+      "name": "東科-KY",
+      "price": 73.16,
+      "shares": 1396,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-22，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "11:17",
+      "action": "ORDER_PLACE",
+      "code": "2323",
+      "name": "中環",
+      "price": 11.38,
+      "shares": 8977,
+      "amount": 102158,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 11.38（現價 11.50 的 99%）｜KD金叉(K58.6/D51.2)，RSI=54.4健康，MACD多頭，MA20上揚(10.8→11.19)"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "11:17",
+      "action": "SELL",
+      "code": "4763",
+      "name": "材料*-KY",
+      "price": 47.0,
+      "shares": 2290,
+      "amount": 107630,
+      "pnl": 5496,
+      "session": "day",
+      "reason": "達停利 TP=46.83（+5.4%）"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "11:17",
+      "action": "ORDER_PLACE",
+      "code": "6757",
+      "name": "台灣虎航",
+      "price": 59.7,
+      "shares": 1729,
+      "amount": 103221,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 59.70（現價 60.30 的 99%）｜KD金叉(K71.6/D64.7)，RSI=63.7健康，MACD多頭，MA20上揚(54.88→56.15)"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "11:17",
+      "action": "ORDER_PLACE",
+      "code": "1615",
+      "name": "大山",
+      "price": 44.7,
+      "shares": 2310,
+      "amount": 103257,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 44.70（現價 45.15 的 99%）｜KD金叉(K69.9/D59.2)，RSI=54.6健康，MACD多頭，MA20上揚(44.11→44.65)"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "11:17",
+      "action": "ORDER_PLACE",
+      "code": "1108",
+      "name": "幸福",
+      "price": 13.66,
+      "shares": 7559,
+      "amount": 103256,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 13.66（現價 13.80 的 99%）｜KD金叉(K62.8/D58.5)，RSI=46.2健康，MACD多頭，MA20上揚(13.73→13.77)"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "11:17",
+      "action": "ORDER_PLACE",
+      "code": "1817",
+      "name": "凱撒衛",
+      "price": 40.0,
+      "shares": 2581,
+      "amount": 103240,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 40.00（現價 40.40 的 99%）｜KD金叉(K64.5/D62.8)，RSI=62.8健康，MACD多頭，MA20上揚(39.47→39.68)"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "11:17",
+      "action": "ORDER_PLACE",
+      "code": "5225",
+      "name": "東科-KY",
+      "price": 72.77,
+      "shares": 1419,
+      "amount": 103261,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 72.77（現價 73.50 的 99%）｜KD金叉(K67.5/D55.7)，RSI=49.5健康，MACD多頭，MA20上揚(72.2→72.94)"
     }
   ],
   "pending_orders": [
@@ -2577,56 +2718,67 @@
       "code": "2323",
       "name": "中環",
       "ticker": "2323.TW",
-      "limit_price": 11.68,
-      "shares": 8746,
-      "placed_date": "2026-06-22",
-      "placed_time": "09:32",
-      "placed_ts": 1782091954,
-      "reserved_cash": 102153
+      "limit_price": 11.38,
+      "shares": 8977,
+      "placed_date": "2026-06-23",
+      "placed_time": "11:17",
+      "placed_ts": 1782184663,
+      "reserved_cash": 102158
     },
     {
       "code": "6757",
       "name": "台灣虎航",
       "ticker": "6757.TW",
-      "limit_price": 57.32,
-      "shares": 1782,
-      "placed_date": "2026-06-22",
-      "placed_time": "09:32",
-      "placed_ts": 1782091954,
-      "reserved_cash": 102144
+      "limit_price": 59.7,
+      "shares": 1729,
+      "placed_date": "2026-06-23",
+      "placed_time": "11:17",
+      "placed_ts": 1782184663,
+      "reserved_cash": 103221
     },
     {
       "code": "1615",
       "name": "大山",
       "ticker": "1615.TW",
-      "limit_price": 44.8,
-      "shares": 2280,
-      "placed_date": "2026-06-22",
-      "placed_time": "09:32",
-      "placed_ts": 1782091954,
-      "reserved_cash": 102144
+      "limit_price": 44.7,
+      "shares": 2310,
+      "placed_date": "2026-06-23",
+      "placed_time": "11:17",
+      "placed_ts": 1782184663,
+      "reserved_cash": 103257
     },
     {
       "code": "1108",
       "name": "幸福",
       "ticker": "1108.TW",
-      "limit_price": 13.71,
-      "shares": 7452,
-      "placed_date": "2026-06-22",
-      "placed_time": "09:32",
-      "placed_ts": 1782091954,
-      "reserved_cash": 102167
+      "limit_price": 13.66,
+      "shares": 7559,
+      "placed_date": "2026-06-23",
+      "placed_time": "11:17",
+      "placed_ts": 1782184663,
+      "reserved_cash": 103256
+    },
+    {
+      "code": "1817",
+      "name": "凱撒衛",
+      "ticker": "1817.TW",
+      "limit_price": 40.0,
+      "shares": 2581,
+      "placed_date": "2026-06-23",
+      "placed_time": "11:17",
+      "placed_ts": 1782184663,
+      "reserved_cash": 103240
     },
     {
       "code": "5225",
       "name": "東科-KY",
       "ticker": "5225.TW",
-      "limit_price": 73.16,
-      "shares": 1396,
-      "placed_date": "2026-06-22",
-      "placed_time": "09:32",
-      "placed_ts": 1782091954,
-      "reserved_cash": 102131
+      "limit_price": 72.77,
+      "shares": 1419,
+      "placed_date": "2026-06-23",
+      "placed_time": "11:17",
+      "placed_ts": 1782184663,
+      "reserved_cash": 103261
     }
   ],
   "sl_cooldown": {
