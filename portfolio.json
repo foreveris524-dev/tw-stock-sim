@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-23 11:32",
+  "last_updated": "2026-06-23 12:03",
   "initial_capital": 1000000,
   "cash": 34,
-  "total_value": 1027577,
+  "total_value": 1027379,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 101616,
-      "unrealized_pnl": 1629,
-      "unrealized_pnl_pct": 1.63
+      "value": 101373,
+      "unrealized_pnl": 1386,
+      "unrealized_pnl_pct": 1.39
     },
     {
       "code": "2204",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 104139,
-      "unrealized_pnl": 1973,
-      "unrealized_pnl_pct": 1.93
+      "value": 104296,
+      "unrealized_pnl": 2130,
+      "unrealized_pnl_pct": 2.08
     },
     {
       "code": "2496",
@@ -60,9 +60,24 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102103,
-      "unrealized_pnl": -63,
-      "unrealized_pnl_pct": -0.06
+      "value": 102260,
+      "unrealized_pnl": 94,
+      "unrealized_pnl_pct": 0.09
+    },
+    {
+      "code": "2323",
+      "name": "中環",
+      "ticker": "2323.TW",
+      "shares": 8977,
+      "entry_price": 11.38,
+      "entry_date": "2026-06-23",
+      "entry_time": "12:03",
+      "cost": 102158,
+      "take_profit": 11.95,
+      "stop_loss": 11.04,
+      "value": 101889,
+      "unrealized_pnl": -269,
+      "unrealized_pnl_pct": -0.26
     }
   ],
   "plan_for_5_22": {
@@ -2711,20 +2726,22 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 72.77（現價 73.50 的 99%）｜KD金叉(K67.5/D55.7)，RSI=49.5健康，MACD多頭，MA20上揚(72.2→72.94)"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "12:03",
+      "action": "BUY",
+      "code": "2323",
+      "name": "中環",
+      "price": 11.38,
+      "shares": 8977,
+      "amount": 102158,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=11.38，5分K低點觸及）"
     }
   ],
   "pending_orders": [
-    {
-      "code": "2323",
-      "name": "中環",
-      "ticker": "2323.TW",
-      "limit_price": 11.38,
-      "shares": 8977,
-      "placed_date": "2026-06-23",
-      "placed_time": "11:17",
-      "placed_ts": 1782184663,
-      "reserved_cash": 102158
-    },
     {
       "code": "6757",
       "name": "台灣虎航",
