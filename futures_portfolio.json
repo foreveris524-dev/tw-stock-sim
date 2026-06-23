@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23 13:09",
+  "last_updated": "2026-06-23 13:47",
   "instrument": "小台指期貨 (MTX)",
   "point_value": 50,
   "initial_margin": 200000,
@@ -2376,6 +2376,21 @@
       "k": 87.6,
       "d": 79.6,
       "macd_hist": 102.549,
+      "action": "OBSERVE",
+      "direction": "NONE",
+      "contracts": 0,
+      "pnl": 0,
+      "reason": "條件未觸發，觀望"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "13:47",
+      "session": "day",
+      "current_price": 47275,
+      "rsi": 66.6,
+      "k": 87.1,
+      "d": 79.4,
+      "macd_hist": 96.309,
       "action": "OBSERVE",
       "direction": "NONE",
       "contracts": 0,
