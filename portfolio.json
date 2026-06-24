@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-23 16:39",
+  "last_updated": "2026-06-24 13:10",
   "initial_capital": 1000000,
-  "cash": 34,
-  "total_value": 1026915,
+  "cash": 206578,
+  "total_value": 1030060,
   "holdings": [
     {
       "code": "5515",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 100742,
-      "unrealized_pnl": -2073,
-      "unrealized_pnl_pct": -2.02
+      "value": 102760,
+      "unrealized_pnl": -55,
+      "unrealized_pnl_pct": -0.05
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 104139,
-      "unrealized_pnl": 1973,
-      "unrealized_pnl_pct": 1.93
+      "value": 103826,
+      "unrealized_pnl": 1660,
+      "unrealized_pnl_pct": 1.62
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102260,
-      "unrealized_pnl": 94,
-      "unrealized_pnl_pct": 0.09
+      "value": 101007,
+      "unrealized_pnl": -1159,
+      "unrealized_pnl_pct": -1.13
     },
     {
       "code": "2323",
@@ -75,9 +75,9 @@
       "cost": 102158,
       "take_profit": 11.95,
       "stop_loss": 11.04,
-      "value": 101889,
-      "unrealized_pnl": -269,
-      "unrealized_pnl_pct": -0.26
+      "value": 104582,
+      "unrealized_pnl": 2424,
+      "unrealized_pnl_pct": 2.37
     }
   ],
   "plan_for_5_22": {
@@ -2739,63 +2739,145 @@
       "pnl": 0,
       "session": "day",
       "reason": "限價單成交（限價=11.38，5分K低點觸及）"
+    },
+    {
+      "date": "2026-06-24",
+      "time": "13:10",
+      "action": "ORDER_CANCEL",
+      "code": "6757",
+      "name": "台灣虎航",
+      "price": 59.7,
+      "shares": 1729,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-23，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-24",
+      "time": "13:10",
+      "action": "ORDER_CANCEL",
+      "code": "1615",
+      "name": "大山",
+      "price": 44.7,
+      "shares": 2310,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-23，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-24",
+      "time": "13:10",
+      "action": "ORDER_CANCEL",
+      "code": "1108",
+      "name": "幸福",
+      "price": 13.66,
+      "shares": 7559,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-23，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-24",
+      "time": "13:10",
+      "action": "ORDER_CANCEL",
+      "code": "1817",
+      "name": "凱撒衛",
+      "price": 40.0,
+      "shares": 2581,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-23，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-24",
+      "time": "13:10",
+      "action": "ORDER_CANCEL",
+      "code": "5225",
+      "name": "東科-KY",
+      "price": 72.77,
+      "shares": 1419,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-23，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-24",
+      "time": "13:10",
+      "action": "ORDER_PLACE",
+      "code": "1615",
+      "name": "大山",
+      "price": 44.35,
+      "shares": 2328,
+      "amount": 103247,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 44.35（現價 44.80 的 99%）｜KD金叉(K60.5/D58.7)，RSI=50.9健康，MACD多頭，MA20上揚(44.2→44.71)"
+    },
+    {
+      "date": "2026-06-24",
+      "time": "13:10",
+      "action": "ORDER_PLACE",
+      "code": "5225",
+      "name": "東科-KY",
+      "price": 72.37,
+      "shares": 1426,
+      "amount": 103200,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 72.37（現價 73.10 的 99%）｜KD金叉(K63.4/D57.4)，RSI=48.2健康，MACD多頭，MA20上揚(72.36→73.0)"
+    },
+    {
+      "date": "2026-06-24",
+      "time": "13:10",
+      "action": "ORDER_PLACE",
+      "code": "2527",
+      "name": "宏璟",
+      "price": 38.96,
+      "shares": 2650,
+      "amount": 103244,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 38.96（現價 39.35 的 99%）｜KD金叉(K76.8/D73.6)，RSI=63.4健康，MACD多頭，MA20上揚(35.9→37.25)"
     }
   ],
   "pending_orders": [
     {
-      "code": "6757",
-      "name": "台灣虎航",
-      "ticker": "6757.TW",
-      "limit_price": 59.7,
-      "shares": 1729,
-      "placed_date": "2026-06-23",
-      "placed_time": "11:17",
-      "placed_ts": 1782184663,
-      "reserved_cash": 103221
-    },
-    {
       "code": "1615",
       "name": "大山",
       "ticker": "1615.TW",
-      "limit_price": 44.7,
-      "shares": 2310,
-      "placed_date": "2026-06-23",
-      "placed_time": "11:17",
-      "placed_ts": 1782184663,
-      "reserved_cash": 103257
-    },
-    {
-      "code": "1108",
-      "name": "幸福",
-      "ticker": "1108.TW",
-      "limit_price": 13.66,
-      "shares": 7559,
-      "placed_date": "2026-06-23",
-      "placed_time": "11:17",
-      "placed_ts": 1782184663,
-      "reserved_cash": 103256
-    },
-    {
-      "code": "1817",
-      "name": "凱撒衛",
-      "ticker": "1817.TW",
-      "limit_price": 40.0,
-      "shares": 2581,
-      "placed_date": "2026-06-23",
-      "placed_time": "11:17",
-      "placed_ts": 1782184663,
-      "reserved_cash": 103240
+      "limit_price": 44.35,
+      "shares": 2328,
+      "placed_date": "2026-06-24",
+      "placed_time": "13:10",
+      "placed_ts": 1782277841,
+      "reserved_cash": 103247
     },
     {
       "code": "5225",
       "name": "東科-KY",
       "ticker": "5225.TW",
-      "limit_price": 72.77,
-      "shares": 1419,
-      "placed_date": "2026-06-23",
-      "placed_time": "11:17",
-      "placed_ts": 1782184663,
-      "reserved_cash": 103261
+      "limit_price": 72.37,
+      "shares": 1426,
+      "placed_date": "2026-06-24",
+      "placed_time": "13:10",
+      "placed_ts": 1782277841,
+      "reserved_cash": 103200
+    },
+    {
+      "code": "2527",
+      "name": "宏璟",
+      "ticker": "2527.TW",
+      "limit_price": 38.96,
+      "shares": 2650,
+      "placed_date": "2026-06-24",
+      "placed_time": "13:10",
+      "placed_ts": 1782277841,
+      "reserved_cash": 103244
     }
   ],
   "sl_cooldown": {
