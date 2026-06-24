@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-24 13:10",
+  "last_updated": "2026-06-24 16:36",
   "initial_capital": 1000000,
   "cash": 206578,
-  "total_value": 1030060,
+  "total_value": 1030188,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 101616,
-      "unrealized_pnl": 1629,
-      "unrealized_pnl_pct": 1.63
+      "value": 101008,
+      "unrealized_pnl": 1021,
+      "unrealized_pnl_pct": 1.02
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 102760,
-      "unrealized_pnl": -55,
-      "unrealized_pnl_pct": -0.05
+      "value": 102577,
+      "unrealized_pnl": -238,
+      "unrealized_pnl_pct": -0.23
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 103826,
-      "unrealized_pnl": 1660,
-      "unrealized_pnl_pct": 1.62
+      "value": 104296,
+      "unrealized_pnl": 2130,
+      "unrealized_pnl_pct": 2.08
     },
     {
       "code": "2496",
@@ -75,9 +75,9 @@
       "cost": 102158,
       "take_profit": 11.95,
       "stop_loss": 11.04,
-      "value": 104582,
-      "unrealized_pnl": 2424,
-      "unrealized_pnl_pct": 2.37
+      "value": 105031,
+      "unrealized_pnl": 2873,
+      "unrealized_pnl_pct": 2.81
     }
   ],
   "plan_for_5_22": {
