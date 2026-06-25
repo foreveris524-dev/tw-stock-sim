@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-24 16:36",
+  "last_updated": "2026-06-25 13:14",
   "initial_capital": 1000000,
-  "cash": 206578,
-  "total_value": 1030188,
+  "cash": 309797,
+  "total_value": 1023557,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 101008,
-      "unrealized_pnl": 1021,
-      "unrealized_pnl_pct": 1.02
+      "value": 97118,
+      "unrealized_pnl": -2869,
+      "unrealized_pnl_pct": -2.87
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 102577,
-      "unrealized_pnl": -238,
-      "unrealized_pnl_pct": -0.23
+      "value": 101475,
+      "unrealized_pnl": -1340,
+      "unrealized_pnl_pct": -1.3
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 104296,
-      "unrealized_pnl": 2130,
-      "unrealized_pnl_pct": 2.08
+      "value": 103982,
+      "unrealized_pnl": 1816,
+      "unrealized_pnl_pct": 1.78
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 101007,
-      "unrealized_pnl": -1159,
-      "unrealized_pnl_pct": -1.13
+      "value": 101477,
+      "unrealized_pnl": -689,
+      "unrealized_pnl_pct": -0.67
     },
     {
       "code": "2323",
@@ -75,9 +75,9 @@
       "cost": 102158,
       "take_profit": 11.95,
       "stop_loss": 11.04,
-      "value": 105031,
-      "unrealized_pnl": 2873,
-      "unrealized_pnl_pct": 2.81
+      "value": 103236,
+      "unrealized_pnl": 1078,
+      "unrealized_pnl_pct": 1.06
     }
   ],
   "plan_for_5_22": {
@@ -2843,6 +2843,71 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 38.96（現價 39.35 的 99%）｜KD金叉(K76.8/D73.6)，RSI=63.4健康，MACD多頭，MA20上揚(35.9→37.25)"
+    },
+    {
+      "date": "2026-06-25",
+      "time": "13:14",
+      "action": "ORDER_CANCEL",
+      "code": "1615",
+      "name": "大山",
+      "price": 44.35,
+      "shares": 2328,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-24，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-25",
+      "time": "13:14",
+      "action": "ORDER_CANCEL",
+      "code": "5225",
+      "name": "東科-KY",
+      "price": 72.37,
+      "shares": 1426,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-24，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-25",
+      "time": "13:14",
+      "action": "ORDER_CANCEL",
+      "code": "2527",
+      "name": "宏璟",
+      "price": 38.96,
+      "shares": 2650,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-24，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-25",
+      "time": "13:14",
+      "action": "ORDER_PLACE",
+      "code": "1615",
+      "name": "大山",
+      "price": 44.6,
+      "shares": 2315,
+      "amount": 103249,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 44.60（現價 45.05 的 99%）｜KD金叉(K63.1/D60.5)，RSI=53.3健康，MACD多頭，MA20上揚(44.31→44.82)"
+    },
+    {
+      "date": "2026-06-25",
+      "time": "13:14",
+      "action": "ORDER_PLACE",
+      "code": "5225",
+      "name": "東科-KY",
+      "price": 73.26,
+      "shares": 1409,
+      "amount": 103223,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 73.26（現價 74.00 的 99%）｜KD金叉(K65.7/D59.6)，RSI=51.5健康，MACD多頭，MA20上揚(72.51→73.16)"
     }
   ],
   "pending_orders": [
@@ -2850,34 +2915,23 @@
       "code": "1615",
       "name": "大山",
       "ticker": "1615.TW",
-      "limit_price": 44.35,
-      "shares": 2328,
-      "placed_date": "2026-06-24",
-      "placed_time": "13:10",
-      "placed_ts": 1782277841,
-      "reserved_cash": 103247
+      "limit_price": 44.6,
+      "shares": 2315,
+      "placed_date": "2026-06-25",
+      "placed_time": "13:14",
+      "placed_ts": 1782364477,
+      "reserved_cash": 103249
     },
     {
       "code": "5225",
       "name": "東科-KY",
       "ticker": "5225.TW",
-      "limit_price": 72.37,
-      "shares": 1426,
-      "placed_date": "2026-06-24",
-      "placed_time": "13:10",
-      "placed_ts": 1782277841,
-      "reserved_cash": 103200
-    },
-    {
-      "code": "2527",
-      "name": "宏璟",
-      "ticker": "2527.TW",
-      "limit_price": 38.96,
-      "shares": 2650,
-      "placed_date": "2026-06-24",
-      "placed_time": "13:10",
-      "placed_ts": 1782277841,
-      "reserved_cash": 103244
+      "limit_price": 73.26,
+      "shares": 1409,
+      "placed_date": "2026-06-25",
+      "placed_time": "13:14",
+      "placed_ts": 1782364477,
+      "reserved_cash": 103223
     }
   ],
   "sl_cooldown": {
