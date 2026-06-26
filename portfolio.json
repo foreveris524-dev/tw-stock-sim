@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-25 16:32",
+  "last_updated": "2026-06-26 13:20",
   "initial_capital": 1000000,
-  "cash": 309797,
-  "total_value": 1022946,
+  "cash": 408385,
+  "total_value": 1014616,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 96997,
-      "unrealized_pnl": -2990,
-      "unrealized_pnl_pct": -2.99
+      "value": 98577,
+      "unrealized_pnl": -1410,
+      "unrealized_pnl_pct": -1.41
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 101659,
-      "unrealized_pnl": -1156,
-      "unrealized_pnl_pct": -1.12
+      "value": 100925,
+      "unrealized_pnl": -1890,
+      "unrealized_pnl_pct": -1.84
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 104452,
-      "unrealized_pnl": 2286,
-      "unrealized_pnl_pct": 2.24
+      "value": 102260,
+      "unrealized_pnl": 94,
+      "unrealized_pnl_pct": 0.09
     },
     {
       "code": "2496",
@@ -60,24 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 101007,
-      "unrealized_pnl": -1159,
-      "unrealized_pnl_pct": -1.13
-    },
-    {
-      "code": "2323",
-      "name": "中環",
-      "ticker": "2323.TW",
-      "shares": 8977,
-      "entry_price": 11.38,
-      "entry_date": "2026-06-23",
-      "entry_time": "12:03",
-      "cost": 102158,
-      "take_profit": 11.95,
-      "stop_loss": 11.04,
-      "value": 102787,
-      "unrealized_pnl": 629,
-      "unrealized_pnl_pct": 0.62
+      "value": 100537,
+      "unrealized_pnl": -1629,
+      "unrealized_pnl_pct": -1.59
     },
     {
       "code": "5225",
@@ -90,9 +75,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 102998,
-      "unrealized_pnl": -225,
-      "unrealized_pnl_pct": -0.22
+      "value": 101871,
+      "unrealized_pnl": -1352,
+      "unrealized_pnl_pct": -1.31
     }
   ],
   "plan_for_5_22": {
@@ -2936,25 +2921,70 @@
       "pnl": 0,
       "session": "day",
       "reason": "限價單成交（限價=73.26，5分K低點觸及）"
+    },
+    {
+      "date": "2026-06-26",
+      "time": "13:20",
+      "action": "ORDER_CANCEL",
+      "code": "1615",
+      "name": "大山",
+      "price": 44.6,
+      "shares": 2315,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-25，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-26",
+      "time": "13:20",
+      "action": "SELL",
+      "code": "2323",
+      "name": "中環",
+      "price": 10.85,
+      "shares": 8977,
+      "amount": 97400,
+      "pnl": -4758,
+      "session": "day",
+      "reason": "達停損 SL=11.04（-4.7%）"
+    },
+    {
+      "date": "2026-06-26",
+      "time": "13:20",
+      "action": "ORDER_PLACE",
+      "code": "6757",
+      "name": "台灣虎航",
+      "price": 62.27,
+      "shares": 1639,
+      "amount": 102061,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 62.27（現價 62.90 的 99%）｜KD金叉(K74.7/D74.1)，RSI=63.6健康，MACD多頭，MA20上揚(55.61→57.54)"
     }
   ],
   "pending_orders": [
     {
-      "code": "1615",
-      "name": "大山",
-      "ticker": "1615.TW",
-      "limit_price": 44.6,
-      "shares": 2315,
-      "placed_date": "2026-06-25",
-      "placed_time": "13:14",
-      "placed_ts": 1782364477,
-      "reserved_cash": 103249
+      "code": "6757",
+      "name": "台灣虎航",
+      "ticker": "6757.TW",
+      "limit_price": 62.27,
+      "shares": 1639,
+      "placed_date": "2026-06-26",
+      "placed_time": "13:20",
+      "placed_ts": 1782451225,
+      "reserved_cash": 102061
     }
   ],
   "sl_cooldown": {
     "8463": {
       "sl_dates": [
         "2026-06-18"
+      ],
+      "cooldown_until": null
+    },
+    "2323": {
+      "sl_dates": [
+        "2026-06-26"
       ],
       "cooldown_until": null
     }
