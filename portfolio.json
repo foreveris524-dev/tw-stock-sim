@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-26 16:37",
+  "last_updated": "2026-06-29 14:04",
   "initial_capital": 1000000,
-  "cash": 408385,
-  "total_value": 1012446,
+  "cash": 510446,
+  "total_value": 1014124,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 98334,
-      "unrealized_pnl": -1653,
-      "unrealized_pnl_pct": -1.65
+      "value": 98456,
+      "unrealized_pnl": -1531,
+      "unrealized_pnl_pct": -1.53
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 100925,
-      "unrealized_pnl": -1890,
-      "unrealized_pnl_pct": -1.84
+      "value": 102026,
+      "unrealized_pnl": -789,
+      "unrealized_pnl_pct": -0.77
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102573,
-      "unrealized_pnl": 407,
-      "unrealized_pnl_pct": 0.4
+      "value": 101790,
+      "unrealized_pnl": -376,
+      "unrealized_pnl_pct": -0.37
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 99284,
-      "unrealized_pnl": -2882,
-      "unrealized_pnl_pct": -2.82
+      "value": 100381,
+      "unrealized_pnl": -1785,
+      "unrealized_pnl_pct": -1.75
     },
     {
       "code": "5225",
@@ -75,9 +75,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 100884,
-      "unrealized_pnl": -2339,
-      "unrealized_pnl_pct": -2.27
+      "value": 101025,
+      "unrealized_pnl": -2198,
+      "unrealized_pnl_pct": -2.13
     }
   ],
   "plan_for_5_22": {
@@ -2960,21 +2960,22 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 62.27（現價 62.90 的 99%）｜KD金叉(K74.7/D74.1)，RSI=63.6健康，MACD多頭，MA20上揚(55.61→57.54)"
-    }
-  ],
-  "pending_orders": [
+    },
     {
+      "date": "2026-06-29",
+      "time": "14:04",
+      "action": "ORDER_CANCEL",
       "code": "6757",
       "name": "台灣虎航",
-      "ticker": "6757.TW",
-      "limit_price": 62.27,
+      "price": 62.27,
       "shares": 1639,
-      "placed_date": "2026-06-26",
-      "placed_time": "13:20",
-      "placed_ts": 1782451225,
-      "reserved_cash": 102061
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-06-26，限價單僅當日有效）"
     }
   ],
+  "pending_orders": [],
   "sl_cooldown": {
     "8463": {
       "sl_dates": [
