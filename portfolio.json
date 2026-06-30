@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-29 14:04",
+  "last_updated": "2026-06-30 13:16",
   "initial_capital": 1000000,
-  "cash": 510446,
-  "total_value": 1014124,
+  "cash": 408368,
+  "total_value": 1015365,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 98456,
-      "unrealized_pnl": -1531,
-      "unrealized_pnl_pct": -1.53
+      "value": 100765,
+      "unrealized_pnl": 778,
+      "unrealized_pnl_pct": 0.78
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 102026,
-      "unrealized_pnl": -789,
-      "unrealized_pnl_pct": -0.77
+      "value": 101475,
+      "unrealized_pnl": -1340,
+      "unrealized_pnl_pct": -1.3
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 101790,
-      "unrealized_pnl": -376,
-      "unrealized_pnl_pct": -0.37
+      "value": 101007,
+      "unrealized_pnl": -1159,
+      "unrealized_pnl_pct": -1.13
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 100381,
-      "unrealized_pnl": -1785,
-      "unrealized_pnl_pct": -1.75
+      "value": 100224,
+      "unrealized_pnl": -1942,
+      "unrealized_pnl_pct": -1.9
     },
     {
       "code": "5225",
@@ -75,9 +75,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 101025,
-      "unrealized_pnl": -2198,
-      "unrealized_pnl_pct": -2.13
+      "value": 101448,
+      "unrealized_pnl": -1775,
+      "unrealized_pnl_pct": -1.72
     }
   ],
   "plan_for_5_22": {
@@ -2973,9 +2973,34 @@
       "pnl": 0,
       "session": "day",
       "reason": "跨日取消（下單日 2026-06-26，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-06-30",
+      "time": "13:16",
+      "action": "ORDER_PLACE",
+      "code": "5519",
+      "name": "隆大",
+      "price": 34.06,
+      "shares": 2997,
+      "amount": 102078,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 34.06（現價 34.40 的 99%）｜KD金叉(K54.1/D53.8)，RSI=60.5健康，MACD多頭，MA20上揚(33.08→33.6)"
     }
   ],
-  "pending_orders": [],
+  "pending_orders": [
+    {
+      "code": "5519",
+      "name": "隆大",
+      "ticker": "5519.TW",
+      "limit_price": 34.06,
+      "shares": 2997,
+      "placed_date": "2026-06-30",
+      "placed_time": "13:16",
+      "placed_ts": 1782796570,
+      "reserved_cash": 102078
+    }
+  ],
   "sl_cooldown": {
     "8463": {
       "sl_dates": [
