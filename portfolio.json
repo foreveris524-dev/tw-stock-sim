@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-30 13:16",
+  "last_updated": "2026-06-30 16:39",
   "initial_capital": 1000000,
-  "cash": 408368,
-  "total_value": 1015365,
+  "cash": 306292,
+  "total_value": 1016175,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 100765,
-      "unrealized_pnl": 778,
-      "unrealized_pnl_pct": 0.78
+      "value": 100279,
+      "unrealized_pnl": 292,
+      "unrealized_pnl_pct": 0.29
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 101475,
-      "unrealized_pnl": -1340,
-      "unrealized_pnl_pct": -1.3
+      "value": 101659,
+      "unrealized_pnl": -1156,
+      "unrealized_pnl_pct": -1.12
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 101007,
-      "unrealized_pnl": -1159,
-      "unrealized_pnl_pct": -1.13
+      "value": 101790,
+      "unrealized_pnl": -376,
+      "unrealized_pnl_pct": -0.37
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 100224,
-      "unrealized_pnl": -1942,
-      "unrealized_pnl_pct": -1.9
+      "value": 100694,
+      "unrealized_pnl": -1472,
+      "unrealized_pnl_pct": -1.44
     },
     {
       "code": "5225",
@@ -75,9 +75,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 101448,
-      "unrealized_pnl": -1775,
-      "unrealized_pnl_pct": -1.72
+      "value": 101307,
+      "unrealized_pnl": -1916,
+      "unrealized_pnl_pct": -1.86
     }
   ],
   "plan_for_5_22": {
@@ -2986,6 +2986,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 34.06（現價 34.40 的 99%）｜KD金叉(K54.1/D53.8)，RSI=60.5健康，MACD多頭，MA20上揚(33.08→33.6)"
+    },
+    {
+      "date": "2026-06-30",
+      "time": "16:39",
+      "action": "ORDER_PLACE",
+      "code": "6807",
+      "name": "峰源-KY",
+      "price": 33.12,
+      "shares": 3082,
+      "amount": 102076,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 33.12（現價 33.45 的 99%）｜KD金叉(K57.8/D55.2)，RSI=46.0健康，MACD多頭，MA20上揚(33.41→33.47)"
     }
   ],
   "pending_orders": [
@@ -2999,6 +3012,17 @@
       "placed_time": "13:16",
       "placed_ts": 1782796570,
       "reserved_cash": 102078
+    },
+    {
+      "code": "6807",
+      "name": "峰源-KY",
+      "ticker": "6807.TW",
+      "limit_price": 33.12,
+      "shares": 3082,
+      "placed_date": "2026-06-30",
+      "placed_time": "16:39",
+      "placed_ts": 1782808778,
+      "reserved_cash": 102076
     }
   ],
   "sl_cooldown": {
