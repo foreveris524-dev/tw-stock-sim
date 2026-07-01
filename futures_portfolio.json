@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-07-01 21:27",
+  "last_updated": "2026-07-02 00:06",
   "instrument": "小台指期貨 (MTX)",
   "point_value": 50,
   "initial_margin": 200000,
-  "available_margin": 200000,
-  "used_margin": 0,
+  "available_margin": 152000,
+  "used_margin": 48000,
   "position": null,
   "cumulative_pnl": 0,
   "plan_for_5_22": {
@@ -3601,7 +3601,30 @@
       "contracts": 0,
       "pnl": 0,
       "reason": "條件未觸發，觀望"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "00:06",
+      "session": "night",
+      "current_price": 46126,
+      "rsi": 57.7,
+      "k": 39.8,
+      "d": 51.6,
+      "macd_hist": -214.59,
+      "action": "ORDER_PLACE",
+      "direction": "SHORT",
+      "contracts": 1,
+      "entry_price": 46218,
+      "pnl": 0,
+      "reason": "掛限價單 SHORT @ 46218（現價46126）｜KD死叉(K39.8/D51.6)，RSI=57.7健康，MACD空頭"
     }
   ],
-  "pending_orders": []
+  "pending_orders": [
+    {
+      "direction": "SHORT",
+      "limit_price": 46218,
+      "placed_ts": 1782921994,
+      "placed_time": "00:06"
+    }
+  ]
 }
