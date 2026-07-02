@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-01 13:52",
+  "last_updated": "2026-07-02 13:08",
   "initial_capital": 1000000,
-  "cash": 306285,
-  "total_value": 1018017,
+  "cash": 306325,
+  "total_value": 1016947,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 98334,
-      "unrealized_pnl": -1653,
-      "unrealized_pnl_pct": -1.65
+      "value": 97362,
+      "unrealized_pnl": -2625,
+      "unrealized_pnl_pct": -2.63
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 103678,
-      "unrealized_pnl": 863,
-      "unrealized_pnl_pct": 0.84
+      "value": 103861,
+      "unrealized_pnl": 1046,
+      "unrealized_pnl_pct": 1.02
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 101790,
-      "unrealized_pnl": -376,
-      "unrealized_pnl_pct": -0.37
+      "value": 100850,
+      "unrealized_pnl": -1316,
+      "unrealized_pnl_pct": -1.29
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 100067,
-      "unrealized_pnl": -2099,
-      "unrealized_pnl_pct": -2.05
+      "value": 101007,
+      "unrealized_pnl": -1159,
+      "unrealized_pnl_pct": -1.13
     },
     {
       "code": "5225",
@@ -75,9 +75,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 103702,
-      "unrealized_pnl": 479,
-      "unrealized_pnl_pct": 0.46
+      "value": 103421,
+      "unrealized_pnl": 198,
+      "unrealized_pnl_pct": 0.19
     }
   ],
   "plan_for_5_22": {
@@ -3051,6 +3051,58 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 33.66（現價 34.00 的 99%）｜KD金叉(K71.9/D60.7)，RSI=52.0健康，MACD多頭，MA20上揚(33.45→33.5)"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "13:08",
+      "action": "ORDER_CANCEL",
+      "code": "5519",
+      "name": "隆大",
+      "price": 34.16,
+      "shares": 2988,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-01，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "13:08",
+      "action": "ORDER_CANCEL",
+      "code": "6807",
+      "name": "峰源-KY",
+      "price": 33.66,
+      "shares": 3033,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-01，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "13:08",
+      "action": "ORDER_PLACE",
+      "code": "5519",
+      "name": "隆大",
+      "price": 34.11,
+      "shares": 2992,
+      "amount": 102057,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 34.11（現價 34.45 的 99%）｜KD金叉(K66.8/D59.5)，RSI=60.6健康，MACD多頭，MA20上揚(33.27→33.85)"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "13:08",
+      "action": "ORDER_PLACE",
+      "code": "6625",
+      "name": "必應",
+      "price": 78.21,
+      "shares": 1305,
+      "amount": 102064,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 78.21（現價 79.00 的 99%）｜KD金叉(K46.2/D44.7)，RSI=61.5健康，MACD多頭，MA20上揚(76.13→77.4)"
     }
   ],
   "pending_orders": [
@@ -3058,23 +3110,23 @@
       "code": "5519",
       "name": "隆大",
       "ticker": "5519.TW",
-      "limit_price": 34.16,
-      "shares": 2988,
-      "placed_date": "2026-07-01",
-      "placed_time": "13:52",
-      "placed_ts": 1782885143,
-      "reserved_cash": 102070
+      "limit_price": 34.11,
+      "shares": 2992,
+      "placed_date": "2026-07-02",
+      "placed_time": "13:08",
+      "placed_ts": 1782968907,
+      "reserved_cash": 102057
     },
     {
-      "code": "6807",
-      "name": "峰源-KY",
-      "ticker": "6807.TW",
-      "limit_price": 33.66,
-      "shares": 3033,
-      "placed_date": "2026-07-01",
-      "placed_time": "13:52",
-      "placed_ts": 1782885143,
-      "reserved_cash": 102091
+      "code": "6625",
+      "name": "必應",
+      "ticker": "6625.TW",
+      "limit_price": 78.21,
+      "shares": 1305,
+      "placed_date": "2026-07-02",
+      "placed_time": "13:08",
+      "placed_ts": 1782968907,
+      "reserved_cash": 102064
     }
   ],
   "sl_cooldown": {
