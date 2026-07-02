@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-07-02 13:04",
+  "last_updated": "2026-07-02 16:25",
   "instrument": "小台指期貨 (MTX)",
   "point_value": 50,
   "initial_margin": 200000,
-  "available_margin": 152000,
-  "used_margin": 48000,
+  "available_margin": 200000,
+  "used_margin": 0,
   "position": null,
   "cumulative_pnl": 0,
   "plan_for_5_22": {
@@ -3745,14 +3745,38 @@
       "entry_price": 46564,
       "pnl": 0,
       "reason": "掛限價單 SHORT @ 46564（現價46471）｜KD死叉(K50.7/D50.8)，RSI=58.2健康，MACD空頭"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "16:25",
+      "session": "night",
+      "action": "ORDER_CANCEL",
+      "direction": "SHORT",
+      "current_price": 46744,
+      "rsi": 59.7,
+      "k": 53.1,
+      "d": 51.6,
+      "macd_hist": -110.584,
+      "contracts": 1,
+      "entry_price": 46564,
+      "pnl": 0,
+      "reason": "限價單逾時取消（200分未成交）"
+    },
+    {
+      "date": "2026-07-02",
+      "time": "16:25",
+      "session": "night",
+      "current_price": 46744,
+      "rsi": 59.7,
+      "k": 53.1,
+      "d": 51.6,
+      "macd_hist": -110.584,
+      "action": "OBSERVE",
+      "direction": "NONE",
+      "contracts": 0,
+      "pnl": 0,
+      "reason": "條件未觸發，觀望"
     }
   ],
-  "pending_orders": [
-    {
-      "direction": "SHORT",
-      "limit_price": 46564,
-      "placed_ts": 1782968681,
-      "placed_time": "13:04"
-    }
-  ]
+  "pending_orders": []
 }
