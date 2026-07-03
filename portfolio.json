@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-02 16:26",
+  "last_updated": "2026-07-03 12:54",
   "initial_capital": 1000000,
-  "cash": 306325,
-  "total_value": 1017993,
+  "cash": 306313,
+  "total_value": 1025297,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 98212,
-      "unrealized_pnl": -1775,
-      "unrealized_pnl_pct": -1.78
+      "value": 97483,
+      "unrealized_pnl": -2504,
+      "unrealized_pnl_pct": -2.5
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 103494,
-      "unrealized_pnl": 679,
-      "unrealized_pnl_pct": 0.66
+      "value": 104778,
+      "unrealized_pnl": 1963,
+      "unrealized_pnl_pct": 1.91
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 101320,
-      "unrealized_pnl": -846,
-      "unrealized_pnl_pct": -0.83
+      "value": 103356,
+      "unrealized_pnl": 1190,
+      "unrealized_pnl_pct": 1.16
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 100537,
-      "unrealized_pnl": -1629,
-      "unrealized_pnl_pct": -1.59
+      "value": 101164,
+      "unrealized_pnl": -1002,
+      "unrealized_pnl_pct": -0.98
     },
     {
       "code": "5225",
@@ -75,9 +75,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 103984,
-      "unrealized_pnl": 761,
-      "unrealized_pnl_pct": 0.74
+      "value": 108070,
+      "unrealized_pnl": 4847,
+      "unrealized_pnl_pct": 4.7
     }
   ],
   "plan_for_5_22": {
@@ -3103,6 +3103,58 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 78.21（現價 79.00 的 99%）｜KD金叉(K46.2/D44.7)，RSI=61.5健康，MACD多頭，MA20上揚(76.13→77.4)"
+    },
+    {
+      "date": "2026-07-03",
+      "time": "12:54",
+      "action": "ORDER_CANCEL",
+      "code": "5519",
+      "name": "隆大",
+      "price": 34.11,
+      "shares": 2992,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-02，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-03",
+      "time": "12:54",
+      "action": "ORDER_CANCEL",
+      "code": "6625",
+      "name": "必應",
+      "price": 78.21,
+      "shares": 1305,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-02，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-03",
+      "time": "12:54",
+      "action": "ORDER_PLACE",
+      "code": "5519",
+      "name": "隆大",
+      "price": 34.2,
+      "shares": 2985,
+      "amount": 102087,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 34.20（現價 34.55 的 99%）｜KD金叉(K73.6/D64.4)，RSI=61.9健康，MACD多頭，MA20上揚(33.37→33.97)"
+    },
+    {
+      "date": "2026-07-03",
+      "time": "12:54",
+      "action": "ORDER_PLACE",
+      "code": "6625",
+      "name": "必應",
+      "price": 78.8,
+      "shares": 1295,
+      "amount": 102046,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 78.80（現價 79.60 的 99%）｜KD金叉(K60.0/D50.2)，RSI=63.7健康，MACD多頭，MA20上揚(76.38→77.66)"
     }
   ],
   "pending_orders": [
@@ -3110,23 +3162,23 @@
       "code": "5519",
       "name": "隆大",
       "ticker": "5519.TW",
-      "limit_price": 34.11,
-      "shares": 2992,
-      "placed_date": "2026-07-02",
-      "placed_time": "13:08",
-      "placed_ts": 1782968907,
-      "reserved_cash": 102057
+      "limit_price": 34.2,
+      "shares": 2985,
+      "placed_date": "2026-07-03",
+      "placed_time": "12:54",
+      "placed_ts": 1783054442,
+      "reserved_cash": 102087
     },
     {
       "code": "6625",
       "name": "必應",
       "ticker": "6625.TW",
-      "limit_price": 78.21,
-      "shares": 1305,
-      "placed_date": "2026-07-02",
-      "placed_time": "13:08",
-      "placed_ts": 1782968907,
-      "reserved_cash": 102064
+      "limit_price": 78.8,
+      "shares": 1295,
+      "placed_date": "2026-07-03",
+      "placed_time": "12:54",
+      "placed_ts": 1783054442,
+      "reserved_cash": 102046
     }
   ],
   "sl_cooldown": {
