@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-06 17:34",
+  "last_updated": "2026-07-07 13:04",
   "initial_capital": 1000000,
-  "cash": 409986,
-  "total_value": 1030708,
+  "cash": 410595,
+  "total_value": 1022024,
   "holdings": [
     {
       "code": "5515",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 105512,
-      "unrealized_pnl": 2697,
-      "unrealized_pnl_pct": 2.62
+      "value": 104595,
+      "unrealized_pnl": 1780,
+      "unrealized_pnl_pct": 1.73
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 106958,
-      "unrealized_pnl": 4792,
-      "unrealized_pnl_pct": 4.69
+      "value": 103669,
+      "unrealized_pnl": 1503,
+      "unrealized_pnl_pct": 1.47
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 101164,
-      "unrealized_pnl": -1002,
-      "unrealized_pnl_pct": -0.98
+      "value": 98658,
+      "unrealized_pnl": -3508,
+      "unrealized_pnl_pct": -3.43
     },
     {
       "code": "5225",
@@ -75,9 +75,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 107929,
-      "unrealized_pnl": 4706,
-      "unrealized_pnl_pct": 4.56
+      "value": 105957,
+      "unrealized_pnl": 2734,
+      "unrealized_pnl_pct": 2.65
     }
   ],
   "plan_for_5_22": {
@@ -3194,6 +3194,32 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 2450.25（現價 2475.00 的 99%）｜KD金叉(K66.4/D58.7)，RSI=59.5健康，MACD多頭，MA20上揚(2369.25→2388.75)"
+    },
+    {
+      "date": "2026-07-07",
+      "time": "13:04",
+      "action": "ORDER_CANCEL",
+      "code": "2330",
+      "name": "台積電",
+      "price": 2450.25,
+      "shares": 41,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-06，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-07",
+      "time": "13:04",
+      "action": "ORDER_PLACE",
+      "code": "2330",
+      "name": "台積電",
+      "price": 2435.4,
+      "shares": 41,
+      "amount": 99851,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 2435.40（現價 2460.00 的 99%）｜KD金叉(K67.4/D61.0)，RSI=58.4健康，MACD多頭，MA20上揚(2372.0→2396.25)"
     }
   ],
   "pending_orders": [
@@ -3201,12 +3227,12 @@
       "code": "2330",
       "name": "台積電",
       "ticker": "2330.TW",
-      "limit_price": 2450.25,
+      "limit_price": 2435.4,
       "shares": 41,
-      "placed_date": "2026-07-06",
-      "placed_time": "13:21",
-      "placed_ts": 1783315308,
-      "reserved_cash": 100460
+      "placed_date": "2026-07-07",
+      "placed_time": "13:04",
+      "placed_ts": 1783400648,
+      "reserved_cash": 99851
     }
   ],
   "sl_cooldown": {
