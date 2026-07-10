@@ -1,46 +1,46 @@
 {
-  "updated": "2026-07-03",
+  "updated": "2026-07-10",
   "pinned": [
-    "2330",
+    "00981A",
     "0050",
-    "00981A"
+    "2330"
   ],
   "candidates": [
     {
-      "code": "2330",
-      "name": "台積電",
-      "ticker": "2330.TW",
-      "price": 2445.0,
-      "rsi": 57.2,
-      "k": 57.9,
-      "d": 54.9,
-      "macd_hist": 0.566,
-      "score": 8,
-      "reasons": "KD金叉(K57.9/D54.9)；RSI健康=57.2；MACD多頭"
+      "code": "00981A",
+      "name": "統一主動台股增長",
+      "ticker": "00981A.TW",
+      "price": 29.95,
+      "rsi": 45.7,
+      "k": 32.2,
+      "d": 45.3,
+      "macd_hist": -0.254,
+      "score": 5,
+      "reasons": "RSI健康=45.7；MACD轉折中"
     },
     {
       "code": "0050",
       "name": "元大台灣50",
       "ticker": "0050.TW",
-      "price": 108.35,
-      "rsi": 58.7,
-      "k": 80.9,
-      "d": 67.8,
-      "macd_hist": -0.21,
-      "score": 6,
-      "reasons": "KD金叉(K80.9/D67.8)；RSI健康=58.7；MACD轉折中"
+      "price": 105.8,
+      "rsi": 52.3,
+      "k": 48.4,
+      "d": 53.6,
+      "macd_hist": -0.556,
+      "score": 4,
+      "reasons": "RSI健康=52.3"
     },
     {
-      "code": "00981A",
-      "name": "統一主動台股增長",
-      "ticker": "00981A.TW",
-      "price": 32.26,
-      "rsi": 59.6,
-      "k": 82.3,
-      "d": 68.1,
-      "macd_hist": -0.001,
-      "score": 6,
-      "reasons": "KD金叉(K82.3/D68.1)；RSI健康=59.6；MACD轉折中"
+      "code": "2330",
+      "name": "台積電",
+      "ticker": "2330.TW",
+      "price": 2415.0,
+      "rsi": 52.7,
+      "k": 61.8,
+      "d": 62.4,
+      "macd_hist": -4.052,
+      "score": 4,
+      "reasons": "RSI健康=52.7"
     }
   ]
 }
