@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13 21:00",
+  "last_updated": "2026-07-13 23:47",
   "instrument": "小台指期貨 (MTX)",
   "point_value": 50,
   "initial_margin": 200000,
@@ -5390,14 +5390,46 @@
       "entry_price": 45471,
       "pnl": 0,
       "reason": "掛限價單 SHORT @ 45471（現價45381）｜KD死叉(K32.9/D43.8)，RSI=51.1健康，MACD空頭"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "23:47",
+      "session": "night",
+      "action": "ORDER_CANCEL",
+      "direction": "SHORT",
+      "current_price": 45381,
+      "rsi": 51.1,
+      "k": 32.9,
+      "d": 43.8,
+      "macd_hist": -266.88,
+      "contracts": 1,
+      "entry_price": 45471,
+      "pnl": 0,
+      "reason": "限價單逾時取消（166分未成交）"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "23:47",
+      "session": "night",
+      "current_price": 45381,
+      "rsi": 51.1,
+      "k": 32.9,
+      "d": 43.8,
+      "macd_hist": -266.88,
+      "action": "ORDER_PLACE",
+      "direction": "SHORT",
+      "contracts": 1,
+      "entry_price": 45471,
+      "pnl": 0,
+      "reason": "掛限價單 SHORT @ 45471（現價45381）｜KD死叉(K32.9/D43.8)，RSI=51.1健康，MACD空頭"
     }
   ],
   "pending_orders": [
     {
       "direction": "SHORT",
       "limit_price": 45471,
-      "placed_ts": 1783947659,
-      "placed_time": "21:00"
+      "placed_ts": 1783957639,
+      "placed_time": "23:47"
     }
   ]
 }
