@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-10 16:37",
+  "last_updated": "2026-07-13 12:40",
   "initial_capital": 1000000,
-  "cash": 510446,
-  "total_value": 1020241,
+  "cash": 306358,
+  "total_value": 1015961,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 100157,
-      "unrealized_pnl": 170,
-      "unrealized_pnl_pct": 0.17
+      "value": 100765,
+      "unrealized_pnl": 778,
+      "unrealized_pnl_pct": 0.78
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 104595,
-      "unrealized_pnl": 1780,
-      "unrealized_pnl_pct": 1.73
+      "value": 104045,
+      "unrealized_pnl": 1230,
+      "unrealized_pnl_pct": 1.2
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 104452,
-      "unrealized_pnl": 2286,
-      "unrealized_pnl_pct": 2.24
+      "value": 102573,
+      "unrealized_pnl": 407,
+      "unrealized_pnl_pct": 0.4
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 96466,
-      "unrealized_pnl": -5700,
-      "unrealized_pnl_pct": -5.58
+      "value": 95839,
+      "unrealized_pnl": -6327,
+      "unrealized_pnl_pct": -6.19
     },
     {
       "code": "5225",
@@ -75,9 +75,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 104125,
-      "unrealized_pnl": 902,
-      "unrealized_pnl_pct": 0.87
+      "value": 102293,
+      "unrealized_pnl": -930,
+      "unrealized_pnl_pct": -0.9
     }
   ],
   "plan_for_5_22": {
@@ -3233,9 +3233,58 @@
       "pnl": 0,
       "session": "day",
       "reason": "跨日取消（下單日 2026-07-07，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "12:40",
+      "action": "ORDER_PLACE",
+      "code": "2006",
+      "name": "東和鋼鐵",
+      "price": 69.0,
+      "shares": 1479,
+      "amount": 102051,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 69.00（現價 69.70 的 99%）｜KD金叉(K64.9/D56.3)，RSI=55.6健康，MACD多頭，MA20上揚(68.62→69.29)"
+    },
+    {
+      "date": "2026-07-13",
+      "time": "12:40",
+      "action": "ORDER_PLACE",
+      "code": "4736",
+      "name": "泰博",
+      "price": 124.74,
+      "shares": 818,
+      "amount": 102037,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 124.74（現價 126.00 的 99%）｜KD金叉(K68.5/D67.8)，RSI=56.1健康，MACD多頭，MA20上揚(124.55→124.85)"
     }
   ],
-  "pending_orders": [],
+  "pending_orders": [
+    {
+      "code": "2006",
+      "name": "東和鋼鐵",
+      "ticker": "2006.TW",
+      "limit_price": 69.0,
+      "shares": 1479,
+      "placed_date": "2026-07-13",
+      "placed_time": "12:40",
+      "placed_ts": 1783917609,
+      "reserved_cash": 102051
+    },
+    {
+      "code": "4736",
+      "name": "泰博",
+      "ticker": "4736.TW",
+      "limit_price": 124.74,
+      "shares": 818,
+      "placed_date": "2026-07-13",
+      "placed_time": "12:40",
+      "placed_ts": 1783917609,
+      "reserved_cash": 102037
+    }
+  ],
   "sl_cooldown": {
     "8463": {
       "sl_dates": [
