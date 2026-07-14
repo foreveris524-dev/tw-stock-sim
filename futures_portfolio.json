@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14 18:56",
+  "last_updated": "2026-07-14 20:17",
   "instrument": "小台指期貨 (MTX)",
   "point_value": 50,
   "initial_margin": 200000,
@@ -5676,6 +5676,21 @@
       "entry_price": 44827,
       "pnl": 0,
       "reason": "掛限價單 SHORT @ 44827（現價44738）｜KD死叉(K31.6/D39.7)，RSI=47.1健康，MACD空頭"
+    },
+    {
+      "date": "2026-07-14",
+      "time": "20:17",
+      "session": "night",
+      "current_price": 44738,
+      "rsi": 47.1,
+      "k": 31.6,
+      "d": 39.7,
+      "macd_hist": -310.412,
+      "action": "OBSERVE",
+      "direction": "NONE",
+      "contracts": 0,
+      "pnl": 0,
+      "reason": "有掛單待成交，等待中"
     }
   ],
   "pending_orders": [
