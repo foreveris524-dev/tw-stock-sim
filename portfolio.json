@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-15 14:32",
+  "last_updated": "2026-07-16 12:21",
   "initial_capital": 1000000,
-  "cash": 408385,
-  "total_value": 1020848,
+  "cash": 408381,
+  "total_value": 1021034,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 101980,
-      "unrealized_pnl": 1993,
-      "unrealized_pnl_pct": 1.99
+      "value": 100886,
+      "unrealized_pnl": 899,
+      "unrealized_pnl_pct": 0.9
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 105696,
-      "unrealized_pnl": 2881,
-      "unrealized_pnl_pct": 2.8
+      "value": 105880,
+      "unrealized_pnl": 3065,
+      "unrealized_pnl_pct": 2.98
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 104609,
-      "unrealized_pnl": 2443,
-      "unrealized_pnl_pct": 2.39
+      "value": 105705,
+      "unrealized_pnl": 3539,
+      "unrealized_pnl_pct": 3.46
     },
     {
       "code": "2496",
@@ -3376,19 +3376,45 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 70.29（現價 71.00 的 99%）｜KD金叉(K69.0/D64.3)，RSI=63.4健康，MACD多頭，MA20上揚(68.9→69.49)"
+    },
+    {
+      "date": "2026-07-16",
+      "time": "12:21",
+      "action": "ORDER_CANCEL",
+      "code": "2006",
+      "name": "東和鋼鐵",
+      "price": 70.29,
+      "shares": 1452,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-15，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-16",
+      "time": "12:21",
+      "action": "ORDER_PLACE",
+      "code": "5538",
+      "name": "東明-KY",
+      "price": 34.25,
+      "shares": 2980,
+      "amount": 102065,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 34.25（現價 34.60 的 99%）｜KD金叉(K64.4/D60.6)，RSI=60.4健康，MACD多頭，MA20上揚(32.66→33.08)"
     }
   ],
   "pending_orders": [
     {
-      "code": "2006",
-      "name": "東和鋼鐵",
-      "ticker": "2006.TW",
-      "limit_price": 70.29,
-      "shares": 1452,
-      "placed_date": "2026-07-15",
-      "placed_time": "12:15",
-      "placed_ts": 1784088926,
-      "reserved_cash": 102061
+      "code": "5538",
+      "name": "東明-KY",
+      "ticker": "5538.TW",
+      "limit_price": 34.25,
+      "shares": 2980,
+      "placed_date": "2026-07-16",
+      "placed_time": "12:21",
+      "placed_ts": 1784175672,
+      "reserved_cash": 102065
     }
   ],
   "sl_cooldown": {
