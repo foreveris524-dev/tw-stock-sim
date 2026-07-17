@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-17 12:19",
+  "last_updated": "2026-07-17 14:34",
   "initial_capital": 1000000,
   "cash": 306314,
-  "total_value": 1014238,
+  "total_value": 1012676,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 101008,
-      "unrealized_pnl": 1021,
-      "unrealized_pnl_pct": 1.02
+      "value": 101130,
+      "unrealized_pnl": 1143,
+      "unrealized_pnl_pct": 1.14
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 104412,
-      "unrealized_pnl": 1597,
-      "unrealized_pnl_pct": 1.55
+      "value": 103127,
+      "unrealized_pnl": 312,
+      "unrealized_pnl_pct": 0.3
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 103982,
-      "unrealized_pnl": 1816,
-      "unrealized_pnl_pct": 1.78
+      "value": 103513,
+      "unrealized_pnl": 1347,
+      "unrealized_pnl_pct": 1.32
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 95056,
-      "unrealized_pnl": -7110,
-      "unrealized_pnl_pct": -6.96
+      "value": 94743,
+      "unrealized_pnl": -7423,
+      "unrealized_pnl_pct": -7.27
     },
     {
       "code": "5225",
@@ -75,9 +75,24 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 99334,
-      "unrealized_pnl": -3889,
-      "unrealized_pnl_pct": -3.77
+      "value": 97926,
+      "unrealized_pnl": -5297,
+      "unrealized_pnl_pct": -5.13
+    },
+    {
+      "code": "5538",
+      "name": "東明-KY",
+      "ticker": "5538.TW",
+      "shares": 2985,
+      "entry_price": 34.2,
+      "entry_date": "2026-07-17",
+      "entry_time": "14:34",
+      "cost": 102087,
+      "take_profit": 35.91,
+      "stop_loss": 33.17,
+      "value": 103878,
+      "unrealized_pnl": 1791,
+      "unrealized_pnl_pct": 1.75
     }
   ],
   "plan_for_5_22": {
@@ -3441,6 +3456,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 34.20（現價 34.55 的 99%）｜KD金叉(K64.7/D62.2)，RSI=59.8健康，MACD多頭，MA20上揚(32.71→33.21)"
+    },
+    {
+      "date": "2026-07-17",
+      "time": "14:34",
+      "action": "BUY",
+      "code": "5538",
+      "name": "東明-KY",
+      "price": 34.2,
+      "shares": 2985,
+      "amount": 102087,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=34.20，5分K低點觸及）"
     }
   ],
   "pending_orders": [
@@ -3454,17 +3482,6 @@
       "placed_time": "12:19",
       "placed_ts": 1784261972,
       "reserved_cash": 102045
-    },
-    {
-      "code": "5538",
-      "name": "東明-KY",
-      "ticker": "5538.TW",
-      "limit_price": 34.2,
-      "shares": 2985,
-      "placed_date": "2026-07-17",
-      "placed_time": "12:19",
-      "placed_ts": 1784261972,
-      "reserved_cash": 102087
     }
   ],
   "sl_cooldown": {
