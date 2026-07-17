@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-16 14:40",
+  "last_updated": "2026-07-17 12:19",
   "initial_capital": 1000000,
-  "cash": 408381,
-  "total_value": 1020902,
+  "cash": 306314,
+  "total_value": 1014238,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 101859,
-      "unrealized_pnl": 1872,
-      "unrealized_pnl_pct": 1.87
+      "value": 101008,
+      "unrealized_pnl": 1021,
+      "unrealized_pnl_pct": 1.02
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 106247,
-      "unrealized_pnl": 3432,
-      "unrealized_pnl_pct": 3.34
+      "value": 104412,
+      "unrealized_pnl": 1597,
+      "unrealized_pnl_pct": 1.55
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 104452,
-      "unrealized_pnl": 2286,
-      "unrealized_pnl_pct": 2.24
+      "value": 103982,
+      "unrealized_pnl": 1816,
+      "unrealized_pnl_pct": 1.78
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 96309,
-      "unrealized_pnl": -5857,
-      "unrealized_pnl_pct": -5.73
+      "value": 95056,
+      "unrealized_pnl": -7110,
+      "unrealized_pnl_pct": -6.96
     },
     {
       "code": "5225",
@@ -75,9 +75,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 101589,
-      "unrealized_pnl": -1634,
-      "unrealized_pnl_pct": -1.58
+      "value": 99334,
+      "unrealized_pnl": -3889,
+      "unrealized_pnl_pct": -3.77
     }
   ],
   "plan_for_5_22": {
@@ -3402,19 +3402,69 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 34.25（現價 34.60 的 99%）｜KD金叉(K64.4/D60.6)，RSI=60.4健康，MACD多頭，MA20上揚(32.66→33.08)"
+    },
+    {
+      "date": "2026-07-17",
+      "time": "12:19",
+      "action": "ORDER_CANCEL",
+      "code": "5538",
+      "name": "東明-KY",
+      "price": 34.25,
+      "shares": 2980,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-16，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-17",
+      "time": "12:19",
+      "action": "ORDER_PLACE",
+      "code": "2006",
+      "name": "東和鋼鐵",
+      "price": 69.99,
+      "shares": 1458,
+      "amount": 102045,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 69.99（現價 70.70 的 99%）｜KD金叉(K74.6/D72.4)，RSI=56.6健康，MACD多頭，MA20上揚(69.23→69.73)"
+    },
+    {
+      "date": "2026-07-17",
+      "time": "12:19",
+      "action": "ORDER_PLACE",
+      "code": "5538",
+      "name": "東明-KY",
+      "price": 34.2,
+      "shares": 2985,
+      "amount": 102087,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 34.20（現價 34.55 的 99%）｜KD金叉(K64.7/D62.2)，RSI=59.8健康，MACD多頭，MA20上揚(32.71→33.21)"
     }
   ],
   "pending_orders": [
     {
+      "code": "2006",
+      "name": "東和鋼鐵",
+      "ticker": "2006.TW",
+      "limit_price": 69.99,
+      "shares": 1458,
+      "placed_date": "2026-07-17",
+      "placed_time": "12:19",
+      "placed_ts": 1784261972,
+      "reserved_cash": 102045
+    },
+    {
       "code": "5538",
       "name": "東明-KY",
       "ticker": "5538.TW",
-      "limit_price": 34.25,
-      "shares": 2980,
-      "placed_date": "2026-07-16",
-      "placed_time": "12:21",
-      "placed_ts": 1784175672,
-      "reserved_cash": 102065
+      "limit_price": 34.2,
+      "shares": 2985,
+      "placed_date": "2026-07-17",
+      "placed_time": "12:19",
+      "placed_ts": 1784261972,
+      "reserved_cash": 102087
     }
   ],
   "sl_cooldown": {
