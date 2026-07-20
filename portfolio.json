@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-20 12:48",
+  "last_updated": "2026-07-20 15:49",
   "initial_capital": 1000000,
-  "cash": 204195,
-  "total_value": 1018062,
+  "cash": 102109,
+  "total_value": 1018615,
   "holdings": [
     {
       "code": "5515",
@@ -15,9 +15,9 @@
       "cost": 99987,
       "take_profit": 43.19,
       "stop_loss": 39.9,
-      "value": 102953,
-      "unrealized_pnl": 2966,
-      "unrealized_pnl_pct": 2.97
+      "value": 103925,
+      "unrealized_pnl": 3938,
+      "unrealized_pnl_pct": 3.94
     },
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 103127,
-      "unrealized_pnl": 312,
-      "unrealized_pnl_pct": 0.3
+      "value": 103494,
+      "unrealized_pnl": 679,
+      "unrealized_pnl_pct": 0.66
     },
     {
       "code": "1419",
@@ -60,9 +60,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 94900,
-      "unrealized_pnl": -7266,
-      "unrealized_pnl_pct": -7.11
+      "value": 95056,
+      "unrealized_pnl": -7110,
+      "unrealized_pnl_pct": -6.96
     },
     {
       "code": "5225",
@@ -75,9 +75,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 99334,
-      "unrealized_pnl": -3889,
-      "unrealized_pnl_pct": -3.77
+      "value": 98348,
+      "unrealized_pnl": -4875,
+      "unrealized_pnl_pct": -4.72
     },
     {
       "code": "5538",
@@ -93,6 +93,21 @@
       "value": 104624,
       "unrealized_pnl": 2537,
       "unrealized_pnl_pct": 2.49
+    },
+    {
+      "code": "1615",
+      "name": "大山",
+      "ticker": "1615.TW",
+      "shares": 2194,
+      "entry_price": 46.53,
+      "entry_date": "2026-07-20",
+      "entry_time": "15:49",
+      "cost": 102087,
+      "take_profit": 48.86,
+      "stop_loss": 45.13,
+      "value": 102131,
+      "unrealized_pnl": 44,
+      "unrealized_pnl_pct": 0.04
     }
   ],
   "plan_for_5_22": {
@@ -3508,6 +3523,32 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 46.53（現價 47.00 的 99%）｜KD金叉(K63.0/D61.4)，RSI=63.9健康，MACD多頭，MA20上揚(45.2→45.74)"
+    },
+    {
+      "date": "2026-07-20",
+      "time": "15:49",
+      "action": "BUY",
+      "code": "1615",
+      "name": "大山",
+      "price": 46.53,
+      "shares": 2194,
+      "amount": 102087,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=46.53，5分K低點觸及）"
+    },
+    {
+      "date": "2026-07-20",
+      "time": "15:49",
+      "action": "ORDER_PLACE",
+      "code": "6807",
+      "name": "峰源-KY",
+      "price": 33.46,
+      "shares": 3051,
+      "amount": 102086,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 33.46（現價 33.80 的 99%）｜KD金叉(K77.7/D73.6)，RSI=53.3健康，MACD多頭，MA20上揚(33.4→33.42)"
     }
   ],
   "pending_orders": [
@@ -3523,15 +3564,15 @@
       "reserved_cash": 102077
     },
     {
-      "code": "1615",
-      "name": "大山",
-      "ticker": "1615.TW",
-      "limit_price": 46.53,
-      "shares": 2194,
+      "code": "6807",
+      "name": "峰源-KY",
+      "ticker": "6807.TW",
+      "limit_price": 33.46,
+      "shares": 3051,
       "placed_date": "2026-07-20",
-      "placed_time": "12:48",
-      "placed_ts": 1784522903,
-      "reserved_cash": 102087
+      "placed_time": "15:49",
+      "placed_ts": 1784533780,
+      "reserved_cash": 102086
     }
   ],
   "sl_cooldown": {
