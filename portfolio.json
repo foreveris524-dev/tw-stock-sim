@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-21 12:27",
+  "last_updated": "2026-07-21 15:15",
   "initial_capital": 1000000,
-  "cash": 196795,
-  "total_value": 1014483,
+  "cash": 98419,
+  "total_value": 1014690,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 103127,
-      "unrealized_pnl": 312,
-      "unrealized_pnl_pct": 0.3
+      "value": 102943,
+      "unrealized_pnl": 128,
+      "unrealized_pnl_pct": 0.12
     },
     {
       "code": "1419",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 104139,
-      "unrealized_pnl": 1973,
-      "unrealized_pnl_pct": 1.93
+      "value": 104765,
+      "unrealized_pnl": 2599,
+      "unrealized_pnl_pct": 2.54
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 94117,
-      "unrealized_pnl": -8049,
-      "unrealized_pnl_pct": -7.88
+      "value": 94586,
+      "unrealized_pnl": -7580,
+      "unrealized_pnl_pct": -7.42
     },
     {
       "code": "5225",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 102434,
-      "unrealized_pnl": -789,
-      "unrealized_pnl_pct": -0.76
+      "value": 101730,
+      "unrealized_pnl": -1493,
+      "unrealized_pnl_pct": -1.45
     },
     {
       "code": "5538",
@@ -3610,6 +3610,19 @@
       "pnl": -8513,
       "session": "day",
       "reason": "達停損 SL=45.13（-8.3%）"
+    },
+    {
+      "date": "2026-07-21",
+      "time": "15:15",
+      "action": "ORDER_PLACE",
+      "code": "6807",
+      "name": "峰源-KY",
+      "price": 33.61,
+      "shares": 2927,
+      "amount": 98376,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 33.61（現價 33.95 的 99%）｜KD金叉(K77.9/D75.0)，RSI=55.6健康，MACD多頭，MA20上揚(33.39→33.46)"
     }
   ],
   "pending_orders": [
@@ -3645,6 +3658,17 @@
       "placed_time": "12:27",
       "placed_ts": 1784608046,
       "reserved_cash": 102845
+    },
+    {
+      "code": "6807",
+      "name": "峰源-KY",
+      "ticker": "6807.TW",
+      "limit_price": 33.61,
+      "shares": 2927,
+      "placed_date": "2026-07-21",
+      "placed_time": "15:15",
+      "placed_ts": 1784618146,
+      "reserved_cash": 98376
     }
   ],
   "sl_cooldown": {
