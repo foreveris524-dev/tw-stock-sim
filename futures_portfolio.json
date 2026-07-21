@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-22 04:50",
+  "last_updated": "2026-07-22 06:06",
   "instrument": "小台指期貨 (MTX)",
   "point_value": 50,
   "initial_margin": 200000,
@@ -7246,14 +7246,46 @@
       "contracts": 0,
       "pnl": 0,
       "reason": "有掛單待成交，等待中"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "06:06",
+      "session": "night",
+      "action": "ORDER_CANCEL",
+      "direction": "SHORT",
+      "current_price": 42450,
+      "rsi": 37.0,
+      "k": 22.5,
+      "d": 32.0,
+      "macd_hist": -496.031,
+      "contracts": 1,
+      "entry_price": 42535,
+      "pnl": 0,
+      "reason": "限價單逾時取消（141分未成交）"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "06:06",
+      "session": "night",
+      "current_price": 42450,
+      "rsi": 37.0,
+      "k": 22.5,
+      "d": 32.0,
+      "macd_hist": -496.031,
+      "action": "ORDER_PLACE",
+      "direction": "SHORT",
+      "contracts": 1,
+      "entry_price": 42535,
+      "pnl": 0,
+      "reason": "掛限價單 SHORT @ 42535（現價42450）｜KD死叉(K22.5/D32.0)，RSI=37.0健康，MACD空頭"
     }
   ],
   "pending_orders": [
     {
       "direction": "SHORT",
       "limit_price": 42535,
-      "placed_ts": 1784663068,
-      "placed_time": "03:44"
+      "placed_ts": 1784671561,
+      "placed_time": "06:06"
     }
   ]
 }
