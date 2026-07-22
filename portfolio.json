@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-22 12:29",
+  "last_updated": "2026-07-22 15:17",
   "initial_capital": 1000000,
   "cash": 15,
-  "total_value": 1013109,
+  "total_value": 1010156,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 102210,
-      "unrealized_pnl": -605,
-      "unrealized_pnl_pct": -0.59
+      "value": 101842,
+      "unrealized_pnl": -973,
+      "unrealized_pnl_pct": -0.95
     },
     {
       "code": "1419",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 103669,
-      "unrealized_pnl": 1503,
-      "unrealized_pnl_pct": 1.47
+      "value": 103199,
+      "unrealized_pnl": 1033,
+      "unrealized_pnl_pct": 1.01
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 102575,
-      "unrealized_pnl": -648,
-      "unrealized_pnl_pct": -0.63
+      "value": 102434,
+      "unrealized_pnl": -789,
+      "unrealized_pnl_pct": -0.76
     },
     {
       "code": "5538",
@@ -75,9 +75,24 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 104475,
-      "unrealized_pnl": 2388,
-      "unrealized_pnl_pct": 2.34
+      "value": 103281,
+      "unrealized_pnl": 1194,
+      "unrealized_pnl_pct": 1.17
+    },
+    {
+      "code": "2530",
+      "name": "華建",
+      "ticker": "2530.TW",
+      "shares": 5200,
+      "entry_price": 19.45,
+      "entry_date": "2026-07-22",
+      "entry_time": "15:17",
+      "cost": 101140,
+      "take_profit": 20.42,
+      "stop_loss": 18.87,
+      "value": 100360,
+      "unrealized_pnl": -780,
+      "unrealized_pnl_pct": -0.77
     }
   ],
   "plan_for_5_22": {
@@ -3740,6 +3755,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 19.45（現價 19.65 的 99%）｜KD金叉(K54.7/D51.4)，RSI=51.0健康，MACD多頭，MA20上揚(19.39→19.42)"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "15:17",
+      "action": "BUY",
+      "code": "2530",
+      "name": "華建",
+      "price": 19.45,
+      "shares": 5200,
+      "amount": 101140,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=19.45，5分K低點觸及）"
     }
   ],
   "pending_orders": [
@@ -3786,17 +3814,6 @@
       "placed_time": "12:29",
       "placed_ts": 1784694558,
       "reserved_cash": 101134
-    },
-    {
-      "code": "2530",
-      "name": "華建",
-      "ticker": "2530.TW",
-      "limit_price": 19.45,
-      "shares": 5200,
-      "placed_date": "2026-07-22",
-      "placed_time": "12:29",
-      "placed_ts": 1784694558,
-      "reserved_cash": 101140
     }
   ],
   "sl_cooldown": {
