@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-21 15:15",
+  "last_updated": "2026-07-22 12:29",
   "initial_capital": 1000000,
-  "cash": 98419,
-  "total_value": 1014690,
+  "cash": 15,
+  "total_value": 1013109,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 102943,
-      "unrealized_pnl": 128,
-      "unrealized_pnl_pct": 0.12
+      "value": 102210,
+      "unrealized_pnl": -605,
+      "unrealized_pnl_pct": -0.59
     },
     {
       "code": "1419",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 104765,
-      "unrealized_pnl": 2599,
-      "unrealized_pnl_pct": 2.54
+      "value": 103669,
+      "unrealized_pnl": 1503,
+      "unrealized_pnl_pct": 1.47
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 101730,
-      "unrealized_pnl": -1493,
-      "unrealized_pnl_pct": -1.45
+      "value": 102575,
+      "unrealized_pnl": -648,
+      "unrealized_pnl_pct": -0.63
     },
     {
       "code": "5538",
@@ -75,9 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 105072,
-      "unrealized_pnl": 2985,
-      "unrealized_pnl_pct": 2.92
+      "value": 104475,
+      "unrealized_pnl": 2388,
+      "unrealized_pnl_pct": 2.34
     }
   ],
   "plan_for_5_22": {
@@ -3623,52 +3623,180 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 33.61（現價 33.95 的 99%）｜KD金叉(K77.9/D75.0)，RSI=55.6健康，MACD多頭，MA20上揚(33.39→33.46)"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "12:29",
+      "action": "ORDER_CANCEL",
+      "code": "2615",
+      "name": "萬海",
+      "price": 83.56,
+      "shares": 1232,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-21，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "12:29",
+      "action": "ORDER_CANCEL",
+      "code": "1439",
+      "name": "雋揚",
+      "price": 25.94,
+      "shares": 3971,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-21，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "12:29",
+      "action": "ORDER_CANCEL",
+      "code": "2603",
+      "name": "長榮",
+      "price": 202.45,
+      "shares": 508,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-21，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "12:29",
+      "action": "ORDER_CANCEL",
+      "code": "6807",
+      "name": "峰源-KY",
+      "price": 33.61,
+      "shares": 2927,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-21，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "12:29",
+      "action": "ORDER_PLACE",
+      "code": "6177",
+      "name": "達麗",
+      "price": 47.72,
+      "shares": 2119,
+      "amount": 101119,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 47.72（現價 48.20 的 99%）｜KD金叉(K70.3/D66.6)，RSI=62.4健康，MACD多頭，MA20上揚(46.09→46.2)"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "12:29",
+      "action": "ORDER_PLACE",
+      "code": "2615",
+      "name": "萬海",
+      "price": 84.94,
+      "shares": 1190,
+      "amount": 101079,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 84.94（現價 85.80 的 99%）｜KD金叉(K70.9/D59.7)，RSI=63.0健康，MACD多頭，MA20上揚(79.44→80.08)"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "12:29",
+      "action": "ORDER_PLACE",
+      "code": "1439",
+      "name": "雋揚",
+      "price": 26.33,
+      "shares": 3840,
+      "amount": 101107,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 26.33（現價 26.60 的 99%）｜KD金叉(K77.2/D68.8)，RSI=62.8健康，MACD多頭，MA20上揚(24.23→24.61)"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "12:29",
+      "action": "ORDER_PLACE",
+      "code": "2546",
+      "name": "根基",
+      "price": 95.14,
+      "shares": 1063,
+      "amount": 101134,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 95.14（現價 96.10 的 99%）｜KD金叉(K75.8/D72.4)，RSI=59.7健康，MACD多頭，MA20上揚(93.67→94.3)"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "12:29",
+      "action": "ORDER_PLACE",
+      "code": "2530",
+      "name": "華建",
+      "price": 19.45,
+      "shares": 5200,
+      "amount": 101140,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 19.45（現價 19.65 的 99%）｜KD金叉(K54.7/D51.4)，RSI=51.0健康，MACD多頭，MA20上揚(19.39→19.42)"
     }
   ],
   "pending_orders": [
     {
+      "code": "6177",
+      "name": "達麗",
+      "ticker": "6177.TW",
+      "limit_price": 47.72,
+      "shares": 2119,
+      "placed_date": "2026-07-22",
+      "placed_time": "12:29",
+      "placed_ts": 1784694558,
+      "reserved_cash": 101119
+    },
+    {
       "code": "2615",
       "name": "萬海",
       "ticker": "2615.TW",
-      "limit_price": 83.56,
-      "shares": 1232,
-      "placed_date": "2026-07-21",
-      "placed_time": "12:27",
-      "placed_ts": 1784608046,
-      "reserved_cash": 102946
+      "limit_price": 84.94,
+      "shares": 1190,
+      "placed_date": "2026-07-22",
+      "placed_time": "12:29",
+      "placed_ts": 1784694558,
+      "reserved_cash": 101079
     },
     {
       "code": "1439",
       "name": "雋揚",
       "ticker": "1439.TW",
-      "limit_price": 25.94,
-      "shares": 3971,
-      "placed_date": "2026-07-21",
-      "placed_time": "12:27",
-      "placed_ts": 1784608046,
-      "reserved_cash": 103008
+      "limit_price": 26.33,
+      "shares": 3840,
+      "placed_date": "2026-07-22",
+      "placed_time": "12:29",
+      "placed_ts": 1784694558,
+      "reserved_cash": 101107
     },
     {
-      "code": "2603",
-      "name": "長榮",
-      "ticker": "2603.TW",
-      "limit_price": 202.45,
-      "shares": 508,
-      "placed_date": "2026-07-21",
-      "placed_time": "12:27",
-      "placed_ts": 1784608046,
-      "reserved_cash": 102845
+      "code": "2546",
+      "name": "根基",
+      "ticker": "2546.TW",
+      "limit_price": 95.14,
+      "shares": 1063,
+      "placed_date": "2026-07-22",
+      "placed_time": "12:29",
+      "placed_ts": 1784694558,
+      "reserved_cash": 101134
     },
     {
-      "code": "6807",
-      "name": "峰源-KY",
-      "ticker": "6807.TW",
-      "limit_price": 33.61,
-      "shares": 2927,
-      "placed_date": "2026-07-21",
-      "placed_time": "15:15",
-      "placed_ts": 1784618146,
-      "reserved_cash": 98376
+      "code": "2530",
+      "name": "華建",
+      "ticker": "2530.TW",
+      "limit_price": 19.45,
+      "shares": 5200,
+      "placed_date": "2026-07-22",
+      "placed_time": "12:29",
+      "placed_ts": 1784694558,
+      "reserved_cash": 101140
     }
   ],
   "sl_cooldown": {
