@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-23 15:14",
+  "last_updated": "2026-07-24 12:27",
   "initial_capital": 1000000,
-  "cash": 7,
-  "total_value": 1006864,
+  "cash": 16,
+  "total_value": 996957,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 95420,
-      "unrealized_pnl": -7395,
-      "unrealized_pnl_pct": -7.19
+      "value": 95237,
+      "unrealized_pnl": -7578,
+      "unrealized_pnl_pct": -7.37
     },
     {
       "code": "1419",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 102293,
-      "unrealized_pnl": -930,
-      "unrealized_pnl_pct": -0.9
+      "value": 101871,
+      "unrealized_pnl": -1352,
+      "unrealized_pnl_pct": -1.31
     },
     {
       "code": "5538",
@@ -75,9 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 103878,
-      "unrealized_pnl": 1791,
-      "unrealized_pnl_pct": 1.75
+      "value": 100296,
+      "unrealized_pnl": -1791,
+      "unrealized_pnl_pct": -1.75
     },
     {
       "code": "2530",
@@ -90,24 +90,9 @@
       "cost": 101140,
       "take_profit": 20.42,
       "stop_loss": 18.87,
-      "value": 103740,
-      "unrealized_pnl": 2600,
-      "unrealized_pnl_pct": 2.57
-    },
-    {
-      "code": "1439",
-      "name": "雋揚",
-      "ticker": "1439.TW",
-      "shares": 3844,
-      "entry_price": 26.33,
-      "entry_date": "2026-07-23",
-      "entry_time": "15:14",
-      "cost": 101213,
-      "take_profit": 27.65,
-      "stop_loss": 25.54,
-      "value": 101289,
-      "unrealized_pnl": 76,
-      "unrealized_pnl_pct": 0.08
+      "value": 102440,
+      "unrealized_pnl": 1300,
+      "unrealized_pnl_pct": 1.29
     }
   ],
   "plan_for_5_22": {
@@ -3900,6 +3885,110 @@
       "pnl": 0,
       "session": "day",
       "reason": "限價單成交（限價=26.33，5分K低點觸及）"
+    },
+    {
+      "date": "2026-07-24",
+      "time": "12:27",
+      "action": "ORDER_CANCEL",
+      "code": "6177",
+      "name": "達麗",
+      "price": 47.92,
+      "shares": 2110,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-23，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-24",
+      "time": "12:27",
+      "action": "ORDER_CANCEL",
+      "code": "2615",
+      "name": "萬海",
+      "price": 83.46,
+      "shares": 1211,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-23，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-24",
+      "time": "12:27",
+      "action": "ORDER_CANCEL",
+      "code": "2548",
+      "name": "華固",
+      "price": 98.11,
+      "shares": 1030,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-23，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-24",
+      "time": "12:27",
+      "action": "ORDER_PLACE",
+      "code": "6177",
+      "name": "達麗",
+      "price": 47.92,
+      "shares": 2109,
+      "amount": 101063,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 47.92（現價 48.40 的 99%）｜KD金叉(K78.9/D73.0)，RSI=62.9健康，MACD多頭，MA20上揚(45.94→46.46)"
+    },
+    {
+      "date": "2026-07-24",
+      "time": "12:27",
+      "action": "ORDER_PLACE",
+      "code": "2615",
+      "name": "萬海",
+      "price": 86.03,
+      "shares": 1175,
+      "amount": 101085,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 86.03（現價 86.90 的 99%）｜KD金叉(K75.6/D66.6)，RSI=64.4健康，MACD多頭，MA20上揚(79.4→80.88)"
+    },
+    {
+      "date": "2026-07-24",
+      "time": "12:27",
+      "action": "ORDER_PLACE",
+      "code": "2548",
+      "name": "華固",
+      "price": 97.52,
+      "shares": 1036,
+      "amount": 101031,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 97.52（現價 98.50 的 99%）｜KD金叉(K77.3/D67.6)，RSI=49.1健康，MACD多頭，MA20上揚(96.8→97.13)"
+    },
+    {
+      "date": "2026-07-24",
+      "time": "12:27",
+      "action": "SELL",
+      "code": "1439",
+      "name": "雋揚",
+      "price": 25.2,
+      "shares": 3844,
+      "amount": 96869,
+      "pnl": -4344,
+      "session": "day",
+      "reason": "達停損 SL=25.54（-4.3%）"
+    },
+    {
+      "date": "2026-07-24",
+      "time": "12:27",
+      "action": "ORDER_PLACE",
+      "code": "2031",
+      "name": "新光鋼",
+      "price": 39.85,
+      "shares": 2432,
+      "amount": 96915,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 39.85（現價 40.25 的 99%）｜KD金叉(K65.7/D63.5)，RSI=57.1健康，MACD多頭，MA20上揚(38.85→39.06)"
     }
   ],
   "pending_orders": [
@@ -3908,33 +3997,44 @@
       "name": "達麗",
       "ticker": "6177.TW",
       "limit_price": 47.92,
-      "shares": 2110,
-      "placed_date": "2026-07-23",
-      "placed_time": "12:28",
-      "placed_ts": 1784780890,
-      "reserved_cash": 101111
+      "shares": 2109,
+      "placed_date": "2026-07-24",
+      "placed_time": "12:27",
+      "placed_ts": 1784867238,
+      "reserved_cash": 101063
     },
     {
       "code": "2615",
       "name": "萬海",
       "ticker": "2615.TW",
-      "limit_price": 83.46,
-      "shares": 1211,
-      "placed_date": "2026-07-23",
-      "placed_time": "12:28",
-      "placed_ts": 1784780890,
-      "reserved_cash": 101070
+      "limit_price": 86.03,
+      "shares": 1175,
+      "placed_date": "2026-07-24",
+      "placed_time": "12:27",
+      "placed_ts": 1784867238,
+      "reserved_cash": 101085
     },
     {
       "code": "2548",
       "name": "華固",
       "ticker": "2548.TW",
-      "limit_price": 98.11,
-      "shares": 1030,
-      "placed_date": "2026-07-23",
-      "placed_time": "12:28",
-      "placed_ts": 1784780890,
-      "reserved_cash": 101053
+      "limit_price": 97.52,
+      "shares": 1036,
+      "placed_date": "2026-07-24",
+      "placed_time": "12:27",
+      "placed_ts": 1784867238,
+      "reserved_cash": 101031
+    },
+    {
+      "code": "2031",
+      "name": "新光鋼",
+      "ticker": "2031.TW",
+      "limit_price": 39.85,
+      "shares": 2432,
+      "placed_date": "2026-07-24",
+      "placed_time": "12:27",
+      "placed_ts": 1784867238,
+      "reserved_cash": 96915
     }
   ],
   "sl_cooldown": {
@@ -3953,6 +4053,12 @@
     "1615": {
       "sl_dates": [
         "2026-07-21"
+      ],
+      "cooldown_until": null
+    },
+    "1439": {
+      "sl_dates": [
+        "2026-07-24"
       ],
       "cooldown_until": null
     }
