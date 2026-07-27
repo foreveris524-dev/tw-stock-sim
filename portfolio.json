@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-27 12:49",
+  "last_updated": "2026-07-27 16:21",
   "initial_capital": 1000000,
   "cash": 10,
-  "total_value": 1005472,
+  "total_value": 1005824,
   "holdings": [
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 108524,
-      "unrealized_pnl": 6358,
-      "unrealized_pnl_pct": 6.22
+      "value": 108837,
+      "unrealized_pnl": 6671,
+      "unrealized_pnl_pct": 6.53
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 102434,
-      "unrealized_pnl": -789,
-      "unrealized_pnl_pct": -0.76
+      "value": 102575,
+      "unrealized_pnl": -648,
+      "unrealized_pnl_pct": -0.63
     },
     {
       "code": "5538",
@@ -90,9 +90,24 @@
       "cost": 101140,
       "take_profit": 20.42,
       "stop_loss": 18.87,
-      "value": 104520,
-      "unrealized_pnl": 3380,
-      "unrealized_pnl_pct": 3.34
+      "value": 104780,
+      "unrealized_pnl": 3640,
+      "unrealized_pnl_pct": 3.6
+    },
+    {
+      "code": "2528",
+      "name": "皇普",
+      "ticker": "2528.TW",
+      "shares": 4530,
+      "entry_price": 22.08,
+      "entry_date": "2026-07-27",
+      "entry_time": "16:21",
+      "cost": 100022,
+      "take_profit": 23.18,
+      "stop_loss": 21.42,
+      "value": 99660,
+      "unrealized_pnl": -362,
+      "unrealized_pnl_pct": -0.36
     }
   ],
   "plan_for_5_22": {
@@ -4093,6 +4108,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 26.04（現價 26.30 的 99%）｜KD金叉(K78.3/D74.2)，RSI=60.0健康，MACD多頭，MA20上揚(24.32→24.83)"
+    },
+    {
+      "date": "2026-07-27",
+      "time": "16:21",
+      "action": "BUY",
+      "code": "2528",
+      "name": "皇普",
+      "price": 22.08,
+      "shares": 4530,
+      "amount": 100022,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=22.08，5分K低點觸及）"
     }
   ],
   "pending_orders": [
@@ -4106,17 +4134,6 @@
       "placed_time": "12:49",
       "placed_ts": 1785127741,
       "reserved_cash": 100003
-    },
-    {
-      "code": "2528",
-      "name": "皇普",
-      "ticker": "2528.TW",
-      "limit_price": 22.08,
-      "shares": 4530,
-      "placed_date": "2026-07-27",
-      "placed_time": "12:49",
-      "placed_ts": 1785127741,
-      "reserved_cash": 100022
     },
     {
       "code": "4763",
