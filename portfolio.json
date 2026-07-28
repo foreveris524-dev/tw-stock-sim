@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-27 16:21",
+  "last_updated": "2026-07-28 12:22",
   "initial_capital": 1000000,
-  "cash": 10,
-  "total_value": 1005824,
+  "cash": 95916,
+  "total_value": 985670,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 95053,
-      "unrealized_pnl": -7762,
-      "unrealized_pnl_pct": -7.55
+      "value": 94870,
+      "unrealized_pnl": -7945,
+      "unrealized_pnl_pct": -7.73
     },
     {
       "code": "1419",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 108837,
-      "unrealized_pnl": 6671,
-      "unrealized_pnl_pct": 6.53
+      "value": 106801,
+      "unrealized_pnl": 4635,
+      "unrealized_pnl_pct": 4.54
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 93490,
-      "unrealized_pnl": -8676,
-      "unrealized_pnl_pct": -8.49
+      "value": 91924,
+      "unrealized_pnl": -10242,
+      "unrealized_pnl_pct": -10.02
     },
     {
       "code": "5225",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 102575,
-      "unrealized_pnl": -648,
-      "unrealized_pnl_pct": -0.63
+      "value": 101307,
+      "unrealized_pnl": -1916,
+      "unrealized_pnl_pct": -1.86
     },
     {
       "code": "5538",
@@ -75,9 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 101341,
-      "unrealized_pnl": -746,
-      "unrealized_pnl_pct": -0.73
+      "value": 99251,
+      "unrealized_pnl": -2836,
+      "unrealized_pnl_pct": -2.78
     },
     {
       "code": "2530",
@@ -90,24 +90,9 @@
       "cost": 101140,
       "take_profit": 20.42,
       "stop_loss": 18.87,
-      "value": 104780,
-      "unrealized_pnl": 3640,
-      "unrealized_pnl_pct": 3.6
-    },
-    {
-      "code": "2528",
-      "name": "皇普",
-      "ticker": "2528.TW",
-      "shares": 4530,
-      "entry_price": 22.08,
-      "entry_date": "2026-07-27",
-      "entry_time": "16:21",
-      "cost": 100022,
-      "take_profit": 23.18,
-      "stop_loss": 21.42,
-      "value": 99660,
-      "unrealized_pnl": -362,
-      "unrealized_pnl_pct": -0.36
+      "value": 104000,
+      "unrealized_pnl": 2860,
+      "unrealized_pnl_pct": 2.83
     }
   ],
   "plan_for_5_22": {
@@ -4121,41 +4106,132 @@
       "pnl": 0,
       "session": "day",
       "reason": "限價單成交（限價=22.08，5分K低點觸及）"
+    },
+    {
+      "date": "2026-07-28",
+      "time": "12:22",
+      "action": "ORDER_CANCEL",
+      "code": "2031",
+      "name": "新光鋼",
+      "price": 40.34,
+      "shares": 2479,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-27，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-28",
+      "time": "12:22",
+      "action": "ORDER_CANCEL",
+      "code": "4763",
+      "name": "材料*-KY",
+      "price": 49.01,
+      "shares": 2041,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-27，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-28",
+      "time": "12:22",
+      "action": "ORDER_CANCEL",
+      "code": "1439",
+      "name": "雋揚",
+      "price": 26.04,
+      "shares": 3842,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-27，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-28",
+      "time": "12:22",
+      "action": "ORDER_PLACE",
+      "code": "2548",
+      "name": "華固",
+      "price": 97.52,
+      "shares": 1025,
+      "amount": 99958,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 97.52（現價 98.50 的 99%）｜KD金叉(K77.4/D74.1)，RSI=49.1健康，MACD多頭，MA20上揚(96.87→97.29)"
+    },
+    {
+      "date": "2026-07-28",
+      "time": "12:22",
+      "action": "SELL",
+      "code": "2528",
+      "name": "皇普",
+      "price": 19.3,
+      "shares": 4530,
+      "amount": 87429,
+      "pnl": -12593,
+      "session": "day",
+      "reason": "達停損 SL=21.42（-12.6%）"
+    },
+    {
+      "date": "2026-07-28",
+      "time": "12:22",
+      "action": "ORDER_PLACE",
+      "code": "1439",
+      "name": "雋揚",
+      "price": 26.23,
+      "shares": 3654,
+      "amount": 95844,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 26.23（現價 26.50 的 99%）｜KD金叉(K77.2/D76.7)，RSI=60.2健康，MACD多頭，MA20上揚(24.49→25.06)"
+    },
+    {
+      "date": "2026-07-28",
+      "time": "12:22",
+      "action": "ORDER_PLACE",
+      "code": "8271",
+      "name": "宇瞻",
+      "price": 206.91,
+      "shares": 463,
+      "amount": 95799,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 206.91（現價 209.00 的 99%）｜KD金叉(K77.7/D72.6)，RSI=56.7健康，MACD多頭，MA20上揚(188.75→191.38)"
     }
   ],
   "pending_orders": [
     {
-      "code": "2031",
-      "name": "新光鋼",
-      "ticker": "2031.TW",
-      "limit_price": 40.34,
-      "shares": 2479,
-      "placed_date": "2026-07-27",
-      "placed_time": "12:49",
-      "placed_ts": 1785127741,
-      "reserved_cash": 100003
-    },
-    {
-      "code": "4763",
-      "name": "材料*-KY",
-      "ticker": "4763.TW",
-      "limit_price": 49.01,
-      "shares": 2041,
-      "placed_date": "2026-07-27",
-      "placed_time": "12:49",
-      "placed_ts": 1785127741,
-      "reserved_cash": 100029
+      "code": "2548",
+      "name": "華固",
+      "ticker": "2548.TW",
+      "limit_price": 97.52,
+      "shares": 1025,
+      "placed_date": "2026-07-28",
+      "placed_time": "12:22",
+      "placed_ts": 1785212572,
+      "reserved_cash": 99958
     },
     {
       "code": "1439",
       "name": "雋揚",
       "ticker": "1439.TW",
-      "limit_price": 26.04,
-      "shares": 3842,
-      "placed_date": "2026-07-27",
-      "placed_time": "12:49",
-      "placed_ts": 1785127741,
-      "reserved_cash": 100046
+      "limit_price": 26.23,
+      "shares": 3654,
+      "placed_date": "2026-07-28",
+      "placed_time": "12:22",
+      "placed_ts": 1785212572,
+      "reserved_cash": 95844
+    },
+    {
+      "code": "8271",
+      "name": "宇瞻",
+      "ticker": "8271.TW",
+      "limit_price": 206.91,
+      "shares": 463,
+      "placed_date": "2026-07-28",
+      "placed_time": "12:22",
+      "placed_ts": 1785212572,
+      "reserved_cash": 95799
     }
   ],
   "sl_cooldown": {
@@ -4180,6 +4256,12 @@
     "1439": {
       "sl_dates": [
         "2026-07-24"
+      ],
+      "cooldown_until": null
+    },
+    "2528": {
+      "sl_dates": [
+        "2026-07-28"
       ],
       "cooldown_until": null
     }
