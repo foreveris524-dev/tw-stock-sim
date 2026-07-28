@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-28 12:22",
+  "last_updated": "2026-07-28 15:20",
   "initial_capital": 1000000,
   "cash": 95916,
-  "total_value": 985670,
+  "total_value": 983943,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 94870,
-      "unrealized_pnl": -7945,
-      "unrealized_pnl_pct": -7.73
+      "value": 94502,
+      "unrealized_pnl": -8313,
+      "unrealized_pnl_pct": -8.09
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 91924,
-      "unrealized_pnl": -10242,
-      "unrealized_pnl_pct": -10.02
+      "value": 91611,
+      "unrealized_pnl": -10555,
+      "unrealized_pnl_pct": -10.33
     },
     {
       "code": "5225",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 101307,
-      "unrealized_pnl": -1916,
-      "unrealized_pnl_pct": -1.86
+      "value": 100321,
+      "unrealized_pnl": -2902,
+      "unrealized_pnl_pct": -2.81
     },
     {
       "code": "5538",
@@ -75,9 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 99251,
-      "unrealized_pnl": -2836,
-      "unrealized_pnl_pct": -2.78
+      "value": 100595,
+      "unrealized_pnl": -1492,
+      "unrealized_pnl_pct": -1.46
     },
     {
       "code": "2530",
@@ -90,9 +90,24 @@
       "cost": 101140,
       "take_profit": 20.42,
       "stop_loss": 18.87,
-      "value": 104000,
-      "unrealized_pnl": 2860,
-      "unrealized_pnl_pct": 2.83
+      "value": 103480,
+      "unrealized_pnl": 2340,
+      "unrealized_pnl_pct": 2.31
+    },
+    {
+      "code": "8271",
+      "name": "宇瞻",
+      "ticker": "8271.TW",
+      "shares": 463,
+      "entry_price": 206.91,
+      "entry_date": "2026-07-28",
+      "entry_time": "15:20",
+      "cost": 95799,
+      "take_profit": 217.26,
+      "stop_loss": 200.7,
+      "value": 94915,
+      "unrealized_pnl": -884,
+      "unrealized_pnl_pct": -0.92
     }
   ],
   "plan_for_5_22": {
@@ -4197,6 +4212,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 206.91（現價 209.00 的 99%）｜KD金叉(K77.7/D72.6)，RSI=56.7健康，MACD多頭，MA20上揚(188.75→191.38)"
+    },
+    {
+      "date": "2026-07-28",
+      "time": "15:20",
+      "action": "BUY",
+      "code": "8271",
+      "name": "宇瞻",
+      "price": 206.91,
+      "shares": 463,
+      "amount": 95799,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=206.91，5分K低點觸及）"
     }
   ],
   "pending_orders": [
@@ -4221,17 +4249,6 @@
       "placed_time": "12:22",
       "placed_ts": 1785212572,
       "reserved_cash": 95844
-    },
-    {
-      "code": "8271",
-      "name": "宇瞻",
-      "ticker": "8271.TW",
-      "limit_price": 206.91,
-      "shares": 463,
-      "placed_date": "2026-07-28",
-      "placed_time": "12:22",
-      "placed_ts": 1785212572,
-      "reserved_cash": 95799
     }
   ],
   "sl_cooldown": {
