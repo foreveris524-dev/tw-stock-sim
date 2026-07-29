@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-29 12:25",
+  "last_updated": "2026-07-29 15:26",
   "initial_capital": 1000000,
-  "cash": 298748,
-  "total_value": 983678,
+  "cash": 302203,
+  "total_value": 997768,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 93218,
-      "unrealized_pnl": -9597,
-      "unrealized_pnl_pct": -9.33
+      "value": 94870,
+      "unrealized_pnl": -7945,
+      "unrealized_pnl_pct": -7.73
     },
     {
       "code": "1419",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 107897,
-      "unrealized_pnl": 5731,
-      "unrealized_pnl_pct": 5.61
+      "value": 109777,
+      "unrealized_pnl": 7611,
+      "unrealized_pnl_pct": 7.45
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 90515,
-      "unrealized_pnl": -11651,
-      "unrealized_pnl_pct": -11.4
+      "value": 90828,
+      "unrealized_pnl": -11338,
+      "unrealized_pnl_pct": -11.1
     },
     {
       "code": "5225",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 97362,
-      "unrealized_pnl": -5861,
-      "unrealized_pnl_pct": -5.68
+      "value": 99616,
+      "unrealized_pnl": -3607,
+      "unrealized_pnl_pct": -3.49
     },
     {
       "code": "5538",
@@ -75,24 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 100296,
-      "unrealized_pnl": -1791,
-      "unrealized_pnl_pct": -1.75
-    },
-    {
-      "code": "8271",
-      "name": "宇瞻",
-      "ticker": "8271.TW",
-      "shares": 463,
-      "entry_price": 206.91,
-      "entry_date": "2026-07-28",
-      "entry_time": "15:20",
-      "cost": 95799,
-      "take_profit": 217.26,
-      "stop_loss": 200.7,
-      "value": 96072,
-      "unrealized_pnl": 273,
-      "unrealized_pnl_pct": 0.28
+      "value": 101341,
+      "unrealized_pnl": -746,
+      "unrealized_pnl_pct": -0.73
     }
   ],
   "plan_for_5_22": {
@@ -4262,6 +4247,32 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 26.63（現價 26.90 的 99%）｜KD金叉(K79.5/D78.8)，RSI=63.8健康，MACD多頭，MA20上揚(24.61→25.22)"
+    },
+    {
+      "date": "2026-07-29",
+      "time": "15:26",
+      "action": "ORDER_PLACE",
+      "code": "2530",
+      "name": "華建",
+      "price": 20.44,
+      "shares": 4871,
+      "amount": 99563,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 20.44（現價 20.65 的 99%）｜KD金叉(K70.6/D64.6)，RSI=60.3健康，MACD多頭，MA20上揚(19.4→19.64)"
+    },
+    {
+      "date": "2026-07-29",
+      "time": "15:26",
+      "action": "SELL",
+      "code": "8271",
+      "name": "宇瞻",
+      "price": 222.5,
+      "shares": 463,
+      "amount": 103018,
+      "pnl": 7218,
+      "session": "day",
+      "reason": "達停利 TP=217.26（+7.5%）"
     }
   ],
   "pending_orders": [
@@ -4275,6 +4286,17 @@
       "placed_time": "12:25",
       "placed_ts": 1785299153,
       "reserved_cash": 99570
+    },
+    {
+      "code": "2530",
+      "name": "華建",
+      "ticker": "2530.TW",
+      "limit_price": 20.44,
+      "shares": 4871,
+      "placed_date": "2026-07-29",
+      "placed_time": "15:26",
+      "placed_ts": 1785309967,
+      "reserved_cash": 99563
     }
   ],
   "sl_cooldown": {
