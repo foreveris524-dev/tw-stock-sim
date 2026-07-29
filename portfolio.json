@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-28 15:20",
+  "last_updated": "2026-07-29 12:25",
   "initial_capital": 1000000,
-  "cash": 95916,
-  "total_value": 983943,
+  "cash": 298748,
+  "total_value": 983678,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 94502,
-      "unrealized_pnl": -8313,
-      "unrealized_pnl_pct": -8.09
+      "value": 93218,
+      "unrealized_pnl": -9597,
+      "unrealized_pnl_pct": -9.33
     },
     {
       "code": "1419",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 106801,
-      "unrealized_pnl": 4635,
-      "unrealized_pnl_pct": 4.54
+      "value": 107897,
+      "unrealized_pnl": 5731,
+      "unrealized_pnl_pct": 5.61
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 91611,
-      "unrealized_pnl": -10555,
-      "unrealized_pnl_pct": -10.33
+      "value": 90515,
+      "unrealized_pnl": -11651,
+      "unrealized_pnl_pct": -11.4
     },
     {
       "code": "5225",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 100321,
-      "unrealized_pnl": -2902,
-      "unrealized_pnl_pct": -2.81
+      "value": 97362,
+      "unrealized_pnl": -5861,
+      "unrealized_pnl_pct": -5.68
     },
     {
       "code": "5538",
@@ -75,24 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 100595,
-      "unrealized_pnl": -1492,
-      "unrealized_pnl_pct": -1.46
-    },
-    {
-      "code": "2530",
-      "name": "華建",
-      "ticker": "2530.TW",
-      "shares": 5200,
-      "entry_price": 19.45,
-      "entry_date": "2026-07-22",
-      "entry_time": "15:17",
-      "cost": 101140,
-      "take_profit": 20.42,
-      "stop_loss": 18.87,
-      "value": 103480,
-      "unrealized_pnl": 2340,
-      "unrealized_pnl_pct": 2.31
+      "value": 100296,
+      "unrealized_pnl": -1791,
+      "unrealized_pnl_pct": -1.75
     },
     {
       "code": "8271",
@@ -105,9 +90,9 @@
       "cost": 95799,
       "take_profit": 217.26,
       "stop_loss": 200.7,
-      "value": 94915,
-      "unrealized_pnl": -884,
-      "unrealized_pnl_pct": -0.92
+      "value": 96072,
+      "unrealized_pnl": 273,
+      "unrealized_pnl_pct": 0.28
     }
   ],
   "plan_for_5_22": {
@@ -4225,30 +4210,71 @@
       "pnl": 0,
       "session": "day",
       "reason": "限價單成交（限價=206.91，5分K低點觸及）"
+    },
+    {
+      "date": "2026-07-29",
+      "time": "12:25",
+      "action": "ORDER_CANCEL",
+      "code": "2548",
+      "name": "華固",
+      "price": 97.52,
+      "shares": 1025,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-28，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-29",
+      "time": "12:25",
+      "action": "ORDER_CANCEL",
+      "code": "1439",
+      "name": "雋揚",
+      "price": 26.23,
+      "shares": 3654,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-28，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-29",
+      "time": "12:25",
+      "action": "SELL",
+      "code": "2530",
+      "name": "華建",
+      "price": 20.5,
+      "shares": 5200,
+      "amount": 106600,
+      "pnl": 5460,
+      "session": "day",
+      "reason": "達停利 TP=20.42（+5.4%）"
+    },
+    {
+      "date": "2026-07-29",
+      "time": "12:25",
+      "action": "ORDER_PLACE",
+      "code": "1439",
+      "name": "雋揚",
+      "price": 26.63,
+      "shares": 3739,
+      "amount": 99570,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 26.63（現價 26.90 的 99%）｜KD金叉(K79.5/D78.8)，RSI=63.8健康，MACD多頭，MA20上揚(24.61→25.22)"
     }
   ],
   "pending_orders": [
     {
-      "code": "2548",
-      "name": "華固",
-      "ticker": "2548.TW",
-      "limit_price": 97.52,
-      "shares": 1025,
-      "placed_date": "2026-07-28",
-      "placed_time": "12:22",
-      "placed_ts": 1785212572,
-      "reserved_cash": 99958
-    },
-    {
       "code": "1439",
       "name": "雋揚",
       "ticker": "1439.TW",
-      "limit_price": 26.23,
-      "shares": 3654,
-      "placed_date": "2026-07-28",
-      "placed_time": "12:22",
-      "placed_ts": 1785212572,
-      "reserved_cash": 95844
+      "limit_price": 26.63,
+      "shares": 3739,
+      "placed_date": "2026-07-29",
+      "placed_time": "12:25",
+      "placed_ts": 1785299153,
+      "reserved_cash": 99570
     }
   ],
   "sl_cooldown": {
