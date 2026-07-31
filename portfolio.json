@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-30 15:05",
+  "last_updated": "2026-07-31 12:34",
   "initial_capital": 1000000,
-  "cash": 0,
-  "total_value": 992720,
+  "cash": 307339,
+  "total_value": 1004824,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 95787,
-      "unrealized_pnl": -7028,
-      "unrealized_pnl_pct": -6.84
+      "value": 97622,
+      "unrealized_pnl": -5193,
+      "unrealized_pnl_pct": -5.05
     },
     {
       "code": "1419",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 107114,
-      "unrealized_pnl": 4948,
-      "unrealized_pnl_pct": 4.84
+      "value": 105862,
+      "unrealized_pnl": 3696,
+      "unrealized_pnl_pct": 3.62
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 90985,
-      "unrealized_pnl": -11181,
-      "unrealized_pnl_pct": -10.94
+      "value": 91611,
+      "unrealized_pnl": -10555,
+      "unrealized_pnl_pct": -10.33
     },
     {
       "code": "5225",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 99616,
-      "unrealized_pnl": -3607,
-      "unrealized_pnl_pct": -3.49
+      "value": 102152,
+      "unrealized_pnl": -1071,
+      "unrealized_pnl_pct": -1.04
     },
     {
       "code": "5538",
@@ -75,24 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 99998,
-      "unrealized_pnl": -2089,
-      "unrealized_pnl_pct": -2.05
-    },
-    {
-      "code": "8271",
-      "name": "宇瞻",
-      "ticker": "8271.TW",
-      "shares": 481,
-      "entry_price": 208.4,
-      "entry_date": "2026-07-30",
-      "entry_time": "15:05",
-      "cost": 100240,
-      "take_profit": 218.82,
-      "stop_loss": 202.15,
-      "value": 98124,
-      "unrealized_pnl": -2116,
-      "unrealized_pnl_pct": -2.11
+      "value": 99699,
+      "unrealized_pnl": -2388,
+      "unrealized_pnl_pct": -2.34
     }
   ],
   "plan_for_5_22": {
@@ -4392,52 +4377,121 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 26.93（現價 27.20 的 99%）｜KD金叉(K60.9/D43.1)，RSI=51.7健康，MACD多頭，MA20上揚(26.93→26.94)"
+    },
+    {
+      "date": "2026-07-31",
+      "time": "12:34",
+      "action": "ORDER_CANCEL",
+      "code": "2530",
+      "name": "華建",
+      "price": 20.59,
+      "shares": 4869,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-30，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-31",
+      "time": "12:34",
+      "action": "ORDER_CANCEL",
+      "code": "2451",
+      "name": "創見",
+      "price": 266.81,
+      "shares": 375,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-30，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-31",
+      "time": "12:34",
+      "action": "ORDER_CANCEL",
+      "code": "2548",
+      "name": "華固",
+      "price": 98.11,
+      "shares": 1023,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-30，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-31",
+      "time": "12:34",
+      "action": "ORDER_CANCEL",
+      "code": "1104",
+      "name": "環泥",
+      "price": 26.93,
+      "shares": 3729,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-07-30，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-07-31",
+      "time": "12:34",
+      "action": "ORDER_PLACE",
+      "code": "2528",
+      "name": "皇普",
+      "price": 19.7,
+      "shares": 5090,
+      "amount": 100273,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 19.70（現價 19.90 的 99%）｜KD金叉(K69.5/D62.4)，RSI=59.1健康，MACD多頭，MA20上揚(19.28→19.32)"
+    },
+    {
+      "date": "2026-07-31",
+      "time": "12:34",
+      "action": "ORDER_PLACE",
+      "code": "2530",
+      "name": "華建",
+      "price": 20.15,
+      "shares": 4976,
+      "amount": 100266,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 20.15（現價 20.35 的 99%）｜KD金叉(K71.6/D70.4)，RSI=55.0健康，MACD多頭，MA20上揚(19.54→19.8)"
+    },
+    {
+      "date": "2026-07-31",
+      "time": "12:34",
+      "action": "SELL",
+      "code": "8271",
+      "name": "宇瞻",
+      "price": 222.0,
+      "shares": 481,
+      "amount": 106782,
+      "pnl": 6542,
+      "session": "day",
+      "reason": "達停利 TP=218.82（+6.5%）"
     }
   ],
   "pending_orders": [
     {
+      "code": "2528",
+      "name": "皇普",
+      "ticker": "2528.TW",
+      "limit_price": 19.7,
+      "shares": 5090,
+      "placed_date": "2026-07-31",
+      "placed_time": "12:34",
+      "placed_ts": 1785472452,
+      "reserved_cash": 100273
+    },
+    {
       "code": "2530",
       "name": "華建",
       "ticker": "2530.TW",
-      "limit_price": 20.59,
-      "shares": 4869,
-      "placed_date": "2026-07-30",
-      "placed_time": "12:15",
-      "placed_ts": 1785384951,
-      "reserved_cash": 100253
-    },
-    {
-      "code": "2451",
-      "name": "創見",
-      "ticker": "2451.TW",
-      "limit_price": 266.81,
-      "shares": 375,
-      "placed_date": "2026-07-30",
-      "placed_time": "15:05",
-      "placed_ts": 1785395126,
-      "reserved_cash": 100054
-    },
-    {
-      "code": "2548",
-      "name": "華固",
-      "ticker": "2548.TW",
-      "limit_price": 98.11,
-      "shares": 1023,
-      "placed_date": "2026-07-30",
-      "placed_time": "15:05",
-      "placed_ts": 1785395126,
-      "reserved_cash": 100367
-    },
-    {
-      "code": "1104",
-      "name": "環泥",
-      "ticker": "1104.TW",
-      "limit_price": 26.93,
-      "shares": 3729,
-      "placed_date": "2026-07-30",
-      "placed_time": "15:05",
-      "placed_ts": 1785395126,
-      "reserved_cash": 100422
+      "limit_price": 20.15,
+      "shares": 4976,
+      "placed_date": "2026-07-31",
+      "placed_time": "12:34",
+      "placed_ts": 1785472452,
+      "reserved_cash": 100266
     }
   ],
   "sl_cooldown": {
