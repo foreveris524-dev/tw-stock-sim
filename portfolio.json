@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-31 12:34",
+  "last_updated": "2026-07-31 15:32",
   "initial_capital": 1000000,
-  "cash": 307339,
-  "total_value": 1004824,
+  "cash": 204902,
+  "total_value": 1005197,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 97622,
-      "unrealized_pnl": -5193,
-      "unrealized_pnl_pct": -5.05
+      "value": 97438,
+      "unrealized_pnl": -5377,
+      "unrealized_pnl_pct": -5.23
     },
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 91611,
-      "unrealized_pnl": -10555,
-      "unrealized_pnl_pct": -10.33
+      "value": 92551,
+      "unrealized_pnl": -9615,
+      "unrealized_pnl_pct": -9.41
     },
     {
       "code": "5225",
@@ -75,9 +75,39 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 99699,
-      "unrealized_pnl": -2388,
-      "unrealized_pnl_pct": -2.34
+      "value": 102087,
+      "unrealized_pnl": 0,
+      "unrealized_pnl_pct": 0.0
+    },
+    {
+      "code": "2528",
+      "name": "皇普",
+      "ticker": "2528.TW",
+      "shares": 5090,
+      "entry_price": 19.7,
+      "entry_date": "2026-07-31",
+      "entry_time": "15:32",
+      "cost": 100273,
+      "take_profit": 20.68,
+      "stop_loss": 19.11,
+      "value": 98746,
+      "unrealized_pnl": -1527,
+      "unrealized_pnl_pct": -1.52
+    },
+    {
+      "code": "2530",
+      "name": "華建",
+      "ticker": "2530.TW",
+      "shares": 4976,
+      "entry_price": 20.15,
+      "entry_date": "2026-07-31",
+      "entry_time": "15:32",
+      "cost": 100266,
+      "take_profit": 21.16,
+      "stop_loss": 19.55,
+      "value": 99022,
+      "unrealized_pnl": -1244,
+      "unrealized_pnl_pct": -1.24
     }
   ],
   "plan_for_5_22": {
@@ -4468,30 +4498,58 @@
       "pnl": 6542,
       "session": "day",
       "reason": "達停利 TP=218.82（+6.5%）"
+    },
+    {
+      "date": "2026-07-31",
+      "time": "15:32",
+      "action": "BUY",
+      "code": "2528",
+      "name": "皇普",
+      "price": 19.7,
+      "shares": 5090,
+      "amount": 100273,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=19.70，5分K低點觸及）"
+    },
+    {
+      "date": "2026-07-31",
+      "time": "15:32",
+      "action": "BUY",
+      "code": "2530",
+      "name": "華建",
+      "price": 20.15,
+      "shares": 4976,
+      "amount": 100266,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=20.15，5分K低點觸及）"
+    },
+    {
+      "date": "2026-07-31",
+      "time": "15:32",
+      "action": "ORDER_PLACE",
+      "code": "8271",
+      "name": "宇瞻",
+      "price": 220.77,
+      "shares": 464,
+      "amount": 102437,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 220.77（現價 223.00 的 99%）｜KD金叉(K76.5/D74.7)，RSI=59.2健康，MACD多頭，MA20上揚(189.4→195.35)"
     }
   ],
   "pending_orders": [
     {
-      "code": "2528",
-      "name": "皇普",
-      "ticker": "2528.TW",
-      "limit_price": 19.7,
-      "shares": 5090,
+      "code": "8271",
+      "name": "宇瞻",
+      "ticker": "8271.TW",
+      "limit_price": 220.77,
+      "shares": 464,
       "placed_date": "2026-07-31",
-      "placed_time": "12:34",
-      "placed_ts": 1785472452,
-      "reserved_cash": 100273
-    },
-    {
-      "code": "2530",
-      "name": "華建",
-      "ticker": "2530.TW",
-      "limit_price": 20.15,
-      "shares": 4976,
-      "placed_date": "2026-07-31",
-      "placed_time": "12:34",
-      "placed_ts": 1785472452,
-      "reserved_cash": 100266
+      "placed_time": "15:32",
+      "placed_ts": 1785483125,
+      "reserved_cash": 102437
     }
   ],
   "sl_cooldown": {
