@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-03 16:16",
+  "last_updated": "2026-08-04 12:26",
   "initial_capital": 1000000,
-  "cash": 102526,
-  "total_value": 1004554,
+  "cash": 96306,
+  "total_value": 995551,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 94502,
-      "unrealized_pnl": -8313,
-      "unrealized_pnl_pct": -8.09
+      "value": 92668,
+      "unrealized_pnl": -10147,
+      "unrealized_pnl_pct": -9.87
     },
     {
       "code": "1419",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 106175,
-      "unrealized_pnl": 4009,
-      "unrealized_pnl_pct": 3.92
+      "value": 104139,
+      "unrealized_pnl": 1973,
+      "unrealized_pnl_pct": 1.93
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 93177,
-      "unrealized_pnl": -8989,
-      "unrealized_pnl_pct": -8.8
+      "value": 93334,
+      "unrealized_pnl": -8832,
+      "unrealized_pnl_pct": -8.64
     },
     {
       "code": "5225",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 104689,
-      "unrealized_pnl": 1466,
-      "unrealized_pnl_pct": 1.42
+      "value": 102716,
+      "unrealized_pnl": -507,
+      "unrealized_pnl_pct": -0.49
     },
     {
       "code": "5538",
@@ -75,9 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 101639,
-      "unrealized_pnl": -448,
-      "unrealized_pnl_pct": -0.44
+      "value": 101341,
+      "unrealized_pnl": -746,
+      "unrealized_pnl_pct": -0.73
     },
     {
       "code": "2528",
@@ -90,24 +90,9 @@
       "cost": 100273,
       "take_profit": 20.68,
       "stop_loss": 19.11,
-      "value": 99255,
-      "unrealized_pnl": -1018,
-      "unrealized_pnl_pct": -1.02
-    },
-    {
-      "code": "2530",
-      "name": "華建",
-      "ticker": "2530.TW",
-      "shares": 4976,
-      "entry_price": 20.15,
-      "entry_date": "2026-07-31",
-      "entry_time": "15:32",
-      "cost": 100266,
-      "take_profit": 21.16,
-      "stop_loss": 19.55,
-      "value": 97778,
-      "unrealized_pnl": -2488,
-      "unrealized_pnl_pct": -2.48
+      "value": 97728,
+      "unrealized_pnl": -2545,
+      "unrealized_pnl_pct": -2.54
     }
   ],
   "plan_for_5_22": {
@@ -4576,6 +4561,84 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 53.56（現價 54.10 的 99%）｜KD金叉(K66.3/D56.2)，RSI=54.3健康，MACD多頭，MA20上揚(53.27→53.37)"
+    },
+    {
+      "date": "2026-08-04",
+      "time": "12:26",
+      "action": "ORDER_CANCEL",
+      "code": "8271",
+      "name": "宇瞻",
+      "price": 217.31,
+      "shares": 471,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-03，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-04",
+      "time": "12:26",
+      "action": "ORDER_CANCEL",
+      "code": "5283",
+      "name": "禾聯碩",
+      "price": 53.56,
+      "shares": 1913,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-03，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-04",
+      "time": "12:26",
+      "action": "ORDER_PLACE",
+      "code": "8271",
+      "name": "宇瞻",
+      "price": 219.28,
+      "shares": 467,
+      "amount": 102404,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 219.28（現價 221.50 的 99%）｜KD金叉(K76.7/D75.5)，RSI=58.1健康，MACD多頭，MA20上揚(191.15→198.32)"
+    },
+    {
+      "date": "2026-08-04",
+      "time": "12:26",
+      "action": "ORDER_PLACE",
+      "code": "5283",
+      "name": "禾聯碩",
+      "price": 53.26,
+      "shares": 1923,
+      "amount": 102419,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 53.26（現價 53.80 的 99%）｜KD金叉(K68.5/D62.2)，RSI=51.8健康，MACD多頭，MA20上揚(53.31→53.41)"
+    },
+    {
+      "date": "2026-08-04",
+      "time": "12:26",
+      "action": "ORDER_PLACE",
+      "code": "9945",
+      "name": "潤泰新",
+      "price": 26.43,
+      "shares": 3878,
+      "amount": 102496,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 26.43（現價 26.70 的 99%）｜KD金叉(K62.1/D58.1)，RSI=55.2健康，MACD多頭，MA20上揚(26.21→26.28)"
+    },
+    {
+      "date": "2026-08-04",
+      "time": "12:26",
+      "action": "SELL",
+      "code": "2530",
+      "name": "華建",
+      "price": 19.35,
+      "shares": 4976,
+      "amount": 96286,
+      "pnl": -3981,
+      "session": "day",
+      "reason": "達停損 SL=19.55（-4.0%）"
     }
   ],
   "pending_orders": [
@@ -4583,23 +4646,34 @@
       "code": "8271",
       "name": "宇瞻",
       "ticker": "8271.TW",
-      "limit_price": 217.31,
-      "shares": 471,
-      "placed_date": "2026-08-03",
-      "placed_time": "12:42",
-      "placed_ts": 1785732132,
-      "reserved_cash": 102353
+      "limit_price": 219.28,
+      "shares": 467,
+      "placed_date": "2026-08-04",
+      "placed_time": "12:26",
+      "placed_ts": 1785817563,
+      "reserved_cash": 102404
     },
     {
       "code": "5283",
       "name": "禾聯碩",
       "ticker": "5283.TW",
-      "limit_price": 53.56,
-      "shares": 1913,
-      "placed_date": "2026-08-03",
-      "placed_time": "12:42",
-      "placed_ts": 1785732132,
-      "reserved_cash": 102460
+      "limit_price": 53.26,
+      "shares": 1923,
+      "placed_date": "2026-08-04",
+      "placed_time": "12:26",
+      "placed_ts": 1785817563,
+      "reserved_cash": 102419
+    },
+    {
+      "code": "9945",
+      "name": "潤泰新",
+      "ticker": "9945.TW",
+      "limit_price": 26.43,
+      "shares": 3878,
+      "placed_date": "2026-08-04",
+      "placed_time": "12:26",
+      "placed_ts": 1785817563,
+      "reserved_cash": 102496
     }
   ],
   "sl_cooldown": {
@@ -4630,6 +4704,12 @@
     "2528": {
       "sl_dates": [
         "2026-07-28"
+      ],
+      "cooldown_until": null
+    },
+    "2530": {
+      "sl_dates": [
+        "2026-08-04"
       ],
       "cooldown_until": null
     }
