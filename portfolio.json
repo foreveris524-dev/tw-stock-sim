@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-04 15:19",
+  "last_updated": "2026-08-05 12:24",
   "initial_capital": 1000000,
-  "cash": 96306,
-  "total_value": 996337,
+  "cash": 14,
+  "total_value": 1006420,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 92851,
-      "unrealized_pnl": -9964,
-      "unrealized_pnl_pct": -9.69
+      "value": 95970,
+      "unrealized_pnl": -6845,
+      "unrealized_pnl_pct": -6.66
     },
     {
       "code": "1419",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 104139,
-      "unrealized_pnl": 1973,
-      "unrealized_pnl_pct": 1.93
+      "value": 103826,
+      "unrealized_pnl": 1660,
+      "unrealized_pnl_pct": 1.62
     },
     {
       "code": "2496",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 103702,
-      "unrealized_pnl": 479,
-      "unrealized_pnl_pct": 0.46
+      "value": 106520,
+      "unrealized_pnl": 3297,
+      "unrealized_pnl_pct": 3.19
     },
     {
       "code": "5538",
@@ -75,9 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 100744,
-      "unrealized_pnl": -1343,
-      "unrealized_pnl_pct": -1.32
+      "value": 101639,
+      "unrealized_pnl": -448,
+      "unrealized_pnl_pct": -0.44
     },
     {
       "code": "2528",
@@ -90,9 +90,9 @@
       "cost": 100273,
       "take_profit": 20.68,
       "stop_loss": 19.11,
-      "value": 97473,
-      "unrealized_pnl": -2800,
-      "unrealized_pnl_pct": -2.79
+      "value": 101037,
+      "unrealized_pnl": 764,
+      "unrealized_pnl_pct": 0.76
     }
   ],
   "plan_for_5_22": {
@@ -4639,6 +4639,97 @@
       "pnl": -3981,
       "session": "day",
       "reason": "達停損 SL=19.55（-4.0%）"
+    },
+    {
+      "date": "2026-08-05",
+      "time": "12:24",
+      "action": "ORDER_CANCEL",
+      "code": "8271",
+      "name": "宇瞻",
+      "price": 219.28,
+      "shares": 467,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-04，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-05",
+      "time": "12:24",
+      "action": "ORDER_CANCEL",
+      "code": "5283",
+      "name": "禾聯碩",
+      "price": 53.26,
+      "shares": 1923,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-04，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-05",
+      "time": "12:24",
+      "action": "ORDER_CANCEL",
+      "code": "9945",
+      "name": "潤泰新",
+      "price": 26.43,
+      "shares": 3878,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-04，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-05",
+      "time": "12:24",
+      "action": "ORDER_PLACE",
+      "code": "8271",
+      "name": "宇瞻",
+      "price": 225.72,
+      "shares": 447,
+      "amount": 100897,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 225.72（現價 228.00 的 99%）｜KD金叉(K77.1/D76.6)，RSI=60.5健康，MACD多頭，MA20上揚(193.28→200.8)"
+    },
+    {
+      "date": "2026-08-05",
+      "time": "12:24",
+      "action": "ORDER_PLACE",
+      "code": "2618",
+      "name": "長榮航",
+      "price": 43.21,
+      "shares": 2335,
+      "amount": 100895,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 43.21（現價 43.65 的 99%）｜KD金叉(K79.1/D70.4)，RSI=60.1健康，MACD多頭，MA20上揚(41.64→41.77)"
+    },
+    {
+      "date": "2026-08-05",
+      "time": "12:24",
+      "action": "ORDER_PLACE",
+      "code": "5283",
+      "name": "禾聯碩",
+      "price": 53.36,
+      "shares": 1891,
+      "amount": 100904,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 53.36（現價 53.90 的 99%）｜KD金叉(K64.2/D62.9)，RSI=52.5健康，MACD多頭，MA20上揚(53.36→53.46)"
+    },
+    {
+      "date": "2026-08-05",
+      "time": "12:24",
+      "action": "ORDER_PLACE",
+      "code": "9945",
+      "name": "潤泰新",
+      "price": 26.28,
+      "shares": 3840,
+      "amount": 100915,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 26.28（現價 26.55 的 99%）｜KD金叉(K58.5/D58.2)，RSI=53.1健康，MACD多頭，MA20上揚(26.18→26.33)"
     }
   ],
   "pending_orders": [
@@ -4646,34 +4737,45 @@
       "code": "8271",
       "name": "宇瞻",
       "ticker": "8271.TW",
-      "limit_price": 219.28,
-      "shares": 467,
-      "placed_date": "2026-08-04",
-      "placed_time": "12:26",
-      "placed_ts": 1785817563,
-      "reserved_cash": 102404
+      "limit_price": 225.72,
+      "shares": 447,
+      "placed_date": "2026-08-05",
+      "placed_time": "12:24",
+      "placed_ts": 1785903878,
+      "reserved_cash": 100897
+    },
+    {
+      "code": "2618",
+      "name": "長榮航",
+      "ticker": "2618.TW",
+      "limit_price": 43.21,
+      "shares": 2335,
+      "placed_date": "2026-08-05",
+      "placed_time": "12:24",
+      "placed_ts": 1785903878,
+      "reserved_cash": 100895
     },
     {
       "code": "5283",
       "name": "禾聯碩",
       "ticker": "5283.TW",
-      "limit_price": 53.26,
-      "shares": 1923,
-      "placed_date": "2026-08-04",
-      "placed_time": "12:26",
-      "placed_ts": 1785817563,
-      "reserved_cash": 102419
+      "limit_price": 53.36,
+      "shares": 1891,
+      "placed_date": "2026-08-05",
+      "placed_time": "12:24",
+      "placed_ts": 1785903878,
+      "reserved_cash": 100904
     },
     {
       "code": "9945",
       "name": "潤泰新",
       "ticker": "9945.TW",
-      "limit_price": 26.43,
-      "shares": 3878,
-      "placed_date": "2026-08-04",
-      "placed_time": "12:26",
-      "placed_ts": 1785817563,
-      "reserved_cash": 102496
+      "limit_price": 26.28,
+      "shares": 3840,
+      "placed_date": "2026-08-05",
+      "placed_time": "12:24",
+      "placed_ts": 1785903878,
+      "reserved_cash": 100915
     }
   ],
   "sl_cooldown": {
