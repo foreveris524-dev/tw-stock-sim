@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-07 23:37",
+  "last_updated": "2026-08-08 00:35",
   "instrument": "小台指期貨 (MTX)",
   "point_value": 50,
   "initial_margin": 200000,
@@ -9719,6 +9719,21 @@
       "entry_price": 44137,
       "pnl": 0,
       "reason": "掛限價單 LONG @ 44137（現價44226）｜KD金叉(K78.4/D64.8)，RSI=51.6健康，MACD多頭"
+    },
+    {
+      "date": "2026-08-08",
+      "time": "00:35",
+      "session": "night",
+      "current_price": 44397,
+      "rsi": 52.4,
+      "k": 74.3,
+      "d": 58.1,
+      "macd_hist": 156.183,
+      "action": "OBSERVE",
+      "direction": "NONE",
+      "contracts": 0,
+      "pnl": 0,
+      "reason": "有掛單待成交，等待中"
     }
   ],
   "pending_orders": [
