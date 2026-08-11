@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-11 11:08",
+  "last_updated": "2026-08-11 12:44",
   "initial_capital": 1000000,
-  "cash": 203731,
-  "total_value": 989083,
+  "cash": 7,
+  "total_value": 990201,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 94135,
-      "unrealized_pnl": -8680,
-      "unrealized_pnl_pct": -8.44
+      "value": 94870,
+      "unrealized_pnl": -7945,
+      "unrealized_pnl_pct": -7.73
     },
     {
       "code": "1419",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102260,
-      "unrealized_pnl": 94,
-      "unrealized_pnl_pct": 0.09
+      "value": 102103,
+      "unrealized_pnl": -63,
+      "unrealized_pnl_pct": -0.06
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 92707,
-      "unrealized_pnl": -9459,
-      "unrealized_pnl_pct": -9.26
+      "value": 92551,
+      "unrealized_pnl": -9615,
+      "unrealized_pnl_pct": -9.41
     },
     {
       "code": "5225",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 88203,
-      "unrealized_pnl": -15020,
-      "unrealized_pnl_pct": -14.55
+      "value": 89049,
+      "unrealized_pnl": -14174,
+      "unrealized_pnl_pct": -13.73
     },
     {
       "code": "5538",
@@ -75,9 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 102535,
-      "unrealized_pnl": 448,
-      "unrealized_pnl_pct": 0.44
+      "value": 102385,
+      "unrealized_pnl": 298,
+      "unrealized_pnl_pct": 0.29
     }
   ],
   "plan_for_5_22": {
@@ -5079,6 +5079,32 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 47.82（現價 48.30 的 99%）｜KD金叉(K62.2/D57.4)，RSI=58.4健康，MACD多頭，MA20上揚(47.12→47.78)"
+    },
+    {
+      "date": "2026-08-11",
+      "time": "12:44",
+      "action": "ORDER_PLACE",
+      "code": "1432",
+      "name": "大魯閣",
+      "price": 15.1,
+      "shares": 6746,
+      "amount": 101865,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 15.10（現價 15.25 的 99%）｜KD金叉(K63.1/D54.7)，RSI=49.2健康，MACD多頭，MA20上揚(15.08→15.09)"
+    },
+    {
+      "date": "2026-08-11",
+      "time": "12:44",
+      "action": "ORDER_PLACE",
+      "code": "2505",
+      "name": "國揚",
+      "price": 17.87,
+      "shares": 5700,
+      "amount": 101859,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 17.87（現價 18.05 的 99%）｜KD金叉(K67.8/D58.5)，RSI=53.7健康，MACD多頭，MA20上揚(17.83→17.84)"
     }
   ],
   "pending_orders": [
@@ -5114,6 +5140,28 @@
       "placed_time": "11:08",
       "placed_ts": 1786417727,
       "reserved_cash": 101857
+    },
+    {
+      "code": "1432",
+      "name": "大魯閣",
+      "ticker": "1432.TW",
+      "limit_price": 15.1,
+      "shares": 6746,
+      "placed_date": "2026-08-11",
+      "placed_time": "12:44",
+      "placed_ts": 1786423492,
+      "reserved_cash": 101865
+    },
+    {
+      "code": "2505",
+      "name": "國揚",
+      "ticker": "2505.TW",
+      "limit_price": 17.87,
+      "shares": 5700,
+      "placed_date": "2026-08-11",
+      "placed_time": "12:44",
+      "placed_ts": 1786423492,
+      "reserved_cash": 101859
     }
   ],
   "sl_cooldown": {
