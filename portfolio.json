@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-11 14:39",
+  "last_updated": "2026-08-12 11:28",
   "initial_capital": 1000000,
-  "cash": 7,
-  "total_value": 989527,
+  "cash": 203725,
+  "total_value": 988232,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 95053,
-      "unrealized_pnl": -7762,
-      "unrealized_pnl_pct": -7.55
+      "value": 94502,
+      "unrealized_pnl": -8313,
+      "unrealized_pnl_pct": -8.09
     },
     {
       "code": "1419",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102416,
-      "unrealized_pnl": 250,
-      "unrealized_pnl_pct": 0.24
+      "value": 102730,
+      "unrealized_pnl": 564,
+      "unrealized_pnl_pct": 0.55
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 92707,
-      "unrealized_pnl": -9459,
-      "unrealized_pnl_pct": -9.26
+      "value": 93647,
+      "unrealized_pnl": -8519,
+      "unrealized_pnl_pct": -8.34
     },
     {
       "code": "5225",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 88767,
-      "unrealized_pnl": -14456,
-      "unrealized_pnl_pct": -14.0
+      "value": 87217,
+      "unrealized_pnl": -16006,
+      "unrealized_pnl_pct": -15.51
     },
     {
       "code": "5538",
@@ -75,9 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 101341,
-      "unrealized_pnl": -746,
-      "unrealized_pnl_pct": -0.73
+      "value": 100893,
+      "unrealized_pnl": -1194,
+      "unrealized_pnl_pct": -1.17
     }
   ],
   "plan_for_5_22": {
@@ -5105,63 +5105,145 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 17.87（現價 18.05 的 99%）｜KD金叉(K67.8/D58.5)，RSI=53.7健康，MACD多頭，MA20上揚(17.83→17.84)"
+    },
+    {
+      "date": "2026-08-12",
+      "time": "11:28",
+      "action": "ORDER_CANCEL",
+      "code": "2607",
+      "name": "榮運",
+      "price": 48.16,
+      "shares": 2114,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-11，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-12",
+      "time": "11:28",
+      "action": "ORDER_CANCEL",
+      "code": "2528",
+      "name": "皇普",
+      "price": 19.95,
+      "shares": 5105,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-11，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-12",
+      "time": "11:28",
+      "action": "ORDER_CANCEL",
+      "code": "6177",
+      "name": "達麗",
+      "price": 47.82,
+      "shares": 2130,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-11，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-12",
+      "time": "11:28",
+      "action": "ORDER_CANCEL",
+      "code": "1432",
+      "name": "大魯閣",
+      "price": 15.1,
+      "shares": 6746,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-11，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-12",
+      "time": "11:28",
+      "action": "ORDER_CANCEL",
+      "code": "2505",
+      "name": "國揚",
+      "price": 17.87,
+      "shares": 5700,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-11，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-12",
+      "time": "11:28",
+      "action": "ORDER_PLACE",
+      "code": "1432",
+      "name": "大魯閣",
+      "price": 15.1,
+      "shares": 6744,
+      "amount": 101834,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 15.10（現價 15.25 的 99%）｜KD金叉(K66.5/D59.4)，RSI=49.1健康，MACD多頭，MA20上揚(15.08→15.09)"
+    },
+    {
+      "date": "2026-08-12",
+      "time": "11:28",
+      "action": "ORDER_PLACE",
+      "code": "2505",
+      "name": "國揚",
+      "price": 17.97,
+      "shares": 5667,
+      "amount": 101836,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 17.97（現價 18.15 的 99%）｜KD金叉(K79.2/D66.5)，RSI=56.0健康，MACD多頭，MA20上揚(17.82→17.86)"
+    },
+    {
+      "date": "2026-08-12",
+      "time": "11:28",
+      "action": "ORDER_PLACE",
+      "code": "2528",
+      "name": "皇普",
+      "price": 20.39,
+      "shares": 4995,
+      "amount": 101848,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 20.39（現價 20.60 的 99%）｜KD金叉(K73.6/D71.4)，RSI=62.0健康，MACD多頭，MA20上揚(19.32→19.66)"
     }
   ],
   "pending_orders": [
-    {
-      "code": "2607",
-      "name": "榮運",
-      "ticker": "2607.TW",
-      "limit_price": 48.16,
-      "shares": 2114,
-      "placed_date": "2026-08-11",
-      "placed_time": "11:08",
-      "placed_ts": 1786417727,
-      "reserved_cash": 101810
-    },
-    {
-      "code": "2528",
-      "name": "皇普",
-      "ticker": "2528.TW",
-      "limit_price": 19.95,
-      "shares": 5105,
-      "placed_date": "2026-08-11",
-      "placed_time": "11:08",
-      "placed_ts": 1786417727,
-      "reserved_cash": 101845
-    },
-    {
-      "code": "6177",
-      "name": "達麗",
-      "ticker": "6177.TW",
-      "limit_price": 47.82,
-      "shares": 2130,
-      "placed_date": "2026-08-11",
-      "placed_time": "11:08",
-      "placed_ts": 1786417727,
-      "reserved_cash": 101857
-    },
     {
       "code": "1432",
       "name": "大魯閣",
       "ticker": "1432.TW",
       "limit_price": 15.1,
-      "shares": 6746,
-      "placed_date": "2026-08-11",
-      "placed_time": "12:44",
-      "placed_ts": 1786423492,
-      "reserved_cash": 101865
+      "shares": 6744,
+      "placed_date": "2026-08-12",
+      "placed_time": "11:28",
+      "placed_ts": 1786505324,
+      "reserved_cash": 101834
     },
     {
       "code": "2505",
       "name": "國揚",
       "ticker": "2505.TW",
-      "limit_price": 17.87,
-      "shares": 5700,
-      "placed_date": "2026-08-11",
-      "placed_time": "12:44",
-      "placed_ts": 1786423492,
-      "reserved_cash": 101859
+      "limit_price": 17.97,
+      "shares": 5667,
+      "placed_date": "2026-08-12",
+      "placed_time": "11:28",
+      "placed_ts": 1786505324,
+      "reserved_cash": 101836
+    },
+    {
+      "code": "2528",
+      "name": "皇普",
+      "ticker": "2528.TW",
+      "limit_price": 20.39,
+      "shares": 4995,
+      "placed_date": "2026-08-12",
+      "placed_time": "11:28",
+      "placed_ts": 1786505324,
+      "reserved_cash": 101848
     }
   ],
   "sl_cooldown": {
