@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-12 11:28",
+  "last_updated": "2026-08-12 13:16",
   "initial_capital": 1000000,
-  "cash": 203725,
-  "total_value": 988232,
+  "cash": 102032,
+  "total_value": 986441,
   "holdings": [
     {
       "code": "2204",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 93647,
-      "unrealized_pnl": -8519,
-      "unrealized_pnl_pct": -8.34
+      "value": 93490,
+      "unrealized_pnl": -8676,
+      "unrealized_pnl_pct": -8.49
     },
     {
       "code": "5225",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 87217,
-      "unrealized_pnl": -16006,
-      "unrealized_pnl_pct": -15.51
+      "value": 87076,
+      "unrealized_pnl": -16147,
+      "unrealized_pnl_pct": -15.64
     },
     {
       "code": "5538",
@@ -75,9 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 100893,
-      "unrealized_pnl": -1194,
-      "unrealized_pnl_pct": -1.17
+      "value": 99400,
+      "unrealized_pnl": -2687,
+      "unrealized_pnl_pct": -2.63
     }
   ],
   "plan_for_5_22": {
@@ -5209,6 +5209,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 20.39（現價 20.60 的 99%）｜KD金叉(K73.6/D71.4)，RSI=62.0健康，MACD多頭，MA20上揚(19.32→19.66)"
+    },
+    {
+      "date": "2026-08-12",
+      "time": "13:16",
+      "action": "ORDER_PLACE",
+      "code": "2603",
+      "name": "長榮",
+      "price": 211.86,
+      "shares": 480,
+      "amount": 101693,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 211.86（現價 214.00 的 99%）｜KD金叉(K79.4/D78.0)，RSI=61.4健康，MACD多頭，MA20上揚(200.95→204.93)"
     }
   ],
   "pending_orders": [
@@ -5244,6 +5257,17 @@
       "placed_time": "11:28",
       "placed_ts": 1786505324,
       "reserved_cash": 101848
+    },
+    {
+      "code": "2603",
+      "name": "長榮",
+      "ticker": "2603.TW",
+      "limit_price": 211.86,
+      "shares": 480,
+      "placed_date": "2026-08-12",
+      "placed_time": "13:16",
+      "placed_ts": 1786511813,
+      "reserved_cash": 101693
     }
   ],
   "sl_cooldown": {
