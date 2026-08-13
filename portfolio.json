@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-13 11:31",
+  "last_updated": "2026-08-13 13:20",
   "initial_capital": 1000000,
-  "cash": 203724,
-  "total_value": 986765,
+  "cash": 101891,
+  "total_value": 985675,
   "holdings": [
     {
       "code": "2204",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102416,
-      "unrealized_pnl": 250,
-      "unrealized_pnl_pct": 0.24
+      "value": 101947,
+      "unrealized_pnl": -219,
+      "unrealized_pnl_pct": -0.21
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 93177,
-      "unrealized_pnl": -8989,
-      "unrealized_pnl_pct": -8.8
+      "value": 93020,
+      "unrealized_pnl": -9146,
+      "unrealized_pnl_pct": -8.95
     },
     {
       "code": "5225",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 86935,
-      "unrealized_pnl": -16288,
-      "unrealized_pnl_pct": -15.78
+      "value": 87217,
+      "unrealized_pnl": -16006,
+      "unrealized_pnl_pct": -15.51
     },
     {
       "code": "5538",
@@ -75,9 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 101042,
-      "unrealized_pnl": -1045,
-      "unrealized_pnl_pct": -1.02
+      "value": 100296,
+      "unrealized_pnl": -1791,
+      "unrealized_pnl_pct": -1.75
     }
   ],
   "plan_for_5_22": {
@@ -5313,6 +5313,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 22.42（現價 22.65 的 99%）｜KD金叉(K78.5/D76.5)，RSI=58.7健康，MACD多頭，MA20上揚(21.12→21.55)"
+    },
+    {
+      "date": "2026-08-13",
+      "time": "13:20",
+      "action": "ORDER_PLACE",
+      "code": "2612",
+      "name": "中航",
+      "price": 53.26,
+      "shares": 1912,
+      "amount": 101833,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 53.26（現價 53.80 的 99%）｜KD金叉(K76.9/D76.8)，RSI=51.6健康，MACD多頭，MA20上揚(52.72→52.78)"
     }
   ],
   "pending_orders": [
@@ -5348,6 +5361,17 @@
       "placed_time": "11:31",
       "placed_ts": 1786591882,
       "reserved_cash": 101832
+    },
+    {
+      "code": "2612",
+      "name": "中航",
+      "ticker": "2612.TW",
+      "limit_price": 53.26,
+      "shares": 1912,
+      "placed_date": "2026-08-13",
+      "placed_time": "13:20",
+      "placed_ts": 1786598446,
+      "reserved_cash": 101833
     }
   ],
   "sl_cooldown": {
