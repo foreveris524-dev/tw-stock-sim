@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-13 14:54",
+  "last_updated": "2026-08-14 11:28",
   "initial_capital": 1000000,
-  "cash": 128,
-  "total_value": 986413,
+  "cash": 509243,
+  "total_value": 985150,
   "holdings": [
     {
       "code": "2204",
@@ -15,9 +15,9 @@
       "cost": 102815,
       "take_profit": 58.83,
       "stop_loss": 54.35,
-      "value": 93952,
-      "unrealized_pnl": -8863,
-      "unrealized_pnl_pct": -8.62
+      "value": 95053,
+      "unrealized_pnl": -7762,
+      "unrealized_pnl_pct": -7.55
     },
     {
       "code": "1419",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 101633,
-      "unrealized_pnl": -533,
-      "unrealized_pnl_pct": -0.52
+      "value": 101164,
+      "unrealized_pnl": -1002,
+      "unrealized_pnl_pct": -0.98
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 93334,
-      "unrealized_pnl": -8832,
-      "unrealized_pnl_pct": -8.64
+      "value": 92864,
+      "unrealized_pnl": -9302,
+      "unrealized_pnl_pct": -9.1
     },
     {
       "code": "5225",
@@ -60,9 +60,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 87358,
-      "unrealized_pnl": -15865,
-      "unrealized_pnl_pct": -15.37
+      "value": 86231,
+      "unrealized_pnl": -16992,
+      "unrealized_pnl_pct": -16.46
     },
     {
       "code": "5538",
@@ -75,9 +75,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 100893,
-      "unrealized_pnl": -1194,
-      "unrealized_pnl_pct": -1.17
+      "value": 100595,
+      "unrealized_pnl": -1492,
+      "unrealized_pnl_pct": -1.46
     }
   ],
   "plan_for_5_22": {
@@ -5339,65 +5339,74 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 213.34（現價 215.50 的 99%）｜KD金叉(K78.5/D78.4)，RSI=63.2健康，MACD多頭，MA20上揚(201.43→205.72)"
-    }
-  ],
-  "pending_orders": [
+    },
     {
+      "date": "2026-08-14",
+      "time": "11:28",
+      "action": "ORDER_CANCEL",
       "code": "2505",
       "name": "國揚",
-      "ticker": "2505.TW",
-      "limit_price": 17.92,
+      "price": 17.92,
       "shares": 5683,
-      "placed_date": "2026-08-13",
-      "placed_time": "11:31",
-      "placed_ts": 1786591882,
-      "reserved_cash": 101839
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-13，限價單僅當日有效）"
     },
     {
+      "date": "2026-08-14",
+      "time": "11:28",
+      "action": "ORDER_CANCEL",
       "code": "2528",
       "name": "皇普",
-      "ticker": "2528.TW",
-      "limit_price": 20.2,
+      "price": 20.2,
       "shares": 5042,
-      "placed_date": "2026-08-13",
-      "placed_time": "11:31",
-      "placed_ts": 1786591882,
-      "reserved_cash": 101848
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-13，限價單僅當日有效）"
     },
     {
+      "date": "2026-08-14",
+      "time": "11:28",
+      "action": "ORDER_CANCEL",
       "code": "2010",
       "name": "春源",
-      "ticker": "2010.TW",
-      "limit_price": 22.42,
+      "price": 22.42,
       "shares": 4542,
-      "placed_date": "2026-08-13",
-      "placed_time": "11:31",
-      "placed_ts": 1786591882,
-      "reserved_cash": 101832
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-13，限價單僅當日有效）"
     },
     {
+      "date": "2026-08-14",
+      "time": "11:28",
+      "action": "ORDER_CANCEL",
       "code": "2612",
       "name": "中航",
-      "ticker": "2612.TW",
-      "limit_price": 53.26,
+      "price": 53.26,
       "shares": 1912,
-      "placed_date": "2026-08-13",
-      "placed_time": "13:20",
-      "placed_ts": 1786598446,
-      "reserved_cash": 101833
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-13，限價單僅當日有效）"
     },
     {
+      "date": "2026-08-14",
+      "time": "11:28",
+      "action": "ORDER_CANCEL",
       "code": "2603",
       "name": "長榮",
-      "ticker": "2603.TW",
-      "limit_price": 213.34,
+      "price": 213.34,
       "shares": 477,
-      "placed_date": "2026-08-13",
-      "placed_time": "14:54",
-      "placed_ts": 1786604065,
-      "reserved_cash": 101763
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-13，限價單僅當日有效）"
     }
   ],
+  "pending_orders": [],
   "sl_cooldown": {
     "8463": {
       "sl_dates": [
