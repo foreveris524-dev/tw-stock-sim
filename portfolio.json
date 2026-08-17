@@ -1,24 +1,9 @@
 {
-  "last_updated": "2026-08-14 14:49",
+  "last_updated": "2026-08-17 10:32",
   "initial_capital": 1000000,
-  "cash": 305560,
-  "total_value": 987204,
+  "cash": 9,
+  "total_value": 985972,
   "holdings": [
-    {
-      "code": "2204",
-      "name": "中華",
-      "ticker": "2204.TW",
-      "shares": 1835,
-      "entry_price": 56.03,
-      "entry_date": "2026-06-15",
-      "entry_time": "11:32",
-      "cost": 102815,
-      "take_profit": 58.83,
-      "stop_loss": 54.35,
-      "value": 96338,
-      "unrealized_pnl": -6477,
-      "unrealized_pnl_pct": -6.3
-    },
     {
       "code": "1419",
       "name": "新紡",
@@ -30,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 101790,
-      "unrealized_pnl": -376,
-      "unrealized_pnl_pct": -0.37
+      "value": 99598,
+      "unrealized_pnl": -2568,
+      "unrealized_pnl_pct": -2.51
     },
     {
       "code": "2496",
@@ -45,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 92394,
-      "unrealized_pnl": -9772,
-      "unrealized_pnl_pct": -9.56
+      "value": 93177,
+      "unrealized_pnl": -8989,
+      "unrealized_pnl_pct": -8.8
     },
     {
       "code": "5225",
@@ -60,9 +45,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 85949,
-      "unrealized_pnl": -17274,
-      "unrealized_pnl_pct": -16.73
+      "value": 85667,
+      "unrealized_pnl": -17556,
+      "unrealized_pnl_pct": -17.01
     },
     {
       "code": "5538",
@@ -75,9 +60,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 101490,
-      "unrealized_pnl": -597,
-      "unrealized_pnl_pct": -0.58
+      "value": 102684,
+      "unrealized_pnl": 597,
+      "unrealized_pnl_pct": 0.58
     }
   ],
   "plan_for_5_22": {
@@ -5430,30 +5415,191 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 17.92（現價 18.10 的 99%）｜KD金叉(K71.7/D68.5)，RSI=54.2健康，MACD多頭，MA20上揚(17.81→17.87)"
+    },
+    {
+      "date": "2026-08-17",
+      "time": "10:32",
+      "action": "ORDER_CANCEL",
+      "code": "2607",
+      "name": "榮運",
+      "price": 49.2,
+      "shares": 2070,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-14，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-17",
+      "time": "10:32",
+      "action": "ORDER_CANCEL",
+      "code": "2505",
+      "name": "國揚",
+      "price": 17.92,
+      "shares": 5683,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-14，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-17",
+      "time": "10:32",
+      "action": "ORDER_PLACE",
+      "code": "1437",
+      "name": "勤益控",
+      "price": 31.09,
+      "shares": 3275,
+      "amount": 101820,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 31.09（現價 31.40 的 99%）｜KD金叉(K72.2/D57.5)，RSI=59.7健康，MACD多頭，MA20上揚(30.77→30.84)"
+    },
+    {
+      "date": "2026-08-17",
+      "time": "10:32",
+      "action": "SELL",
+      "code": "2204",
+      "name": "中華",
+      "price": 52.1,
+      "shares": 1835,
+      "amount": 95603,
+      "pnl": -7212,
+      "session": "day",
+      "reason": "達停損 SL=54.35（-7.0%）"
+    },
+    {
+      "date": "2026-08-17",
+      "time": "10:32",
+      "action": "ORDER_PLACE",
+      "code": "2852",
+      "name": "第一保",
+      "price": 26.78,
+      "shares": 3756,
+      "amount": 100586,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 26.78（現價 27.05 的 99%）｜KD金叉(K76.9/D66.6)，RSI=56.7健康，MACD多頭，MA20上揚(26.73→26.77)"
+    },
+    {
+      "date": "2026-08-17",
+      "time": "10:32",
+      "action": "ORDER_PLACE",
+      "code": "2505",
+      "name": "國揚",
+      "price": 17.87,
+      "shares": 5630,
+      "amount": 100608,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 17.87（現價 18.05 的 99%）｜KD金叉(K70.1/D69.0)，RSI=52.6健康，MACD多頭，MA20上揚(17.82→17.89)"
+    },
+    {
+      "date": "2026-08-17",
+      "time": "10:32",
+      "action": "ORDER_PLACE",
+      "code": "2501",
+      "name": "國建",
+      "price": 22.62,
+      "shares": 4447,
+      "amount": 100591,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 22.62（現價 22.85 的 99%）｜KD金叉(K69.4/D65.5)，RSI=51.2健康，MACD多頭，MA20上揚(22.32→22.45)"
+    },
+    {
+      "date": "2026-08-17",
+      "time": "10:32",
+      "action": "ORDER_PLACE",
+      "code": "3356",
+      "name": "奇偶",
+      "price": 63.95,
+      "shares": 1573,
+      "amount": 100593,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 63.95（現價 64.60 的 99%）｜KD金叉(K78.9/D75.4)，RSI=64.9健康，MACD多頭，MA20上揚(57.31→58.34)"
+    },
+    {
+      "date": "2026-08-17",
+      "time": "10:32",
+      "action": "ORDER_PLACE",
+      "code": "2739",
+      "name": "寒舍",
+      "price": 35.84,
+      "shares": 2808,
+      "amount": 100639,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 35.84（現價 36.20 的 99%）｜KD金叉(K70.8/D51.5)，RSI=61.7健康，MACD多頭，MA20上揚(34.66→34.84)"
     }
   ],
   "pending_orders": [
     {
-      "code": "2607",
-      "name": "榮運",
-      "ticker": "2607.TW",
-      "limit_price": 49.2,
-      "shares": 2070,
-      "placed_date": "2026-08-14",
-      "placed_time": "13:17",
-      "placed_ts": 1786684642,
-      "reserved_cash": 101844
+      "code": "1437",
+      "name": "勤益控",
+      "ticker": "1437.TW",
+      "limit_price": 31.09,
+      "shares": 3275,
+      "placed_date": "2026-08-17",
+      "placed_time": "10:32",
+      "placed_ts": 1786933968,
+      "reserved_cash": 101820
+    },
+    {
+      "code": "2852",
+      "name": "第一保",
+      "ticker": "2852.TW",
+      "limit_price": 26.78,
+      "shares": 3756,
+      "placed_date": "2026-08-17",
+      "placed_time": "10:32",
+      "placed_ts": 1786933968,
+      "reserved_cash": 100586
     },
     {
       "code": "2505",
       "name": "國揚",
       "ticker": "2505.TW",
-      "limit_price": 17.92,
-      "shares": 5683,
-      "placed_date": "2026-08-14",
-      "placed_time": "14:49",
-      "placed_ts": 1786690144,
-      "reserved_cash": 101839
+      "limit_price": 17.87,
+      "shares": 5630,
+      "placed_date": "2026-08-17",
+      "placed_time": "10:32",
+      "placed_ts": 1786933968,
+      "reserved_cash": 100608
+    },
+    {
+      "code": "2501",
+      "name": "國建",
+      "ticker": "2501.TW",
+      "limit_price": 22.62,
+      "shares": 4447,
+      "placed_date": "2026-08-17",
+      "placed_time": "10:32",
+      "placed_ts": 1786933968,
+      "reserved_cash": 100591
+    },
+    {
+      "code": "3356",
+      "name": "奇偶",
+      "ticker": "3356.TW",
+      "limit_price": 63.95,
+      "shares": 1573,
+      "placed_date": "2026-08-17",
+      "placed_time": "10:32",
+      "placed_ts": 1786933968,
+      "reserved_cash": 100593
+    },
+    {
+      "code": "2739",
+      "name": "寒舍",
+      "ticker": "2739.TW",
+      "limit_price": 35.84,
+      "shares": 2808,
+      "placed_date": "2026-08-17",
+      "placed_time": "10:32",
+      "placed_ts": 1786933968,
+      "reserved_cash": 100639
     }
   ],
   "sl_cooldown": {
@@ -5490,6 +5636,12 @@
     "2530": {
       "sl_dates": [
         "2026-08-04"
+      ],
+      "cooldown_until": null
+    },
+    "2204": {
+      "sl_dates": [
+        "2026-08-17"
       ],
       "cooldown_until": null
     }
