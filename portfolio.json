@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-17 13:56",
+  "last_updated": "2026-08-18 10:20",
   "initial_capital": 1000000,
-  "cash": 9,
-  "total_value": 987039,
+  "cash": 22,
+  "total_value": 987049,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 100381,
-      "unrealized_pnl": -1785,
-      "unrealized_pnl_pct": -1.75
+      "value": 99598,
+      "unrealized_pnl": -2568,
+      "unrealized_pnl_pct": -2.51
     },
     {
       "code": "2496",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 92864,
-      "unrealized_pnl": -9302,
-      "unrealized_pnl_pct": -9.1
+      "value": 93334,
+      "unrealized_pnl": -8832,
+      "unrealized_pnl_pct": -8.64
     },
     {
       "code": "5225",
@@ -45,9 +45,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 85667,
-      "unrealized_pnl": -17556,
-      "unrealized_pnl_pct": -17.01
+      "value": 85244,
+      "unrealized_pnl": -17979,
+      "unrealized_pnl_pct": -17.42
     },
     {
       "code": "5538",
@@ -60,9 +60,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 103281,
-      "unrealized_pnl": 1194,
-      "unrealized_pnl_pct": 1.17
+      "value": 104027,
+      "unrealized_pnl": 1940,
+      "unrealized_pnl_pct": 1.9
     }
   ],
   "plan_for_5_22": {
@@ -5532,74 +5532,230 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 35.84（現價 36.20 的 99%）｜KD金叉(K70.8/D51.5)，RSI=61.7健康，MACD多頭，MA20上揚(34.66→34.84)"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "10:20",
+      "action": "ORDER_CANCEL",
+      "code": "1437",
+      "name": "勤益控",
+      "price": 31.09,
+      "shares": 3275,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-17，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "10:20",
+      "action": "ORDER_CANCEL",
+      "code": "2852",
+      "name": "第一保",
+      "price": 26.78,
+      "shares": 3756,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-17，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "10:20",
+      "action": "ORDER_CANCEL",
+      "code": "2505",
+      "name": "國揚",
+      "price": 17.87,
+      "shares": 5630,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-17，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "10:20",
+      "action": "ORDER_CANCEL",
+      "code": "2501",
+      "name": "國建",
+      "price": 22.62,
+      "shares": 4447,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-17，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "10:20",
+      "action": "ORDER_CANCEL",
+      "code": "3356",
+      "name": "奇偶",
+      "price": 63.95,
+      "shares": 1573,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-17，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "10:20",
+      "action": "ORDER_CANCEL",
+      "code": "2739",
+      "name": "寒舍",
+      "price": 35.84,
+      "shares": 2808,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-17，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "10:20",
+      "action": "ORDER_PLACE",
+      "code": "3708",
+      "name": "上緯投控",
+      "price": 102.96,
+      "shares": 979,
+      "amount": 100798,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 102.96（現價 104.00 的 99%）｜KD金叉(K77.8/D76.1)，RSI=55.3健康，MACD多頭，MA20上揚(96.88→97.88)"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "10:20",
+      "action": "ORDER_PLACE",
+      "code": "1437",
+      "name": "勤益控",
+      "price": 30.69,
+      "shares": 3284,
+      "amount": 100786,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 30.69（現價 31.00 的 99%）｜KD金叉(K72.2/D62.7)，RSI=53.7健康，MACD多頭，MA20上揚(30.76→30.83)"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "10:20",
+      "action": "ORDER_PLACE",
+      "code": "6005",
+      "name": "群益證",
+      "price": 30.2,
+      "shares": 3338,
+      "amount": 100808,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 30.20（現價 30.50 的 99%）｜KD金叉(K53.7/D53.4)，RSI=48.7健康，MACD多頭，MA20上揚(30.12→30.33)"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "10:20",
+      "action": "ORDER_PLACE",
+      "code": "2852",
+      "name": "第一保",
+      "price": 26.98,
+      "shares": 3736,
+      "amount": 100797,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 26.98（現價 27.25 的 99%）｜KD金叉(K78.5/D70.3)，RSI=60.2健康，MACD多頭，MA20上揚(26.73→26.81)"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "10:20",
+      "action": "ORDER_PLACE",
+      "code": "3356",
+      "name": "奇偶",
+      "price": 63.26,
+      "shares": 1593,
+      "amount": 100773,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 63.26（現價 63.90 的 99%）｜KD金叉(K77.2/D76.3)，RSI=62.3健康，MACD多頭，MA20上揚(57.24→58.71)"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "10:20",
+      "action": "ORDER_PLACE",
+      "code": "2739",
+      "name": "寒舍",
+      "price": 35.59,
+      "shares": 2834,
+      "amount": 100862,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 35.59（現價 35.95 的 99%）｜KD金叉(K72.1/D57.6)，RSI=58.7健康，MACD多頭，MA20上揚(34.66→34.88)"
     }
   ],
   "pending_orders": [
     {
+      "code": "3708",
+      "name": "上緯投控",
+      "ticker": "3708.TW",
+      "limit_price": 102.96,
+      "shares": 979,
+      "placed_date": "2026-08-18",
+      "placed_time": "10:20",
+      "placed_ts": 1787019624,
+      "reserved_cash": 100798
+    },
+    {
       "code": "1437",
       "name": "勤益控",
       "ticker": "1437.TW",
-      "limit_price": 31.09,
-      "shares": 3275,
-      "placed_date": "2026-08-17",
-      "placed_time": "10:32",
-      "placed_ts": 1786933968,
-      "reserved_cash": 101820
+      "limit_price": 30.69,
+      "shares": 3284,
+      "placed_date": "2026-08-18",
+      "placed_time": "10:20",
+      "placed_ts": 1787019624,
+      "reserved_cash": 100786
+    },
+    {
+      "code": "6005",
+      "name": "群益證",
+      "ticker": "6005.TW",
+      "limit_price": 30.2,
+      "shares": 3338,
+      "placed_date": "2026-08-18",
+      "placed_time": "10:20",
+      "placed_ts": 1787019624,
+      "reserved_cash": 100808
     },
     {
       "code": "2852",
       "name": "第一保",
       "ticker": "2852.TW",
-      "limit_price": 26.78,
-      "shares": 3756,
-      "placed_date": "2026-08-17",
-      "placed_time": "10:32",
-      "placed_ts": 1786933968,
-      "reserved_cash": 100586
-    },
-    {
-      "code": "2505",
-      "name": "國揚",
-      "ticker": "2505.TW",
-      "limit_price": 17.87,
-      "shares": 5630,
-      "placed_date": "2026-08-17",
-      "placed_time": "10:32",
-      "placed_ts": 1786933968,
-      "reserved_cash": 100608
-    },
-    {
-      "code": "2501",
-      "name": "國建",
-      "ticker": "2501.TW",
-      "limit_price": 22.62,
-      "shares": 4447,
-      "placed_date": "2026-08-17",
-      "placed_time": "10:32",
-      "placed_ts": 1786933968,
-      "reserved_cash": 100591
+      "limit_price": 26.98,
+      "shares": 3736,
+      "placed_date": "2026-08-18",
+      "placed_time": "10:20",
+      "placed_ts": 1787019624,
+      "reserved_cash": 100797
     },
     {
       "code": "3356",
       "name": "奇偶",
       "ticker": "3356.TW",
-      "limit_price": 63.95,
-      "shares": 1573,
-      "placed_date": "2026-08-17",
-      "placed_time": "10:32",
-      "placed_ts": 1786933968,
-      "reserved_cash": 100593
+      "limit_price": 63.26,
+      "shares": 1593,
+      "placed_date": "2026-08-18",
+      "placed_time": "10:20",
+      "placed_ts": 1787019624,
+      "reserved_cash": 100773
     },
     {
       "code": "2739",
       "name": "寒舍",
       "ticker": "2739.TW",
-      "limit_price": 35.84,
-      "shares": 2808,
-      "placed_date": "2026-08-17",
-      "placed_time": "10:32",
-      "placed_ts": 1786933968,
-      "reserved_cash": 100639
+      "limit_price": 35.59,
+      "shares": 2834,
+      "placed_date": "2026-08-18",
+      "placed_time": "10:20",
+      "placed_ts": 1787019624,
+      "reserved_cash": 100862
     }
   ],
   "sl_cooldown": {
