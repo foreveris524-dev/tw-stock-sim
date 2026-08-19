@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-19 10:22",
+  "last_updated": "2026-08-19 11:26",
   "initial_capital": 1000000,
-  "cash": 201640,
-  "total_value": 986308,
+  "cash": 21,
+  "total_value": 985944,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 99128,
-      "unrealized_pnl": -3038,
-      "unrealized_pnl_pct": -2.97
+      "value": 100224,
+      "unrealized_pnl": -1942,
+      "unrealized_pnl_pct": -1.9
     },
     {
       "code": "2496",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 85973,
-      "unrealized_pnl": -16193,
-      "unrealized_pnl_pct": -15.85
+      "value": 85817,
+      "unrealized_pnl": -16349,
+      "unrealized_pnl_pct": -16.0
     },
     {
       "code": "5225",
@@ -60,9 +60,24 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 112385,
-      "unrealized_pnl": 10298,
-      "unrealized_pnl_pct": 10.09
+      "value": 111042,
+      "unrealized_pnl": 8955,
+      "unrealized_pnl_pct": 8.77
+    },
+    {
+      "code": "3708",
+      "name": "上緯投控",
+      "ticker": "3708.TW",
+      "shares": 979,
+      "entry_price": 102.96,
+      "entry_date": "2026-08-19",
+      "entry_time": "11:26",
+      "cost": 100798,
+      "take_profit": 108.11,
+      "stop_loss": 99.87,
+      "value": 100837,
+      "unrealized_pnl": 39,
+      "unrealized_pnl_pct": 0.04
     }
   ],
   "plan_for_5_22": {
@@ -5818,20 +5833,48 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 35.10（現價 35.45 的 99%）｜KD金叉(K65.7/D59.6)，RSI=53.2健康，MACD多頭，MA20上揚(34.65→34.89)"
+    },
+    {
+      "date": "2026-08-19",
+      "time": "11:26",
+      "action": "BUY",
+      "code": "3708",
+      "name": "上緯投控",
+      "price": 102.96,
+      "shares": 979,
+      "amount": 100798,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=102.96，5分K低點觸及）"
+    },
+    {
+      "date": "2026-08-19",
+      "time": "11:26",
+      "action": "ORDER_PLACE",
+      "code": "2505",
+      "name": "國揚",
+      "price": 17.97,
+      "shares": 5610,
+      "amount": 100812,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 17.97（現價 18.15 的 99%）｜KD金叉(K68.4/D66.4)，RSI=55.0健康，MACD多頭，MA20上揚(17.86→17.92)"
+    },
+    {
+      "date": "2026-08-19",
+      "time": "11:26",
+      "action": "ORDER_PLACE",
+      "code": "9904",
+      "name": "寶成",
+      "price": 24.45,
+      "shares": 4123,
+      "amount": 100807,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 24.45（現價 24.70 的 99%）｜KD金叉(K64.1/D63.0)，RSI=54.5健康，MACD多頭，MA20上揚(24.12→24.17)"
     }
   ],
   "pending_orders": [
-    {
-      "code": "3708",
-      "name": "上緯投控",
-      "ticker": "3708.TW",
-      "limit_price": 102.96,
-      "shares": 979,
-      "placed_date": "2026-08-19",
-      "placed_time": "10:22",
-      "placed_ts": 1787106157,
-      "reserved_cash": 100798
-    },
     {
       "code": "1102",
       "name": "亞泥",
@@ -5863,6 +5906,28 @@
       "placed_date": "2026-08-19",
       "placed_time": "10:22",
       "placed_ts": 1787106157,
+      "reserved_cash": 100807
+    },
+    {
+      "code": "2505",
+      "name": "國揚",
+      "ticker": "2505.TW",
+      "limit_price": 17.97,
+      "shares": 5610,
+      "placed_date": "2026-08-19",
+      "placed_time": "11:26",
+      "placed_ts": 1787110011,
+      "reserved_cash": 100812
+    },
+    {
+      "code": "9904",
+      "name": "寶成",
+      "ticker": "9904.TW",
+      "limit_price": 24.45,
+      "shares": 4123,
+      "placed_date": "2026-08-19",
+      "placed_time": "11:26",
+      "placed_ts": 1787110011,
       "reserved_cash": 100807
     }
   ],
