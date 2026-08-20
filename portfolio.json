@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-20 12:18",
+  "last_updated": "2026-08-20 13:00",
   "initial_capital": 1000000,
   "cash": 201672,
-  "total_value": 988675,
+  "total_value": 988182,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102260,
-      "unrealized_pnl": 94,
-      "unrealized_pnl_pct": 0.09
+      "value": 101633,
+      "unrealized_pnl": -533,
+      "unrealized_pnl_pct": -0.52
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 84963,
-      "unrealized_pnl": -18260,
-      "unrealized_pnl_pct": -17.69
+      "value": 85104,
+      "unrealized_pnl": -18119,
+      "unrealized_pnl_pct": -17.55
     },
     {
       "code": "5538",
@@ -60,9 +60,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 110594,
-      "unrealized_pnl": 8507,
-      "unrealized_pnl_pct": 8.33
+      "value": 110893,
+      "unrealized_pnl": 8806,
+      "unrealized_pnl_pct": 8.63
     },
     {
       "code": "3708",
@@ -78,6 +78,21 @@
       "value": 100837,
       "unrealized_pnl": 39,
       "unrealized_pnl_pct": 0.04
+    },
+    {
+      "code": "2501",
+      "name": "國建",
+      "ticker": "2501.TW",
+      "shares": 4369,
+      "entry_price": 23.07,
+      "entry_date": "2026-08-20",
+      "entry_time": "13:00",
+      "cost": 100793,
+      "take_profit": 24.22,
+      "stop_loss": 22.38,
+      "value": 100487,
+      "unrealized_pnl": -306,
+      "unrealized_pnl_pct": -0.3
     }
   ],
   "plan_for_5_22": {
@@ -5976,6 +5991,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 35.54（現價 35.90 的 99%）｜KD金叉(K71.0/D63.7)，RSI=57.6健康，MACD多頭，MA20上揚(34.68→34.94)"
+    },
+    {
+      "date": "2026-08-20",
+      "time": "13:00",
+      "action": "BUY",
+      "code": "2501",
+      "name": "國建",
+      "price": 23.07,
+      "shares": 4369,
+      "amount": 100793,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=23.07，5分K低點觸及）"
     }
   ],
   "pending_orders": [
@@ -5989,17 +6017,6 @@
       "placed_time": "10:21",
       "placed_ts": 1787192510,
       "reserved_cash": 100792
-    },
-    {
-      "code": "2501",
-      "name": "國建",
-      "ticker": "2501.TW",
-      "limit_price": 23.07,
-      "shares": 4369,
-      "placed_date": "2026-08-20",
-      "placed_time": "10:21",
-      "placed_ts": 1787192510,
-      "reserved_cash": 100793
     },
     {
       "code": "2739",
