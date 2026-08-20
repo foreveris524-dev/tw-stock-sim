@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-19 14:19",
+  "last_updated": "2026-08-20 10:21",
   "initial_capital": 1000000,
-  "cash": 21,
-  "total_value": 983676,
+  "cash": 201672,
+  "total_value": 987735,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 99284,
-      "unrealized_pnl": -2882,
-      "unrealized_pnl_pct": -2.82
+      "value": 101477,
+      "unrealized_pnl": -689,
+      "unrealized_pnl_pct": -0.67
     },
     {
       "code": "2496",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 85660,
-      "unrealized_pnl": -16506,
-      "unrealized_pnl_pct": -16.16
+      "value": 85973,
+      "unrealized_pnl": -16193,
+      "unrealized_pnl_pct": -15.85
     },
     {
       "code": "5225",
@@ -45,9 +45,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 83976,
-      "unrealized_pnl": -19247,
-      "unrealized_pnl_pct": -18.65
+      "value": 85104,
+      "unrealized_pnl": -18119,
+      "unrealized_pnl_pct": -17.55
     },
     {
       "code": "5538",
@@ -60,9 +60,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 111340,
-      "unrealized_pnl": 9253,
-      "unrealized_pnl_pct": 9.06
+      "value": 110296,
+      "unrealized_pnl": 8209,
+      "unrealized_pnl_pct": 8.04
     },
     {
       "code": "3708",
@@ -75,9 +75,9 @@
       "cost": 100798,
       "take_profit": 108.11,
       "stop_loss": 99.87,
-      "value": 99368,
-      "unrealized_pnl": -1430,
-      "unrealized_pnl_pct": -1.42
+      "value": 100837,
+      "unrealized_pnl": 39,
+      "unrealized_pnl_pct": 0.04
     }
   ],
   "plan_for_5_22": {
@@ -5872,63 +5872,145 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 24.45（現價 24.70 的 99%）｜KD金叉(K64.1/D63.0)，RSI=54.5健康，MACD多頭，MA20上揚(24.12→24.17)"
+    },
+    {
+      "date": "2026-08-20",
+      "time": "10:21",
+      "action": "ORDER_CANCEL",
+      "code": "1102",
+      "name": "亞泥",
+      "price": 33.07,
+      "shares": 3048,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-19，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-20",
+      "time": "10:21",
+      "action": "ORDER_CANCEL",
+      "code": "1817",
+      "name": "凱撒衛",
+      "price": 39.3,
+      "shares": 2565,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-19，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-20",
+      "time": "10:21",
+      "action": "ORDER_CANCEL",
+      "code": "2739",
+      "name": "寒舍",
+      "price": 35.1,
+      "shares": 2872,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-19，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-20",
+      "time": "10:21",
+      "action": "ORDER_CANCEL",
+      "code": "2505",
+      "name": "國揚",
+      "price": 17.97,
+      "shares": 5610,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-19，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-20",
+      "time": "10:21",
+      "action": "ORDER_CANCEL",
+      "code": "9904",
+      "name": "寶成",
+      "price": 24.45,
+      "shares": 4123,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-19，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-20",
+      "time": "10:21",
+      "action": "ORDER_PLACE",
+      "code": "9904",
+      "name": "寶成",
+      "price": 24.85,
+      "shares": 4056,
+      "amount": 100792,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 24.85（現價 25.10 的 99%）｜KD金叉(K70.8/D65.6)，RSI=59.3健康，MACD多頭，MA20上揚(24.09→24.21)"
+    },
+    {
+      "date": "2026-08-20",
+      "time": "10:21",
+      "action": "ORDER_PLACE",
+      "code": "2501",
+      "name": "國建",
+      "price": 23.07,
+      "shares": 4369,
+      "amount": 100793,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 23.07（現價 23.30 的 99%）｜KD金叉(K75.7/D70.1)，RSI=56.7健康，MACD多頭，MA20上揚(22.4→22.54)"
+    },
+    {
+      "date": "2026-08-20",
+      "time": "10:21",
+      "action": "ORDER_PLACE",
+      "code": "2739",
+      "name": "寒舍",
+      "price": 35.54,
+      "shares": 2836,
+      "amount": 100791,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 35.54（現價 35.90 的 99%）｜KD金叉(K71.0/D63.7)，RSI=57.6健康，MACD多頭，MA20上揚(34.68→34.94)"
     }
   ],
   "pending_orders": [
     {
-      "code": "1102",
-      "name": "亞泥",
-      "ticker": "1102.TW",
-      "limit_price": 33.07,
-      "shares": 3048,
-      "placed_date": "2026-08-19",
-      "placed_time": "10:22",
-      "placed_ts": 1787106157,
-      "reserved_cash": 100797
+      "code": "9904",
+      "name": "寶成",
+      "ticker": "9904.TW",
+      "limit_price": 24.85,
+      "shares": 4056,
+      "placed_date": "2026-08-20",
+      "placed_time": "10:21",
+      "placed_ts": 1787192510,
+      "reserved_cash": 100792
     },
     {
-      "code": "1817",
-      "name": "凱撒衛",
-      "ticker": "1817.TW",
-      "limit_price": 39.3,
-      "shares": 2565,
-      "placed_date": "2026-08-19",
-      "placed_time": "10:22",
-      "placed_ts": 1787106157,
-      "reserved_cash": 100804
+      "code": "2501",
+      "name": "國建",
+      "ticker": "2501.TW",
+      "limit_price": 23.07,
+      "shares": 4369,
+      "placed_date": "2026-08-20",
+      "placed_time": "10:21",
+      "placed_ts": 1787192510,
+      "reserved_cash": 100793
     },
     {
       "code": "2739",
       "name": "寒舍",
       "ticker": "2739.TW",
-      "limit_price": 35.1,
-      "shares": 2872,
-      "placed_date": "2026-08-19",
-      "placed_time": "10:22",
-      "placed_ts": 1787106157,
-      "reserved_cash": 100807
-    },
-    {
-      "code": "2505",
-      "name": "國揚",
-      "ticker": "2505.TW",
-      "limit_price": 17.97,
-      "shares": 5610,
-      "placed_date": "2026-08-19",
-      "placed_time": "11:26",
-      "placed_ts": 1787110011,
-      "reserved_cash": 100812
-    },
-    {
-      "code": "9904",
-      "name": "寶成",
-      "ticker": "9904.TW",
-      "limit_price": 24.45,
-      "shares": 4123,
-      "placed_date": "2026-08-19",
-      "placed_time": "11:26",
-      "placed_ts": 1787110011,
-      "reserved_cash": 100807
+      "limit_price": 35.54,
+      "shares": 2836,
+      "placed_date": "2026-08-20",
+      "placed_time": "10:21",
+      "placed_ts": 1787192510,
+      "reserved_cash": 100791
     }
   ],
   "sl_cooldown": {
