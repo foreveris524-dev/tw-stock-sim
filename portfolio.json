@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-20 13:00",
+  "last_updated": "2026-08-20 13:42",
   "initial_capital": 1000000,
   "cash": 201672,
-  "total_value": 988182,
+  "total_value": 988322,
   "holdings": [
     {
       "code": "1419",
@@ -45,9 +45,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 85104,
-      "unrealized_pnl": -18119,
-      "unrealized_pnl_pct": -17.55
+      "value": 85244,
+      "unrealized_pnl": -17979,
+      "unrealized_pnl_pct": -17.42
     },
     {
       "code": "5538",
