@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-21 14:20",
+  "last_updated": "2026-08-24 10:36",
   "initial_capital": 1000000,
-  "cash": 12,
-  "total_value": 992091,
+  "cash": 63,
+  "total_value": 989526,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 104765,
-      "unrealized_pnl": 2599,
-      "unrealized_pnl_pct": 2.54
+      "value": 103513,
+      "unrealized_pnl": 1347,
+      "unrealized_pnl_pct": 1.32
     },
     {
       "code": "2496",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 86287,
-      "unrealized_pnl": -15879,
-      "unrealized_pnl_pct": -15.54
+      "value": 85817,
+      "unrealized_pnl": -16349,
+      "unrealized_pnl_pct": -16.0
     },
     {
       "code": "5225",
@@ -45,9 +45,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 83976,
-      "unrealized_pnl": -19247,
-      "unrealized_pnl_pct": -18.65
+      "value": 83554,
+      "unrealized_pnl": -19669,
+      "unrealized_pnl_pct": -19.05
     },
     {
       "code": "5538",
@@ -60,9 +60,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 111340,
-      "unrealized_pnl": 9253,
-      "unrealized_pnl_pct": 9.06
+      "value": 110594,
+      "unrealized_pnl": 8507,
+      "unrealized_pnl_pct": 8.33
     },
     {
       "code": "3708",
@@ -75,9 +75,9 @@
       "cost": 100798,
       "take_profit": 108.11,
       "stop_loss": 99.87,
-      "value": 101326,
-      "unrealized_pnl": 528,
-      "unrealized_pnl_pct": 0.52
+      "value": 102306,
+      "unrealized_pnl": 1508,
+      "unrealized_pnl_pct": 1.5
     },
     {
       "code": "2501",
@@ -90,9 +90,9 @@
       "cost": 100793,
       "take_profit": 24.22,
       "stop_loss": 22.38,
-      "value": 101142,
-      "unrealized_pnl": 349,
-      "unrealized_pnl_pct": 0.35
+      "value": 100487,
+      "unrealized_pnl": -306,
+      "unrealized_pnl_pct": -0.3
     }
   ],
   "plan_for_5_22": {
@@ -6082,52 +6082,156 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 30.49（現價 30.80 的 99%）｜KD金叉(K55.2/D52.3)，RSI=52.0健康，MACD多頭，MA20上揚(30.21→30.33)"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "10:36",
+      "action": "ORDER_CANCEL",
+      "code": "2442",
+      "name": "新美齊",
+      "price": 19.4,
+      "shares": 5196,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-21，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "10:36",
+      "action": "ORDER_CANCEL",
+      "code": "1615",
+      "name": "大山",
+      "price": 43.76,
+      "shares": 2303,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-21，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "10:36",
+      "action": "ORDER_CANCEL",
+      "code": "9904",
+      "name": "寶成",
+      "price": 24.75,
+      "shares": 4074,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-21，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "10:36",
+      "action": "ORDER_CANCEL",
+      "code": "6005",
+      "name": "群益證",
+      "price": 30.49,
+      "shares": 3307,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-21，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "10:36",
+      "action": "ORDER_PLACE",
+      "code": "4967",
+      "name": "十銓",
+      "price": 283.14,
+      "shares": 356,
+      "amount": 100798,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 283.14（現價 286.00 的 99%）｜KD金叉(K63.6/D54.2)，RSI=63.7健康，MACD多頭，MA20上揚(247.07→259.5)"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "10:36",
+      "action": "ORDER_PLACE",
+      "code": "9904",
+      "name": "寶成",
+      "price": 24.7,
+      "shares": 4081,
+      "amount": 100801,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 24.70（現價 24.95 的 99%）｜KD金叉(K73.4/D69.6)，RSI=57.2健康，MACD多頭，MA20上揚(24.14→24.27)"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "10:36",
+      "action": "ORDER_PLACE",
+      "code": "3135",
+      "name": "凌航",
+      "price": 178.69,
+      "shares": 564,
+      "amount": 100781,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 178.69（現價 180.50 的 99%）｜KD金叉(K69.0/D51.6)，RSI=57.8健康，MACD多頭，MA20上揚(160.07→163.35)"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "10:36",
+      "action": "ORDER_PLACE",
+      "code": "2535",
+      "name": "達欣工",
+      "price": 89.69,
+      "shares": 1124,
+      "amount": 100812,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 89.69（現價 90.60 的 99%）｜KD金叉(K64.6/D56.8)，RSI=53.5健康，MACD多頭，MA20上揚(88.57→89.28)"
     }
   ],
   "pending_orders": [
     {
-      "code": "2442",
-      "name": "新美齊",
-      "ticker": "2442.TW",
-      "limit_price": 19.4,
-      "shares": 5196,
-      "placed_date": "2026-08-21",
-      "placed_time": "10:35",
-      "placed_ts": 1787279735,
-      "reserved_cash": 100802
-    },
-    {
-      "code": "1615",
-      "name": "大山",
-      "ticker": "1615.TW",
-      "limit_price": 43.76,
-      "shares": 2303,
-      "placed_date": "2026-08-21",
-      "placed_time": "10:35",
-      "placed_ts": 1787279735,
-      "reserved_cash": 100779
+      "code": "4967",
+      "name": "十銓",
+      "ticker": "4967.TW",
+      "limit_price": 283.14,
+      "shares": 356,
+      "placed_date": "2026-08-24",
+      "placed_time": "10:36",
+      "placed_ts": 1787538970,
+      "reserved_cash": 100798
     },
     {
       "code": "9904",
       "name": "寶成",
       "ticker": "9904.TW",
-      "limit_price": 24.75,
-      "shares": 4074,
-      "placed_date": "2026-08-21",
-      "placed_time": "10:35",
-      "placed_ts": 1787279735,
-      "reserved_cash": 100832
+      "limit_price": 24.7,
+      "shares": 4081,
+      "placed_date": "2026-08-24",
+      "placed_time": "10:36",
+      "placed_ts": 1787538970,
+      "reserved_cash": 100801
     },
     {
-      "code": "6005",
-      "name": "群益證",
-      "ticker": "6005.TW",
-      "limit_price": 30.49,
-      "shares": 3307,
-      "placed_date": "2026-08-21",
-      "placed_time": "11:34",
-      "placed_ts": 1787283257,
-      "reserved_cash": 100830
+      "code": "3135",
+      "name": "凌航",
+      "ticker": "3135.TW",
+      "limit_price": 178.69,
+      "shares": 564,
+      "placed_date": "2026-08-24",
+      "placed_time": "10:36",
+      "placed_ts": 1787538970,
+      "reserved_cash": 100781
+    },
+    {
+      "code": "2535",
+      "name": "達欣工",
+      "ticker": "2535.TW",
+      "limit_price": 89.69,
+      "shares": 1124,
+      "placed_date": "2026-08-24",
+      "placed_time": "10:36",
+      "placed_ts": 1787538970,
+      "reserved_cash": 100812
     }
   ],
   "sl_cooldown": {
