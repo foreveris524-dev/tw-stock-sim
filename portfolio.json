@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-24 14:06",
+  "last_updated": "2026-08-25 10:22",
   "initial_capital": 1000000,
-  "cash": 63,
-  "total_value": 987185,
+  "cash": 71,
+  "total_value": 978140,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 103356,
-      "unrealized_pnl": 1190,
-      "unrealized_pnl_pct": 1.16
+      "value": 102730,
+      "unrealized_pnl": 564,
+      "unrealized_pnl_pct": 0.55
     },
     {
       "code": "2496",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 86130,
-      "unrealized_pnl": -16036,
-      "unrealized_pnl_pct": -15.7
+      "value": 85347,
+      "unrealized_pnl": -16819,
+      "unrealized_pnl_pct": -16.46
     },
     {
       "code": "5225",
@@ -45,9 +45,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 83976,
-      "unrealized_pnl": -19247,
-      "unrealized_pnl_pct": -18.65
+      "value": 83272,
+      "unrealized_pnl": -19951,
+      "unrealized_pnl_pct": -19.33
     },
     {
       "code": "5538",
@@ -60,9 +60,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 111490,
-      "unrealized_pnl": 9403,
-      "unrealized_pnl_pct": 9.21
+      "value": 110893,
+      "unrealized_pnl": 8806,
+      "unrealized_pnl_pct": 8.63
     },
     {
       "code": "3708",
@@ -75,9 +75,9 @@
       "cost": 100798,
       "take_profit": 108.11,
       "stop_loss": 99.87,
-      "value": 100837,
-      "unrealized_pnl": 39,
-      "unrealized_pnl_pct": 0.04
+      "value": 99858,
+      "unrealized_pnl": -940,
+      "unrealized_pnl_pct": -0.93
     },
     {
       "code": "2501",
@@ -95,21 +95,6 @@
       "unrealized_pnl_pct": 0.13
     },
     {
-      "code": "4967",
-      "name": "十銓",
-      "ticker": "4967.TW",
-      "shares": 356,
-      "entry_price": 283.14,
-      "entry_date": "2026-08-24",
-      "entry_time": "11:37",
-      "cost": 100798,
-      "take_profit": 297.3,
-      "stop_loss": 274.65,
-      "value": 98968,
-      "unrealized_pnl": -1830,
-      "unrealized_pnl_pct": -1.82
-    },
-    {
       "code": "3135",
       "name": "凌航",
       "ticker": "3135.TW",
@@ -120,9 +105,9 @@
       "cost": 100781,
       "take_profit": 187.62,
       "stop_loss": 173.33,
-      "value": 99828,
-      "unrealized_pnl": -953,
-      "unrealized_pnl_pct": -0.95
+      "value": 97854,
+      "unrealized_pnl": -2927,
+      "unrealized_pnl_pct": -2.9
     }
   ],
   "plan_for_5_22": {
@@ -6242,6 +6227,84 @@
       "pnl": 0,
       "session": "day",
       "reason": "限價單成交（限價=178.69，5分K低點觸及）"
+    },
+    {
+      "date": "2026-08-25",
+      "time": "10:22",
+      "action": "ORDER_CANCEL",
+      "code": "9904",
+      "name": "寶成",
+      "price": 24.7,
+      "shares": 4081,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-24，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-25",
+      "time": "10:22",
+      "action": "ORDER_CANCEL",
+      "code": "2535",
+      "name": "達欣工",
+      "price": 89.69,
+      "shares": 1124,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-24，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-25",
+      "time": "10:22",
+      "action": "SELL",
+      "code": "4967",
+      "name": "十銓",
+      "price": 268.5,
+      "shares": 356,
+      "amount": 95586,
+      "pnl": -5212,
+      "session": "day",
+      "reason": "達停損 SL=274.65（-5.2%）"
+    },
+    {
+      "date": "2026-08-25",
+      "time": "10:22",
+      "action": "ORDER_PLACE",
+      "code": "9904",
+      "name": "寶成",
+      "price": 24.85,
+      "shares": 3987,
+      "amount": 99077,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 24.85（現價 25.10 的 99%）｜KD金叉(K78.4/D73.0)，RSI=59.3健康，MACD多頭，MA20上揚(24.15→24.33)"
+    },
+    {
+      "date": "2026-08-25",
+      "time": "10:22",
+      "action": "ORDER_PLACE",
+      "code": "2528",
+      "name": "皇普",
+      "price": 20.34,
+      "shares": 4871,
+      "amount": 99076,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 20.34（現價 20.55 的 99%）｜KD金叉(K69.3/D60.5)，RSI=58.6健康，MACD多頭，MA20上揚(19.87→20.13)"
+    },
+    {
+      "date": "2026-08-25",
+      "time": "10:22",
+      "action": "ORDER_PLACE",
+      "code": "2535",
+      "name": "達欣工",
+      "price": 89.79,
+      "shares": 1103,
+      "amount": 99038,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 89.79（現價 90.70 的 99%）｜KD金叉(K66.4/D60.6)，RSI=53.8健康，MACD多頭，MA20上揚(88.65→89.52)"
     }
   ],
   "pending_orders": [
@@ -6249,23 +6312,34 @@
       "code": "9904",
       "name": "寶成",
       "ticker": "9904.TW",
-      "limit_price": 24.7,
-      "shares": 4081,
-      "placed_date": "2026-08-24",
-      "placed_time": "10:36",
-      "placed_ts": 1787538970,
-      "reserved_cash": 100801
+      "limit_price": 24.85,
+      "shares": 3987,
+      "placed_date": "2026-08-25",
+      "placed_time": "10:22",
+      "placed_ts": 1787624522,
+      "reserved_cash": 99077
+    },
+    {
+      "code": "2528",
+      "name": "皇普",
+      "ticker": "2528.TW",
+      "limit_price": 20.34,
+      "shares": 4871,
+      "placed_date": "2026-08-25",
+      "placed_time": "10:22",
+      "placed_ts": 1787624522,
+      "reserved_cash": 99076
     },
     {
       "code": "2535",
       "name": "達欣工",
       "ticker": "2535.TW",
-      "limit_price": 89.69,
-      "shares": 1124,
-      "placed_date": "2026-08-24",
-      "placed_time": "10:36",
-      "placed_ts": 1787538970,
-      "reserved_cash": 100812
+      "limit_price": 89.79,
+      "shares": 1103,
+      "placed_date": "2026-08-25",
+      "placed_time": "10:22",
+      "placed_ts": 1787624522,
+      "reserved_cash": 99038
     }
   ],
   "sl_cooldown": {
@@ -6308,6 +6382,12 @@
     "2204": {
       "sl_dates": [
         "2026-08-17"
+      ],
+      "cooldown_until": null
+    },
+    "4967": {
+      "sl_dates": [
+        "2026-08-25"
       ],
       "cooldown_until": null
     }
