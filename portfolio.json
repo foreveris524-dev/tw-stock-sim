@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-25 11:25",
+  "last_updated": "2026-08-25 12:20",
   "initial_capital": 1000000,
   "cash": 2,
-  "total_value": 975656,
+  "total_value": 977974,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102416,
-      "unrealized_pnl": 250,
-      "unrealized_pnl_pct": 0.24
+      "value": 102573,
+      "unrealized_pnl": 407,
+      "unrealized_pnl_pct": 0.4
     },
     {
       "code": "2496",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 85347,
-      "unrealized_pnl": -16819,
-      "unrealized_pnl_pct": -16.46
+      "value": 85504,
+      "unrealized_pnl": -16662,
+      "unrealized_pnl_pct": -16.31
     },
     {
       "code": "5225",
@@ -60,9 +60,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 110147,
-      "unrealized_pnl": 8060,
-      "unrealized_pnl_pct": 7.9
+      "value": 111639,
+      "unrealized_pnl": 9552,
+      "unrealized_pnl_pct": 9.36
     },
     {
       "code": "3708",
@@ -75,9 +75,9 @@
       "cost": 100798,
       "take_profit": 108.11,
       "stop_loss": 99.87,
-      "value": 99858,
-      "unrealized_pnl": -940,
-      "unrealized_pnl_pct": -0.93
+      "value": 99368,
+      "unrealized_pnl": -1430,
+      "unrealized_pnl_pct": -1.42
     },
     {
       "code": "2501",
@@ -90,9 +90,24 @@
       "cost": 100793,
       "take_profit": 24.22,
       "stop_loss": 22.38,
-      "value": 100487,
-      "unrealized_pnl": -306,
-      "unrealized_pnl_pct": -0.3
+      "value": 100705,
+      "unrealized_pnl": -88,
+      "unrealized_pnl_pct": -0.09
+    },
+    {
+      "code": "2535",
+      "name": "達欣工",
+      "ticker": "2535.TW",
+      "shares": 1103,
+      "entry_price": 89.79,
+      "entry_date": "2026-08-25",
+      "entry_time": "12:20",
+      "cost": 99038,
+      "take_profit": 94.28,
+      "stop_loss": 87.1,
+      "value": 99822,
+      "unrealized_pnl": 784,
+      "unrealized_pnl_pct": 0.79
     }
   ],
   "plan_for_5_22": {
@@ -6316,6 +6331,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 144.04（現價 145.50 的 99%）｜KD金叉(K61.9/D50.3)，RSI=50.0健康，MACD多頭，MA20上揚(145.03→145.07)"
+    },
+    {
+      "date": "2026-08-25",
+      "time": "12:20",
+      "action": "BUY",
+      "code": "2535",
+      "name": "達欣工",
+      "price": 89.79,
+      "shares": 1103,
+      "amount": 99038,
+      "pnl": 0,
+      "session": "day",
+      "reason": "限價單成交（限價=89.79，5分K低點觸及）"
     }
   ],
   "pending_orders": [
@@ -6340,17 +6368,6 @@
       "placed_time": "10:22",
       "placed_ts": 1787624522,
       "reserved_cash": 99076
-    },
-    {
-      "code": "2535",
-      "name": "達欣工",
-      "ticker": "2535.TW",
-      "limit_price": 89.79,
-      "shares": 1103,
-      "placed_date": "2026-08-25",
-      "placed_time": "10:22",
-      "placed_ts": 1787624522,
-      "reserved_cash": 99038
     },
     {
       "code": "2731",
