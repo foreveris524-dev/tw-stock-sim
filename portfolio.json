@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-25 10:22",
+  "last_updated": "2026-08-25 11:25",
   "initial_capital": 1000000,
-  "cash": 71,
-  "total_value": 978140,
+  "cash": 2,
+  "total_value": 975656,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102730,
-      "unrealized_pnl": 564,
-      "unrealized_pnl_pct": 0.55
+      "value": 102416,
+      "unrealized_pnl": 250,
+      "unrealized_pnl_pct": 0.24
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 83272,
-      "unrealized_pnl": -19951,
-      "unrealized_pnl_pct": -19.33
+      "value": 83413,
+      "unrealized_pnl": -19810,
+      "unrealized_pnl_pct": -19.19
     },
     {
       "code": "5538",
@@ -60,9 +60,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 110893,
-      "unrealized_pnl": 8806,
-      "unrealized_pnl_pct": 8.63
+      "value": 110147,
+      "unrealized_pnl": 8060,
+      "unrealized_pnl_pct": 7.9
     },
     {
       "code": "3708",
@@ -90,24 +90,9 @@
       "cost": 100793,
       "take_profit": 24.22,
       "stop_loss": 22.38,
-      "value": 100924,
-      "unrealized_pnl": 131,
-      "unrealized_pnl_pct": 0.13
-    },
-    {
-      "code": "3135",
-      "name": "凌航",
-      "ticker": "3135.TW",
-      "shares": 564,
-      "entry_price": 178.69,
-      "entry_date": "2026-08-24",
-      "entry_time": "11:37",
-      "cost": 100781,
-      "take_profit": 187.62,
-      "stop_loss": 173.33,
-      "value": 97854,
-      "unrealized_pnl": -2927,
-      "unrealized_pnl_pct": -2.9
+      "value": 100487,
+      "unrealized_pnl": -306,
+      "unrealized_pnl_pct": -0.3
     }
   ],
   "plan_for_5_22": {
@@ -6305,6 +6290,32 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 89.79（現價 90.70 的 99%）｜KD金叉(K66.4/D60.6)，RSI=53.8健康，MACD多頭，MA20上揚(88.65→89.52)"
+    },
+    {
+      "date": "2026-08-25",
+      "time": "11:25",
+      "action": "SELL",
+      "code": "3135",
+      "name": "凌航",
+      "price": 171.5,
+      "shares": 564,
+      "amount": 96726,
+      "pnl": -4055,
+      "session": "day",
+      "reason": "達停損 SL=173.33（-4.0%）"
+    },
+    {
+      "date": "2026-08-25",
+      "time": "11:25",
+      "action": "ORDER_PLACE",
+      "code": "2731",
+      "name": "雄獅",
+      "price": 144.04,
+      "shares": 672,
+      "amount": 96795,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 144.04（現價 145.50 的 99%）｜KD金叉(K61.9/D50.3)，RSI=50.0健康，MACD多頭，MA20上揚(145.03→145.07)"
     }
   ],
   "pending_orders": [
@@ -6340,6 +6351,17 @@
       "placed_time": "10:22",
       "placed_ts": 1787624522,
       "reserved_cash": 99038
+    },
+    {
+      "code": "2731",
+      "name": "雄獅",
+      "ticker": "2731.TW",
+      "limit_price": 144.04,
+      "shares": 672,
+      "placed_date": "2026-08-25",
+      "placed_time": "11:25",
+      "placed_ts": 1787628338,
+      "reserved_cash": 96795
     }
   ],
   "sl_cooldown": {
@@ -6386,6 +6408,12 @@
       "cooldown_until": null
     },
     "4967": {
+      "sl_dates": [
+        "2026-08-25"
+      ],
+      "cooldown_until": null
+    },
+    "3135": {
       "sl_dates": [
         "2026-08-25"
       ],
