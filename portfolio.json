@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-27 19:09",
+  "last_updated": "2026-08-28 20:42",
   "initial_capital": 1000000,
-  "cash": 107,
-  "total_value": 984421,
+  "cash": 9,
+  "total_value": 976011,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 103982,
-      "unrealized_pnl": 1816,
-      "unrealized_pnl_pct": 1.78
+      "value": 104765,
+      "unrealized_pnl": 2599,
+      "unrealized_pnl_pct": 2.54
     },
     {
       "code": "2496",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 85347,
-      "unrealized_pnl": -16819,
-      "unrealized_pnl_pct": -16.46
+      "value": 85504,
+      "unrealized_pnl": -16662,
+      "unrealized_pnl_pct": -16.31
     },
     {
       "code": "5225",
@@ -45,9 +45,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 87076,
-      "unrealized_pnl": -16147,
-      "unrealized_pnl_pct": -15.64
+      "value": 85244,
+      "unrealized_pnl": -17979,
+      "unrealized_pnl_pct": -17.42
     },
     {
       "code": "5538",
@@ -60,9 +60,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 112236,
-      "unrealized_pnl": 10149,
-      "unrealized_pnl_pct": 9.94
+      "value": 110743,
+      "unrealized_pnl": 8656,
+      "unrealized_pnl_pct": 8.48
     },
     {
       "code": "3708",
@@ -75,9 +75,9 @@
       "cost": 100798,
       "take_profit": 108.11,
       "stop_loss": 99.87,
-      "value": 100837,
-      "unrealized_pnl": 39,
-      "unrealized_pnl_pct": 0.04
+      "value": 98879,
+      "unrealized_pnl": -1919,
+      "unrealized_pnl_pct": -1.9
     },
     {
       "code": "2501",
@@ -90,9 +90,9 @@
       "cost": 100793,
       "take_profit": 24.22,
       "stop_loss": 22.38,
-      "value": 100050,
-      "unrealized_pnl": -743,
-      "unrealized_pnl_pct": -0.74
+      "value": 98302,
+      "unrealized_pnl": -2491,
+      "unrealized_pnl_pct": -2.47
     },
     {
       "code": "2535",
@@ -105,9 +105,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 100924,
-      "unrealized_pnl": 1886,
-      "unrealized_pnl_pct": 1.9
+      "value": 100373,
+      "unrealized_pnl": 1335,
+      "unrealized_pnl_pct": 1.35
     },
     {
       "code": "9904",
@@ -120,9 +120,9 @@
       "cost": 98371,
       "take_profit": 26.3,
       "stop_loss": 24.3,
-      "value": 97390,
-      "unrealized_pnl": -981,
-      "unrealized_pnl_pct": -1.0
+      "value": 95622,
+      "unrealized_pnl": -2749,
+      "unrealized_pnl_pct": -2.79
     }
   ],
   "plan_for_5_22": {
@@ -6502,6 +6502,58 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 143.06（現價 144.50 的 99%）｜KD金叉(K59.1/D55.8)，RSI=45.7健康，MACD多頭，MA20上揚(144.93→145.07)"
+    },
+    {
+      "date": "2026-08-28",
+      "time": "20:42",
+      "action": "ORDER_CANCEL",
+      "code": "4967",
+      "name": "十銓",
+      "price": 272.75,
+      "shares": 360,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-27，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-28",
+      "time": "20:42",
+      "action": "ORDER_CANCEL",
+      "code": "2731",
+      "name": "雄獅",
+      "price": 143.06,
+      "shares": 687,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-08-27，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-08-28",
+      "time": "20:42",
+      "action": "ORDER_PLACE",
+      "code": "4967",
+      "name": "十銓",
+      "price": 270.76,
+      "shares": 363,
+      "amount": 98286,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 270.76（現價 273.50 的 99%）｜KD金叉(K58.9/D57.1)，RSI=57.3健康，MACD多頭，MA20上揚(256.38→270.07)"
+    },
+    {
+      "date": "2026-08-28",
+      "time": "20:42",
+      "action": "ORDER_PLACE",
+      "code": "5519",
+      "name": "隆大",
+      "price": 27.67,
+      "shares": 3552,
+      "amount": 98284,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 27.67（現價 27.95 的 99%）｜KD金叉(K64.5/D57.8)，RSI=43.1健康，MACD多頭，MA20上揚(27.86→27.87)"
     }
   ],
   "pending_orders": [
@@ -6509,23 +6561,23 @@
       "code": "4967",
       "name": "十銓",
       "ticker": "4967.TW",
-      "limit_price": 272.75,
-      "shares": 360,
-      "placed_date": "2026-08-27",
-      "placed_time": "19:09",
-      "placed_ts": 1787828974,
-      "reserved_cash": 98190
+      "limit_price": 270.76,
+      "shares": 363,
+      "placed_date": "2026-08-28",
+      "placed_time": "20:42",
+      "placed_ts": 1787920961,
+      "reserved_cash": 98286
     },
     {
-      "code": "2731",
-      "name": "雄獅",
-      "ticker": "2731.TW",
-      "limit_price": 143.06,
-      "shares": 687,
-      "placed_date": "2026-08-27",
-      "placed_time": "19:09",
-      "placed_ts": 1787828974,
-      "reserved_cash": 98282
+      "code": "5519",
+      "name": "隆大",
+      "ticker": "5519.TW",
+      "limit_price": 27.67,
+      "shares": 3552,
+      "placed_date": "2026-08-28",
+      "placed_time": "20:42",
+      "placed_ts": 1787920961,
+      "reserved_cash": 98284
     }
   ],
   "sl_cooldown": {
