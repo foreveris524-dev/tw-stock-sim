@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-01 14:12",
+  "last_updated": "2026-09-02 13:45",
   "initial_capital": 1000000,
-  "cash": 3,
-  "total_value": 976582,
+  "cash": 196579,
+  "total_value": 977034,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 105235,
-      "unrealized_pnl": 3069,
-      "unrealized_pnl_pct": 3.0
+      "value": 104765,
+      "unrealized_pnl": 2599,
+      "unrealized_pnl_pct": 2.54
     },
     {
       "code": "2496",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 85504,
-      "unrealized_pnl": -16662,
-      "unrealized_pnl_pct": -16.31
+      "value": 85660,
+      "unrealized_pnl": -16506,
+      "unrealized_pnl_pct": -16.16
     },
     {
       "code": "5225",
@@ -45,9 +45,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 85808,
-      "unrealized_pnl": -17415,
-      "unrealized_pnl_pct": -16.87
+      "value": 86090,
+      "unrealized_pnl": -17133,
+      "unrealized_pnl_pct": -16.6
     },
     {
       "code": "5538",
@@ -60,9 +60,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 110594,
-      "unrealized_pnl": 8507,
-      "unrealized_pnl_pct": 8.33
+      "value": 110893,
+      "unrealized_pnl": 8806,
+      "unrealized_pnl_pct": 8.63
     },
     {
       "code": "3708",
@@ -90,9 +90,9 @@
       "cost": 100793,
       "take_profit": 24.22,
       "stop_loss": 22.38,
-      "value": 98302,
-      "unrealized_pnl": -2491,
-      "unrealized_pnl_pct": -2.47
+      "value": 98084,
+      "unrealized_pnl": -2709,
+      "unrealized_pnl_pct": -2.69
     },
     {
       "code": "2535",
@@ -105,9 +105,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 98388,
-      "unrealized_pnl": -650,
-      "unrealized_pnl_pct": -0.66
+      "value": 99380,
+      "unrealized_pnl": 342,
+      "unrealized_pnl_pct": 0.35
     },
     {
       "code": "9904",
@@ -120,9 +120,9 @@
       "cost": 98371,
       "take_profit": 26.3,
       "stop_loss": 24.3,
-      "value": 97782,
-      "unrealized_pnl": -589,
-      "unrealized_pnl_pct": -0.6
+      "value": 97193,
+      "unrealized_pnl": -1178,
+      "unrealized_pnl_pct": -1.2
     }
   ],
   "plan_for_5_22": {
@@ -6658,32 +6658,35 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 31.73（現價 32.05 的 99%）｜KD金叉(K75.0/D62.8)，RSI=60.6健康，MACD多頭，MA20上揚(30.29→30.62)"
-    }
-  ],
-  "pending_orders": [
-    {
-      "code": "1618",
-      "name": "合機",
-      "ticker": "1618.TW",
-      "limit_price": 39.5,
-      "shares": 2488,
-      "placed_date": "2026-09-01",
-      "placed_time": "14:12",
-      "placed_ts": 1788243167,
-      "reserved_cash": 98276
     },
     {
+      "date": "2026-09-02",
+      "time": "13:45",
+      "action": "ORDER_CANCEL",
+      "code": "1618",
+      "name": "合機",
+      "price": 39.5,
+      "shares": 2488,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-09-01，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-09-02",
+      "time": "13:45",
+      "action": "ORDER_CANCEL",
       "code": "6005",
       "name": "群益證",
-      "ticker": "6005.TW",
-      "limit_price": 31.73,
+      "price": 31.73,
       "shares": 3098,
-      "placed_date": "2026-09-01",
-      "placed_time": "14:12",
-      "placed_ts": 1788243167,
-      "reserved_cash": 98300
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-09-01，限價單僅當日有效）"
     }
   ],
+  "pending_orders": [],
   "sl_cooldown": {
     "8463": {
       "sl_dates": [
