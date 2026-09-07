@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-04 18:09",
+  "last_updated": "2026-09-07 14:01",
   "initial_capital": 1000000,
-  "cash": 57,
-  "total_value": 970621,
+  "cash": 98304,
+  "total_value": 969509,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 104765,
-      "unrealized_pnl": 2599,
-      "unrealized_pnl_pct": 2.54
+      "value": 106958,
+      "unrealized_pnl": 4792,
+      "unrealized_pnl_pct": 4.69
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 80877,
-      "unrealized_pnl": -22346,
-      "unrealized_pnl_pct": -21.65
+      "value": 79468,
+      "unrealized_pnl": -23755,
+      "unrealized_pnl_pct": -23.01
     },
     {
       "code": "5538",
@@ -60,9 +60,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 110147,
-      "unrealized_pnl": 8060,
-      "unrealized_pnl_pct": 7.9
+      "value": 110445,
+      "unrealized_pnl": 8358,
+      "unrealized_pnl_pct": 8.19
     },
     {
       "code": "3708",
@@ -75,9 +75,9 @@
       "cost": 100798,
       "take_profit": 108.11,
       "stop_loss": 99.87,
-      "value": 98390,
-      "unrealized_pnl": -2408,
-      "unrealized_pnl_pct": -2.39
+      "value": 97508,
+      "unrealized_pnl": -3290,
+      "unrealized_pnl_pct": -3.26
     },
     {
       "code": "2501",
@@ -90,9 +90,9 @@
       "cost": 100793,
       "take_profit": 24.22,
       "stop_loss": 22.38,
-      "value": 98521,
-      "unrealized_pnl": -2272,
-      "unrealized_pnl_pct": -2.25
+      "value": 97429,
+      "unrealized_pnl": -3364,
+      "unrealized_pnl_pct": -3.34
     },
     {
       "code": "2535",
@@ -105,9 +105,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 98608,
-      "unrealized_pnl": -430,
-      "unrealized_pnl_pct": -0.43
+      "value": 98388,
+      "unrealized_pnl": -650,
+      "unrealized_pnl_pct": -0.66
     },
     {
       "code": "9904",
@@ -6710,30 +6710,58 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 62.57（現價 63.20 的 99%）｜KD金叉(K71.4/D69.4)，RSI=62.4健康，MACD多頭，MA20上揚(61.06→62.09)"
+    },
+    {
+      "date": "2026-09-07",
+      "time": "14:01",
+      "action": "ORDER_CANCEL",
+      "code": "4440",
+      "name": "宜新實業",
+      "price": 17.52,
+      "shares": 5610,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-09-04，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-09-07",
+      "time": "14:01",
+      "action": "ORDER_CANCEL",
+      "code": "6024",
+      "name": "群益期",
+      "price": 62.57,
+      "shares": 1570,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-09-04，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-09-07",
+      "time": "14:01",
+      "action": "ORDER_PLACE",
+      "code": "2905",
+      "name": "三商",
+      "price": 17.72,
+      "shares": 5546,
+      "amount": 98275,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 17.72（現價 17.90 的 99%）｜KD金叉(K67.7/D64.8)，RSI=62.1健康，MACD多頭，MA20上揚(17.05→17.43)"
     }
   ],
   "pending_orders": [
     {
-      "code": "4440",
-      "name": "宜新實業",
-      "ticker": "4440.TW",
-      "limit_price": 17.52,
-      "shares": 5610,
-      "placed_date": "2026-09-04",
-      "placed_time": "13:49",
-      "placed_ts": 1788500951,
-      "reserved_cash": 98287
-    },
-    {
-      "code": "6024",
-      "name": "群益期",
-      "ticker": "6024.TW",
-      "limit_price": 62.57,
-      "shares": 1570,
-      "placed_date": "2026-09-04",
-      "placed_time": "13:49",
-      "placed_ts": 1788500951,
-      "reserved_cash": 98235
+      "code": "2905",
+      "name": "三商",
+      "ticker": "2905.TW",
+      "limit_price": 17.72,
+      "shares": 5546,
+      "placed_date": "2026-09-07",
+      "placed_time": "14:01",
+      "placed_ts": 1788760888,
+      "reserved_cash": 98275
     }
   ],
   "sl_cooldown": {
