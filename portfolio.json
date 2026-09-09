@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-08 13:54",
+  "last_updated": "2026-09-09 13:56",
   "initial_capital": 1000000,
-  "cash": 98311,
-  "total_value": 966139,
+  "cash": 3,
+  "total_value": 963664,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 105705,
-      "unrealized_pnl": 3539,
-      "unrealized_pnl_pct": 3.46
+      "value": 106331,
+      "unrealized_pnl": 4165,
+      "unrealized_pnl_pct": 4.08
     },
     {
       "code": "2496",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 86287,
-      "unrealized_pnl": -15879,
-      "unrealized_pnl_pct": -15.54
+      "value": 86130,
+      "unrealized_pnl": -16036,
+      "unrealized_pnl_pct": -15.7
     },
     {
       "code": "5225",
@@ -45,9 +45,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 77072,
-      "unrealized_pnl": -26151,
-      "unrealized_pnl_pct": -25.33
+      "value": 75945,
+      "unrealized_pnl": -27278,
+      "unrealized_pnl_pct": -26.43
     },
     {
       "code": "5538",
@@ -60,9 +60,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 109848,
-      "unrealized_pnl": 7761,
-      "unrealized_pnl_pct": 7.6
+      "value": 109550,
+      "unrealized_pnl": 7463,
+      "unrealized_pnl_pct": 7.31
     },
     {
       "code": "3708",
@@ -75,9 +75,9 @@
       "cost": 100798,
       "take_profit": 108.11,
       "stop_loss": 99.87,
-      "value": 97508,
-      "unrealized_pnl": -3290,
-      "unrealized_pnl_pct": -3.26
+      "value": 97019,
+      "unrealized_pnl": -3779,
+      "unrealized_pnl_pct": -3.75
     },
     {
       "code": "2501",
@@ -105,9 +105,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 98277,
-      "unrealized_pnl": -761,
-      "unrealized_pnl_pct": -0.77
+      "value": 97836,
+      "unrealized_pnl": -1202,
+      "unrealized_pnl_pct": -1.21
     },
     {
       "code": "9904",
@@ -120,9 +120,9 @@
       "cost": 98371,
       "take_profit": 26.3,
       "stop_loss": 24.3,
-      "value": 96997,
-      "unrealized_pnl": -1374,
-      "unrealized_pnl_pct": -1.4
+      "value": 96408,
+      "unrealized_pnl": -1963,
+      "unrealized_pnl_pct": -2.0
     }
   ],
   "plan_for_5_22": {
@@ -6775,19 +6775,69 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 32.03（現價 32.35 的 99%）｜KD金叉(K71.5/D63.9)，RSI=64.0健康，MACD多頭，MA20上揚(30.15→30.94)"
+    },
+    {
+      "date": "2026-09-09",
+      "time": "13:56",
+      "action": "ORDER_CANCEL",
+      "code": "2617",
+      "name": "台航",
+      "price": 32.03,
+      "shares": 3068,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-09-08，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-09-09",
+      "time": "13:56",
+      "action": "ORDER_PLACE",
+      "code": "5525",
+      "name": "順天",
+      "price": 21.98,
+      "shares": 4471,
+      "amount": 98273,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 21.98（現價 22.20 的 99%）｜KD金叉(K55.6/D45.4)，RSI=51.1健康，MACD多頭，MA20上揚(22.02→22.08)"
+    },
+    {
+      "date": "2026-09-09",
+      "time": "13:56",
+      "action": "ORDER_PLACE",
+      "code": "2905",
+      "name": "三商",
+      "price": 17.87,
+      "shares": 5501,
+      "amount": 98303,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 17.87（現價 18.05 的 99%）｜KD金叉(K71.9/D69.0)，RSI=61.9健康，MACD多頭，MA20上揚(17.17→17.6)"
     }
   ],
   "pending_orders": [
     {
-      "code": "2617",
-      "name": "台航",
-      "ticker": "2617.TW",
-      "limit_price": 32.03,
-      "shares": 3068,
-      "placed_date": "2026-09-08",
-      "placed_time": "13:54",
-      "placed_ts": 1788846891,
-      "reserved_cash": 98268
+      "code": "5525",
+      "name": "順天",
+      "ticker": "5525.TW",
+      "limit_price": 21.98,
+      "shares": 4471,
+      "placed_date": "2026-09-09",
+      "placed_time": "13:56",
+      "placed_ts": 1788933383,
+      "reserved_cash": 98273
+    },
+    {
+      "code": "2905",
+      "name": "三商",
+      "ticker": "2905.TW",
+      "limit_price": 17.87,
+      "shares": 5501,
+      "placed_date": "2026-09-09",
+      "placed_time": "13:56",
+      "placed_ts": 1788933383,
+      "reserved_cash": 98303
     }
   ],
   "sl_cooldown": {
