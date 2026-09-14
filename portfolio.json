@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-11 13:54",
+  "last_updated": "2026-09-14 14:11",
   "initial_capital": 1000000,
   "cash": 196579,
-  "total_value": 952949,
+  "total_value": 951188,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 105079,
-      "unrealized_pnl": 2913,
-      "unrealized_pnl_pct": 2.85
+      "value": 104139,
+      "unrealized_pnl": 1973,
+      "unrealized_pnl_pct": 1.93
     },
     {
       "code": "2496",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 85504,
-      "unrealized_pnl": -16662,
-      "unrealized_pnl_pct": -16.31
+      "value": 85973,
+      "unrealized_pnl": -16193,
+      "unrealized_pnl_pct": -15.85
     },
     {
       "code": "5225",
@@ -45,9 +45,9 @@
       "cost": 103223,
       "take_profit": 76.92,
       "stop_loss": 71.06,
-      "value": 74677,
-      "unrealized_pnl": -28546,
-      "unrealized_pnl_pct": -27.65
+      "value": 74818,
+      "unrealized_pnl": -28405,
+      "unrealized_pnl_pct": -27.52
     },
     {
       "code": "5538",
@@ -60,9 +60,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 106565,
-      "unrealized_pnl": 4478,
-      "unrealized_pnl_pct": 4.39
+      "value": 105968,
+      "unrealized_pnl": 3881,
+      "unrealized_pnl_pct": 3.8
     },
     {
       "code": "3708",
@@ -75,9 +75,9 @@
       "cost": 100798,
       "take_profit": 108.11,
       "stop_loss": 99.87,
-      "value": 93690,
-      "unrealized_pnl": -7108,
-      "unrealized_pnl_pct": -7.05
+      "value": 94865,
+      "unrealized_pnl": -5933,
+      "unrealized_pnl_pct": -5.89
     },
     {
       "code": "2501",
@@ -90,9 +90,9 @@
       "cost": 100793,
       "take_profit": 24.22,
       "stop_loss": 22.38,
-      "value": 96773,
-      "unrealized_pnl": -4020,
-      "unrealized_pnl_pct": -3.99
+      "value": 95463,
+      "unrealized_pnl": -5330,
+      "unrealized_pnl_pct": -5.29
     },
     {
       "code": "2535",
@@ -105,9 +105,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 99049,
-      "unrealized_pnl": 11,
-      "unrealized_pnl_pct": 0.01
+      "value": 98939,
+      "unrealized_pnl": -99,
+      "unrealized_pnl_pct": -0.1
     },
     {
       "code": "9904",
@@ -120,9 +120,9 @@
       "cost": 98371,
       "take_profit": 26.3,
       "stop_loss": 24.3,
-      "value": 95033,
-      "unrealized_pnl": -3338,
-      "unrealized_pnl_pct": -3.39
+      "value": 94444,
+      "unrealized_pnl": -3927,
+      "unrealized_pnl_pct": -3.99
     }
   ],
   "plan_for_5_22": {
