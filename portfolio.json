@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-18 18:30",
+  "last_updated": "2026-09-21 14:15",
   "initial_capital": 1000000,
-  "cash": 8,
-  "total_value": 957126,
+  "cash": 6,
+  "total_value": 958808,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 103982,
-      "unrealized_pnl": 1816,
-      "unrealized_pnl_pct": 1.78
+      "value": 103513,
+      "unrealized_pnl": 1347,
+      "unrealized_pnl_pct": 1.32
     },
     {
       "code": "2496",
@@ -30,24 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 86600,
-      "unrealized_pnl": -15566,
-      "unrealized_pnl_pct": -15.24
-    },
-    {
-      "code": "5225",
-      "name": "東科-KY",
-      "ticker": "5225.TW",
-      "shares": 1409,
-      "entry_price": 73.26,
-      "entry_date": "2026-06-25",
-      "entry_time": "16:32",
-      "cost": 103223,
-      "take_profit": 76.92,
-      "stop_loss": 71.06,
-      "value": 77636,
-      "unrealized_pnl": -25587,
-      "unrealized_pnl_pct": -24.79
+      "value": 85817,
+      "unrealized_pnl": -16349,
+      "unrealized_pnl_pct": -16.0
     },
     {
       "code": "5538",
@@ -60,9 +45,9 @@
       "cost": 102087,
       "take_profit": 35.91,
       "stop_loss": 33.17,
-      "value": 105818,
-      "unrealized_pnl": 3731,
-      "unrealized_pnl_pct": 3.65
+      "value": 105370,
+      "unrealized_pnl": 3283,
+      "unrealized_pnl_pct": 3.22
     },
     {
       "code": "3708",
@@ -75,24 +60,9 @@
       "cost": 100798,
       "take_profit": 108.11,
       "stop_loss": 99.87,
-      "value": 94669,
-      "unrealized_pnl": -6129,
-      "unrealized_pnl_pct": -6.08
-    },
-    {
-      "code": "2501",
-      "name": "國建",
-      "ticker": "2501.TW",
-      "shares": 4369,
-      "entry_price": 23.07,
-      "entry_date": "2026-08-20",
-      "entry_time": "13:00",
-      "cost": 100793,
-      "take_profit": 24.22,
-      "stop_loss": 22.38,
-      "value": 95244,
-      "unrealized_pnl": -5549,
-      "unrealized_pnl_pct": -5.51
+      "value": 97606,
+      "unrealized_pnl": -3192,
+      "unrealized_pnl_pct": -3.17
     },
     {
       "code": "2535",
@@ -105,9 +75,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 99601,
-      "unrealized_pnl": 563,
-      "unrealized_pnl_pct": 0.57
+      "value": 99049,
+      "unrealized_pnl": 11,
+      "unrealized_pnl_pct": 0.01
     },
     {
       "code": "9904",
@@ -120,9 +90,9 @@
       "cost": 98371,
       "take_profit": 26.3,
       "stop_loss": 24.3,
-      "value": 96997,
-      "unrealized_pnl": -1374,
-      "unrealized_pnl_pct": -1.4
+      "value": 97586,
+      "unrealized_pnl": -785,
+      "unrealized_pnl_pct": -0.8
     }
   ],
   "plan_for_5_22": {
@@ -6970,30 +6940,156 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 15.44（現價 15.60 的 99%）｜KD金叉(K49.0/D43.0)，RSI=56.7健康，MACD多頭，MA20上揚(15.11→15.44)"
+    },
+    {
+      "date": "2026-09-21",
+      "time": "14:15",
+      "action": "ORDER_CANCEL",
+      "code": "4155",
+      "name": "訊映",
+      "price": 15.0,
+      "shares": 6552,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-09-18，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-09-21",
+      "time": "14:15",
+      "action": "ORDER_CANCEL",
+      "code": "1459",
+      "name": "聯發",
+      "price": 15.44,
+      "shares": 6366,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-09-18，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-09-21",
+      "time": "14:15",
+      "action": "ORDER_PLACE",
+      "code": "1459",
+      "name": "聯發",
+      "price": 15.59,
+      "shares": 6304,
+      "amount": 98279,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 15.59（現價 15.75 的 99%）｜KD金叉(K58.8/D48.3)，RSI=59.2健康，MACD多頭，MA20上揚(15.18→15.49)"
+    },
+    {
+      "date": "2026-09-21",
+      "time": "14:15",
+      "action": "SELL",
+      "code": "5225",
+      "name": "東科-KY",
+      "price": 55.7,
+      "shares": 1409,
+      "amount": 78481,
+      "pnl": -24742,
+      "session": "day",
+      "reason": "達停損 SL=71.06（-24.0%）"
+    },
+    {
+      "date": "2026-09-21",
+      "time": "14:15",
+      "action": "ORDER_PLACE",
+      "code": "6887",
+      "name": "寶綠特-KY",
+      "price": 38.51,
+      "shares": 2295,
+      "amount": 88380,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 38.51（現價 38.90 的 99%）｜KD金叉(K57.2/D46.2)，RSI=57.4健康，MACD多頭，MA20上揚(37.51→37.82)"
+    },
+    {
+      "date": "2026-09-21",
+      "time": "14:15",
+      "action": "SELL",
+      "code": "2501",
+      "name": "國建",
+      "price": 21.7,
+      "shares": 4369,
+      "amount": 94807,
+      "pnl": -5986,
+      "session": "day",
+      "reason": "達停損 SL=22.38（-5.9%）"
+    },
+    {
+      "date": "2026-09-21",
+      "time": "14:15",
+      "action": "ORDER_PLACE",
+      "code": "2527",
+      "name": "宏璟",
+      "price": 46.43,
+      "shares": 1972,
+      "amount": 91560,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 46.43（現價 46.90 的 99%）｜KD金叉(K67.1/D48.8)，RSI=63.1健康，MACD多頭，MA20上揚(43.51→43.61)"
+    },
+    {
+      "date": "2026-09-21",
+      "time": "14:15",
+      "action": "ORDER_PLACE",
+      "code": "4155",
+      "name": "訊映",
+      "price": 14.75,
+      "shares": 6213,
+      "amount": 91642,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 14.75（現價 14.90 的 99%）｜KD金叉(K64.5/D58.1)，RSI=54.2健康，MACD多頭，MA20上揚(14.54→14.59)"
     }
   ],
   "pending_orders": [
     {
-      "code": "4155",
-      "name": "訊映",
-      "ticker": "4155.TW",
-      "limit_price": 15.0,
-      "shares": 6552,
-      "placed_date": "2026-09-18",
-      "placed_time": "13:51",
-      "placed_ts": 1789710695,
-      "reserved_cash": 98280
-    },
-    {
       "code": "1459",
       "name": "聯發",
       "ticker": "1459.TW",
-      "limit_price": 15.44,
-      "shares": 6366,
-      "placed_date": "2026-09-18",
-      "placed_time": "13:51",
-      "placed_ts": 1789710695,
-      "reserved_cash": 98291
+      "limit_price": 15.59,
+      "shares": 6304,
+      "placed_date": "2026-09-21",
+      "placed_time": "14:15",
+      "placed_ts": 1789971310,
+      "reserved_cash": 98279
+    },
+    {
+      "code": "6887",
+      "name": "寶綠特-KY",
+      "ticker": "6887.TW",
+      "limit_price": 38.51,
+      "shares": 2295,
+      "placed_date": "2026-09-21",
+      "placed_time": "14:15",
+      "placed_ts": 1789971310,
+      "reserved_cash": 88380
+    },
+    {
+      "code": "2527",
+      "name": "宏璟",
+      "ticker": "2527.TW",
+      "limit_price": 46.43,
+      "shares": 1972,
+      "placed_date": "2026-09-21",
+      "placed_time": "14:15",
+      "placed_ts": 1789971310,
+      "reserved_cash": 91560
+    },
+    {
+      "code": "4155",
+      "name": "訊映",
+      "ticker": "4155.TW",
+      "limit_price": 14.75,
+      "shares": 6213,
+      "placed_date": "2026-09-21",
+      "placed_time": "14:15",
+      "placed_ts": 1789971310,
+      "reserved_cash": 91642
     }
   ],
   "sl_cooldown": {
@@ -7048,6 +7144,18 @@
     "3135": {
       "sl_dates": [
         "2026-08-25"
+      ],
+      "cooldown_until": null
+    },
+    "5225": {
+      "sl_dates": [
+        "2026-09-21"
+      ],
+      "cooldown_until": null
+    },
+    "2501": {
+      "sl_dates": [
+        "2026-09-21"
       ],
       "cooldown_until": null
     }
