@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-24 14:07",
+  "last_updated": "2026-09-25 14:07",
   "initial_capital": 1000000,
   "cash": 184934,
   "total_value": 959827,
@@ -7226,6 +7226,58 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 38.56（現價 38.95 的 99%）｜KD金叉(K64.3/D57.8)，RSI=56.7健康，MACD多頭，MA20上揚(37.65→37.88)"
+    },
+    {
+      "date": "2026-09-25",
+      "time": "14:07",
+      "action": "ORDER_CANCEL",
+      "code": "1459",
+      "name": "聯發",
+      "price": 15.79,
+      "shares": 5856,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-09-24，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-09-25",
+      "time": "14:07",
+      "action": "ORDER_CANCEL",
+      "code": "6887",
+      "name": "寶綠特-KY",
+      "price": 38.56,
+      "shares": 2398,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-09-24，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-09-25",
+      "time": "14:07",
+      "action": "ORDER_PLACE",
+      "code": "1459",
+      "name": "聯發",
+      "price": 15.79,
+      "shares": 5856,
+      "amount": 92466,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 15.79（現價 15.95 的 99%）｜KD金叉(K77.5/D65.7)，RSI=62.5健康，MACD多頭，MA20上揚(15.4→15.57)"
+    },
+    {
+      "date": "2026-09-25",
+      "time": "14:07",
+      "action": "ORDER_PLACE",
+      "code": "6887",
+      "name": "寶綠特-KY",
+      "price": 38.56,
+      "shares": 2398,
+      "amount": 92467,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 38.56（現價 38.95 的 99%）｜KD金叉(K64.3/D57.8)，RSI=56.7健康，MACD多頭，MA20上揚(37.65→37.88)"
     }
   ],
   "pending_orders": [
@@ -7235,9 +7287,9 @@
       "ticker": "1459.TW",
       "limit_price": 15.79,
       "shares": 5856,
-      "placed_date": "2026-09-24",
+      "placed_date": "2026-09-25",
       "placed_time": "14:07",
-      "placed_ts": 1790230046,
+      "placed_ts": 1790316474,
       "reserved_cash": 92466
     },
     {
@@ -7246,9 +7298,9 @@
       "ticker": "6887.TW",
       "limit_price": 38.56,
       "shares": 2398,
-      "placed_date": "2026-09-24",
+      "placed_date": "2026-09-25",
       "placed_time": "14:07",
-      "placed_ts": 1790230046,
+      "placed_ts": 1790316474,
       "reserved_cash": 92467
     }
   ],
