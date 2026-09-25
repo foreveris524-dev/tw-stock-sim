@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-25 14:03",
+  "last_updated": "2026-09-25 20:38",
   "instrument": "小台指期貨 (MTX)",
   "point_value": 50,
   "initial_margin": 200000,
@@ -17422,14 +17422,46 @@
       "entry_price": 47929,
       "pnl": 0,
       "reason": "掛限價單 LONG @ 47929（現價48025）｜KD金叉(K79.7/D65.8)，RSI=63.6健康，MACD多頭"
+    },
+    {
+      "date": "2026-09-25",
+      "time": "20:38",
+      "session": "night",
+      "action": "ORDER_CANCEL",
+      "direction": "LONG",
+      "current_price": 48025,
+      "rsi": 63.6,
+      "k": 79.7,
+      "d": 65.8,
+      "macd_hist": 123.196,
+      "contracts": 1,
+      "entry_price": 47929,
+      "pnl": 0,
+      "reason": "限價單逾時取消（395分未成交）"
+    },
+    {
+      "date": "2026-09-25",
+      "time": "20:38",
+      "session": "night",
+      "current_price": 48025,
+      "rsi": 63.6,
+      "k": 79.7,
+      "d": 65.8,
+      "macd_hist": 123.196,
+      "action": "ORDER_PLACE",
+      "direction": "LONG",
+      "contracts": 1,
+      "entry_price": 47929,
+      "pnl": 0,
+      "reason": "掛限價單 LONG @ 47929（現價48025）｜KD金叉(K79.7/D65.8)，RSI=63.6健康，MACD多頭"
     }
   ],
   "pending_orders": [
     {
       "direction": "LONG",
       "limit_price": 47929,
-      "placed_ts": 1790316194,
-      "placed_time": "14:03"
+      "placed_ts": 1790339922,
+      "placed_time": "20:38"
     }
   ]
 }
