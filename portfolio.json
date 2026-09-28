@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-25 14:07",
+  "last_updated": "2026-09-28 14:46",
   "initial_capital": 1000000,
-  "cash": 184934,
+  "cash": 280516,
   "total_value": 959827,
   "holdings": [
     {
@@ -48,21 +48,6 @@
       "value": 105370,
       "unrealized_pnl": 3283,
       "unrealized_pnl_pct": 3.22
-    },
-    {
-      "code": "3708",
-      "name": "上緯投控",
-      "ticker": "3708.TW",
-      "shares": 979,
-      "entry_price": 102.96,
-      "entry_date": "2026-08-19",
-      "entry_time": "11:26",
-      "cost": 100798,
-      "take_profit": 108.11,
-      "stop_loss": 99.87,
-      "value": 97606,
-      "unrealized_pnl": -3192,
-      "unrealized_pnl_pct": -3.17
     },
     {
       "code": "2535",
@@ -7278,30 +7263,95 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 38.56（現價 38.95 的 99%）｜KD金叉(K64.3/D57.8)，RSI=56.7健康，MACD多頭，MA20上揚(37.65→37.88)"
+    },
+    {
+      "date": "2026-09-28",
+      "time": "14:46",
+      "action": "ORDER_CANCEL",
+      "code": "1459",
+      "name": "聯發",
+      "price": 15.79,
+      "shares": 5856,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-09-25，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-09-28",
+      "time": "14:46",
+      "action": "ORDER_CANCEL",
+      "code": "6887",
+      "name": "寶綠特-KY",
+      "price": 38.56,
+      "shares": 2398,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-09-25，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-09-28",
+      "time": "14:46",
+      "action": "SELL",
+      "code": "3708",
+      "name": "上緯投控",
+      "price": 99.7,
+      "shares": 979,
+      "amount": 97606,
+      "pnl": -3192,
+      "session": "day",
+      "reason": "達停損 SL=99.87（-3.2%）"
+    },
+    {
+      "date": "2026-09-28",
+      "time": "14:46",
+      "action": "ORDER_PLACE",
+      "code": "6005",
+      "name": "群益證",
+      "price": 31.68,
+      "shares": 2951,
+      "amount": 93488,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 31.68（現價 32.00 的 99%）｜KD金叉(K56.9/D50.5)，RSI=53.4健康，MACD多頭，MA20上揚(31.53→31.92)"
+    },
+    {
+      "date": "2026-09-28",
+      "time": "14:46",
+      "action": "ORDER_PLACE",
+      "code": "6887",
+      "name": "寶綠特-KY",
+      "price": 38.56,
+      "shares": 2424,
+      "amount": 93469,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 38.56（現價 38.95 的 99%）｜KD金叉(K64.3/D57.8)，RSI=56.7健康，MACD多頭，MA20上揚(37.65→37.88)"
     }
   ],
   "pending_orders": [
     {
-      "code": "1459",
-      "name": "聯發",
-      "ticker": "1459.TW",
-      "limit_price": 15.79,
-      "shares": 5856,
-      "placed_date": "2026-09-25",
-      "placed_time": "14:07",
-      "placed_ts": 1790316474,
-      "reserved_cash": 92466
+      "code": "6005",
+      "name": "群益證",
+      "ticker": "6005.TW",
+      "limit_price": 31.68,
+      "shares": 2951,
+      "placed_date": "2026-09-28",
+      "placed_time": "14:46",
+      "placed_ts": 1790577981,
+      "reserved_cash": 93488
     },
     {
       "code": "6887",
       "name": "寶綠特-KY",
       "ticker": "6887.TW",
       "limit_price": 38.56,
-      "shares": 2398,
-      "placed_date": "2026-09-25",
-      "placed_time": "14:07",
-      "placed_ts": 1790316474,
-      "reserved_cash": 92467
+      "shares": 2424,
+      "placed_date": "2026-09-28",
+      "placed_time": "14:46",
+      "placed_ts": 1790577981,
+      "reserved_cash": 93469
     }
   ],
   "sl_cooldown": {
@@ -7368,6 +7418,12 @@
     "2501": {
       "sl_dates": [
         "2026-09-21"
+      ],
+      "cooldown_until": null
+    },
+    "3708": {
+      "sl_dates": [
+        "2026-09-28"
       ],
       "cooldown_until": null
     }
