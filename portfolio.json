@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-02 14:57",
+  "last_updated": "2026-10-05 14:57",
   "initial_capital": 1000000,
-  "cash": 467473,
-  "total_value": 957966,
+  "cash": 673941,
+  "total_value": 959413,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102730,
-      "unrealized_pnl": 564,
-      "unrealized_pnl_pct": 0.55
+      "value": 102260,
+      "unrealized_pnl": 94,
+      "unrealized_pnl_pct": 0.09
     },
     {
       "code": "2496",
@@ -30,24 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 86287,
-      "unrealized_pnl": -15879,
-      "unrealized_pnl_pct": -15.54
-    },
-    {
-      "code": "5538",
-      "name": "東明-KY",
-      "ticker": "5538.TW",
-      "shares": 2985,
-      "entry_price": 34.2,
-      "entry_date": "2026-07-17",
-      "entry_time": "14:34",
-      "cost": 102087,
-      "take_profit": 35.91,
-      "stop_loss": 33.17,
-      "value": 106863,
-      "unrealized_pnl": 4776,
-      "unrealized_pnl_pct": 4.68
+      "value": 85817,
+      "unrealized_pnl": -16349,
+      "unrealized_pnl_pct": -16.0
     },
     {
       "code": "2535",
@@ -60,24 +45,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 97616,
-      "unrealized_pnl": -1422,
-      "unrealized_pnl_pct": -1.44
-    },
-    {
-      "code": "9904",
-      "name": "寶成",
-      "ticker": "9904.TW",
-      "shares": 3927,
-      "entry_price": 25.05,
-      "entry_date": "2026-08-26",
-      "entry_time": "13:54",
-      "cost": 98371,
-      "take_profit": 26.3,
-      "stop_loss": 24.3,
-      "value": 96997,
-      "unrealized_pnl": -1374,
-      "unrealized_pnl_pct": -1.4
+      "value": 97395,
+      "unrealized_pnl": -1643,
+      "unrealized_pnl_pct": -1.66
     }
   ],
   "plan_for_5_22": {
@@ -7380,6 +7350,32 @@
       "pnl": 0,
       "session": "day",
       "reason": "跨日取消（下單日 2026-09-29，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-05",
+      "time": "14:57",
+      "action": "SELL",
+      "code": "9904",
+      "name": "寶成",
+      "price": 24.3,
+      "shares": 3927,
+      "amount": 95426,
+      "pnl": -2945,
+      "session": "day",
+      "reason": "達停損 SL=24.30（-3.0%）"
+    },
+    {
+      "date": "2026-10-05",
+      "time": "14:57",
+      "action": "SELL",
+      "code": "5538",
+      "name": "東明-KY",
+      "price": 37.2,
+      "shares": 2985,
+      "amount": 111042,
+      "pnl": 8955,
+      "session": "day",
+      "reason": "達停利 TP=35.91（+8.8%）"
     }
   ],
   "pending_orders": [],
@@ -7453,6 +7449,12 @@
     "3708": {
       "sl_dates": [
         "2026-09-28"
+      ],
+      "cooldown_until": null
+    },
+    "9904": {
+      "sl_dates": [
+        "2026-10-05"
       ],
       "cooldown_until": null
     }
