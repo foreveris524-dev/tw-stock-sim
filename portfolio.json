@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-06 15:29",
+  "last_updated": "2026-10-07 15:10",
   "initial_capital": 1000000,
-  "cash": 577671,
-  "total_value": 961245,
+  "cash": 481407,
+  "total_value": 962070,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 103826,
-      "unrealized_pnl": 1660,
-      "unrealized_pnl_pct": 1.62
+      "value": 102886,
+      "unrealized_pnl": 720,
+      "unrealized_pnl_pct": 0.7
     },
     {
       "code": "2496",
@@ -45,9 +45,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 97505,
-      "unrealized_pnl": -1533,
-      "unrealized_pnl_pct": -1.55
+      "value": 99270,
+      "unrealized_pnl": 232,
+      "unrealized_pnl_pct": 0.23
     }
   ],
   "plan_for_5_22": {
@@ -7389,6 +7389,45 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 15.00（現價 15.15 的 99%）｜KD金叉(K66.8/D62.6)，RSI=62.1健康，MACD多頭，MA20上揚(14.25→14.26)"
+    },
+    {
+      "date": "2026-10-07",
+      "time": "15:10",
+      "action": "ORDER_CANCEL",
+      "code": "2611",
+      "name": "志信",
+      "price": 15.0,
+      "shares": 6418,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-06，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-07",
+      "time": "15:10",
+      "action": "ORDER_PLACE",
+      "code": "2611",
+      "name": "志信",
+      "price": 14.9,
+      "shares": 6461,
+      "amount": 96269,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 14.90（現價 15.05 的 99%）｜KD金叉(K66.1/D63.8)，RSI=60.0健康，MACD多頭，MA20上揚(14.24→14.3)"
+    },
+    {
+      "date": "2026-10-07",
+      "time": "15:10",
+      "action": "ORDER_PLACE",
+      "code": "9933",
+      "name": "中鼎",
+      "price": 43.11,
+      "shares": 2233,
+      "amount": 96265,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 43.11（現價 43.55 的 99%）｜KD金叉(K52.3/D52.2)，RSI=57.1健康，MACD多頭，MA20上揚(40.83→41.99)"
     }
   ],
   "pending_orders": [
@@ -7396,12 +7435,23 @@
       "code": "2611",
       "name": "志信",
       "ticker": "2611.TW",
-      "limit_price": 15.0,
-      "shares": 6418,
-      "placed_date": "2026-10-06",
-      "placed_time": "15:29",
-      "placed_ts": 1791271790,
-      "reserved_cash": 96270
+      "limit_price": 14.9,
+      "shares": 6461,
+      "placed_date": "2026-10-07",
+      "placed_time": "15:10",
+      "placed_ts": 1791357025,
+      "reserved_cash": 96269
+    },
+    {
+      "code": "9933",
+      "name": "中鼎",
+      "ticker": "9933.TW",
+      "limit_price": 43.11,
+      "shares": 2233,
+      "placed_date": "2026-10-07",
+      "placed_time": "15:10",
+      "placed_ts": 1791357025,
+      "reserved_cash": 96265
     }
   ],
   "sl_cooldown": {
