@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-08 15:16",
+  "last_updated": "2026-10-09 15:19",
   "initial_capital": 1000000,
   "cash": 288877,
   "total_value": 963771,
@@ -7506,6 +7506,110 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 24.80（現價 25.05 的 99%）｜KD金叉(K66.8/D59.0)，RSI=57.0健康，MACD多頭，MA20上揚(24.61→24.63)"
+    },
+    {
+      "date": "2026-10-09",
+      "time": "15:19",
+      "action": "ORDER_CANCEL",
+      "code": "2611",
+      "name": "志信",
+      "price": 15.05,
+      "shares": 6397,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-08，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-09",
+      "time": "15:19",
+      "action": "ORDER_CANCEL",
+      "code": "2010",
+      "name": "春源",
+      "price": 22.47,
+      "shares": 4284,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-08，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-09",
+      "time": "15:19",
+      "action": "ORDER_CANCEL",
+      "code": "1713",
+      "name": "國化",
+      "price": 44.5,
+      "shares": 2163,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-08，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-09",
+      "time": "15:19",
+      "action": "ORDER_CANCEL",
+      "code": "9904",
+      "name": "寶成",
+      "price": 24.8,
+      "shares": 3882,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-08，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-09",
+      "time": "15:19",
+      "action": "ORDER_PLACE",
+      "code": "2611",
+      "name": "志信",
+      "price": 15.05,
+      "shares": 6397,
+      "amount": 96275,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 15.05（現價 15.20 的 99%）｜KD金叉(K68.6/D65.4)，RSI=62.0健康，MACD多頭，MA20上揚(14.21→14.36)"
+    },
+    {
+      "date": "2026-10-09",
+      "time": "15:19",
+      "action": "ORDER_PLACE",
+      "code": "2010",
+      "name": "春源",
+      "price": 22.47,
+      "shares": 4284,
+      "amount": 96261,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 22.47（現價 22.70 的 99%）｜KD金叉(K63.6/D61.8)，RSI=56.7健康，MACD多頭，MA20上揚(22.21→22.23)"
+    },
+    {
+      "date": "2026-10-09",
+      "time": "15:19",
+      "action": "ORDER_PLACE",
+      "code": "1713",
+      "name": "國化",
+      "price": 44.5,
+      "shares": 2163,
+      "amount": 96254,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 44.50（現價 44.95 的 99%）｜KD金叉(K71.4/D65.5)，RSI=64.1健康，MACD多頭，MA20上揚(42.5→42.67)"
+    },
+    {
+      "date": "2026-10-09",
+      "time": "15:19",
+      "action": "ORDER_PLACE",
+      "code": "9904",
+      "name": "寶成",
+      "price": 24.8,
+      "shares": 3882,
+      "amount": 96274,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 24.80（現價 25.05 的 99%）｜KD金叉(K66.8/D59.0)，RSI=56.9健康，MACD多頭，MA20上揚(24.61→24.63)"
     }
   ],
   "pending_orders": [
@@ -7515,9 +7619,9 @@
       "ticker": "2611.TW",
       "limit_price": 15.05,
       "shares": 6397,
-      "placed_date": "2026-10-08",
-      "placed_time": "15:16",
-      "placed_ts": 1791443818,
+      "placed_date": "2026-10-09",
+      "placed_time": "15:19",
+      "placed_ts": 1791530388,
       "reserved_cash": 96275
     },
     {
@@ -7526,9 +7630,9 @@
       "ticker": "2010.TW",
       "limit_price": 22.47,
       "shares": 4284,
-      "placed_date": "2026-10-08",
-      "placed_time": "15:16",
-      "placed_ts": 1791443818,
+      "placed_date": "2026-10-09",
+      "placed_time": "15:19",
+      "placed_ts": 1791530388,
       "reserved_cash": 96261
     },
     {
@@ -7537,9 +7641,9 @@
       "ticker": "1713.TW",
       "limit_price": 44.5,
       "shares": 2163,
-      "placed_date": "2026-10-08",
-      "placed_time": "15:16",
-      "placed_ts": 1791443818,
+      "placed_date": "2026-10-09",
+      "placed_time": "15:19",
+      "placed_ts": 1791530388,
       "reserved_cash": 96254
     },
     {
@@ -7548,9 +7652,9 @@
       "ticker": "9904.TW",
       "limit_price": 24.8,
       "shares": 3882,
-      "placed_date": "2026-10-08",
-      "placed_time": "15:16",
-      "placed_ts": 1791443818,
+      "placed_date": "2026-10-09",
+      "placed_time": "15:19",
+      "placed_ts": 1791530388,
       "reserved_cash": 96274
     }
   ],
