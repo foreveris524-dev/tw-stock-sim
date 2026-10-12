@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-09 15:19",
+  "last_updated": "2026-10-12 15:17",
   "initial_capital": 1000000,
-  "cash": 288877,
-  "total_value": 963771,
+  "cash": 192629,
+  "total_value": 963846,
   "holdings": [
     {
       "code": "1419",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 85817,
-      "unrealized_pnl": -16349,
-      "unrealized_pnl_pct": -16.0
+      "value": 86443,
+      "unrealized_pnl": -15723,
+      "unrealized_pnl_pct": -15.39
     },
     {
       "code": "2535",
@@ -45,9 +45,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 100814,
-      "unrealized_pnl": 1776,
-      "unrealized_pnl_pct": 1.79
+      "value": 100263,
+      "unrealized_pnl": 1225,
+      "unrealized_pnl_pct": 1.24
     }
   ],
   "plan_for_5_22": {
@@ -7610,52 +7610,180 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 24.80（現價 25.05 的 99%）｜KD金叉(K66.8/D59.0)，RSI=56.9健康，MACD多頭，MA20上揚(24.61→24.63)"
+    },
+    {
+      "date": "2026-10-12",
+      "time": "15:17",
+      "action": "ORDER_CANCEL",
+      "code": "2611",
+      "name": "志信",
+      "price": 15.05,
+      "shares": 6397,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-09，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-12",
+      "time": "15:17",
+      "action": "ORDER_CANCEL",
+      "code": "2010",
+      "name": "春源",
+      "price": 22.47,
+      "shares": 4284,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-09，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-12",
+      "time": "15:17",
+      "action": "ORDER_CANCEL",
+      "code": "1713",
+      "name": "國化",
+      "price": 44.5,
+      "shares": 2163,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-09，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-12",
+      "time": "15:17",
+      "action": "ORDER_CANCEL",
+      "code": "9904",
+      "name": "寶成",
+      "price": 24.8,
+      "shares": 3882,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-09，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-12",
+      "time": "15:17",
+      "action": "ORDER_PLACE",
+      "code": "1608",
+      "name": "華榮",
+      "price": 36.78,
+      "shares": 2617,
+      "amount": 96253,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 36.78（現價 37.15 的 99%）｜KD金叉(K73.3/D66.0)，RSI=58.2健康，MACD多頭，MA20上揚(36.04→36.05)"
+    },
+    {
+      "date": "2026-10-12",
+      "time": "15:17",
+      "action": "ORDER_PLACE",
+      "code": "9904",
+      "name": "寶成",
+      "price": 25.39,
+      "shares": 3792,
+      "amount": 96279,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 25.39（現價 25.65 的 99%）｜KD金叉(K75.6/D64.5)，RSI=64.8健康，MACD多頭，MA20上揚(24.61→24.69)"
+    },
+    {
+      "date": "2026-10-12",
+      "time": "15:17",
+      "action": "ORDER_PLACE",
+      "code": "2731",
+      "name": "雄獅",
+      "price": 144.04,
+      "shares": 668,
+      "amount": 96219,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 144.04（現價 145.50 的 99%）｜KD金叉(K71.5/D65.8)，RSI=57.6健康，MACD多頭，MA20上揚(142.95→143.25)"
+    },
+    {
+      "date": "2026-10-12",
+      "time": "15:17",
+      "action": "ORDER_PLACE",
+      "code": "9945",
+      "name": "潤泰新",
+      "price": 29.65,
+      "shares": 3247,
+      "amount": 96274,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 29.65（現價 29.95 的 99%）｜KD金叉(K60.9/D47.9)，RSI=62.2健康，MACD多頭，MA20上揚(28.65→28.93)"
+    },
+    {
+      "date": "2026-10-12",
+      "time": "15:17",
+      "action": "ORDER_PLACE",
+      "code": "6005",
+      "name": "群益證",
+      "price": 32.42,
+      "shares": 2970,
+      "amount": 96287,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 32.42（現價 32.75 的 99%）｜KD金叉(K60.9/D59.1)，RSI=57.2健康，MACD多頭，MA20上揚(31.97→31.99)"
     }
   ],
   "pending_orders": [
     {
-      "code": "2611",
-      "name": "志信",
-      "ticker": "2611.TW",
-      "limit_price": 15.05,
-      "shares": 6397,
-      "placed_date": "2026-10-09",
-      "placed_time": "15:19",
-      "placed_ts": 1791530388,
-      "reserved_cash": 96275
-    },
-    {
-      "code": "2010",
-      "name": "春源",
-      "ticker": "2010.TW",
-      "limit_price": 22.47,
-      "shares": 4284,
-      "placed_date": "2026-10-09",
-      "placed_time": "15:19",
-      "placed_ts": 1791530388,
-      "reserved_cash": 96261
-    },
-    {
-      "code": "1713",
-      "name": "國化",
-      "ticker": "1713.TW",
-      "limit_price": 44.5,
-      "shares": 2163,
-      "placed_date": "2026-10-09",
-      "placed_time": "15:19",
-      "placed_ts": 1791530388,
-      "reserved_cash": 96254
+      "code": "1608",
+      "name": "華榮",
+      "ticker": "1608.TW",
+      "limit_price": 36.78,
+      "shares": 2617,
+      "placed_date": "2026-10-12",
+      "placed_time": "15:17",
+      "placed_ts": 1791789449,
+      "reserved_cash": 96253
     },
     {
       "code": "9904",
       "name": "寶成",
       "ticker": "9904.TW",
-      "limit_price": 24.8,
-      "shares": 3882,
-      "placed_date": "2026-10-09",
-      "placed_time": "15:19",
-      "placed_ts": 1791530388,
+      "limit_price": 25.39,
+      "shares": 3792,
+      "placed_date": "2026-10-12",
+      "placed_time": "15:17",
+      "placed_ts": 1791789449,
+      "reserved_cash": 96279
+    },
+    {
+      "code": "2731",
+      "name": "雄獅",
+      "ticker": "2731.TW",
+      "limit_price": 144.04,
+      "shares": 668,
+      "placed_date": "2026-10-12",
+      "placed_time": "15:17",
+      "placed_ts": 1791789449,
+      "reserved_cash": 96219
+    },
+    {
+      "code": "9945",
+      "name": "潤泰新",
+      "ticker": "9945.TW",
+      "limit_price": 29.65,
+      "shares": 3247,
+      "placed_date": "2026-10-12",
+      "placed_time": "15:17",
+      "placed_ts": 1791789449,
       "reserved_cash": 96274
+    },
+    {
+      "code": "6005",
+      "name": "群益證",
+      "ticker": "6005.TW",
+      "limit_price": 32.42,
+      "shares": 2970,
+      "placed_date": "2026-10-12",
+      "placed_time": "15:17",
+      "placed_ts": 1791789449,
+      "reserved_cash": 96287
     }
   ],
   "sl_cooldown": {
