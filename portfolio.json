@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-15 18:46",
+  "last_updated": "2026-10-16 13:47",
   "initial_capital": 1000000,
-  "cash": 577670,
-  "total_value": 960203,
+  "cash": 385220,
+  "total_value": 962384,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102260,
-      "unrealized_pnl": 94,
-      "unrealized_pnl_pct": 0.09
+      "value": 103043,
+      "unrealized_pnl": 877,
+      "unrealized_pnl_pct": 0.86
     },
     {
       "code": "2496",
@@ -30,9 +30,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 85504,
-      "unrealized_pnl": -16662,
-      "unrealized_pnl_pct": -16.31
+      "value": 86130,
+      "unrealized_pnl": -16036,
+      "unrealized_pnl_pct": -15.7
     },
     {
       "code": "2535",
@@ -45,9 +45,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 98498,
-      "unrealized_pnl": -540,
-      "unrealized_pnl_pct": -0.55
+      "value": 99270,
+      "unrealized_pnl": 232,
+      "unrealized_pnl_pct": 0.23
     }
   ],
   "plan_for_5_22": {
@@ -7883,19 +7883,93 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 22.62（現價 22.85 的 99%）｜KD金叉(K68.9/D58.4)，RSI=57.9健康，MACD多頭，MA20上揚(22.22→22.33)"
+    },
+    {
+      "date": "2026-10-16",
+      "time": "13:47",
+      "action": "ORDER_CANCEL",
+      "code": "2010",
+      "name": "春源",
+      "price": 22.62,
+      "shares": 4256,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-15，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-16",
+      "time": "13:47",
+      "action": "ORDER_PLACE",
+      "code": "2731",
+      "name": "雄獅",
+      "price": 143.55,
+      "shares": 670,
+      "amount": 96179,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 143.55（現價 145.00 的 99%）｜KD金叉(K52.7/D50.8)，RSI=54.6健康，MACD多頭，MA20上揚(143.07→143.78)"
+    },
+    {
+      "date": "2026-10-16",
+      "time": "13:47",
+      "action": "ORDER_PLACE",
+      "code": "9945",
+      "name": "潤泰新",
+      "price": 29.4,
+      "shares": 3275,
+      "amount": 96285,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 29.40（現價 29.70 的 99%）｜KD金叉(K64.4/D57.3)，RSI=57.6健康，MACD多頭，MA20上揚(28.84→29.23)"
+    },
+    {
+      "date": "2026-10-16",
+      "time": "13:47",
+      "action": "ORDER_PLACE",
+      "code": "5225",
+      "name": "東科-KY",
+      "price": 55.64,
+      "shares": 1730,
+      "amount": 96257,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 55.64（現價 56.20 的 99%）｜KD金叉(K45.3/D40.4)，RSI=50.6健康，MACD多頭，MA20上揚(54.66→55.12)"
     }
   ],
   "pending_orders": [
     {
-      "code": "2010",
-      "name": "春源",
-      "ticker": "2010.TW",
-      "limit_price": 22.62,
-      "shares": 4256,
-      "placed_date": "2026-10-15",
-      "placed_time": "13:51",
-      "placed_ts": 1792043474,
-      "reserved_cash": 96271
+      "code": "2731",
+      "name": "雄獅",
+      "ticker": "2731.TW",
+      "limit_price": 143.55,
+      "shares": 670,
+      "placed_date": "2026-10-16",
+      "placed_time": "13:47",
+      "placed_ts": 1792129647,
+      "reserved_cash": 96179
+    },
+    {
+      "code": "9945",
+      "name": "潤泰新",
+      "ticker": "9945.TW",
+      "limit_price": 29.4,
+      "shares": 3275,
+      "placed_date": "2026-10-16",
+      "placed_time": "13:47",
+      "placed_ts": 1792129647,
+      "reserved_cash": 96285
+    },
+    {
+      "code": "5225",
+      "name": "東科-KY",
+      "ticker": "5225.TW",
+      "limit_price": 55.64,
+      "shares": 1730,
+      "placed_date": "2026-10-16",
+      "placed_time": "13:47",
+      "placed_ts": 1792129647,
+      "reserved_cash": 96257
     }
   ],
   "sl_cooldown": {
