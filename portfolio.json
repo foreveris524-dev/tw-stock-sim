@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-16 18:10",
+  "last_updated": "2026-10-19 14:06",
   "initial_capital": 1000000,
-  "cash": 385220,
-  "total_value": 961914,
+  "cash": 30,
+  "total_value": 956536,
   "holdings": [
     {
       "code": "1419",
@@ -15,24 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102573,
-      "unrealized_pnl": 407,
-      "unrealized_pnl_pct": 0.4
-    },
-    {
-      "code": "2496",
-      "name": "卓越",
-      "ticker": "2496.TW",
-      "shares": 1566,
-      "entry_price": 65.24,
-      "entry_date": "2026-06-22",
-      "entry_time": "14:40",
-      "cost": 102166,
-      "take_profit": 68.5,
-      "stop_loss": 63.28,
-      "value": 86130,
-      "unrealized_pnl": -16036,
-      "unrealized_pnl_pct": -15.7
+      "value": 98501,
+      "unrealized_pnl": -3665,
+      "unrealized_pnl_pct": -3.59
     },
     {
       "code": "2535",
@@ -45,9 +30,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 99270,
-      "unrealized_pnl": 232,
-      "unrealized_pnl_pct": 0.23
+      "value": 98277,
+      "unrealized_pnl": -761,
+      "unrealized_pnl_pct": -0.77
     }
   ],
   "plan_for_5_22": {
@@ -7935,41 +7920,252 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 55.64（現價 56.20 的 99%）｜KD金叉(K45.3/D40.4)，RSI=50.6健康，MACD多頭，MA20上揚(54.66→55.12)"
+    },
+    {
+      "date": "2026-10-19",
+      "time": "14:06",
+      "action": "ORDER_CANCEL",
+      "code": "2731",
+      "name": "雄獅",
+      "price": 143.55,
+      "shares": 670,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-16，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-19",
+      "time": "14:06",
+      "action": "ORDER_CANCEL",
+      "code": "9945",
+      "name": "潤泰新",
+      "price": 29.4,
+      "shares": 3275,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-16，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-19",
+      "time": "14:06",
+      "action": "ORDER_CANCEL",
+      "code": "5225",
+      "name": "東科-KY",
+      "price": 55.64,
+      "shares": 1730,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-16，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-19",
+      "time": "14:06",
+      "action": "ORDER_PLACE",
+      "code": "2362",
+      "name": "藍天",
+      "price": 47.32,
+      "shares": 2034,
+      "amount": 96249,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 47.32（現價 47.80 的 99%）｜KD金叉(K53.7/D52.4)，RSI=52.8健康，MACD多頭，MA20上揚(47.1→47.41)"
+    },
+    {
+      "date": "2026-10-19",
+      "time": "14:06",
+      "action": "ORDER_PLACE",
+      "code": "5225",
+      "name": "東科-KY",
+      "price": 54.85,
+      "shares": 1755,
+      "amount": 96262,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 54.85（現價 55.40 的 99%）｜KD金叉(K45.3/D41.9)，RSI=47.2健康，MACD多頭，MA20上揚(54.74→55.17)"
+    },
+    {
+      "date": "2026-10-19",
+      "time": "14:06",
+      "action": "ORDER_PLACE",
+      "code": "4438",
+      "name": "廣越",
+      "price": 56.92,
+      "shares": 1691,
+      "amount": 96252,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 56.92（現價 57.50 的 99%）｜KD金叉(K75.3/D61.3)，RSI=51.5健康，MACD多頭，MA20上揚(56.66→56.79)"
+    },
+    {
+      "date": "2026-10-19",
+      "time": "14:06",
+      "action": "ORDER_PLACE",
+      "code": "2852",
+      "name": "第一保",
+      "price": 27.62,
+      "shares": 3486,
+      "amount": 96283,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 27.62（現價 27.90 的 99%）｜KD金叉(K70.1/D67.6)，RSI=49.9健康，MACD多頭，MA20上揚(27.88→27.91)"
+    },
+    {
+      "date": "2026-10-19",
+      "time": "14:06",
+      "action": "SELL",
+      "code": "2496",
+      "name": "卓越",
+      "price": 54.8,
+      "shares": 1566,
+      "amount": 85817,
+      "pnl": -16349,
+      "session": "day",
+      "reason": "達停損 SL=63.28（-16.0%）"
+    },
+    {
+      "date": "2026-10-19",
+      "time": "14:06",
+      "action": "ORDER_PLACE",
+      "code": "9945",
+      "name": "潤泰新",
+      "price": 29.5,
+      "shares": 3175,
+      "amount": 93662,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 29.50（現價 29.80 的 99%）｜KD金叉(K70.9/D61.9)，RSI=58.6健康，MACD多頭，MA20上揚(28.93→29.32)"
+    },
+    {
+      "date": "2026-10-19",
+      "time": "14:06",
+      "action": "ORDER_PLACE",
+      "code": "5522",
+      "name": "遠雄",
+      "price": 61.38,
+      "shares": 1526,
+      "amount": 93666,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 61.38（現價 62.00 的 99%）｜KD金叉(K75.3/D67.1)，RSI=52.0健康，MACD多頭，MA20上揚(61.13→61.22)"
+    },
+    {
+      "date": "2026-10-19",
+      "time": "14:06",
+      "action": "ORDER_PLACE",
+      "code": "9935",
+      "name": "慶豐富",
+      "price": 18.46,
+      "shares": 5075,
+      "amount": 93684,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 18.46（現價 18.65 的 99%）｜KD金叉(K65.2/D58.3)，RSI=51.1健康，MACD多頭，MA20上揚(18.23→18.34)"
+    },
+    {
+      "date": "2026-10-19",
+      "time": "14:06",
+      "action": "ORDER_PLACE",
+      "code": "1808",
+      "name": "潤隆",
+      "price": 34.45,
+      "shares": 2719,
+      "amount": 93670,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 34.45（現價 34.80 的 99%）｜KD金叉(K75.6/D70.1)，RSI=57.5健康，MACD多頭，MA20上揚(33.12→33.4)"
     }
   ],
   "pending_orders": [
     {
-      "code": "2731",
-      "name": "雄獅",
-      "ticker": "2731.TW",
-      "limit_price": 143.55,
-      "shares": 670,
-      "placed_date": "2026-10-16",
-      "placed_time": "13:47",
-      "placed_ts": 1792129647,
-      "reserved_cash": 96179
-    },
-    {
-      "code": "9945",
-      "name": "潤泰新",
-      "ticker": "9945.TW",
-      "limit_price": 29.4,
-      "shares": 3275,
-      "placed_date": "2026-10-16",
-      "placed_time": "13:47",
-      "placed_ts": 1792129647,
-      "reserved_cash": 96285
+      "code": "2362",
+      "name": "藍天",
+      "ticker": "2362.TW",
+      "limit_price": 47.32,
+      "shares": 2034,
+      "placed_date": "2026-10-19",
+      "placed_time": "14:06",
+      "placed_ts": 1792389971,
+      "reserved_cash": 96249
     },
     {
       "code": "5225",
       "name": "東科-KY",
       "ticker": "5225.TW",
-      "limit_price": 55.64,
-      "shares": 1730,
-      "placed_date": "2026-10-16",
-      "placed_time": "13:47",
-      "placed_ts": 1792129647,
-      "reserved_cash": 96257
+      "limit_price": 54.85,
+      "shares": 1755,
+      "placed_date": "2026-10-19",
+      "placed_time": "14:06",
+      "placed_ts": 1792389971,
+      "reserved_cash": 96262
+    },
+    {
+      "code": "4438",
+      "name": "廣越",
+      "ticker": "4438.TW",
+      "limit_price": 56.92,
+      "shares": 1691,
+      "placed_date": "2026-10-19",
+      "placed_time": "14:06",
+      "placed_ts": 1792389971,
+      "reserved_cash": 96252
+    },
+    {
+      "code": "2852",
+      "name": "第一保",
+      "ticker": "2852.TW",
+      "limit_price": 27.62,
+      "shares": 3486,
+      "placed_date": "2026-10-19",
+      "placed_time": "14:06",
+      "placed_ts": 1792389971,
+      "reserved_cash": 96283
+    },
+    {
+      "code": "9945",
+      "name": "潤泰新",
+      "ticker": "9945.TW",
+      "limit_price": 29.5,
+      "shares": 3175,
+      "placed_date": "2026-10-19",
+      "placed_time": "14:06",
+      "placed_ts": 1792389971,
+      "reserved_cash": 93662
+    },
+    {
+      "code": "5522",
+      "name": "遠雄",
+      "ticker": "5522.TW",
+      "limit_price": 61.38,
+      "shares": 1526,
+      "placed_date": "2026-10-19",
+      "placed_time": "14:06",
+      "placed_ts": 1792389971,
+      "reserved_cash": 93666
+    },
+    {
+      "code": "9935",
+      "name": "慶豐富",
+      "ticker": "9935.TW",
+      "limit_price": 18.46,
+      "shares": 5075,
+      "placed_date": "2026-10-19",
+      "placed_time": "14:06",
+      "placed_ts": 1792389971,
+      "reserved_cash": 93684
+    },
+    {
+      "code": "1808",
+      "name": "潤隆",
+      "ticker": "1808.TW",
+      "limit_price": 34.45,
+      "shares": 2719,
+      "placed_date": "2026-10-19",
+      "placed_time": "14:06",
+      "placed_ts": 1792389971,
+      "reserved_cash": 93670
     }
   ],
   "sl_cooldown": {
@@ -8048,6 +8244,12 @@
     "9904": {
       "sl_dates": [
         "2026-10-05"
+      ],
+      "cooldown_until": null
+    },
+    "2496": {
+      "sl_dates": [
+        "2026-10-19"
       ],
       "cooldown_until": null
     }
