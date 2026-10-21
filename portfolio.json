@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-20 13:57",
+  "last_updated": "2026-10-21 13:58",
   "initial_capital": 1000000,
-  "cash": 190014,
-  "total_value": 956594,
+  "cash": 284958,
+  "total_value": 956972,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 99441,
-      "unrealized_pnl": -2725,
-      "unrealized_pnl_pct": -2.67
+      "value": 99598,
+      "unrealized_pnl": -2568,
+      "unrealized_pnl_pct": -2.51
     },
     {
       "code": "2535",
@@ -30,9 +30,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 97395,
-      "unrealized_pnl": -1643,
-      "unrealized_pnl_pct": -1.66
+      "value": 97616,
+      "unrealized_pnl": -1422,
+      "unrealized_pnl_pct": -1.44
     }
   ],
   "plan_for_5_22": {
@@ -8258,74 +8258,206 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 34.16（現價 34.50 的 99%）｜KD金叉(K73.7/D71.3)，RSI=55.3健康，MACD多頭，MA20上揚(33.17→33.42)"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "13:58",
+      "action": "ORDER_CANCEL",
+      "code": "5225",
+      "name": "東科-KY",
+      "price": 54.35,
+      "shares": 1747,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-20，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "13:58",
+      "action": "ORDER_CANCEL",
+      "code": "4438",
+      "name": "廣越",
+      "price": 56.92,
+      "shares": 1668,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-20，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "13:58",
+      "action": "ORDER_CANCEL",
+      "code": "5522",
+      "name": "遠雄",
+      "price": 61.48,
+      "shares": 1544,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-20，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "13:58",
+      "action": "ORDER_CANCEL",
+      "code": "2031",
+      "name": "新光鋼",
+      "price": 46.93,
+      "shares": 2024,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-20，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "13:58",
+      "action": "ORDER_CANCEL",
+      "code": "9935",
+      "name": "慶豐富",
+      "price": 18.36,
+      "shares": 5173,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-20，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "13:58",
+      "action": "ORDER_CANCEL",
+      "code": "1808",
+      "name": "潤隆",
+      "price": 34.16,
+      "shares": 2780,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-20，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "13:58",
+      "action": "ORDER_PLACE",
+      "code": "4438",
+      "name": "廣越",
+      "price": 57.02,
+      "shares": 1665,
+      "amount": 94938,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 57.02（現價 57.60 的 99%）｜KD金叉(K78.1/D70.3)，RSI=52.5健康，MACD多頭，MA20上揚(56.58→56.89)"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "13:58",
+      "action": "ORDER_PLACE",
+      "code": "2204",
+      "name": "中華",
+      "price": 51.78,
+      "shares": 1834,
+      "amount": 94965,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 51.78（現價 52.30 的 99%）｜KD金叉(K71.5/D69.4)，RSI=48.2健康，MACD多頭，MA20上揚(52.07→52.12)"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "13:58",
+      "action": "ORDER_PLACE",
+      "code": "5522",
+      "name": "遠雄",
+      "price": 61.18,
+      "shares": 1552,
+      "amount": 94951,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 61.18（現價 61.80 的 99%）｜KD金叉(K74.5/D72.3)，RSI=49.9健康，MACD多頭，MA20上揚(61.05→61.27)"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "13:58",
+      "action": "ORDER_PLACE",
+      "code": "2031",
+      "name": "新光鋼",
+      "price": 47.32,
+      "shares": 2007,
+      "amount": 94971,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 47.32（現價 47.80 的 99%）｜KD金叉(K74.8/D73.1)，RSI=62.7健康，MACD多頭，MA20上揚(45.48→46.42)"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "13:58",
+      "action": "ORDER_PLACE",
+      "code": "9935",
+      "name": "慶豐富",
+      "price": 18.51,
+      "shares": 5131,
+      "amount": 94975,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 18.51（現價 18.70 的 99%）｜KD金叉(K64.5/D61.1)，RSI=51.9健康，MACD多頭，MA20上揚(18.23→18.39)"
     }
   ],
   "pending_orders": [
     {
-      "code": "5225",
-      "name": "東科-KY",
-      "ticker": "5225.TW",
-      "limit_price": 54.35,
-      "shares": 1747,
-      "placed_date": "2026-10-20",
-      "placed_time": "13:57",
-      "placed_ts": 1792475878,
-      "reserved_cash": 94949
-    },
-    {
       "code": "4438",
       "name": "廣越",
       "ticker": "4438.TW",
-      "limit_price": 56.92,
-      "shares": 1668,
-      "placed_date": "2026-10-20",
-      "placed_time": "13:57",
-      "placed_ts": 1792475878,
-      "reserved_cash": 94943
+      "limit_price": 57.02,
+      "shares": 1665,
+      "placed_date": "2026-10-21",
+      "placed_time": "13:58",
+      "placed_ts": 1792562315,
+      "reserved_cash": 94938
+    },
+    {
+      "code": "2204",
+      "name": "中華",
+      "ticker": "2204.TW",
+      "limit_price": 51.78,
+      "shares": 1834,
+      "placed_date": "2026-10-21",
+      "placed_time": "13:58",
+      "placed_ts": 1792562315,
+      "reserved_cash": 94965
     },
     {
       "code": "5522",
       "name": "遠雄",
       "ticker": "5522.TW",
-      "limit_price": 61.48,
-      "shares": 1544,
-      "placed_date": "2026-10-20",
-      "placed_time": "13:57",
-      "placed_ts": 1792475878,
-      "reserved_cash": 94925
+      "limit_price": 61.18,
+      "shares": 1552,
+      "placed_date": "2026-10-21",
+      "placed_time": "13:58",
+      "placed_ts": 1792562315,
+      "reserved_cash": 94951
     },
     {
       "code": "2031",
       "name": "新光鋼",
       "ticker": "2031.TW",
-      "limit_price": 46.93,
-      "shares": 2024,
-      "placed_date": "2026-10-20",
-      "placed_time": "13:57",
-      "placed_ts": 1792475878,
-      "reserved_cash": 94986
+      "limit_price": 47.32,
+      "shares": 2007,
+      "placed_date": "2026-10-21",
+      "placed_time": "13:58",
+      "placed_ts": 1792562315,
+      "reserved_cash": 94971
     },
     {
       "code": "9935",
       "name": "慶豐富",
       "ticker": "9935.TW",
-      "limit_price": 18.36,
-      "shares": 5173,
-      "placed_date": "2026-10-20",
-      "placed_time": "13:57",
-      "placed_ts": 1792475878,
-      "reserved_cash": 94976
-    },
-    {
-      "code": "1808",
-      "name": "潤隆",
-      "ticker": "1808.TW",
-      "limit_price": 34.16,
-      "shares": 2780,
-      "placed_date": "2026-10-20",
-      "placed_time": "13:57",
-      "placed_ts": 1792475878,
-      "reserved_cash": 94965
+      "limit_price": 18.51,
+      "shares": 5131,
+      "placed_date": "2026-10-21",
+      "placed_time": "13:58",
+      "placed_ts": 1792562315,
+      "reserved_cash": 94975
     }
   ],
   "sl_cooldown": {
