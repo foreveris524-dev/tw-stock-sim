@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-23 13:59",
+  "last_updated": "2026-10-26 14:05",
   "initial_capital": 1000000,
-  "cash": 474907,
+  "cash": 379978,
   "total_value": 957587,
   "holdings": [
     {
@@ -8583,30 +8583,121 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 47.72（現價 48.20 的 99%）｜KD金叉(K76.0/D74.1)，RSI=64.8健康，MACD多頭，MA20上揚(45.65→46.6)"
+    },
+    {
+      "date": "2026-10-26",
+      "time": "14:05",
+      "action": "ORDER_CANCEL",
+      "code": "4438",
+      "name": "廣越",
+      "price": 56.83,
+      "shares": 1671,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-23，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-26",
+      "time": "14:05",
+      "action": "ORDER_CANCEL",
+      "code": "5522",
+      "name": "遠雄",
+      "price": 61.48,
+      "shares": 1544,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-23，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-26",
+      "time": "14:05",
+      "action": "ORDER_CANCEL",
+      "code": "2031",
+      "name": "新光鋼",
+      "price": 47.72,
+      "shares": 1990,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-23，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-26",
+      "time": "14:05",
+      "action": "ORDER_PLACE",
+      "code": "5522",
+      "name": "遠雄",
+      "price": 61.48,
+      "shares": 1544,
+      "amount": 94925,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 61.48（現價 62.10 的 99%）｜KD金叉(K75.8/D74.2)，RSI=52.8健康，MACD多頭，MA20上揚(61.12→61.31)"
+    },
+    {
+      "date": "2026-10-26",
+      "time": "14:05",
+      "action": "ORDER_PLACE",
+      "code": "8112",
+      "name": "至上",
+      "price": 82.96,
+      "shares": 1144,
+      "amount": 94906,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 82.96（現價 83.80 的 99%）｜KD金叉(K42.9/D41.1)，RSI=45.9健康，MACD多頭，MA20上揚(83.64→83.87)"
+    },
+    {
+      "date": "2026-10-26",
+      "time": "14:05",
+      "action": "ORDER_PLACE",
+      "code": "2031",
+      "name": "新光鋼",
+      "price": 47.72,
+      "shares": 1990,
+      "amount": 94963,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 47.72（現價 48.20 的 99%）｜KD金叉(K76.8/D75.0)，RSI=64.8健康，MACD多頭，MA20上揚(45.88→46.72)"
+    },
+    {
+      "date": "2026-10-26",
+      "time": "14:05",
+      "action": "ORDER_PLACE",
+      "code": "9933",
+      "name": "中鼎",
+      "price": 44.2,
+      "shares": 2149,
+      "amount": 94986,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 44.20（現價 44.65 的 99%）｜KD金叉(K59.8/D43.9)，RSI=61.6健康，MACD多頭，MA20上揚(42.58→43.04)"
     }
   ],
   "pending_orders": [
-    {
-      "code": "4438",
-      "name": "廣越",
-      "ticker": "4438.TW",
-      "limit_price": 56.83,
-      "shares": 1671,
-      "placed_date": "2026-10-23",
-      "placed_time": "13:59",
-      "placed_ts": 1792735172,
-      "reserved_cash": 94963
-    },
     {
       "code": "5522",
       "name": "遠雄",
       "ticker": "5522.TW",
       "limit_price": 61.48,
       "shares": 1544,
-      "placed_date": "2026-10-23",
-      "placed_time": "13:59",
-      "placed_ts": 1792735172,
+      "placed_date": "2026-10-26",
+      "placed_time": "14:05",
+      "placed_ts": 1792994702,
       "reserved_cash": 94925
+    },
+    {
+      "code": "8112",
+      "name": "至上",
+      "ticker": "8112.TW",
+      "limit_price": 82.96,
+      "shares": 1144,
+      "placed_date": "2026-10-26",
+      "placed_time": "14:05",
+      "placed_ts": 1792994702,
+      "reserved_cash": 94906
     },
     {
       "code": "2031",
@@ -8614,10 +8705,21 @@
       "ticker": "2031.TW",
       "limit_price": 47.72,
       "shares": 1990,
-      "placed_date": "2026-10-23",
-      "placed_time": "13:59",
-      "placed_ts": 1792735172,
+      "placed_date": "2026-10-26",
+      "placed_time": "14:05",
+      "placed_ts": 1792994702,
       "reserved_cash": 94963
+    },
+    {
+      "code": "9933",
+      "name": "中鼎",
+      "ticker": "9933.TW",
+      "limit_price": 44.2,
+      "shares": 2149,
+      "placed_date": "2026-10-26",
+      "placed_time": "14:05",
+      "placed_ts": 1792994702,
+      "reserved_cash": 94986
     }
   ],
   "sl_cooldown": {
