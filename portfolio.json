@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-28 14:48",
+  "last_updated": "2026-10-29 14:59",
   "initial_capital": 1000000,
-  "cash": 569884,
-  "total_value": 964597,
+  "cash": 664800,
+  "total_value": 965949,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102260,
-      "unrealized_pnl": 94,
-      "unrealized_pnl_pct": 0.09
+      "value": 102730,
+      "unrealized_pnl": 564,
+      "unrealized_pnl_pct": 0.55
     },
     {
       "code": "2535",
@@ -30,9 +30,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 102579,
-      "unrealized_pnl": 3541,
-      "unrealized_pnl_pct": 3.58
+      "value": 103461,
+      "unrealized_pnl": 4423,
+      "unrealized_pnl_pct": 4.47
     }
   ],
   "plan_for_5_22": {
@@ -8778,6 +8778,45 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 48.26（現價 48.75 的 99%）｜KD金叉(K58.8/D51.5)，RSI=59.7健康，MACD多頭，MA20上揚(47.44→47.51)"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "14:59",
+      "action": "ORDER_CANCEL",
+      "code": "8112",
+      "name": "至上",
+      "price": 83.95,
+      "shares": 1131,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-28，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "14:59",
+      "action": "ORDER_CANCEL",
+      "code": "2362",
+      "name": "藍天",
+      "price": 48.26,
+      "shares": 1967,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-28，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "14:59",
+      "action": "ORDER_PLACE",
+      "code": "8112",
+      "name": "至上",
+      "price": 82.86,
+      "shares": 1146,
+      "amount": 94958,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 82.86（現價 83.70 的 99%）｜KD金叉(K53.3/D49.1)，RSI=47.6健康，MACD多頭，MA20上揚(83.76→84.05)"
     }
   ],
   "pending_orders": [
@@ -8785,23 +8824,12 @@
       "code": "8112",
       "name": "至上",
       "ticker": "8112.TW",
-      "limit_price": 83.95,
-      "shares": 1131,
-      "placed_date": "2026-10-28",
-      "placed_time": "14:48",
-      "placed_ts": 1793170104,
-      "reserved_cash": 94947
-    },
-    {
-      "code": "2362",
-      "name": "藍天",
-      "ticker": "2362.TW",
-      "limit_price": 48.26,
-      "shares": 1967,
-      "placed_date": "2026-10-28",
-      "placed_time": "14:48",
-      "placed_ts": 1793170104,
-      "reserved_cash": 94927
+      "limit_price": 82.86,
+      "shares": 1146,
+      "placed_date": "2026-10-29",
+      "placed_time": "14:59",
+      "placed_ts": 1793257184,
+      "reserved_cash": 94958
     }
   ],
   "sl_cooldown": {
