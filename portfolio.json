@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-29 14:59",
+  "last_updated": "2026-10-30 15:02",
   "initial_capital": 1000000,
-  "cash": 664800,
-  "total_value": 965949,
+  "cash": 474934,
+  "total_value": 963187,
   "holdings": [
     {
       "code": "1419",
@@ -15,9 +15,9 @@
       "cost": 102166,
       "take_profit": 68.5,
       "stop_loss": 63.28,
-      "value": 102730,
-      "unrealized_pnl": 564,
-      "unrealized_pnl_pct": 0.55
+      "value": 100850,
+      "unrealized_pnl": -1316,
+      "unrealized_pnl_pct": -1.29
     },
     {
       "code": "2535",
@@ -30,9 +30,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 103461,
-      "unrealized_pnl": 4423,
-      "unrealized_pnl_pct": 4.47
+      "value": 102579,
+      "unrealized_pnl": 3541,
+      "unrealized_pnl_pct": 3.58
     }
   ],
   "plan_for_5_22": {
@@ -8817,19 +8817,93 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 82.86（現價 83.70 的 99%）｜KD金叉(K53.3/D49.1)，RSI=47.6健康，MACD多頭，MA20上揚(83.76→84.05)"
+    },
+    {
+      "date": "2026-10-30",
+      "time": "15:02",
+      "action": "ORDER_CANCEL",
+      "code": "8112",
+      "name": "至上",
+      "price": 82.86,
+      "shares": 1146,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-10-29，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-10-30",
+      "time": "15:02",
+      "action": "ORDER_PLACE",
+      "code": "3708",
+      "name": "上緯投控",
+      "price": 99.5,
+      "shares": 954,
+      "amount": 94923,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 99.50（現價 100.50 的 99%）｜KD金叉(K70.2/D60.0)，RSI=56.9健康，MACD多頭，MA20上揚(96.34→96.74)"
+    },
+    {
+      "date": "2026-10-30",
+      "time": "15:02",
+      "action": "ORDER_PLACE",
+      "code": "1808",
+      "name": "潤隆",
+      "price": 35.59,
+      "shares": 2668,
+      "amount": 94954,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 35.59（現價 35.95 的 99%）｜KD金叉(K69.3/D67.2)，RSI=58.3健康，MACD多頭，MA20上揚(33.24→34.18)"
+    },
+    {
+      "date": "2026-10-30",
+      "time": "15:02",
+      "action": "ORDER_PLACE",
+      "code": "9933",
+      "name": "中鼎",
+      "price": 44.85,
+      "shares": 2117,
+      "amount": 94947,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 44.85（現價 45.30 的 99%）｜KD金叉(K72.2/D70.6)，RSI=57.6健康，MACD多頭，MA20上揚(42.85→44.22)"
     }
   ],
   "pending_orders": [
     {
-      "code": "8112",
-      "name": "至上",
-      "ticker": "8112.TW",
-      "limit_price": 82.86,
-      "shares": 1146,
-      "placed_date": "2026-10-29",
-      "placed_time": "14:59",
-      "placed_ts": 1793257184,
-      "reserved_cash": 94958
+      "code": "3708",
+      "name": "上緯投控",
+      "ticker": "3708.TW",
+      "limit_price": 99.5,
+      "shares": 954,
+      "placed_date": "2026-10-30",
+      "placed_time": "15:02",
+      "placed_ts": 1793343737,
+      "reserved_cash": 94923
+    },
+    {
+      "code": "1808",
+      "name": "潤隆",
+      "ticker": "1808.TW",
+      "limit_price": 35.59,
+      "shares": 2668,
+      "placed_date": "2026-10-30",
+      "placed_time": "15:02",
+      "placed_ts": 1793343737,
+      "reserved_cash": 94954
+    },
+    {
+      "code": "9933",
+      "name": "中鼎",
+      "ticker": "9933.TW",
+      "limit_price": 44.85,
+      "shares": 2117,
+      "placed_date": "2026-10-30",
+      "placed_time": "15:02",
+      "placed_ts": 1793343737,
+      "reserved_cash": 94947
     }
   ],
   "sl_cooldown": {
