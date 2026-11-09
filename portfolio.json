@@ -1,24 +1,9 @@
 {
-  "last_updated": "2026-11-06 15:52",
+  "last_updated": "2026-11-09 15:53",
   "initial_capital": 1000000,
-  "cash": 759758,
-  "total_value": 957319,
+  "cash": 854658,
+  "total_value": 952604,
   "holdings": [
-    {
-      "code": "1419",
-      "name": "新紡",
-      "ticker": "1419.TW",
-      "shares": 1566,
-      "entry_price": 65.24,
-      "entry_date": "2026-06-22",
-      "entry_time": "10:18",
-      "cost": 102166,
-      "take_profit": 68.5,
-      "stop_loss": 63.28,
-      "value": 99284,
-      "unrealized_pnl": -2882,
-      "unrealized_pnl_pct": -2.82
-    },
     {
       "code": "2535",
       "name": "達欣工",
@@ -30,9 +15,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 98277,
-      "unrealized_pnl": -761,
-      "unrealized_pnl_pct": -0.77
+      "value": 97946,
+      "unrealized_pnl": -1092,
+      "unrealized_pnl_pct": -1.1
     }
   ],
   "plan_for_5_22": {
@@ -9038,6 +9023,19 @@
       "pnl": 0,
       "session": "day",
       "reason": "跨日取消（下單日 2026-11-03，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-11-09",
+      "time": "15:53",
+      "action": "SELL",
+      "code": "1419",
+      "name": "新紡",
+      "price": 60.6,
+      "shares": 1566,
+      "amount": 94900,
+      "pnl": -7266,
+      "session": "day",
+      "reason": "達停損 SL=63.28（-7.1%）"
     }
   ],
   "pending_orders": [],
@@ -9123,6 +9121,12 @@
     "2496": {
       "sl_dates": [
         "2026-10-19"
+      ],
+      "cooldown_until": null
+    },
+    "1419": {
+      "sl_dates": [
+        "2026-11-09"
       ],
       "cooldown_until": null
     }
