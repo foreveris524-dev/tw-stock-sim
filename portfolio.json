@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-09 15:53",
+  "last_updated": "2026-11-10 16:21",
   "initial_capital": 1000000,
-  "cash": 854658,
-  "total_value": 952604,
+  "cash": 664828,
+  "total_value": 953046,
   "holdings": [
     {
       "code": "2535",
@@ -15,9 +15,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 97946,
-      "unrealized_pnl": -1092,
-      "unrealized_pnl_pct": -1.1
+      "value": 98388,
+      "unrealized_pnl": -650,
+      "unrealized_pnl_pct": -0.66
     }
   ],
   "plan_for_5_22": {
@@ -9036,9 +9036,58 @@
       "pnl": -7266,
       "session": "day",
       "reason": "達停損 SL=63.28（-7.1%）"
+    },
+    {
+      "date": "2026-11-10",
+      "time": "16:21",
+      "action": "ORDER_PLACE",
+      "code": "2548",
+      "name": "華固",
+      "price": 92.56,
+      "shares": 1025,
+      "amount": 94874,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 92.56（現價 93.50 的 99%）｜KD金叉(K60.3/D48.4)，RSI=56.9健康，MACD多頭，MA20上揚(91.55→91.69)"
+    },
+    {
+      "date": "2026-11-10",
+      "time": "16:21",
+      "action": "ORDER_PLACE",
+      "code": "9935",
+      "name": "慶豐富",
+      "price": 18.51,
+      "shares": 5130,
+      "amount": 94956,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 18.51（現價 18.70 的 99%）｜KD金叉(K69.5/D52.0)，RSI=55.7健康，MACD多頭，MA20上揚(18.44→18.47)"
     }
   ],
-  "pending_orders": [],
+  "pending_orders": [
+    {
+      "code": "2548",
+      "name": "華固",
+      "ticker": "2548.TW",
+      "limit_price": 92.56,
+      "shares": 1025,
+      "placed_date": "2026-11-10",
+      "placed_time": "16:21",
+      "placed_ts": 1794298879,
+      "reserved_cash": 94874
+    },
+    {
+      "code": "9935",
+      "name": "慶豐富",
+      "ticker": "9935.TW",
+      "limit_price": 18.51,
+      "shares": 5130,
+      "placed_date": "2026-11-10",
+      "placed_time": "16:21",
+      "placed_ts": 1794298879,
+      "reserved_cash": 94956
+    }
+  ],
   "sl_cooldown": {
     "8463": {
       "sl_dates": [
