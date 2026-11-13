@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-12 16:13",
+  "last_updated": "2026-11-13 15:51",
   "initial_capital": 1000000,
-  "cash": 759748,
-  "total_value": 954810,
+  "cash": 854658,
+  "total_value": 956575,
   "holdings": [
     {
       "code": "2535",
@@ -15,9 +15,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 100152,
-      "unrealized_pnl": 1114,
-      "unrealized_pnl_pct": 1.12
+      "value": 101917,
+      "unrealized_pnl": 2879,
+      "unrealized_pnl_pct": 2.91
     }
   ],
   "plan_for_5_22": {
@@ -9127,21 +9127,22 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 94.25（現價 95.20 的 99%）｜KD金叉(K78.3/D63.5)，RSI=62.9健康，MACD多頭，MA20上揚(91.6→92.06)"
-    }
-  ],
-  "pending_orders": [
+    },
     {
+      "date": "2026-11-13",
+      "time": "15:51",
+      "action": "ORDER_CANCEL",
       "code": "2548",
       "name": "華固",
-      "ticker": "2548.TW",
-      "limit_price": 94.25,
+      "price": 94.25,
       "shares": 1007,
-      "placed_date": "2026-11-12",
-      "placed_time": "16:13",
-      "placed_ts": 1794471214,
-      "reserved_cash": 94910
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-11-12，限價單僅當日有效）"
     }
   ],
+  "pending_orders": [],
   "sl_cooldown": {
     "8463": {
       "sl_dates": [
