@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-13 15:51",
+  "last_updated": "2026-11-16 15:54",
   "initial_capital": 1000000,
-  "cash": 854658,
-  "total_value": 956575,
+  "cash": 664758,
+  "total_value": 954480,
   "holdings": [
     {
       "code": "2535",
@@ -15,9 +15,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 101917,
-      "unrealized_pnl": 2879,
-      "unrealized_pnl_pct": 2.91
+      "value": 99822,
+      "unrealized_pnl": 784,
+      "unrealized_pnl_pct": 0.79
     }
   ],
   "plan_for_5_22": {
@@ -9140,9 +9140,58 @@
       "pnl": 0,
       "session": "day",
       "reason": "跨日取消（下單日 2026-11-12，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-11-16",
+      "time": "15:54",
+      "action": "ORDER_PLACE",
+      "code": "1817",
+      "name": "凱撒衛",
+      "price": 39.4,
+      "shares": 2410,
+      "amount": 94954,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 39.40（現價 39.80 的 99%）｜KD金叉(K53.3/D50.3)，RSI=48.0健康，MACD多頭，MA20上揚(39.84→39.87)"
+    },
+    {
+      "date": "2026-11-16",
+      "time": "15:54",
+      "action": "ORDER_PLACE",
+      "code": "3209",
+      "name": "全科",
+      "price": 46.18,
+      "shares": 2056,
+      "amount": 94946,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 46.18（現價 46.65 的 99%）｜KD金叉(K67.8/D59.4)，RSI=53.9健康，MACD多頭，MA20上揚(45.09→45.15)"
     }
   ],
-  "pending_orders": [],
+  "pending_orders": [
+    {
+      "code": "1817",
+      "name": "凱撒衛",
+      "ticker": "1817.TW",
+      "limit_price": 39.4,
+      "shares": 2410,
+      "placed_date": "2026-11-16",
+      "placed_time": "15:54",
+      "placed_ts": 1794815663,
+      "reserved_cash": 94954
+    },
+    {
+      "code": "3209",
+      "name": "全科",
+      "ticker": "3209.TW",
+      "limit_price": 46.18,
+      "shares": 2056,
+      "placed_date": "2026-11-16",
+      "placed_time": "15:54",
+      "placed_ts": 1794815663,
+      "reserved_cash": 94946
+    }
+  ],
   "sl_cooldown": {
     "8463": {
       "sl_dates": [
