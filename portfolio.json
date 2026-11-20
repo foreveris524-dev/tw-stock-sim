@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-19 16:41",
+  "last_updated": "2026-11-20 16:27",
   "initial_capital": 1000000,
-  "cash": 759696,
-  "total_value": 953376,
+  "cash": 854658,
+  "total_value": 946207,
   "holdings": [
     {
       "code": "2535",
@@ -15,9 +15,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 98718,
-      "unrealized_pnl": -320,
-      "unrealized_pnl_pct": -0.32
+      "value": 91549,
+      "unrealized_pnl": -7489,
+      "unrealized_pnl_pct": -7.56
     }
   ],
   "plan_for_5_22": {
@@ -9335,21 +9335,22 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 39.90（現價 40.30 的 99%）｜KD金叉(K63.4/D60.1)，RSI=55.1健康，MACD多頭，MA20上揚(39.86→39.96)"
-    }
-  ],
-  "pending_orders": [
+    },
     {
+      "date": "2026-11-20",
+      "time": "16:27",
+      "action": "ORDER_CANCEL",
       "code": "1817",
       "name": "凱撒衛",
-      "ticker": "1817.TW",
-      "limit_price": 39.9,
+      "price": 39.9,
       "shares": 2380,
-      "placed_date": "2026-11-19",
-      "placed_time": "16:41",
-      "placed_ts": 1795077703,
-      "reserved_cash": 94962
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-11-19，限價單僅當日有效）"
     }
   ],
+  "pending_orders": [],
   "sl_cooldown": {
     "8463": {
       "sl_dates": [
