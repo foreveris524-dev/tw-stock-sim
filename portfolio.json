@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-24 18:51",
+  "last_updated": "2026-11-25 17:46",
   "initial_capital": 1000000,
-  "cash": 759704,
-  "total_value": 952935,
+  "cash": 759702,
+  "total_value": 948744,
   "holdings": [
     {
       "code": "2535",
@@ -15,9 +15,9 @@
       "cost": 99038,
       "take_profit": 94.28,
       "stop_loss": 87.1,
-      "value": 98277,
-      "unrealized_pnl": -761,
-      "unrealized_pnl_pct": -0.77
+      "value": 94086,
+      "unrealized_pnl": -4952,
+      "unrealized_pnl_pct": -5.0
     }
   ],
   "plan_for_5_22": {
@@ -9361,6 +9361,32 @@
       "pnl": 0,
       "session": "day",
       "reason": "掛限價單 21.04（現價 21.25 的 99%）｜KD金叉(K47.2/D46.8)，RSI=56.3健康，MACD多頭，MA20上揚(20.46→20.58)"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "17:46",
+      "action": "ORDER_CANCEL",
+      "code": "2501",
+      "name": "國建",
+      "price": 21.04,
+      "shares": 4513,
+      "amount": 0,
+      "pnl": 0,
+      "session": "day",
+      "reason": "跨日取消（下單日 2026-11-24，限價單僅當日有效）"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "17:46",
+      "action": "ORDER_PLACE",
+      "code": "2501",
+      "name": "國建",
+      "price": 20.54,
+      "shares": 4623,
+      "amount": 94956,
+      "pnl": 0,
+      "session": "day",
+      "reason": "掛限價單 20.54（現價 20.75 的 99%）｜KD金叉(K47.7/D47.1)，RSI=50.5健康，MACD多頭，MA20上揚(20.51→20.6)"
     }
   ],
   "pending_orders": [
@@ -9368,12 +9394,12 @@
       "code": "2501",
       "name": "國建",
       "ticker": "2501.TW",
-      "limit_price": 21.04,
-      "shares": 4513,
-      "placed_date": "2026-11-24",
-      "placed_time": "18:51",
-      "placed_ts": 1795517476,
-      "reserved_cash": 94954
+      "limit_price": 20.54,
+      "shares": 4623,
+      "placed_date": "2026-11-25",
+      "placed_time": "17:46",
+      "placed_ts": 1795599964,
+      "reserved_cash": 94956
     }
   ],
   "sl_cooldown": {
